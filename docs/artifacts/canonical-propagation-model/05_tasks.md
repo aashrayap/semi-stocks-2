@@ -37,8 +37,8 @@ Executed on 2026-04-10:
 
 Remaining follow-up items are optional hardening, not migration blockers:
 
-- run the live networked fetch path in `agents/src/transcript_fetcher.py`
-- run a human-in-the-loop interactive scoring pass through `agents/src/post_earnings_scorer.py`
+- live network validation is now complete for `agents/src/transcript_fetcher.py`; the Motley Fool fallback was hardened for historical quarter fetches after direct IR/q4cdn endpoints rejected scripted access
+- human-in-the-loop interactive scoring is now complete for `agents/src/post_earnings_scorer.py`
 - continue future repo iteration from the canonical structure instead of reopening flat-root compatibility work
 
 ## Task List

@@ -26,7 +26,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
@@ -72,6 +72,7 @@ STATE_FILE = STATE_DIR / "transcripts.yaml"
 
 USER_AGENT = "semi-stocks-transcript-fetcher/1.0 (research tool; contact: github.com/ashdasher777)"
 REQUEST_DELAY = 1.0  # seconds between HTTP requests
+MOTLEY_FOOL_LISTING_URL = "https://www.fool.com/earnings-call-transcripts/"
 
 
 # ---------------------------------------------------------------------------
@@ -653,36 +654,18 @@ def fetch_motley_fool(ticker: str, quarter: str, fool_config: dict) -> dict | No
 
     q_num = q_label.replace("Q", "")
 
-    # Strategy 1: Try to find the transcript by searching the Motley Fool
-    # earnings call transcript listing page
+    # Strategy 1: scan recent pages from the real earnings transcript listing.
+    # Motley Fool does not expose per-ticker transcript pages at ?ticker=...
+    # and recent transcripts usually remain visible in the paginated index.
     log.info(f"[{ticker}] Tier 3: Searching Motley Fool for {ticker} {quarter} transcript")
-
-    # First, try the search/listing approach — fetch recent transcripts page
-    # and look for our ticker
-    search_url = f"{base_url}?ticker={ticker.lower()}"
     transcript_url = None
 
     try:
-        html = fetch_url_text(search_url)
-        links = extract_links(html, base_url=base_url)
-
-        # Look for links that match our ticker and quarter
-        for link in links:
-            href = link["href"].lower()
-            text = link["text"].lower()
-
-            # Match patterns like:
-            # /earnings/call-transcripts/2026/04/17/taiwan-semiconductor-manufacturing-tsm-q1-2026-...
-            ticker_lower = ticker.lower()
-            if ticker_lower in href or slug in href:
-                # Check quarter match in URL or link text
-                if (f"q{q_num}" in href and q_year in href) or \
-                   (f"q{q_num}" in text and q_year in text):
-                    transcript_url = link["href"]
-                    log.info(f"[{ticker}] Found transcript link: {transcript_url}")
-                    break
+        transcript_url = _find_motley_fool_listing_url(ticker, q_num, q_year, slug)
+        if transcript_url:
+            log.info(f"[{ticker}] Found transcript link in Motley Fool index: {transcript_url}")
     except (urllib.error.URLError, urllib.error.HTTPError, OSError) as e:
-        log.warning(f"[{ticker}] Failed to search Motley Fool listing: {e}")
+        log.warning(f"[{ticker}] Failed to scan Motley Fool listing pages: {e}")
 
     # Strategy 2: If listing search failed, try a direct URL construction
     # Pattern: /earnings/call-transcripts/YYYY/MM/DD/{slug}-{ticker}-q{N}-{year}-earnings-call-transcript/
@@ -741,27 +724,20 @@ def _guess_fool_url(
 ) -> str | None:
     """Try to construct a Motley Fool transcript URL by guessing the date.
 
-    Earnings are typically within a few weeks of quarter end. We try a range
-    of dates around the expected earnings date from canonical/30-thesis/thesis.yaml.
+    Earnings are typically within a few weeks of quarter end.
+    First prefer the current thesis next-earnings date when it corresponds to
+    the requested quarter. Otherwise fall back to a generic post-quarter window
+    so historical quarter fetches can still work.
     """
-    ticker_map = get_ticker_map()
-    info = ticker_map.get(ticker, {})
-    earnings_str = info.get("next_earnings")
-
-    if not earnings_str:
-        return None
-
-    try:
-        earnings_date = datetime.strptime(earnings_str, "%Y-%m-%d").date()
-    except (ValueError, TypeError):
+    earnings_date = _candidate_earnings_date(ticker, q_num, q_year)
+    if earnings_date is None:
         return None
 
     ticker_lower = ticker.lower()
 
-    # Try dates in a window around the earnings date: -2 to +5 days
-    # (transcript is posted 1-3 days after the call)
-    for offset in range(0, 8):
-        try_date = earnings_date + __import__("datetime").timedelta(days=offset)
+    # Try dates in a short window around the likely transcript publication date.
+    for offset in range(0, 21):
+        try_date = earnings_date + timedelta(days=offset)
         date_path = try_date.strftime("%Y/%m/%d")
 
         # Try common URL patterns
@@ -787,6 +763,124 @@ def _guess_fool_url(
                 continue
 
     return None
+
+
+def _find_motley_fool_listing_url(
+    ticker: str,
+    q_num: str,
+    q_year: str,
+    slug: str,
+    max_pages: int = 8,
+) -> str | None:
+    """Scan recent Motley Fool transcript listing pages for a matching article."""
+    for page_num in range(1, max_pages + 1):
+        if page_num == 1:
+            listing_url = MOTLEY_FOOL_LISTING_URL
+        else:
+            listing_url = f"{MOTLEY_FOOL_LISTING_URL}page/{page_num}/"
+
+        html = fetch_url_text(listing_url)
+        links = extract_links(html, base_url=listing_url)
+        candidates = _find_motley_fool_links(links, ticker, q_num, q_year, slug)
+        if candidates:
+            return candidates[0]["href"]
+
+    return None
+
+
+def _find_motley_fool_links(
+    links: list[dict[str, str]],
+    ticker: str,
+    q_num: str,
+    q_year: str,
+    slug: str,
+) -> list[dict[str, str]]:
+    """Find Motley Fool article links that match the requested ticker + quarter."""
+    scored: list[tuple[int, dict[str, str]]] = []
+    ticker_lower = ticker.lower()
+    slug_terms = [part for part in slug.lower().split("-") if part]
+
+    for link in links:
+        href = link["href"].lower()
+        text = link["text"].lower()
+        combined = f"{href} {text}"
+
+        if "/earnings/call-transcripts/" not in href:
+            continue
+        if "transcript" not in combined:
+            continue
+        if f"q{q_num}" not in combined or q_year not in combined:
+            continue
+
+        score = 0
+        if ticker_lower in combined:
+            score += 6
+        if slug and slug in combined:
+            score += 5
+        matched_slug_terms = sum(1 for term in slug_terms if term in combined)
+        score += matched_slug_terms
+        if "earnings-call-transcript" in href:
+            score += 3
+        if "motley fool transcribing" in text:
+            score += 1
+
+        required_slug_matches = 1 if len(slug_terms) <= 1 else 2
+        has_identity_signal = (
+            ticker_lower in combined
+            or (slug and slug in combined)
+            or matched_slug_terms >= required_slug_matches
+        )
+
+        if has_identity_signal and score > 0:
+            scored.append((score, link))
+
+    scored.sort(key=lambda item: item[0], reverse=True)
+    return [link for _, link in scored]
+
+
+def _candidate_earnings_date(ticker: str, q_num: str, q_year: str) -> date | None:
+    """Estimate the earnings date for the requested quarter."""
+    requested_quarter = f"Q{q_num}_{q_year}"
+    ticker_map = get_ticker_map()
+    info = ticker_map.get(ticker, {})
+    earnings_str = info.get("next_earnings")
+
+    if earnings_str:
+        try:
+            next_earnings = datetime.strptime(earnings_str, "%Y-%m-%d").date()
+        except (ValueError, TypeError):
+            next_earnings = None
+        else:
+            if infer_quarter_from_earnings_date(earnings_str) == requested_quarter:
+                return next_earnings
+
+    quarter_end = _quarter_end_date(q_num, q_year)
+    if quarter_end is None:
+        return None
+
+    # Most earnings calls land ~2-8 weeks after quarter end.
+    return quarter_end + timedelta(days=14)
+
+
+def _quarter_end_date(q_num: str, q_year: str) -> date | None:
+    """Map a calendar quarter label to an approximate quarter-end date."""
+    try:
+        year = int(q_year)
+        quarter = int(q_num)
+    except ValueError:
+        return None
+
+    quarter_ends = {
+        1: (3, 31),
+        2: (6, 30),
+        3: (9, 30),
+        4: (12, 31),
+    }
+    month_day = quarter_ends.get(quarter)
+    if month_day is None:
+        return None
+    month, day = month_day
+    return date(year, month, day)
 
 
 # ---------------------------------------------------------------------------

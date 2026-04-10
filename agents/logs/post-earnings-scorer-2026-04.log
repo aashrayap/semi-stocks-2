@@ -23,3 +23,9 @@
   action: template_scorecard
   files_written: none
 
+[2026-04-10T12:34:09] post_earnings_scorer
+  ticker: ASML
+  quarter: Q1_2026
+  action: interactive_score
+  files_written: none
+

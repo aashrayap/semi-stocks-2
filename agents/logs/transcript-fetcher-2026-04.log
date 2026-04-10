@@ -36,3 +36,71 @@
 [2026-04-10 05:40:31] INFO No due transcripts to fetch
 [2026-04-10 05:40:31] INFO transcript_fetcher finished at 2026-04-10T05:40:31
 [2026-04-10 05:40:31] INFO ============================================================
+[2026-04-10 12:29:10] INFO ============================================================
+[2026-04-10 12:29:10] INFO transcript_fetcher started at 2026-04-10T12:29:10
+[2026-04-10 12:29:10] INFO Mode: single ticker=CRWV quarter=Q4_2025 source=auto
+[2026-04-10 12:29:10] INFO [CRWV] Trying Tier 1 (q4cdn)
+[2026-04-10 12:29:10] INFO [CRWV] Tier 1: Fetching q4cdn events page: https://investors.coreweave.com/news-events/events
+[2026-04-10 12:29:10] DEBUG Fetching: https://investors.coreweave.com/news-events/events
+[2026-04-10 12:29:11] WARNING [CRWV] Failed to fetch q4cdn events page: HTTP Error 403: Forbidden
+[2026-04-10 12:29:11] INFO [CRWV] Trying Tier 3 (Motley Fool)
+[2026-04-10 12:29:11] INFO [CRWV] Tier 3: Searching Motley Fool for CRWV Q4_2025 transcript
+[2026-04-10 12:29:11] DEBUG Fetching: https://www.fool.com/earnings/call-transcripts/?ticker=crwv
+[2026-04-10 12:29:12] WARNING [CRWV] Failed to search Motley Fool listing: HTTP Error 404: Not Found
+[2026-04-10 12:29:12] DEBUG [CRWV] Listing search failed, trying URL construction
+[2026-04-10 12:29:36] INFO [CRWV] Could not find Motley Fool transcript for Q4_2025
+[2026-04-10 12:29:36] WARNING [CRWV] All sources exhausted for Q4_2025
+[2026-04-10 12:32:15] INFO ============================================================
+[2026-04-10 12:32:15] INFO transcript_fetcher started at 2026-04-10T12:32:15
+[2026-04-10 12:32:15] INFO Mode: single ticker=INTC quarter=Q4_2025 source=motley_fool
+[2026-04-10 12:32:15] INFO [INTC] Tier 3: Searching Motley Fool for INTC Q4_2025 transcript
+[2026-04-10 12:32:15] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/
+[2026-04-10 12:32:16] INFO [INTC] Found transcript link in Motley Fool index: https://www.fool.com/earnings/call-transcripts/2026/04/10/lotus-tech-lot-q4-2025-earnings-call-transcript/
+[2026-04-10 12:32:16] INFO [INTC] Fetching transcript: https://www.fool.com/earnings/call-transcripts/2026/04/10/lotus-tech-lot-q4-2025-earnings-call-transcript/
+[2026-04-10 12:32:16] DEBUG Fetching: https://www.fool.com/earnings/call-transcripts/2026/04/10/lotus-tech-lot-q4-2025-earnings-call-transcript/
+[2026-04-10 12:32:16] INFO [INTC] DRY RUN — would save transcript (full_transcript)
+[2026-04-10 12:32:16] INFO transcript_fetcher finished at 2026-04-10T12:32:16
+[2026-04-10 12:32:16] INFO ============================================================
+[2026-04-10 12:32:34] INFO ============================================================
+[2026-04-10 12:32:34] INFO transcript_fetcher started at 2026-04-10T12:32:34
+[2026-04-10 12:32:34] INFO Mode: single ticker=INTC quarter=Q4_2025 source=motley_fool
+[2026-04-10 12:32:34] INFO [INTC] Tier 3: Searching Motley Fool for INTC Q4_2025 transcript
+[2026-04-10 12:32:34] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/
+[2026-04-10 12:32:35] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/2/
+[2026-04-10 12:32:36] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/3/
+[2026-04-10 12:32:37] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/4/
+[2026-04-10 12:32:38] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/5/
+[2026-04-10 12:32:39] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/6/
+[2026-04-10 12:32:40] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/7/
+[2026-04-10 12:32:41] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/8/
+[2026-04-10 12:32:42] DEBUG [INTC] Listing search failed, trying URL construction
+[2026-04-10 12:33:10] INFO [INTC] Found transcript via URL guess: https://www.fool.com/earnings/call-transcripts/2026/01/23/intel-intc-q4-2025-earnings-call-transcript/
+[2026-04-10 12:33:10] INFO [INTC] Fetching transcript: https://www.fool.com/earnings/call-transcripts/2026/01/23/intel-intc-q4-2025-earnings-call-transcript/
+[2026-04-10 12:33:10] DEBUG Fetching: https://www.fool.com/earnings/call-transcripts/2026/01/23/intel-intc-q4-2025-earnings-call-transcript/
+[2026-04-10 12:33:11] INFO [INTC] DRY RUN — would save transcript (full_transcript)
+[2026-04-10 12:33:11] INFO transcript_fetcher finished at 2026-04-10T12:33:11
+[2026-04-10 12:33:11] INFO ============================================================
+[2026-04-10 12:33:18] INFO ============================================================
+[2026-04-10 12:33:18] INFO transcript_fetcher started at 2026-04-10T12:33:18
+[2026-04-10 12:33:18] INFO Mode: single ticker=INTC quarter=Q4_2025 source=auto
+[2026-04-10 12:33:18] INFO [INTC] Trying Tier 2 (IR scrape)
+[2026-04-10 12:33:18] INFO [INTC] Tier 2: Fetching IR page: https://intc.com/news-events/events-and-presentations
+[2026-04-10 12:33:18] DEBUG Fetching: https://intc.com/news-events/events-and-presentations
+[2026-04-10 12:33:18] WARNING [INTC] Failed to fetch IR page: <urlopen error [Errno 61] Connection refused>
+[2026-04-10 12:33:18] INFO [INTC] Trying Tier 3 (Motley Fool)
+[2026-04-10 12:33:18] INFO [INTC] Tier 3: Searching Motley Fool for INTC Q4_2025 transcript
+[2026-04-10 12:33:19] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/
+[2026-04-10 12:33:20] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/2/
+[2026-04-10 12:33:21] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/3/
+[2026-04-10 12:33:22] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/4/
+[2026-04-10 12:33:23] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/5/
+[2026-04-10 12:33:24] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/6/
+[2026-04-10 12:33:25] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/7/
+[2026-04-10 12:33:26] DEBUG Fetching: https://www.fool.com/earnings-call-transcripts/page/8/
+[2026-04-10 12:33:26] DEBUG [INTC] Listing search failed, trying URL construction
+[2026-04-10 12:33:54] INFO [INTC] Found transcript via URL guess: https://www.fool.com/earnings/call-transcripts/2026/01/23/intel-intc-q4-2025-earnings-call-transcript/
+[2026-04-10 12:33:54] INFO [INTC] Fetching transcript: https://www.fool.com/earnings/call-transcripts/2026/01/23/intel-intc-q4-2025-earnings-call-transcript/
+[2026-04-10 12:33:55] DEBUG Fetching: https://www.fool.com/earnings/call-transcripts/2026/01/23/intel-intc-q4-2025-earnings-call-transcript/
+[2026-04-10 12:33:55] INFO [INTC] DRY RUN — would save transcript (full_transcript)
+[2026-04-10 12:33:55] INFO transcript_fetcher finished at 2026-04-10T12:33:55
+[2026-04-10 12:33:55] INFO ============================================================

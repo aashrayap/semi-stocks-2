@@ -170,6 +170,8 @@ Executed successfully:
 - earnings-calendar and pre-earnings prediction flows executed successfully under `uv`
 - historical autoagent backtests now replay successfully against the legacy-shaped snapshots
 - transcript fetch dry run and post-earnings scorer dry run both execute successfully
+- live network transcript fetch now succeeds via the Motley Fool fallback in `agents/src/transcript_fetcher.py`
+- human-driven interactive scoring now executes successfully in `agents/src/post_earnings_scorer.py`
 
 ## Verified Commands
 
@@ -179,12 +181,14 @@ Executed successfully:
 - `uv run python agents/src/report.py`
 - `uv run python agents/src/earnings_calendar.py --days 14`
 - `uv run python agents/src/pre_earnings_predictor.py --all-upcoming`
+- `uv run python agents/src/transcript_fetcher.py --ticker INTC --quarter Q4_2025 --dry-run`
+- `uv run python agents/src/post_earnings_scorer.py --ticker ASML --quarter Q1_2026 --interactive --dry-run`
 
 ## Residual Risk
 
-- `agents/src/transcript_fetcher.py` has not been run through a live network fetch in this migration pass.
-- `agents/src/post_earnings_scorer.py` has not been exercised through a human-driven interactive scoring flow in this migration pass.
-- These are test gaps, not structural blockers.
+- No structural migration blockers remain.
+- Some direct IR/q4cdn transcript endpoints still resist scripted fetches in this environment, so `agents/src/transcript_fetcher.py` currently depends on the Motley Fool fallback for at least part of the live validation path.
+- Remaining work is operational hardening and ongoing content/thesis iteration, not migration completion.
 
 ## Suggested Next Session
 
@@ -192,7 +196,7 @@ Continue from the live canonical repo, not from the old migration plan.
 
 Good next-session targets:
 
-- deeper validation of `transcript_fetcher.py`
-- deeper validation of `post_earnings_scorer.py`
+- harden site-specific transcript fetches for IR endpoints that reject scripted access
+- continue accumulating scored prediction history after real earnings results land
 - ongoing thesis/content iteration inside the canonical lanes
 - future research and agent work using `docs/ash.md`, `README.md`, and the repo-local `ingest-semi` skills as the primary operator map
