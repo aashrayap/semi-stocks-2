@@ -1,0 +1,15 @@
+cascade:
+  - name: Power / DC buildout
+    status: active
+    cycle_phase: buildout
+    cycle_signal: "GPU cloud demand remains constrained by site readiness and power availability."
+    period: "2025-2026"
+    tickers: [CRWV, BE, CORZ, IREN]
+    signals:
+      - "Leopold's largest position is CRWV, expressing conviction in GPU cloud demand staying supply constrained."
+      - "Large GPU deployments still require incremental data-center capacity and power delivery before revenue can flow."
+      - "Blackwell-era demand is arriving faster than enterprise-ready data-center capacity."
+    notes: "Frozen pre-earnings snapshot for the CRWV Q4 2025 backtest task."
+
+ticker_map:
+  CRWV: { bottleneck: gpu_cloud, status: active, next_earnings: "2026-02-26" }

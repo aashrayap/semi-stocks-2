@@ -1,0 +1,17 @@
+[project]
+name = "semi-stocks-2"
+version = "0.1.0"
+description = "Canonical propagation workspace for semiconductor research."
+requires-python = ">=3.10,<3.11"
+dependencies = [
+  "beautifulsoup4>=4.12.3",
+  "pdfplumber>=0.11.5",
+  "pyyaml>=6.0.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = false

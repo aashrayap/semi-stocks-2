@@ -1,0 +1,15 @@
+cascade:
+  - name: N3 logic wafers
+    status: active
+    cycle_phase: mid_shortage
+    cycle_signal: "Leading-edge logic capacity remains constrained heading into NVDA Q4 FY2026."
+    period: "2025-2027"
+    tickers: [TSM, NVDA, AVGO, INTC]
+    signals:
+      - "Advanced logic demand is rising across GPUs and datacenter CPUs at the same time."
+      - "Venice, Diamond Rapids, and Vera all compete for leading-edge foundry capacity."
+      - "AI accelerator demand remains strong enough that supply allocation still matters."
+    notes: "Frozen pre-earnings snapshot for the NVDA Q4 FY2026 backtest task."
+
+ticker_map:
+  NVDA: { bottleneck: n3_logic, status: active, next_earnings: "2026-02-26" }

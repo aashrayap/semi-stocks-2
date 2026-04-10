@@ -1,0 +1,93 @@
+# Known outcomes for NVDA Q4 FY2026 earnings (reported 2026-02-26)
+# Extracted from canonical/20-data/companies/NVDA/q4_fy2026.yaml and canonical/10-wiki/sources/nvda-q4-fy2026.md
+# Used by the autoagent backtest to score predictions against actuals.
+
+ticker: NVDA
+quarter: Q4 FY2026
+earnings_date: "2026-02-26"
+
+outcomes:
+  capacity:
+    - claim_pattern: "utilization remains at or near capacity"
+      status: confirmed
+      evidence: >
+        Supply commitments nearly doubled from $50.3B to $95.2B QoQ.
+        $500B revenue visibility through end of CY2026. Jensen: "Computing
+        demand is growing exponentially." Capacity secured through CY2027.
+        Six new chips this cycle all on N3.
+    - claim_pattern: "capacity expansion"
+      status: confirmed
+      evidence: >
+        Vera Rubin samples already shipped, production H2 2026.
+        GB300 NVL72 announced (50x perf/watt vs Hopper). CUDA optimization
+        yielded 5x better performance on GB200 NVL72 in 4 months.
+        Massive product pipeline all demanding N3 capacity.
+
+  pricing:
+    - claim_pattern: "ASPs/margins remain strong"
+      status: confirmed
+      evidence: >
+        Gross margin 75.2% non-GAAP (expanded +180bps QoQ). Kress: margins
+        sustained by "delivering generational leads" in performance per watt.
+        Mid-70s gross margins described as sustainable through FY2027.
+    - claim_pattern: "margin"
+      status: confirmed
+      evidence: >
+        Gross margin 75.2% non-GAAP, expanding QoQ. Management explicitly
+        guided mid-70s margins sustainable through FY2027. Operating income
+        $46.1B non-GAAP, operating margin ~68%.
+
+  demand:
+    - claim_pattern: "demand remains elevated"
+      status: confirmed
+      evidence: >
+        Revenue $68.1B (+73% YoY, +20% QoQ), beat by ~$3B. Data Center
+        $62.3B (+75% YoY). Networking $11B (+3.5x YoY). Jensen: demand
+        "growing exponentially." Q1 guide $78B crushed Street $72.6B.
+        Grace Blackwell = ~2/3 of DC revenue.
+    - claim_pattern: "customer"
+      status: confirmed
+      evidence: >
+        Top 5 cloud providers = ~50% of DC revenue. Sovereign AI tripled
+        to $30B annually. Partnerships: OpenAI (GPT-5.3), Meta (millions
+        of GPUs), Anthropic ($10B investment), Groq (licensing).
+
+  margins:
+    - claim_pattern: "Gross margins remain"
+      status: confirmed
+      evidence: >
+        Q4 gross margin 75.2% non-GAAP (up from prior quarter). FY2026
+        gross margin 71.3% non-GAAP. Guided Q1 FY2027 to 75.0% ±50bps.
+        Kress: "The single most important lever of our gross margins is
+        actually delivering generational leads."
+    - claim_pattern: "margin claim"
+      status: confirmed
+      evidence: >
+        Mid-70s margins guided as sustainable through FY2027. This is a
+        direct forward claim now trackable. No margin compression despite
+        Blackwell ramp — generational performance advantage sustains pricing.
+
+  guidance:
+    - claim_pattern: "raises or maintains forward revenue guidance"
+      status: confirmed
+      evidence: >
+        Guided Q1 FY2027 to $78B ±2% vs Street $72.6B — massive $5.4B beat
+        on guidance alone. FY2027 tax rate 17-19%. Mid-70s margins sustained.
+    - claim_pattern: "timeline or capacity plans"
+      status: confirmed
+      evidence: >
+        Rubin production H2 2026. Vera Rubin samples already shipped.
+        Supply commitments doubled to $95.2B (capacity secured through CY2027).
+        Jensen laid out $3-4T annual AI infrastructure TAM by 2029-2030.
+        Acknowledged China competitive threat.
+
+  positioning:
+    - claim_pattern: "fund positioning thesis"
+      status: confirmed
+      evidence: >
+        Baker's massive NVDA long ($1B+) was validated by the blowout quarter
+        and guidance beat. Leopold's decision to exit NVDA and concentrate
+        into CRWV/optics/power is a different time-horizon bet — not invalidated
+        by this quarter but the relative return diverged. The clearest thesis
+        disagreement between Baker (chip layer) and Leopold (deployment layer)
+        was reinforced, not resolved.

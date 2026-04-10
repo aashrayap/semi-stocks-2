@@ -1,0 +1,83 @@
+timestamp: '2026-04-08T04:54:17'
+label: as_of snapshot baseline
+aggregate_score: 0.95
+task_count: 2
+tasks:
+  CRWV-Q4-2025:
+    total: 5
+    confirmed: 4
+    partial: 1
+    missed: 0
+    unmatched: 0
+    score: 0.9
+    by_category:
+      capacity:
+        total: 1
+        confirmed: 1
+        partial: 0
+        missed: 0
+        unmatched: 0
+      pricing:
+        total: 1
+        confirmed: 0
+        partial: 1
+        missed: 0
+        unmatched: 0
+      demand:
+        total: 1
+        confirmed: 1
+        partial: 0
+        missed: 0
+        unmatched: 0
+      guidance:
+        total: 1
+        confirmed: 1
+        partial: 0
+        missed: 0
+        unmatched: 0
+      positioning:
+        total: 1
+        confirmed: 1
+        partial: 0
+        missed: 0
+        unmatched: 0
+    input_mode: snapshot
+  NVDA-Q4-FY2026:
+    total: 5
+    confirmed: 5
+    partial: 0
+    missed: 0
+    unmatched: 0
+    score: 1.0
+    by_category:
+      capacity:
+        total: 1
+        confirmed: 1
+        partial: 0
+        missed: 0
+        unmatched: 0
+      pricing:
+        total: 1
+        confirmed: 1
+        partial: 0
+        missed: 0
+        unmatched: 0
+      demand:
+        total: 1
+        confirmed: 1
+        partial: 0
+        missed: 0
+        unmatched: 0
+      guidance:
+        total: 1
+        confirmed: 1
+        partial: 0
+        missed: 0
+        unmatched: 0
+      positioning:
+        total: 1
+        confirmed: 1
+        partial: 0
+        missed: 0
+        unmatched: 0
+    input_mode: snapshot

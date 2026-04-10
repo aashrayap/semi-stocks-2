@@ -1,0 +1,17 @@
+source: baker
+entity: "Atreides Management LP"
+quarter: "Q4 2025"
+period: "2025-12-31"
+filed: "2026-02-17"
+
+positions:
+  - ticker: CRWV
+    company: CoreWeave
+    type: common
+    value: 43_000_000
+    pct_portfolio: 0.005
+    change_vs_prior: "+864%"
+    bottleneck: gpu_cloud
+    notes: "Tiny vs Leopold's position size, but directionally aligned."
+
+exits: []

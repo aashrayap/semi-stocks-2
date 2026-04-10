@@ -1,0 +1,183 @@
+ticker: LITE
+company: Lumentum Holdings Inc.
+quarter: Q2 FY2026
+period: "2025-12-27"
+earnings_date: "2026-02-03"
+source_page: wiki/sources/lite-q2-fy2026.md
+
+source_artifacts:
+  - id: earnings_release
+    raw: wiki/raw/lite-q2-fy2026-primary-sources.md
+    url: "https://s21.q4cdn.com/377324469/files/doc_news/Lumentum-Announces-Second-Quarter-of-Fiscal-Year-2026-Financial-Results-2026.pdf"
+  - id: nvidia_partnership
+    raw: wiki/raw/lite-q2-fy2026-primary-sources.md
+    url: "https://investor.lumentum.com/financial-news-releases/news-details/2026/NVIDIA-Announces-Strategic-Partnership-With-Lumentum-to-Develop-State-of-the-Art-Optics-Technology/default.aspx"
+  - id: r64_ocs_release
+    raw: wiki/raw/lite-q2-fy2026-primary-sources.md
+    url: "https://investor.lumentum.com/financial-news-releases/news-details/2025/Lumentum-Announces-R64-Optical-Circuit-Switch-for-AI-Data-Centers/"
+
+business:
+  summary: >
+    Lumentum sells optical components and systems used in AI data-center interconnects, including
+    lasers, modules, optical circuit switches, and CPO-related photonics. It is both a current scale-out
+    optics beneficiary and a future CPO option.
+  key_products:
+    - "AI optical components"
+    - "optical circuit switches (R300, R64)"
+    - "advanced laser components"
+    - "co-packaged optics platforms"
+
+thesis_relevance:
+  bottleneck_role: >
+    Direct expression of AI scale-out optics demand today with visible optionality into scale-up / CPO.
+    Lumentum now monetizes both components and systems rather than only long-dated architecture hopes.
+  why_now: >
+    Q2 FY2026 revenue grew 65.5% YoY, Q3 guide implies another major step up, OCS backlog is above
+    $400M, CPO already has a multi-hundred-million-dollar order for 1H 2027 delivery, and NVIDIA
+    committed both capital and future purchase rights in March 2026.
+  confirms_next:
+    - "Q3 FY2026 hits the $780M-$830M guide with 30%-31% non-GAAP operating margin."
+    - "OCS backlog converts into systems revenue rather than remaining pipeline."
+    - "CPO orders and NVIDIA partnership show up in capacity or shipment commentary through 2026-2027."
+  break_conditions:
+    - "Optical demand is concentrated and customers pause orders after the first AI buildout wave."
+    - "OCS backlog slips or gets pushed out."
+    - "CPO remains real but too delayed to support valuation."
+
+financials:
+  q2:
+    revenue: 665_500_000
+    revenue_qoq: "+24.7%"
+    revenue_yoy: "+65.5%"
+    gross_margin_gaap: 0.361
+    gross_margin_non_gaap: 0.425
+    operating_margin_gaap: 0.097
+    operating_margin_non_gaap: 0.252
+    net_income_gaap: 78_200_000
+    eps_gaap: 0.89
+    eps_non_gaap: 1.67
+
+  revenue_mix:
+    components:
+      revenue: 443_700_000
+      pct: 0.667
+    systems:
+      revenue: 221_800_000
+      pct: 0.333
+
+  balance_sheet:
+    cash_and_short_term_investments: 1_155_300_000
+
+  orders:
+    ocs_backlog: ">400M"
+    cpo_incremental_order: "multi-hundred-million-dollar, deliverable in 1H CY2027"
+
+guidance:
+  q3_fy2026:
+    revenue: [780_000_000, 830_000_000]
+    operating_margin_non_gaap: [0.30, 0.31]
+    eps_non_gaap: [2.15, 2.35]
+
+forward_claims:
+  - claim: "Q3 FY2026 revenue of $780M-$830M"
+    speaker: guidance
+    source: "Q2 FY2026 earnings release"
+    source_ref: earnings_release
+    verify_at: "Q3 FY2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q3 FY2026"]
+    status: pending
+
+  - claim: "Q3 FY2026 non-GAAP operating margin of 30%-31%"
+    speaker: guidance
+    source: "Q2 FY2026 earnings release"
+    source_ref: earnings_release
+    verify_at: "Q3 FY2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q3 FY2026"]
+    status: pending
+
+  - claim: "OCS backlog well beyond $400M converts into revenue as demand scales"
+    speaker: "CEO Michael Hurlston"
+    source: "Q2 FY2026 earnings release"
+    source_ref: earnings_release
+    verify_at: "FY2026-FY2027 quarterly results"
+    verify_window:
+      kind: earnings
+      targets: ["Q3 FY2026", "Q4 FY2026", "Q1 FY2027", "Q2 FY2027", "Q3 FY2027", "Q4 FY2027"]
+    status: pending
+
+  - claim: "Incremental multi-hundred-million-dollar CPO order delivers in 1H calendar 2027"
+    speaker: "CEO Michael Hurlston"
+    source: "Q2 FY2026 earnings release"
+    source_ref: earnings_release
+    verify_at: "1H 2027 results / shipment commentary"
+    verify_window:
+      kind: commentary
+      targets: ["H1 2027"]
+    status: pending
+
+  - claim: "R64 OCS reaches general availability in 2H 2026"
+    speaker: announcement
+    source: "R64 OCS product release"
+    source_ref: r64_ocs_release
+    verify_at: "2H 2026 product / revenue commentary"
+    verify_window:
+      kind: commentary
+      targets: ["H2 2026"]
+    status: pending
+
+thesis_signals:
+  - bottleneck: pluggable_optics
+    direction: confirms
+    evidence: >
+      Revenue rose 65.5% YoY, components were 66.7% of total revenue, and Q3 guide points to another
+      major step up, showing AI optical demand is already moving the reported P&L.
+    source_ref: earnings_release
+
+  - bottleneck: pluggable_optics
+    direction: confirms
+    evidence: >
+      OCS backlog is already above $400M, and the R64 OCS extends Lumentum's optical-circuit-switch
+      lineup into lower-port-count AI deployments with 72x72 scaling and major power savings.
+    source_ref: earnings_release
+
+  - bottleneck: cpo_next
+    direction: confirms
+    evidence: >
+      Management disclosed an incremental multi-hundred-million-dollar CPO order for 1H 2027 delivery,
+      while NVIDIA added a $2B investment, a multibillion purchase commitment, and future capacity rights
+      for advanced laser components.
+    source_ref: nvidia_partnership
+
+positioning:
+  leopold:
+    ticker: LITE
+    value: 479_000_000
+    type: common
+    pct_portfolio: 0.087
+    rank: 4
+    change: "+604% QoQ"
+    conviction: high
+    notes: "One of Leopold's largest non-power positions."
+
+  baker:
+    ticker: LITE
+    value: 141_000_000
+    type: common
+    pct_portfolio: 0.017
+    change: "-42% QoQ"
+    conviction: moderate
+    notes: "Still long, but trimming while Leopold is pressing the position."
+
+  divergence: >
+    Both funds agree Lumentum matters. They disagree on timing and sizing.
+    Leopold is treating it like a top-tier current bottleneck expression; Baker is still involved but
+    taking money off the table.
+
+key_risks:
+  - "The stock now prices in a lot of optics momentum; any guide slip could hit hard."
+  - "OCS and CPO are real, but revenue timing still matters more than technology demos."
+  - "Customer concentration and order timing can make quarter-to-quarter optics numbers noisy."

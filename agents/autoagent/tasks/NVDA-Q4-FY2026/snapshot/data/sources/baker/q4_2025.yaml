@@ -1,0 +1,25 @@
+source: baker
+entity: "Atreides Management LP"
+quarter: "Q4 2025"
+period: "2025-12-31"
+filed: "2026-02-17"
+
+positions:
+  - ticker: NVDA
+    company: NVIDIA Corp
+    type: call
+    value: 653_000_000
+    pct_portfolio: 0.080
+    change_vs_prior: new
+    bottleneck: n3_logic
+
+  - ticker: NVDA
+    company: NVIDIA Corp
+    type: common
+    value: 359_000_000
+    pct_portfolio: 0.044
+    change_vs_prior: "+235%"
+    bottleneck: n3_logic
+    notes: "Combined NVDA exposure = $1.01B."
+
+exits: []

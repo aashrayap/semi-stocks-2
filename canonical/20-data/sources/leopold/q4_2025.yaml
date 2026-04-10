@@ -1,0 +1,301 @@
+source: leopold
+entity: "Situational Awareness LP"
+quarter: "Q4 2025"
+period: "2025-12-31"
+filed: "2026-02-11"
+aum: 5_517_000_000
+positions_count: 25
+top5_concentration: 0.68
+performance_q4: -0.2134
+performance_h1_2025: 0.47
+
+cross_checked:
+  - sec_edgar
+  - whalewisdom
+  - danielscrivner
+  - stockzoa
+  - hedgefollow
+  - 13f_info
+
+positions:
+  - ticker: CRWV
+    company: CoreWeave
+    type: call
+    value: 1_200_000_000
+    shares: 17_000_000
+    pct_portfolio: 0.219
+    first_acquired: "Q1 2025"
+    change_vs_prior: "+116%"
+    bottleneck: gpu_cloud
+
+  - ticker: BE
+    company: Bloom Energy
+    type: common
+    value: 911_000_000
+    shares: 11_000_000
+    pct_portfolio: 0.165
+    first_acquired: "Q3 2025"
+    change_vs_prior: "+1970%"
+    bottleneck: power
+
+  - ticker: INTC
+    company: Intel
+    type: call
+    value: 749_000_000
+    shares: 20_000_000
+    pct_portfolio: 0.136
+    first_acquired: "Q1 2025"
+    change_vs_prior: "+10%"
+    bottleneck: n3_logic
+
+  - ticker: LITE
+    company: Lumentum Holdings
+    type: common
+    value: 479_000_000
+    shares: 1_300_000
+    pct_portfolio: 0.087
+    first_acquired: "Q3 2025"
+    change_vs_prior: "+604%"
+    bottleneck: optical
+
+  - ticker: CORZ
+    company: Core Scientific
+    type: common
+    value: 419_000_000
+    shares: 29_000_000
+    pct_portfolio: 0.076
+    first_acquired: "Q1 2025"
+    change_vs_prior: "+42%"
+    bottleneck: power
+    notes: "9.4% activist stake — 13D filed Aug 2025"
+
+  - ticker: IREN
+    company: IREN
+    type: common
+    value: 329_000_000
+    shares: 8_700_000
+    pct_portfolio: 0.060
+    first_acquired: "Q1 2025"
+    change_vs_prior: "+20%"
+    bottleneck: power
+
+  - ticker: APLD
+    company: Applied Digital
+    type: common
+    value: 278_000_000
+    shares: 11_000_000
+    pct_portfolio: 0.050
+    first_acquired: "Q1 2025"
+    change_vs_prior: "+86%"
+    bottleneck: power
+
+  - ticker: SNDK
+    company: SanDisk
+    type: common
+    value: 250_000_000
+    shares: 1_100_000
+    pct_portfolio: 0.045
+    first_acquired: "Q3 2025"
+    change_vs_prior: "+816%"
+    bottleneck: memory
+
+  - ticker: EQT
+    company: EQT Corp
+    type: common
+    value: 171_000_000
+    shares: 3_200_000
+    pct_portfolio: 0.031
+    first_acquired: "Q1 2025"
+    change_vs_prior: "+161%"
+    bottleneck: power
+
+  - ticker: CIFR
+    company: Cipher Mining
+    type: common
+    value: 155_000_000
+    shares: 11_000_000
+    pct_portfolio: 0.028
+    first_acquired: "Q3 2025"
+    change_vs_prior: "+115%"
+    bottleneck: power
+
+  - ticker: COHR
+    company: Coherent Corp
+    type: common
+    value: 89_000_000
+    shares: 480_000
+    pct_portfolio: 0.016
+    first_acquired: "Q3 2025"
+    change_vs_prior: "+211%"
+    bottleneck: optical
+
+  - ticker: SEI
+    company: Solaris Energy Infrastructure
+    type: common
+    value: 86_000_000
+    shares: 1_900_000
+    pct_portfolio: 0.016
+    first_acquired: "Q3 2025"
+    change_vs_prior: "+62%"
+    bottleneck: power
+
+  - ticker: TSEM
+    company: Tower Semiconductor
+    type: common
+    value: 85_000_000
+    shares: 723_000
+    pct_portfolio: 0.015
+    first_acquired: "Q3 2025"
+    change_vs_prior: "+53%"
+    bottleneck: foundry
+
+  - ticker: RIOT
+    company: Riot Platforms
+    type: common
+    value: 78_000_000
+    shares: 6_200_000
+    pct_portfolio: 0.014
+    first_acquired: "Q3 2025"
+    change_vs_prior: "+71%"
+    bottleneck: power
+
+  - ticker: KRC
+    company: Kilroy Realty
+    type: common
+    value: 50_000_000
+    shares: 1_300_000
+    pct_portfolio: 0.009
+    first_acquired: "Q4 2025"
+    change_vs_prior: new
+    bottleneck: power
+    notes: "DC real estate play"
+
+  - ticker: HUT
+    company: Hut 8 Corp
+    type: common
+    value: 40_000_000
+    shares: 860_000
+    pct_portfolio: 0.007
+    first_acquired: "Q3 2025"
+    change_vs_prior: "+43%"
+    bottleneck: power
+
+  - ticker: WYFI
+    company: WhiteFiber
+    type: common
+    value: 28_000_000
+    shares: 1_800_000
+    pct_portfolio: 0.005
+    first_acquired: "Q4 2025"
+    change_vs_prior: new
+    bottleneck: optical
+
+  - ticker: PSIX
+    company: Power Solutions Intl
+    type: common
+    value: 25_000_000
+    shares: 432_000
+    pct_portfolio: 0.004
+    first_acquired: "Q4 2025"
+    change_vs_prior: new
+    bottleneck: power
+
+  - ticker: BTDR
+    company: Bitdeer Technologies
+    type: common
+    value: 20_000_000
+    shares: 1_800_000
+    pct_portfolio: 0.004
+    first_acquired: "Q3 2025"
+    change_vs_prior: "+92%"
+    bottleneck: power
+
+  - ticker: CLSK
+    company: CleanSpark
+    type: common
+    value: 17_000_000
+    shares: 1_600_000
+    pct_portfolio: 0.003
+    first_acquired: "Q4 2025"
+    change_vs_prior: new
+    bottleneck: power
+
+  - ticker: BITF
+    company: Bitfarms
+    type: common
+    value: 16_000_000
+    shares: 6_900_000
+    pct_portfolio: 0.003
+    first_acquired: "Q4 2025"
+    change_vs_prior: new
+    bottleneck: power
+
+  - ticker: LBRT
+    company: Liberty Energy
+    type: common
+    value: 11_000_000
+    shares: 567_000
+    pct_portfolio: 0.002
+    first_acquired: "Q4 2025"
+    change_vs_prior: new
+    bottleneck: power
+
+  - ticker: INFY
+    company: Infosys
+    type: put
+    value: 8_900_000
+    shares: 500_000
+    pct_portfolio: 0.002
+    first_acquired: "Q4 2025"
+    change_vs_prior: new
+    bottleneck: short
+    notes: "Only short position"
+
+  - ticker: PUMP
+    company: ProPetro Holdings
+    type: common
+    value: 8_700_000
+    shares: 910_000
+    pct_portfolio: 0.002
+    first_acquired: "Q4 2025"
+    change_vs_prior: new
+    bottleneck: power
+
+  - ticker: BW
+    company: Babcock & Wilcox
+    type: common
+    value: 8_600_000
+    shares: 1_400_000
+    pct_portfolio: 0.002
+    first_acquired: "Q4 2025"
+    change_vs_prior: new
+    bottleneck: power
+
+exits:
+  - ticker: NVDA
+    type: put
+    prior_value: 299_000_000
+  - ticker: VST
+    type: common
+    prior_value: 252_000_000
+  - ticker: GDX
+    type: common
+    prior_value: 196_000_000
+  - ticker: GLXY
+    type: common
+    prior_value: 93_000_000
+  - ticker: AVGO
+    type: common
+    prior_value: 76_000_000
+  - ticker: TSM
+    type: put
+    prior_value: 75_000_000
+  - ticker: MU
+    type: put
+    prior_value: 50_000_000
+  - ticker: WDC
+    type: common
+    prior_value: 18_000_000
+  - ticker: STX
+    type: common
+    prior_value: 12_000_000

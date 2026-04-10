@@ -1,0 +1,38 @@
+[2026-04-07 07:24:54] INFO ============================================================
+[2026-04-07 07:24:54] INFO transcript_fetcher started at 2026-04-07T07:24:54
+[2026-04-07 07:24:54] INFO Mode: --all-due
+[2026-04-07 07:24:54] INFO No due transcripts to fetch
+[2026-04-07 07:24:54] INFO transcript_fetcher finished at 2026-04-07T07:24:54
+[2026-04-07 07:24:54] INFO ============================================================
+[2026-04-07 07:25:06] INFO ============================================================
+[2026-04-07 07:25:06] INFO transcript_fetcher started at 2026-04-07T07:25:06
+[2026-04-07 07:25:06] INFO Mode: single ticker=TSM quarter=Q1_2026 source=auto
+[2026-04-07 07:25:06] INFO [TSM] Trying Tier 2 (IR scrape)
+[2026-04-07 07:25:06] INFO [TSM] Tier 2: Fetching IR page: https://investor.tsmc.com/english/quarterly-results
+[2026-04-07 07:25:06] DEBUG Fetching: https://investor.tsmc.com/english/quarterly-results
+[2026-04-07 07:25:06] WARNING [TSM] Failed to fetch IR page: HTTP Error 403: Forbidden
+[2026-04-07 07:25:06] INFO [TSM] Trying Tier 3 (Motley Fool)
+[2026-04-07 07:25:06] INFO [TSM] Tier 3: Searching Motley Fool for TSM Q1_2026 transcript
+[2026-04-07 07:25:07] DEBUG Fetching: https://www.fool.com/earnings/call-transcripts/?ticker=tsm
+[2026-04-07 07:25:08] WARNING [TSM] Failed to search Motley Fool listing: HTTP Error 404: Not Found
+[2026-04-07 07:25:08] DEBUG [TSM] Listing search failed, trying URL construction
+[2026-04-07 07:25:32] INFO [TSM] Could not find Motley Fool transcript for Q1_2026
+[2026-04-07 07:25:32] WARNING [TSM] All sources exhausted for Q1_2026
+[2026-04-07 07:26:02] INFO ============================================================
+[2026-04-07 07:26:02] INFO transcript_fetcher started at 2026-04-07T07:26:02
+[2026-04-07 07:26:02] INFO Mode: --all-due
+[2026-04-07 07:26:02] INFO No due transcripts to fetch
+[2026-04-07 07:26:02] INFO transcript_fetcher finished at 2026-04-07T07:26:02
+[2026-04-07 07:26:02] INFO ============================================================
+[2026-04-10 04:59:04] INFO ============================================================
+[2026-04-10 04:59:04] INFO transcript_fetcher started at 2026-04-10T04:59:04
+[2026-04-10 04:59:04] INFO Mode: --all-due
+[2026-04-10 04:59:04] INFO No due transcripts to fetch
+[2026-04-10 04:59:04] INFO transcript_fetcher finished at 2026-04-10T04:59:04
+[2026-04-10 04:59:04] INFO ============================================================
+[2026-04-10 05:40:31] INFO ============================================================
+[2026-04-10 05:40:31] INFO transcript_fetcher started at 2026-04-10T05:40:31
+[2026-04-10 05:40:31] INFO Mode: --all-due
+[2026-04-10 05:40:31] INFO No due transcripts to fetch
+[2026-04-10 05:40:31] INFO transcript_fetcher finished at 2026-04-10T05:40:31
+[2026-04-10 05:40:31] INFO ============================================================

@@ -1,0 +1,237 @@
+source: baker
+entity: "Atreides Management LP"
+quarter: "Q4 2025"
+period: "2025-12-31"
+filed: "2026-02-17"
+aum: 8_183_000_000
+positions_count: 56
+top5_concentration: 0.46
+performance_q4: 0.0212
+performance_1yr: 0.6726
+
+cross_checked:
+  - sec_edgar
+  - whalewisdom
+  - insidearbitrage
+  - stockzoa
+  - hedgefollow
+  - 13f_info
+
+# Only thesis-relevant positions included (semi supply chain, power, optical, memory, GPU).
+# Full filing has ~30 additional non-thesis positions (DKS, PM, RL, RBLX, W, etc.)
+
+positions:
+  - ticker: QQQ
+    company: Invesco QQQ Trust
+    type: put
+    value: 2_150_000_000
+    shares: 3_500_000
+    pct_portfolio: 0.263
+    change_vs_prior: "+75%"
+    bottleneck: macro_hedge
+    notes: "Portfolio hedge — doubled from 2M to 3.5M shares"
+
+  - ticker: NVDA
+    company: NVIDIA Corp
+    type: call
+    value: 653_000_000
+    shares: 3_500_000
+    pct_portfolio: 0.080
+    change_vs_prior: new
+    bottleneck: n3_logic
+
+  - ticker: NVDA
+    company: NVIDIA Corp
+    type: common
+    value: 359_000_000
+    shares: 1_925_231
+    pct_portfolio: 0.044
+    change_vs_prior: "+235%"
+    bottleneck: n3_logic
+    notes: "Combined NVDA exposure = $1.01B (12.4% of portfolio)"
+
+  - ticker: CIEN
+    company: Ciena Corp
+    type: common
+    value: 334_000_000
+    shares: 1_428_230
+    pct_portfolio: 0.041
+    change_vs_prior: "+2%"
+    bottleneck: optical
+
+  - ticker: PSTG
+    company: Pure Storage
+    type: common
+    value: 280_000_000
+    shares: 4_177_675
+    pct_portfolio: 0.034
+    change_vs_prior: "+2%"
+    bottleneck: storage
+
+  - ticker: ALAB
+    company: Astera Labs
+    type: common
+    value: 268_000_000
+    shares: 1_611_194
+    pct_portfolio: 0.033
+    change_vs_prior: "+2497%"
+    bottleneck: optical
+    notes: "PCIe/CXL retimers — interconnect bottleneck play. From 62K to 1.6M shares."
+
+  - ticker: COHR
+    company: Coherent Corp
+    type: common
+    value: 228_000_000
+    shares: 1_235_246
+    pct_portfolio: 0.028
+    change_vs_prior: "+35%"
+    bottleneck: optical
+
+  - ticker: MU
+    company: Micron Technology
+    type: common
+    value: 211_000_000
+    shares: 738_916
+    pct_portfolio: 0.026
+    change_vs_prior: "+2%"
+    bottleneck: memory
+
+  - ticker: MU
+    company: Micron Technology
+    type: put
+    value: 200_000_000
+    shares: 700_000
+    pct_portfolio: 0.024
+    change_vs_prior: new
+    bottleneck: memory
+    notes: "Long common + put hedge = nuanced conviction. Believes in cycle but hedging timing."
+
+  - ticker: COHR
+    company: Coherent Corp
+    type: call
+    value: 166_000_000
+    shares: 900_000
+    pct_portfolio: 0.020
+    change_vs_prior: new
+    bottleneck: optical
+    notes: "Combined COHR = $394M (common + calls)"
+
+  - ticker: GOOGL
+    company: Alphabet
+    type: common
+    value: 161_000_000
+    shares: 514_339
+    pct_portfolio: 0.020
+    change_vs_prior: "-7%"
+    bottleneck: hyperscaler
+
+  - ticker: AMZN
+    company: Amazon
+    type: common
+    value: 159_000_000
+    shares: 687_799
+    pct_portfolio: 0.019
+    change_vs_prior: "+4%"
+    bottleneck: hyperscaler
+
+  - ticker: LITE
+    company: Lumentum Holdings
+    type: common
+    value: 141_000_000
+    shares: 382_805
+    pct_portfolio: 0.017
+    change_vs_prior: "-42%"
+    bottleneck: optical
+    notes: "Trimming — opposite direction vs Leopold who added +604%"
+
+  - ticker: PSTG
+    company: Pure Storage
+    type: call
+    value: 101_000_000
+    shares: 1_500_000
+    pct_portfolio: 0.012
+    change_vs_prior: new
+    bottleneck: storage
+    notes: "Combined PSTG = $381M (common + calls)"
+
+  - ticker: MSFT
+    company: Microsoft
+    type: common
+    value: 88_000_000
+    shares: 181_468
+    pct_portfolio: 0.011
+    change_vs_prior: new
+    bottleneck: hyperscaler
+
+  - ticker: SMTC
+    company: Semtech
+    type: common
+    value: 51_000_000
+    shares: 691_591
+    pct_portfolio: 0.006
+    change_vs_prior: "+2%"
+    bottleneck: optical
+
+  - ticker: CRWV
+    company: CoreWeave
+    type: common
+    value: 43_000_000
+    shares: 606_110
+    pct_portfolio: 0.005
+    change_vs_prior: "+864%"
+    bottleneck: gpu_cloud
+    notes: "Tiny vs Leopold's $1.2B — different conviction level"
+
+  - ticker: AMSC
+    company: American Superconductor
+    type: common
+    value: 30_000_000
+    shares: 1_044_193
+    pct_portfolio: 0.004
+    change_vs_prior: "+35%"
+    bottleneck: power
+
+  - ticker: GNRC
+    company: Generac Holdings
+    type: common
+    value: 25_000_000
+    shares: 182_765
+    pct_portfolio: 0.003
+    change_vs_prior: new
+    bottleneck: power
+
+  - ticker: INTC
+    company: Intel
+    type: common
+    value: 18_000_000
+    shares: 483_930
+    pct_portfolio: 0.002
+    change_vs_prior: "-81%"
+    bottleneck: n3_logic
+    notes: "Dumping — opposite direction vs Leopold who holds $749M in INTC calls"
+
+exits:
+  - ticker: AMD
+    type: common
+    prior_value: 55_000_000
+  - ticker: META
+    type: common
+    prior_value: 49_000_000
+  - ticker: MRVL
+    type: call
+    prior_value: 84_000_000
+  - ticker: HUBS
+    type: common
+    prior_value: 114_000_000
+  - ticker: INTU
+    type: common
+    prior_value: 92_000_000
+  - ticker: DECK
+    type: common
+    prior_value: 127_000_000
+  - ticker: ELF
+    type: common
+    prior_value: 71_000_000
+  - ticker: SNPS
+    type: common
+    prior_value: 19_000_000

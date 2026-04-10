@@ -1,0 +1,56 @@
+sources:
+  - name: leopold
+    type: 13f
+    entity: "Situational Awareness LP"
+    cik: "0002045724"
+    urls:
+      whalewisdom: "https://whalewisdom.com/filer/situational-awareness-lp"
+      sec_edgar: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002045724&type=13F"
+      danielscrivner: "https://www.danielscrivner.com/tag/leopold-aschenbrenner/"
+    cadence: quarterly
+
+  - name: baker
+    type: 13f
+    entity: "Atreides Management LP"
+    cik: "0001777813"
+    urls:
+      whalewisdom: "https://whalewisdom.com/filer/atreides-management-lp"
+      sec_edgar: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001777813&type=13F"
+      insidearbitrage: "https://www.insidearbitrage.com/holdings/0001777813/atreides-management-lp/"
+    cadence: quarterly
+
+  - name: semianalysis
+    type: newsletter
+    entity: "SemiAnalysis (Dylan Patel)"
+    urls:
+      newsletter: "https://newsletter.semianalysis.com"
+    cadence: ongoing
+
+# Cross-check policy: every 13F ingestion must verify against
+# SEC EDGAR + at least 2 aggregators before committing to canonical/20-data/
+
+# Companies with full earnings pipeline treatment (canonical/20-data/companies/<TICKER>/)
+# Criteria: top-10 in either fund + divergence points + SemiAnalysis supply signals
+companies:
+  deep_dive:
+    - ticker: CRWV
+      bottleneck: gpu_cloud
+      reason: "Leopold #1 ($1.2B calls) vs Baker tiny ($43M). GPU cloud demand validator."
+    - ticker: NVDA
+      bottleneck: n3_logic
+      reason: "Leopold exited vs Baker $1B+. The core disagreement."
+    - ticker: MU
+      bottleneck: memory
+      reason: "Memory supercycle. Baker long + hedged, Leopold exited puts."
+    - ticker: COHR
+      bottleneck: pluggable_optics
+      reason: "Only full agreement zone. Both long, both adding."
+    - ticker: INTC
+      bottleneck: n3_logic
+      reason: "Leopold $749M calls vs Baker dumping (-81%). Opposite directions."
+    - ticker: TSM
+      bottleneck: n3_logic
+      reason: "Foundry bottleneck source. Neither holds but both depend on it."
+    - ticker: LITE
+      bottleneck: pluggable_optics
+      reason: "Leopold adding aggressively, Baker trimming."

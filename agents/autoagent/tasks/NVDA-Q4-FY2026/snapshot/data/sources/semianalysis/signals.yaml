@@ -1,0 +1,15 @@
+source: semianalysis
+entity: "SemiAnalysis (Dylan Patel)"
+updated: "2026-02-19"
+
+signals:
+  - date: "2026-02-09"
+    title: "CPUs are Back: The Datacenter CPU Landscape in 2026"
+    bottleneck: n3_logic
+    data_points:
+      - "AMD Venice: up to 256 cores, 1.7x perf/watt vs Turin"
+      - "Intel Diamond Rapids: up to 256 cores, ~40% faster than Granite Rapids"
+      - "Nvidia Vera: 2x performance over Grace, 6 dies"
+      - "ARM datacenter royalty revenue more than doubled YoY, >1B Neoverse cores deployed"
+    tickers: [INTC, TSM]
+    notes: "CPUs competing with GPUs for leading-edge capacity."

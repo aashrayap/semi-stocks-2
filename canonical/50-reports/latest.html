@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>semi-stocks | April 10, 2026</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, 'SF Mono', monospace; background: #0d1117; color: #c9d1d9; padding: 24px; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { color: #58a6ff; font-size: 20px; margin-bottom: 4px; }
+    h2 { color: #8b949e; font-size: 14px; margin-bottom: 20px; font-weight: normal; }
+    h3 { color: #f0f6fc; font-size: 15px; margin: 28px 0 12px 0; padding-bottom: 6px; border-bottom: 1px solid #21262d; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 13px; }
+    th { text-align: left; padding: 8px 10px; background: #161b22; color: #8b949e; font-weight: 600; border-bottom: 1px solid #21262d; }
+    td { padding: 6px 10px; border-bottom: 1px solid #21262d; vertical-align: top; }
+    tr:hover { background: #161b22; }
+    .badge { padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+    .badge.full { background: #238636; color: #fff; }
+    .badge.partial { background: #9e6a03; color: #fff; }
+    .badge.single { background: #21262d; color: #8b949e; }
+    .badge.missed { background: #da3633; color: #fff; }
+    .meta { display: flex; gap: 32px; margin-bottom: 20px; font-size: 13px; color: #8b949e; }
+    .meta strong { color: #c9d1d9; }
+    .small { font-size: 11px; color: #8b949e; line-height: 1.5; }
+    .section { margin-bottom: 32px; }
+    .summary { background: #161b22; border: 1px solid #21262d; border-radius: 8px; padding: 16px 20px; margin-bottom: 28px; font-size: 13px; line-height: 1.7; }
+    .summary strong { color: #58a6ff; }
+    .summary em { color: #f0883e; font-style: normal; }
+    .cell-block { margin-bottom: 6px; }
+    details { margin-bottom: 20px; }
+    details summary { cursor: pointer; color: #8b949e; font-size: 13px; padding: 8px 0; }
+    details summary:hover { color: #c9d1d9; }
+    .flag-details summary { padding: 0; font-size: 12px; }
+    .flag-list { margin: 6px 0 0 16px; padding: 0; font-size: 11px; color: #f0883e; line-height: 1.6; }
+    .flag-list li { margin-bottom: 2px; }
+</style>
+</head>
+<body>
+
+<h1>semi-stocks</h1>
+<h2>Semiconductor bottleneck research | April 10, 2026</h2>
+
+<div class="meta">
+    <div><strong>Leopold</strong> Q4 2025 | AUM $5.5B | Filed 2026-02-11 | 25 positions</div>
+    <div><strong>Baker</strong> Q4 2025 | AUM $8.2B | Filed 2026-02-17 | 56 positions</div>
+</div>
+
+<div class="summary">
+<strong>Where we are:</strong> The semiconductor supply chain has a sequence of physical constraints that limit how fast AI can scale. Each one gets solved eventually, but the next one becomes the new ceiling. Right now, <strong>Memory supercycle and N3 logic wafers and Pluggable optics (scale-out)</strong> are the active constraints — they're happening simultaneously, not sequentially as originally expected.<br><br><strong>What the money says:</strong> Leopold Aschenbrenner's fund ($5.5B) and Gavin Baker's fund ($8.2B) are both betting heavily on AI infrastructure but disagree on <em>where</em> the constraint is tightest. Leopold has exited chip companies entirely and loaded up on power infrastructure and GPU cloud operators. Baker has done the opposite — $1B+ in Nvidia alone — betting that chips themselves remain scarce. The cleanest three-source overlap is <strong>optical interconnect (LITE, COHR)</strong>, which makes it the highest-conviction, lowest-divergence-risk zone in the entire thesis.<br><br><strong>Cycle risk:</strong> <span style='color:#da3633'>Memory supercycle</span> is at peak shortage — Baker's framework says hedge, don't exit. His QQQ put hedge ratio: <strong>70%</strong> (trend: increasing).
+</div>
+
+<div class="section">
+<h3>CASCADE + CYCLE RISK</h3>
+<table>
+    <tr><th>Stage</th><th>Cycle</th><th>Signal</th><th>Tickers</th><th>Leopold $</th><th>Baker $</th><th>Flags</th></tr>
+    
+        <tr>
+            <td>&#9989; CoWoS packaging<br><span class="small">Chip-on-wafer stacking for GPU+HBM. TSMC monopoly. Resolved.</span></td>
+            <td><span class="badge" style="background:#21262d;color:#8b949e">—</span></td>
+            <td class="small"></td>
+            <td>ASX, AMAT</td>
+            <td>—</td>
+            <td>—</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&#9989; Power / DC buildout<br><span class="small">Data centers need power + cooling. 2-3yr build. Miners converting.</span></td>
+            <td><span class="badge" style="background:#9e6a03;color:#fff">Avoid</span></td>
+            <td class="small">Still monetizable, but increasingly substitution-rich: behind-the-meter engines, fuel cells, batteries, and grid workarounds make power less likely than semiconductors to be the terminal bottleneck.</td>
+            <td>VST, CEG, TLN, VRT</td>
+            <td>—</td>
+            <td>—</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&#128308; Memory supercycle<br><span class="small">AI consumes all HBM/DRAM. Prices +90% QoQ. All vendors sold out.</span></td>
+            <td><span class="badge" style="background:#da3633;color:#fff">Long + Puts</span></td>
+            <td class="small">Micron just printed a record quarter and guided ~81% gross margin, but Baker already hedged MU. Strong proof, late-cycle risk rising.</td>
+            <td>MU, SNDK</td>
+            <td>$250M</td>
+            <td>$411M</td>
+            <td><details class="flag-details"><summary style="color:#da3633;cursor:pointer;font-size:12px">&#9888; 5</summary><ul class="flag-list"><li>MU fwd P/E compressing to 10-12x on record EPS $12.20 — classic peak signal</li><li>Micron FY2026 capex is now above $25B — exactly how shortage peaks eventually get overbuilt</li><li>All 3 vendors (SK Hynix, Samsung, Micron) expanding capacity simultaneously</li><li>NVIDIA $21.4B inventory = double-ordering at chip level (10x the FY2023 write-down)</li><li>Google TurboQuant: 6x memory footprint reduction — potential demand destruction</li></ul></details></td>
+        </tr>
+        <tr>
+            <td>&#128308; N3 logic wafers<br><span class="small">TSMC 3nm at 100%+ util. Every AI chip competes for same lines.</span></td>
+            <td><span class="badge" style="background:#f0883e;color:#fff">Long + Hedge</span></td>
+            <td class="small">TSMC and Intel both confirmed AI-driven tightness, but TSMC's $52B-$56B capex and Intel's 18A/14A ramp are visible future relief valves.</td>
+            <td>TSM, NVDA, AVGO, INTC</td>
+            <td>$749M</td>
+            <td>$1.0B</td>
+            <td><details class="flag-details"><summary style="color:#da3633;cursor:pointer;font-size:12px">&#9888; 4</summary><ul class="flag-list"><li>TSMC 2026 capital budget of $52B-$56B is a real supply response</li><li>Intel 18A / 14A ramp and external-customer decisions could add alternative supply in 2026-2027</li><li>NVDA $95.2B supply commitments (doubled QoQ) = capacity locked even if demand slows</li><li>NVDA fwd P/E compressing from 60x+ to 21x — shortage-phase compression underway</li></ul></details></td>
+        </tr>
+        <tr>
+            <td>&#128308; Pluggable optics (scale-out)<br><span class="small">800G/1.6T transceivers in every GPU rack. Revenue flowing now.</span></td>
+            <td><span class="badge" style="background:#238636;color:#fff">Long</span></td>
+            <td class="small">COHR and LITE are now printing direct AI-optics revenue, backlog, and guide data. Still early cycle, but consensus crowding is rising.</td>
+            <td>COHR, LITE, CIEN</td>
+            <td>$568M</td>
+            <td>$869M</td>
+            <td><details class="flag-details"><summary style="color:#da3633;cursor:pointer;font-size:12px">&#9888; 2</summary><ul class="flag-list"><li>Baker trimmed LITE -42% while Leopold added +604% — directional divergence in consensus zone</li><li>COHR and LITE now sit squarely in the consensus zone; any guide slip can hit crowded optics names hard</li></ul></details></td>
+        </tr>
+        <tr>
+            <td>&#11093; Co-packaged optics / CPO (scale-up)<br><span class="small">Laser-on-chip for next-gen racks. Volume 2028+.</span></td>
+            <td><span class="badge" style="background:#21262d;color:#8b949e">Watch</span></td>
+            <td class="small">COHR and LITE now have real orders, partnerships, and demos, but revenue still points to 2027+ rather than a current bottleneck.</td>
+            <td>COHR, LITE, CIEN, ALAB, SMTC</td>
+            <td>$568M</td>
+            <td>$1.2B</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&#11093; EUV tools<br><span class="small">ASML monopoly. ~100 tools/yr ceiling. Final cascade bottleneck.</span></td>
+            <td><span class="badge" style="background:#21262d;color:#8b949e">Watch</span></td>
+            <td class="small">ASML bookings hit record EUR 13.2B (Q4 2025), but the deeper issue is physical throughput: EUV and its supplier chain cap long-run AI-chip output.</td>
+            <td>ASML</td>
+            <td>—</td>
+            <td>—</td>
+            <td></td>
+        </tr>
+</table>
+</div>
+
+<div class="section">
+<h3>POSITIONS + SIGNALS</h3>
+<table>
+    <tr><th>Ticker</th><th>Bottleneck</th><th>Sources</th><th>Agreement</th><th>Leopold</th><th>Baker</th><th>Earnings</th><th>Semi#</th></tr>
+    
+        <tr>
+            <td><strong>CRWV</strong></td>
+            <td>gpu_cloud</td>
+            <td>L&#9679; B&#9679; S&#9679;</td>
+            <td><span class="badge full">AGREE</span></td>
+            <td>$1.2B</td>
+            <td>$43M</td>
+            <td>May 12</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><strong>INTC</strong></td>
+            <td>n3_logic</td>
+            <td>L&#9679; B&#9679; S&#9679;</td>
+            <td><span class="badge full">AGREE</span></td>
+            <td>$749M</td>
+            <td>$18M</td>
+            <td><span style="color:#f0883e">Apr 24</span></td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><strong>LITE</strong></td>
+            <td>pluggable_optics</td>
+            <td>L&#9679; B&#9679; S&#9679;</td>
+            <td><span class="badge full">AGREE</span></td>
+            <td>$479M</td>
+            <td>$141M</td>
+            <td>May 06</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><strong>COHR</strong></td>
+            <td>pluggable_optics</td>
+            <td>L&#9679; B&#9679; S&#9679;</td>
+            <td><span class="badge full">AGREE</span></td>
+            <td>$89M</td>
+            <td>$394M</td>
+            <td>May 07</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><strong>NVDA</strong></td>
+            <td>n3_logic</td>
+            <td>L&#9675; B&#9679; S&#9679;</td>
+            <td><span class="badge partial">PARTIAL</span></td>
+            <td>—</td>
+            <td>$1.0B</td>
+            <td>May 28</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><strong>MU</strong></td>
+            <td>memory</td>
+            <td>L&#9675; B&#9679; S&#9679;</td>
+            <td><span class="badge partial">PARTIAL</span></td>
+            <td>—</td>
+            <td>$411M</td>
+            <td>Jun 25</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><strong>CIEN</strong></td>
+            <td>pluggable_optics</td>
+            <td>L&#9675; B&#9679; S&#9679;</td>
+            <td><span class="badge partial">PARTIAL</span></td>
+            <td>—</td>
+            <td>$334M</td>
+            <td>Jun 04</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><strong>BE</strong></td>
+            <td>power</td>
+            <td>L&#9679; B&#9675; S&#9675;</td>
+            <td><span class="badge single">SINGLE</span></td>
+            <td>$911M</td>
+            <td>—</td>
+            <td>May 08</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><strong>CORZ</strong></td>
+            <td>power</td>
+            <td>L&#9679; B&#9675; S&#9675;</td>
+            <td><span class="badge single">SINGLE</span></td>
+            <td>$419M</td>
+            <td>—</td>
+            <td>May 08</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><strong>IREN</strong></td>
+            <td>power</td>
+            <td>L&#9679; B&#9675; S&#9675;</td>
+            <td><span class="badge single">SINGLE</span></td>
+            <td>$329M</td>
+            <td>—</td>
+            <td>May 15</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><strong>ALAB</strong></td>
+            <td>copper_signal_integrity</td>
+            <td>L&#9675; B&#9679; S&#9675;</td>
+            <td><span class="badge single">SINGLE</span></td>
+            <td>—</td>
+            <td>$268M</td>
+            <td>May 06</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><strong>SNDK</strong></td>
+            <td>memory</td>
+            <td>L&#9679; B&#9675; S&#9675;</td>
+            <td><span class="badge single">SINGLE</span></td>
+            <td>$250M</td>
+            <td>—</td>
+            <td><span style="color:#f0883e">May 01</span></td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><strong>EQT</strong></td>
+            <td>power</td>
+            <td>L&#9679; B&#9675; S&#9675;</td>
+            <td><span class="badge single">SINGLE</span></td>
+            <td>$171M</td>
+            <td>—</td>
+            <td><span style="color:#f0883e">Apr 23</span></td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><strong>TSEM</strong></td>
+            <td>foundry</td>
+            <td>L&#9679; B&#9675; S&#9675;</td>
+            <td><span class="badge single">SINGLE</span></td>
+            <td>$85M</td>
+            <td>—</td>
+            <td>May 14</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><strong>SMTC</strong></td>
+            <td>copper_signal_integrity</td>
+            <td>L&#9675; B&#9679; S&#9675;</td>
+            <td><span class="badge single">SINGLE</span></td>
+            <td>—</td>
+            <td>$51M</td>
+            <td>Jun 04</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><strong>TSM</strong></td>
+            <td>n3_logic</td>
+            <td>L&#9675; B&#9675; S&#9679;</td>
+            <td><span class="badge single">SINGLE</span></td>
+            <td>—</td>
+            <td>—</td>
+            <td><span style="color:#da3633;font-weight:600">Apr 17</span></td>
+            <td>3</td>
+        </tr>
+</table>
+</div>
+
+<div class="section">
+<h3>EARNINGS + PROOF GATES</h3>
+<table>
+    <tr><th>Ticker</th><th>Next Earnings</th><th>Snapshot</th><th>Thesis Now</th><th>Signal Delta</th><th>Proof Gates</th></tr>
+    
+        <tr>
+            <td><strong><a href="../wiki/sources/tsm-q4-2025.md">TSM</a></strong><br><span class="small">Q4 2025 | n3_logic [active]</span></td>
+            <td><span style="color:#da3633;font-weight:600">Apr 17 (7d)</span><br><span class='small'>3 due next / 5 pending</span></td>
+            <td><strong>Revenue:</strong> $33.7B<br><strong>Net Margin:</strong> 48.3%<br><span class='small'>Q1 2026: Revenue $34.6B - $35.8B</span></td>
+            <td><span class='small'>Foundational logic bottleneck. If leading-edge wafer capacity is tight, the entire AI stack backs up. If TSMC overbuilds or demand softens, the shortage starts to break.</span><br><span class='small'><strong>Why now:</strong> Q4 2025 showed continued strong leading-edge demand, 3nm already at 28% of wafer revenue, advanced nodes at 77%, and another strong guide into Q1 2026 alongside a $52B-$56B capex plan.</span></td>
+            <td><div class='cell-block'><span class='small'><strong>Confirm:</strong> 3nm already accounted for 28% of wafer revenue, and 7nm-and-below advanced nodes were 77% of total wafer revenue, showing AI demand remains concentrated in constrained leading-e...</span></div><div class='cell-block'><span class='small'><strong>Risk:</strong> A 2026 capital budget of $52B-$56B is a real supply response. It does not break the shortage today, but it is exactly the kind of capex that can eventually ease logic tightness.</span></div></td>
+            <td><div class='cell-block'><span class='small'><strong>Due Next:</strong><br>&bull; Q1 2026 revenue of $34.6B-$35.8B (Q1 2026 earnings)<br>&bull; Q1 2026 gross margin of 63%-65% (Q1 2026 earnings)<br></span></div><div class='cell-block'><span class='small'><strong>Confirm Next:</strong><br>&bull; Q1 2026 lands near the $34.6B-$35.8B guide with margins staying above 63%.<br>&bull; 2026 USD revenue growth remains close to 30%.<br></span></div><div class='cell-block'><span class='small'><strong>Break If:</strong><br>&bull; Leading-edge demand cools enough to pull revenue/margins below guide.<br>&bull; Massive capex results in faster-than-expected supply relief.<br></span></div></td>
+        </tr>
+        <tr>
+            <td><strong><a href="../wiki/sources/intc-q4-2025.md">INTC</a></strong><br><span class="small">Q4 2025 | n3_logic [active]</span></td>
+            <td><span style="color:#f0883e">Apr 24 (14d)</span><br><span class='small'>2 due next / 6 pending</span></td>
+            <td><strong>Revenue:</strong> $13.7B<br><strong>Gross Margin:</strong> 37.9%<br><span class='small'>Q1 2026: Revenue $11.7B - $12.7B; GM 34.5%; EPS 0.0%</span></td>
+            <td><span class='small'>Potential alternative supply source for leading-edge logic and advanced packaging. Intel can both validate current scarcity and eventually soften it if 18A/14A ramp well.</span><br><span class='small'><strong>Why now:</strong> Intel said AI-driven demand materially outstripped available supply, DCAI had its fastest sequential growth of the decade, and Foundry revenue rose on EUV mix. At the same time, 18A and 1...</span></td>
+            <td><div class='cell-block'><span class='small'><strong>Confirm:</strong> Intel flagged rising DRAM, NAND, and substrate pricing due to intense AI infrastructure demand, showing upstream component constraints are now feeding through into Intel's model.</span></div><div class='cell-block'><span class='small'><strong>Risk:</strong> Intel Foundry is ramping 18A, raising EUV wafer mix, and engaging external customers on 14A, which is precisely the kind of alternative leading-edge supply response that could e...</span></div></td>
+            <td><div class='cell-block'><span class='small'><strong>Due Next:</strong><br>&bull; Q1 2026 revenue of $11.7B-$12.7B (Q1 2026 earnings)<br>&bull; Intel Foundry revenue up double digits QoQ in Q1 2026 (Q1 2026 earnings)<br></span></div><div class='cell-block'><span class='small'><strong>Confirm Next:</strong><br>&bull; Q1/Q2 2026 supply actually improves and DCAI remains strong.<br>&bull; Intel Foundry posts the promised double-digit Q1 QoQ growth.<br></span></div><div class='cell-block'><span class='small'><strong>Break If:</strong><br>&bull; 18A yield improvements stall and foundry losses widen further.<br>&bull; Server demand shifts to competitors faster than Intel can supply.<br></span></div></td>
+        </tr>
+        <tr>
+            <td><strong><a href="../wiki/sources/lite-q2-fy2026.md">LITE</a></strong><br><span class="small">Q2 FY2026 | pluggable_optics [active]</span></td>
+            <td>May 06 (26d)<br><span class='small'>3 due next / 5 pending</span></td>
+            <td><strong>Revenue:</strong> $666M<br><strong>Gross Margin:</strong> 42.5%<br><span class='small'>Q3 FY2026: Revenue $780M - $830M; Op Margin 30.0% - 31.0%; EPS 2.15 - 2.35</span></td>
+            <td><span class='small'>Direct expression of AI scale-out optics demand today with visible optionality into scale-up / CPO. Lumentum now monetizes both components and systems rather than only...</span><br><span class='small'><strong>Why now:</strong> Q2 FY2026 revenue grew 65.5% YoY, Q3 guide implies another major step up, OCS backlog is above $400M, CPO already has a multi-hundred-million-dollar order for 1H 2027 delivery, and NVIDIA...</span></td>
+            <td><div class='cell-block'><span class='small'><strong>Confirm:</strong> Management disclosed an incremental multi-hundred-million-dollar CPO order for 1H 2027 delivery, while NVIDIA added a $2B investment, a multibillion purchase commitment, and fut...</span></div></td>
+            <td><div class='cell-block'><span class='small'><strong>Due Next:</strong><br>&bull; Q3 FY2026 revenue of $780M-$830M (Q3 FY2026 earnings)<br>&bull; Q3 FY2026 non-GAAP operating margin of 30%-31% (Q3 FY2026 earnings)<br></span></div><div class='cell-block'><span class='small'><strong>Confirm Next:</strong><br>&bull; Q3 FY2026 hits the $780M-$830M guide with 30%-31% non-GAAP operating margin.<br>&bull; OCS backlog converts into systems revenue rather than remaining pipeline.<br></span></div><div class='cell-block'><span class='small'><strong>Break If:</strong><br>&bull; Optical demand is concentrated and customers pause orders after the first AI buildout wave.<br>&bull; OCS backlog slips or gets pushed out.<br></span></div></td>
+        </tr>
+        <tr>
+            <td><strong><a href="../wiki/sources/cohr-q2-fy2026.md">COHR</a></strong><br><span class="small">Q2 FY2026 | pluggable_optics [active]</span></td>
+            <td>May 07 (27d)<br><span class='small'>4 due next / 5 pending</span></td>
+            <td><strong>Revenue:</strong> $1.7B<br><strong>Gross Margin:</strong> 39.0%<br><span class='small'>Q3 FY2026: Revenue $1.7B - $1.8B; GM 38.5% - 40.5%; EPS 1.28 - 1.48</span></td>
+            <td><span class='small'>Current pluggable-optics revenue play with credible optionality into co-packaged optics. Coherent supplies lasers, optical engines, and packaging technologies needed f...</span><br><span class='small'><strong>Why now:</strong> Datacenter and communications was 72% of Q2 revenue, management guided another up-quarter, and March 2026 artifacts show direct NVIDIA capacity commitments plus OFC demos across 6.4T CPO,...</span></td>
+            <td><div class='cell-block'><span class='small'><strong>Confirm:</strong> March 2026 NVIDIA partnership added a multibillion-dollar purchase commitment, future capacity rights for advanced laser and optical networking products, and a $2B NVIDIA invest...</span></div></td>
+            <td><div class='cell-block'><span class='small'><strong>Due Next:</strong><br>&bull; Q3 FY2026 revenue of $1.70B-$1.84B (Q3 FY2026 earnings)<br>&bull; Q3 FY2026 non-GAAP gross margin of 38.5%-40.5% (Q3 FY2026 earnings)<br></span></div><div class='cell-block'><span class='small'><strong>Confirm Next:</strong><br>&bull; Q3 FY2026 lands inside or above the $1.70B-$1.84B revenue guide.<br>&bull; Datacenter and communications remains the dominant segment with margins staying near 40%.<br></span></div><div class='cell-block'><span class='small'><strong>Break If:</strong><br>&bull; Datacenter and communications growth slows sharply or loses mix share.<br>&bull; Capacity expansion fails to convert into revenue or gross margin.<br></span></div></td>
+        </tr>
+        <tr>
+            <td><strong><a href="../wiki/sources/crwv-q4-2025.md">CRWV</a></strong><br><span class="small">Q4 2025 | gpu_cloud [active]</span></td>
+            <td>May 12 (32d)<br><span class='small'>2 due next / 9 pending</span></td>
+            <td><strong>Revenue:</strong> $1.6B<br><strong>Adj EBITDA Margin:</strong> 57.0%<br><span class='small'>FY 2026: Revenue $12.0B - $13.0B</span></td>
+            <td><span class='small'>Primary read-through on downstream AI infrastructure demand. CoreWeave is not the upstream bottleneck itself; it is the proof that GPU cloud demand is strong enough to...</span><br><span class='small'><strong>Why now:</strong> Q4 2025 revenue reached $1.57B, backlog expanded to $66.8B, management said it still could not catch up with demand, and virtually all 2026 capacity was already allocated. That makes Core...</span></td>
+            <td><div class='cell-block'><span class='small'><strong>Confirm:</strong> Delivered 50K GB200s in Q4 to single customer. Nvidia GPUs 'remain in short supply' per Intrator. Massive capex plan ($30-35B) = enormous chip demand.</span></div></td>
+            <td><div class='cell-block'><span class='small'><strong>Due Next:</strong><br>&bull; Q1 represents the trough in annual margin trajectory — margins ramp from low single digits in Q1,... (Q1 2026 earnings)<br>&bull; We expect to continue reducing our weighted average cost of capital (Q1 2026 earnings)<br></span></div><div class='cell-block'><span class='small'><strong>Confirm Next:</strong><br>&bull; Q1 2026 revenue lands inside the $1.9B-$2.0B guide and operating income avoids a deeper trough.<br>&bull; Backlog, power capacity, or reserved-instance commentary keeps moving up rather than flattening.<br></span></div><div class='cell-block'><span class='small'><strong>Break If:</strong><br>&bull; Customer demand or backlog conversion weakens enough to expose the leverage.<br>&bull; Interest expense and capex stay so high that scale fails to turn into margin.<br></span></div></td>
+        </tr>
+        <tr>
+            <td><strong><a href="../wiki/sources/nvda-q4-fy2026.md">NVDA</a></strong><br><span class="small">Q4 FY2026 | n3_logic [active]</span></td>
+            <td>May 28 (48d)<br><span class='small'>3 due next / 7 pending</span></td>
+            <td><strong>Revenue:</strong> $68.1B<br><strong>Gross Margin:</strong> 75.2%<br><span class='small'>Q1 FY2027: Revenue $78.0B; GM 75.0%; GM 74.9%</span></td>
+            <td><span class='small'>Core consumer and monetizer of the active semiconductor bottlenecks. NVIDIA does not just benefit from scarcity; its own roadmap and shipment volume are what make N3,...</span><br><span class='small'><strong>Why now:</strong> Q4 FY2026 printed $68.1B revenue, $11B of networking revenue, and $95.2B of supply commitments, while management guided another step up to $78B in Q1 and pushed Rubin production into H2 2...</span></td>
+            <td><div class='cell-block'><span class='small'><strong>Confirm:</strong> Rubin moving to N3, competing with TPU v7/v8, Trainium3, MI350X for TSMC capacity. $95.2B supply commitments (nearly doubled QoQ) = enormous wafer demand. Vera Rubin production...</span></div></td>
+            <td><div class='cell-block'><span class='small'><strong>Due Next:</strong><br>&bull; Q1 FY2027 revenue of $78B ±2% (Q1 FY2027 earnings (~May 2026))<br>&bull; Mid-70s gross margins sustainable through FY2027 (FY2027 quarterly results)<br></span></div><div class='cell-block'><span class='small'><strong>Confirm Next:</strong><br>&bull; Q1 FY2027 reaches the $78B +/-2% guide with margins still in the mid-70s.<br>&bull; Rubin production timing, supply commitments, and networking growth stay on track through 2026.<br></span></div><div class='cell-block'><span class='small'><strong>Break If:</strong><br>&bull; Rubin slips or Blackwell-to-Rubin transitions slow enough to weaken supply pressure.<br>&bull; Networking growth stalls, undermining the optics read-through.<br></span></div></td>
+        </tr>
+        <tr>
+            <td><strong><a href="../wiki/sources/mu-q2-fy2026.md">MU</a></strong><br><span class="small">Q2 FY2026 | memory [active]</span></td>
+            <td>Jun 25 (76d)<br><span class='small'>2 due next / 6 pending</span></td>
+            <td><strong>Revenue:</strong> $23.9B<br><strong>Gross Margin:</strong> 74.9%<br><span class='small'>Q3 FY2026: Revenue $32.8B - $34.2B; GM 81.0%; GM 81.0%</span></td>
+            <td><span class='small'>Pure memory supercycle exposure. Micron is where AI demand shows up as higher bits per system, tighter supply, stronger pricing, and aggressive cleanroom / packaging c...</span><br><span class='small'><strong>Why now:</strong> The quarter set records across revenue, gross margin, EPS, and free cash flow, while management explicitly said DRAM and NAND should remain supply constrained beyond calendar 2026. HBM4 v...</span></td>
+            <td><div class='cell-block'><span class='small'><strong>Confirm:</strong> Micron has begun HBM4 volume shipments for NVIDIA Vera Rubin and is investing above $25B in FY2026 capex, reinforcing that memory capacity is being pulled hard by the 2026 accel...</span></div></td>
+            <td><div class='cell-block'><span class='small'><strong>Due Next:</strong><br>&bull; Q3 FY2026 revenue of $33.5B +/- $750M (Q3 FY2026 earnings)<br>&bull; Q3 FY2026 gross margin of approximately 81% (Q3 FY2026 earnings)<br></span></div><div class='cell-block'><span class='small'><strong>Confirm Next:</strong><br>&bull; Q3 FY2026 prints near the $33.5B guide with gross margin around 81%.<br>&bull; HBM4/HBM4E ramp commentary stays constructive and supply remains tight.<br></span></div><div class='cell-block'><span class='small'><strong>Break If:</strong><br>&bull; Pricing weakens faster than expected as supply additions arrive.<br>&bull; HBM share or yield execution slips versus peers.<br></span></div></td>
+        </tr>
+</table>
+</div>
+
+
+
+</body>
+</html>

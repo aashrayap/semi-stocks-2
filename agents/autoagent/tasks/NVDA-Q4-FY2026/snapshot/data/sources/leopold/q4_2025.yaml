@@ -1,0 +1,12 @@
+source: leopold
+entity: "Situational Awareness LP"
+quarter: "Q4 2025"
+period: "2025-12-31"
+filed: "2026-02-11"
+
+positions: []
+
+exits:
+  - ticker: NVDA
+    type: put
+    prior_value: 299_000_000

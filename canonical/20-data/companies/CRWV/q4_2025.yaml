@@ -1,0 +1,315 @@
+ticker: CRWV
+company: CoreWeave
+quarter: Q4 2025
+period: "2025-12-31"
+earnings_date: "2026-02-26"
+source_page: wiki/sources/crwv-q4-2025.md
+stock_price_at_earnings: ~100  # dropped ~18-20% next day
+stock_price_current: 80.91  # as of 2026-04-07
+
+source_artifacts:
+  - id: earnings_release
+    raw: wiki/raw/crwv-q4-2025-transcript.md
+    url: "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Fourth-Quarter-and-Fiscal-Year-2025-Results"
+  - id: earnings_call_transcript
+    raw: wiki/raw/crwv-q4-2025-transcript.md
+    url: "https://s205.q4cdn.com/133937190/files/doc_financials/2025/q4/CORRECTED-TRANSCRIPT-CoreWeave-Inc-CRWV-US-Q4-2025-Earnings-Call-26-February-2026-5-00-PM-ET.pdf"
+  - id: rubin_platform_release
+    raw: wiki/raw/crwv-q4-2025-transcript.md
+    url: "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Extends-Its-Cloud-Platform-with-NVIDIA-Rubin-Platform/default.aspx"
+
+business:
+  summary: >
+    CoreWeave sells GPU cloud capacity, managed AI infrastructure, storage, and software services.
+    In this repo it is the clearest downstream demand expression: when CoreWeave expands backlog,
+    power, and capex, that demand propagates backward into NVIDIA, memory, optics, and data-center buildout.
+  key_products:
+    - "GPU cloud / reserved instances"
+    - "GB200 and future Rubin AI clusters"
+    - "CoreWeave storage and cloud software stack"
+    - "mission-control / orchestration software"
+    - "AI data-center capacity"
+
+thesis_relevance:
+  bottleneck_role: >
+    Primary read-through on downstream AI infrastructure demand. CoreWeave is not the upstream bottleneck
+    itself; it is the proof that GPU cloud demand is strong enough to keep pulling on chips, memory,
+    optics, and power simultaneously.
+  why_now: >
+    Q4 2025 revenue reached $1.57B, backlog expanded to $66.8B, management said it still could not catch
+    up with demand, and virtually all 2026 capacity was already allocated. That makes CoreWeave the
+    strongest current demand validator in the repo.
+  confirms_next:
+    - "Q1 2026 revenue lands inside the $1.9B-$2.0B guide and operating income avoids a deeper trough."
+    - "Backlog, power capacity, or reserved-instance commentary keeps moving up rather than flattening."
+    - "Rubin deployment timing and lower financing costs show up as visible execution progress in 2026."
+  break_conditions:
+    - "Customer demand or backlog conversion weakens enough to expose the leverage."
+    - "Interest expense and capex stay so high that scale fails to turn into margin."
+    - "GPU availability improves while CoreWeave still cannot earn through the balance sheet."
+
+financials:
+  q4:
+    revenue: 1_570_000_000
+    revenue_yoy: "+110%"
+    adjusted_ebitda: 898_000_000
+    adjusted_ebitda_margin: 0.57
+    adjusted_operating_income: 88_000_000
+    adjusted_operating_margin: 0.06
+    net_loss_gaap: -452_000_000
+    eps: -0.89
+    eps_estimate: -0.21
+    interest_expense: 388_000_000
+    capex: 8_200_000_000
+
+  full_year:
+    revenue: 5_130_000_000
+    revenue_yoy: "+168%"
+    adjusted_ebitda: 3_100_000_000
+    adjusted_ebitda_margin: 0.60
+    net_loss_gaap: -1_170_000_000
+    capex: 14_900_000_000
+
+  balance_sheet:
+    cash_and_equivalents: 4_200_000_000
+    total_debt: 21_400_000_000
+    total_assets: 49_300_000_000
+    total_liabilities: 46_000_000_000
+    shareholder_equity: 3_300_000_000
+    debt_to_equity: 6.4
+    net_debt_to_ebitda: 5.5
+    weighted_avg_interest_rate_decline: "300 bps in 2025 (600 bps since 2023)"
+    no_maturities_before: 2029
+
+  backlog:
+    total: 66_800_000_000
+    sequential_change: "+11.2B from Q3 ($55.6B)"
+    ytd_change: "4x from start of 2025"
+    avg_contract_length: "~5 years (up from ~4)"
+
+  infrastructure:
+    active_power_mw: 850
+    data_centers: 43
+    contracted_power_gw: 3.1
+    q4_deployment: "260 MW, 100K+ GPUs"
+    gb200_delivered: 50_000  # to single customer in Q4
+    nvidia_exemplar_cloud: true
+    semianalysis_rating: "Platinum (ClusterMAX)"
+
+  customers:
+    million_plus_annual_spend_growth: "+150% YoY"
+    new_reserved_instance_q4: "~2x any prior quarter"
+    storage_adoption: "~80% of $1M+ customers"
+    storage_arr: ">$100M (as of Q3)"
+    key_new_q4: [Cognition, Cursor, MercadoLibre, Midjourney, Runway]
+    concentration_risk: "Microsoft = 62% of 2024 revenue"
+    major_contracts:
+      - customer: OpenAI
+        value: 22_000_000_000
+      - customer: Meta
+        value: 14_200_000_000
+        term: "6 years through 2031"
+
+guidance:
+  fy_2026:
+    revenue: [12_000_000_000, 13_000_000_000]
+    revenue_growth: "~140%"
+    adjusted_operating_income: [900_000_000, 1_100_000_000]
+    capex: [30_000_000_000, 35_000_000_000]
+    exit_run_rate_revenue: [17_000_000_000, 19_000_000_000]  # annualized
+    exit_2027_run_rate: 30_000_000_000  # annualized
+    active_power_ye2026: "~1.7 GW (double current)"
+    long_term_adj_operating_margin: [0.25, 0.30]
+  q1_2026:
+    revenue: [1_900_000_000, 2_000_000_000]
+    consensus_was: 2_300_000_000  # miss drove sell-off
+    adjusted_operating_income: [0, 40_000_000]
+    interest_expense: [510_000_000, 590_000_000]
+
+forward_claims:
+  - claim: "Q1 represents the trough in annual margin trajectory — margins ramp from low single digits in Q1, expanding each quarter, to low double-digits by Q4 2026"
+    speaker: "CFO Nitin Agrawal"
+    source: "Q4 2025 earnings call"
+    source_ref: earnings_call_transcript
+    verify_at: "Q1 2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q1 2026", "Q2 2026", "Q3 2026", "Q4 2026"]
+    status: pending
+
+  - claim: "Exit-2026 annualized run rate revenue of $17B-$19B"
+    speaker: guidance
+    source: "Q4 2025 earnings call"
+    source_ref: earnings_call_transcript
+    verify_at: "Q4 2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q4 2026"]
+    status: pending
+
+  - claim: "Exit-2027 annualized run rate revenue of $30B+"
+    speaker: guidance
+    source: "Q4 2025 earnings call"
+    source_ref: earnings_call_transcript
+    verify_at: "Q4 2027 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q4 2027"]
+    status: pending
+
+  - claim: "Active power capacity ~1.7 GW by YE 2026 (double current 850 MW)"
+    speaker: guidance
+    source: "Q4 2025 earnings call"
+    source_ref: earnings_call_transcript
+    verify_at: "Q4 2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q4 2026"]
+    status: pending
+
+  - claim: "Mature/fully-ramped contracts generate EBITDA margins in the 70% zone"
+    speaker: "CEO Mike Intrator"
+    source: "Q4 2025 earnings call"
+    source_ref: earnings_call_transcript
+    verify_at: ongoing
+    verify_window:
+      kind: ongoing
+    status: pending
+    notes: "If true, unit economics are extraordinary. Watch gross margin trajectory as older contracts season."
+
+  - claim: "We expect to continue reducing our weighted average cost of capital"
+    speaker: "CFO Nitin Agrawal"
+    source: "Q4 2025 earnings call"
+    source_ref: earnings_call_transcript
+    verify_at: "Q1 2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q1 2026", "Q2 2026", "Q3 2026", "Q4 2026"]
+    status: pending
+    notes: "$8.5B GPU-backed loan closed Mar 2026 at ~5.9% / SOFR+225bps. Investment-grade rated A3/A-low."
+
+  - claim: "Among the first cloud providers to deploy NVIDIA Rubin GPUs in H2 2026"
+    speaker: announcement
+    source: "IR press release"
+    source_ref: rubin_platform_release
+    verify_at: "Q3 2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q3 2026", "Q4 2026"]
+    status: pending
+
+  - claim: "FY 2026 revenue $12B-$13B"
+    speaker: guidance
+    source: "Q4 2025 earnings call"
+    source_ref: earnings_call_transcript
+    verify_at: "Q4 2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q4 2026"]
+    status: pending
+
+  - claim: "FY 2026 capex $30B-$35B"
+    speaker: guidance
+    source: "Q4 2025 earnings call"
+    source_ref: earnings_call_transcript
+    verify_at: "Q4 2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q4 2026"]
+    status: pending
+    notes: "Spending $2.60 for every $1 of revenue. Market flagged this as unsustainable — key risk."
+
+thesis_signals:
+  - bottleneck: gpu_cloud
+    direction: confirms
+    evidence: "Revenue +168% YoY, backlog 4x'd to $66.8B, 'unable to catch up with demand signals', all capacity booked through Aug-Sep 2026"
+    source_ref: earnings_call_transcript
+
+  - bottleneck: n3_logic
+    direction: confirms
+    evidence: "Delivered 50K GB200s in Q4 to single customer. Nvidia GPUs 'remain in short supply' per Intrator. Massive capex plan ($30-35B) = enormous chip demand."
+    source_ref: earnings_call_transcript
+
+  - bottleneck: memory
+    direction: confirms
+    evidence: "Every GPU CRWV deploys needs HBM. $30-35B capex = substantial HBM demand. Storage ARR >$100M and growing."
+    source_ref: earnings_call_transcript
+
+  - bottleneck: power
+    direction: confirms
+    evidence: "850 MW active, 3.1 GW contracted, targeting 5+ GW by 2030. 43 data centers. 260 MW added in Q4 alone."
+    source_ref: earnings_call_transcript
+
+  - bottleneck: pluggable_optics
+    direction: confirms
+    evidence: "Every NVL72 rack deployed uses pluggable optics for scale-out. 100K+ GPUs deployed in Q4 = significant transceiver demand."
+    source_ref: earnings_call_transcript
+
+positioning:
+  leopold:
+    ticker: CRWV
+    value: 1_200_000_000
+    type: call
+    pct_portfolio: 0.219
+    rank: 1
+    change: "+116% QoQ"
+    conviction: extreme
+    notes: "Largest position by far. Calls = leveraged upside bet."
+
+  baker:
+    ticker: CRWV
+    value: 43_000_000
+    type: common
+    pct_portfolio: 0.005
+    rank: ~17
+    change: "+864% QoQ"
+    conviction: low_but_growing
+    notes: "Tiny vs Leopold. Ramping but 28x smaller. Common stock, not calls."
+
+  divergence: "Leopold 28x more concentrated than Baker. Leopold uses calls (leveraged), Baker uses common (conservative). Both adding — but different conviction levels. Leopold sees CRWV as THE way to play GPU cloud demand. Baker sees it as one small piece."
+
+capital_raises:
+  - date: "Q4 2025"
+    type: "Convertible notes"
+    amount: 2_600_000_000
+  - date: "2026-01"
+    type: "NVIDIA strategic investment"
+    amount: 2_000_000_000
+    price_per_share: 87.20
+  - date: "2026-03-31"
+    type: "GPU-backed loan (investment-grade)"
+    amount: 8_500_000_000
+    rating: "A3 (Moody's) / A-low (DBRS)"
+    maturity: "2032"
+    rate: "~5.9% fixed / SOFR+225bps floating"
+    collateral: "GPUs + Meta contract ($19B+)"
+    notes: "First investment-grade HPC infrastructure financing ever"
+
+analyst_reactions:
+  - firm: DA Davidson
+    analyst: Alexander Platt
+    rating: Buy
+    target: 125
+    note: "Raised from $110"
+  - firm: Cantor Fitzgerald
+    analyst: Thomas Blakey
+    rating: Overweight
+    target: 131
+  - firm: Needham
+    analyst: Mike Cikos
+    rating: Hold
+    note: "Expects continued capex prioritization cutting into profitability"
+  - firm: Citi
+    target: 126
+    note: "Lowered from $135"
+  - firm: Deutsche Bank
+    target: 125
+    note: "Lowered from $140"
+
+key_risks:
+  - "Debt/equity 6.4x — heavily leveraged. Interest expense already $388M/quarter."
+  - "Customer concentration: Microsoft 62% of 2024 revenue. OpenAI and Meta contracts massive but concentrated."
+  - "Capex $30-35B in 2026 vs $12-13B revenue — spending $2.60 per $1 revenue. FCF deeply negative."
+  - "GPU depreciation: current fleet (H100, A100) will depreciate as Blackwell/Rubin ramp."
+  - "Q1 guide missed consensus by $300M+ — execution risk in ramp timing."
+  - "NVIDIA dependency: single supplier for core product. Exemplar status = advantage but also lock-in."

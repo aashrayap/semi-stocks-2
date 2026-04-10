@@ -1,0 +1,193 @@
+ticker: COHR
+company: Coherent Corp.
+quarter: Q2 FY2026
+period: "2025-12-31"
+earnings_date: "2026-02-04"
+source_page: wiki/sources/cohr-q2-fy2026.md
+
+source_artifacts:
+  - id: earnings_release
+    raw: wiki/raw/cohr-q2-fy2026-primary-sources.md
+    url: "https://www.coherent.com/content/dam/coherent/site/en/documents/investors/financial-releases/2026/february-4/earnings-release-fy26-q2.pdf"
+  - id: investor_presentation
+    raw: wiki/raw/cohr-q2-fy2026-primary-sources.md
+    url: "https://www.coherent.com/content/dam/coherent/site/en/documents/investors/investor-presentations/2026/february-4/investor-presentation-20260204.pdf"
+  - id: nvidia_partnership
+    raw: wiki/raw/cohr-q2-fy2026-primary-sources.md
+    url: "https://www.coherent.com/news/press-releases/nvidia-and-coherent-announce-strategic-partnership"
+  - id: ofc_2026_cpo_release
+    raw: wiki/raw/cohr-q2-fy2026-primary-sources.md
+    url: "https://www.coherent.com/news/press-releases/coherent-co-packaged-optics-cpo-technologies-ofc-2026"
+
+business:
+  summary: >
+    Coherent sells the optical building blocks that show up in AI interconnects: lasers, optical
+    modules, transceivers, silicon photonics components, and advanced photonic packaging.
+    The company is no longer an "industrial laser only" story; datacenter and communications is
+    now the dominant segment.
+  key_products:
+    - "800G and 1.6T optical modules / transceivers"
+    - "external laser source modules"
+    - "indium phosphide lasers and modulators"
+    - "VCSEL-based optical engines"
+    - "silicon photonics and CPO building blocks"
+
+thesis_relevance:
+  bottleneck_role: >
+    Current pluggable-optics revenue play with credible optionality into co-packaged optics.
+    Coherent supplies lasers, optical engines, and packaging technologies needed for AI scale-out
+    links today and higher-density optical architectures tomorrow.
+  why_now: >
+    Datacenter and communications was 72% of Q2 revenue, management guided another up-quarter,
+    and March 2026 artifacts show direct NVIDIA capacity commitments plus OFC demos across
+    6.4T CPO, 400G-per-lane InP modulation, and 1.6T/XPO-related platforms.
+  confirms_next:
+    - "Q3 FY2026 lands inside or above the $1.70B-$1.84B revenue guide."
+    - "Datacenter and communications remains the dominant segment with margins staying near 40%."
+    - "NVIDIA capacity commitments and new AI optics programs show up in backlog or shipment commentary."
+  break_conditions:
+    - "Datacenter and communications growth slows sharply or loses mix share."
+    - "Capacity expansion fails to convert into revenue or gross margin."
+    - "CPO stays experimental without visible program revenue moving toward 2027."
+
+financials:
+  q2:
+    revenue: 1_686_000_000
+    revenue_yoy: "+17%"
+    revenue_yoy_pro_forma: "+22%"
+    gross_margin_gaap: 0.369
+    gross_margin_non_gaap: 0.390
+    operating_income_gaap: 259_000_000
+    operating_margin_gaap: 0.154
+    net_income_gaap: 147_000_000
+    eps_gaap: 0.76
+    eps_non_gaap: 1.29
+
+  revenue_mix:
+    datacenter_communications:
+      revenue: 1_208_000_000
+      pct: 0.72
+    industrial:
+      revenue: 478_000_000
+      pct: 0.28
+
+guidance:
+  q3_fy2026:
+    revenue: [1_700_000_000, 1_840_000_000]
+    gross_margin_non_gaap: [0.385, 0.405]
+    opex_non_gaap: [320_000_000, 340_000_000]
+    tax_rate_non_gaap: [0.18, 0.20]
+    eps_non_gaap: [1.28, 1.48]
+
+forward_claims:
+  - claim: "Q3 FY2026 revenue of $1.70B-$1.84B"
+    speaker: guidance
+    source: "Q2 FY2026 earnings release"
+    source_ref: earnings_release
+    verify_at: "Q3 FY2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q3 FY2026"]
+    status: pending
+
+  - claim: "Q3 FY2026 non-GAAP gross margin of 38.5%-40.5%"
+    speaker: guidance
+    source: "Q2 FY2026 earnings release"
+    source_ref: earnings_release
+    verify_at: "Q3 FY2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q3 FY2026"]
+    status: pending
+
+  - claim: "Q3 FY2026 non-GAAP EPS of $1.28-$1.48"
+    speaker: guidance
+    source: "Q2 FY2026 earnings release"
+    source_ref: earnings_release
+    verify_at: "Q3 FY2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q3 FY2026"]
+    status: pending
+
+  - claim: "Continued strong growth in H2 FY2026 and throughout FY2027 driven by datacenter and communications demand and capacity expansion"
+    speaker: "CEO Jim Anderson"
+    source: "Q2 FY2026 earnings release"
+    source_ref: earnings_release
+    verify_at: "FY2026-FY2027 quarterly results"
+    verify_window:
+      kind: earnings
+      targets: ["Q3 FY2026", "Q4 FY2026", "Q1 FY2027", "Q2 FY2027", "Q3 FY2027", "Q4 FY2027"]
+    status: pending
+
+  - claim: "NVIDIA multiyear demand and capacity commitments deepen Coherent's role in next-generation AI optics"
+    speaker: announcement
+    source: "March 2026 NVIDIA partnership release"
+    source_ref: nvidia_partnership
+    verify_at: "FY2026-FY2027 optics backlog / shipment commentary"
+    verify_window:
+      kind: commentary
+      targets: ["FY2026", "FY2027"]
+    status: pending
+
+thesis_signals:
+  - bottleneck: pluggable_optics
+    direction: confirms
+    evidence: >
+      Datacenter and communications was 72% of Q2 revenue ($1.208B) and management tied
+      H2 FY2026 and FY2027 growth to continued datacenter demand plus production capacity expansion.
+    source_ref: earnings_release
+
+  - bottleneck: pluggable_optics
+    direction: confirms
+    evidence: >
+      Q3 guide calls for $1.70B-$1.84B revenue and 38.5%-40.5% non-GAAP gross margin,
+      implying AI-optics demand is supporting both growth and pricing/mix.
+    source_ref: earnings_release
+
+  - bottleneck: cpo_next
+    direction: confirms
+    evidence: >
+      March 2026 NVIDIA partnership added a multibillion-dollar purchase commitment, future
+      capacity rights for advanced laser and optical networking products, and a $2B NVIDIA investment
+      to expand Coherent's U.S. manufacturing and R&D base.
+    source_ref: nvidia_partnership
+
+  - bottleneck: cpo_next
+    direction: confirms
+    evidence: >
+      OFC 2026 demos included 6.4T socketed silicon-photonics CPO, VCSEL-based socketed CPO,
+      and a 400G-per-lane InP-on-silicon modulator path, showing Coherent has multiple technical
+      routes into future package-level optics.
+    source_ref: ofc_2026_cpo_release
+
+positioning:
+  leopold:
+    ticker: COHR
+    value: 89_000_000
+    type: common
+    pct_portfolio: 0.016
+    change: "+211% QoQ"
+    conviction: medium
+    notes: "Consensus-zone optics exposure; smaller than his LITE position but meaningfully added."
+
+  baker:
+    ticker: COHR
+    value: 394_000_000
+    type: common_plus_calls
+    common_value: 228_000_000
+    call_value: 166_000_000
+    pct_portfolio: 0.048
+    change: "common +35% QoQ; new calls"
+    conviction: high
+    notes: "One of Baker's larger direct optics expressions."
+
+  divergence: >
+    This is an overlap name, not a divergence name. Both funds are long and both added.
+    Baker is materially larger, but the directional read-through is aligned: current AI scale-out optics
+    are producing revenue now, and Coherent has credible optionality into CPO.
+
+key_risks:
+  - "Datacenter and communications concentration becomes a problem if hyperscaler optical spend pauses."
+  - "Capacity expansion could outrun actual demand conversion."
+  - "CPO technical leadership does not guarantee near-term revenue if customer architectures slip."

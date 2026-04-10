@@ -1,0 +1,192 @@
+ticker: TSM
+company: Taiwan Semiconductor Manufacturing Company Limited
+quarter: Q4 2025
+period: "2025-12-31"
+earnings_date: "2026-01-15"
+source_page: wiki/sources/tsm-q4-2025.md
+
+source_artifacts:
+  - id: form_6k
+    raw: wiki/raw/tsm-q4-2025-primary-sources.md
+    url: "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/tsm-20260115x6k.htm"
+  - id: press_release_ex_99_1
+    raw: wiki/raw/tsm-q4-2025-primary-sources.md
+    url: "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm"
+  - id: presentation_ex_99_2
+    raw: wiki/raw/tsm-q4-2025-primary-sources.md
+    url: "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25presentatione.htm"
+
+business:
+  summary: >
+    TSMC is the critical manufacturing substrate for advanced AI chips. It sells leading-edge wafer
+    capacity and advanced packaging services that sit underneath NVIDIA, custom ASICs, and most of
+    the broader accelerator roadmap.
+  key_products:
+    - "3nm and 5nm foundry capacity"
+    - "advanced-node wafer starts"
+    - "advanced packaging services"
+    - "future N2 / N2-family capacity"
+
+thesis_relevance:
+  bottleneck_role: >
+    Foundational logic bottleneck. If leading-edge wafer capacity is tight, the entire AI stack backs up.
+    If TSMC overbuilds or demand softens, the shortage starts to break.
+  why_now: >
+    Q4 2025 showed continued strong leading-edge demand, 3nm already at 28% of wafer revenue,
+    advanced nodes at 77%, and another strong guide into Q1 2026 alongside a $52B-$56B capex plan.
+  confirms_next:
+    - "Q1 2026 lands near the $34.6B-$35.8B guide with margins staying above 63%."
+    - "2026 USD revenue growth remains close to 30%."
+    - "Advanced-node mix keeps rising rather than flattening."
+  break_conditions:
+    - "Leading-edge demand cools enough to pull revenue/margins below guide."
+    - "Massive capex results in faster-than-expected supply relief."
+    - "AI customers digest inventory and node mix stops moving up."
+
+financials:
+  q4:
+    revenue_usd: 33_730_000_000
+    revenue_ntd: 1_046_090_000_000
+    revenue_yoy_usd: "+25.5%"
+    revenue_qoq_usd: "+1.9%"
+    net_income_ntd: 505_744_000_000
+    gross_margin: 0.623
+    operating_margin: 0.540
+    net_profit_margin: 0.483
+    eps_ntd: 19.50
+    eps_adr: 3.14
+
+  technology_mix:
+    n3: 0.28
+    n5: 0.35
+    n7: 0.14
+    advanced_nodes: 0.77
+
+  balance_sheet:
+    cash_and_marketable_securities_ntd: 3_068_590_000_000
+    inventories_ntd: 288_110_000_000
+    net_ppe_ntd: 3_691_840_000_000
+
+  cash_flow:
+    operating_cash_flow_ntd: 725_510_000_000
+    capex_ntd: 356_910_000_000
+    free_cash_flow_ntd: 368_600_000_000
+
+  full_year:
+    revenue_usd: 122_420_000_000
+    revenue_yoy_usd: "+35.9%"
+    gross_margin: 0.599
+    operating_margin: 0.508
+    eps_ntd: 66.25
+    capex_ntd: 1_272_410_000_000
+
+guidance:
+  q1_2026:
+    revenue_usd: [34_600_000_000, 35_800_000_000]
+    gross_margin: [0.63, 0.65]
+    operating_margin: [0.54, 0.56]
+
+  fy_2026:
+    capital_budget_usd: [52_000_000_000, 56_000_000_000]
+    revenue_growth_usd: "~30%"
+
+  long_term:
+    revenue_cagr_2024_2029: "~25%"
+    gross_margin_floor: 0.56
+
+forward_claims:
+  - claim: "Q1 2026 revenue of $34.6B-$35.8B"
+    speaker: guidance
+    source: "Q4 2025 press release"
+    source_ref: press_release_ex_99_1
+    verify_at: "Q1 2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q1 2026"]
+    status: pending
+
+  - claim: "Q1 2026 gross margin of 63%-65%"
+    speaker: guidance
+    source: "Q4 2025 press release"
+    source_ref: press_release_ex_99_1
+    verify_at: "Q1 2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q1 2026"]
+    status: pending
+
+  - claim: "Q1 2026 operating margin of 54%-56%"
+    speaker: guidance
+    source: "Q4 2025 press release"
+    source_ref: press_release_ex_99_1
+    verify_at: "Q1 2026 earnings"
+    verify_window:
+      kind: earnings
+      targets: ["Q1 2026"]
+    status: pending
+
+  - claim: "2026 capital budget of $52B-$56B"
+    speaker: management
+    source: "Q4 2025 press release"
+    source_ref: press_release_ex_99_1
+    verify_at: "FY2026 results"
+    verify_window:
+      kind: earnings
+      targets: ["Q4 2026"]
+    status: pending
+
+  - claim: "2026 revenue growth close to 30% in US dollar terms"
+    speaker: management
+    source: "Q4 2025 presentation"
+    source_ref: presentation_ex_99_2
+    verify_at: "FY2026 results"
+    verify_window:
+      kind: earnings
+      targets: ["Q4 2026"]
+    status: pending
+
+thesis_signals:
+  - bottleneck: n3_logic
+    direction: confirms
+    evidence: >
+      Q4 revenue reached $33.73B with gross margin 62.3%, and management said both Q4 and Q1 2026
+      were supported by strong demand for leading-edge process technologies.
+    source_ref: press_release_ex_99_1
+
+  - bottleneck: n3_logic
+    direction: confirms
+    evidence: >
+      3nm already accounted for 28% of wafer revenue, and 7nm-and-below advanced nodes were 77%
+      of total wafer revenue, showing AI demand remains concentrated in constrained leading-edge supply.
+    source_ref: press_release_ex_99_1
+
+  - bottleneck: n3_logic
+    direction: contradicts
+    evidence: >
+      A 2026 capital budget of $52B-$56B is a real supply response. It does not break the shortage today,
+      but it is exactly the kind of capex that can eventually ease logic tightness.
+    source_ref: press_release_ex_99_1
+
+positioning:
+  leopold:
+    ticker: TSM
+    value: 0
+    type: no_direct_position
+    conviction: indirect
+    notes: "Exposure is indirect through downstream AI infrastructure and adjacent semiconductor names."
+
+  baker:
+    ticker: TSM
+    value: 0
+    type: no_direct_position
+    conviction: indirect
+    notes: "Exposure is embedded via NVDA and other semiconductor supply-chain longs rather than direct TSM ownership."
+
+  divergence: >
+    There is no direct 13F divergence because neither fund owns TSM. The real read-through is that both
+    rely on TSM capacity, but both prefer more leveraged downstream expressions of the same bottleneck.
+
+key_risks:
+  - "TSMC is foundational but less trade-expressive than second-order beneficiaries."
+  - "Massive capex is both a strength and the eventual mechanism that relieves the bottleneck."
+  - "Node mix and margins are strong now, but any demand digestion would be felt quickly."

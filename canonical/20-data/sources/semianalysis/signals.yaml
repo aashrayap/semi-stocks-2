@@ -1,0 +1,112 @@
+source: semianalysis
+entity: "SemiAnalysis (Dylan Patel)"
+updated: "2026-04-03"
+
+# Credibility notes:
+# - Smartphone volume projections (500-600M) are more aggressive than IDC consensus (~1.1B)
+# - CoWoS bottleneck (2023) resolved faster than SemiAnalysis projected
+# - 40% of revenue from hedge fund clients — scarcity narratives align with client interests
+# - Use for DIRECTION, discount MAGNITUDE by 6-12 months
+
+signals:
+  - date: "2026-04-02"
+    title: "The Great GPU Shortage — Rental Capacity"
+    bottleneck: n3_logic
+    data_points:
+      - "H100 1yr rental: $1.70/hr (Oct 2025) → $2.35/hr (Mar 2026), +40%"
+      - "AWS p6-b200 spot: $14/hr/GPU"
+      - "Month-on-month rental increases 15-20% (Jan-Mar 2026)"
+      - "All new capacity through Aug-Sep 2026 already booked"
+      - "Blackwell deployment lead times extended to Jun-Jul 2026"
+      - "Anthropic ARR: $9B (end 2025) → $25B (early 2026)"
+    tickers: [NVDA, CRWV, TSM]
+
+  - date: "2026-03-15"
+    title: "The Great AI Silicon Shortage"
+    bottleneck: n3_logic
+    data_points:
+      - "AI = 60% of TSMC N3 output (2026), projected 86% by 2027"
+      - "Reallocating 5% smartphone N3 wafers = ~100K Rubin GPUs or ~300K TPU v7s"
+      - "Reallocating 25% = ~700K Rubin GPUs or ~1.5M TPU v7s"
+      - "Google 2026 capex roughly doubled vs prior expectations"
+      - "Anthropic added $6B ARR in Feb 2026 alone (Claude Code driven)"
+      - "HBM consumes ~3x more wafer capacity than commodity DRAM, widening to ~4x with HBM4"
+      - "All major AI accelerators moving to N3 simultaneously: Rubin, TPU v7/v8, Trainium3, MI350X"
+    tickers: [TSM, NVDA, MU]
+
+  - date: "2026-03-15"
+    title: "Nvidia — The Inference Kingdom Expands (GTC 2026)"
+    bottleneck: optical
+    data_points:
+      - "Nvidia acquired Groq for ~$20B"
+      - "Rubin Ultra NVL144: 144 GPUs/rack, 72 NVLink 7 switches, 28.8Tbit/s per switch"
+      - "NVL576 (Rubin Ultra): CPO optics required between racks"
+      - "CPO market projected $20B by 2036, 37% CAGR"
+      - "Vera CPU: 88 cores, 1.5TB LPDDR5X, 1.8TB/s NVLink-C2C (2x Grace)"
+    tickers: [NVDA, COHR, LITE, CIEN]
+
+  - date: "2026-02-09"
+    title: "CPUs are Back: The Datacenter CPU Landscape in 2026"
+    bottleneck: n3_logic
+    data_points:
+      - "AMD Venice: up to 256 cores, 1.7x perf/watt vs Turin"
+      - "Intel Diamond Rapids: up to 256 cores, ~40% faster than Granite Rapids"
+      - "Nvidia Vera: 2x performance over Grace, 6 dies"
+      - "SoftBank acquired Ampere Computing for $6.5B"
+      - "ARM datacenter royalty revenue more than doubled YoY, >1B Neoverse cores deployed"
+    tickers: [INTC, TSM]
+    notes: "CPUs competing with GPUs for N3 capacity intensifies silicon shortage"
+
+  - date: "2025-12-15"
+    title: "Scaling the Memory Wall: The Rise and Roadmap of HBM"
+    bottleneck: memory
+    data_points:
+      - "HBM 85% less dense than DDR equivalent (0.16 vs 0.296 Gb/mm2)"
+      - "12-layer HBM stack yield ~87% (at 99% per-layer)"
+      - "HBM market: $35B (2025) → $54.6B (2026)"
+      - "HBM bit share of DRAM: 19% (2025) → 23% (2026)"
+      - "China CXMT matching Micron TSV capacity by end 2025, ~2M stacks (enough for ~250K Ascend 910Cs)"
+      - "Rubin Ultra projected 1,024GB HBM4E per GPU"
+    tickers: [MU]
+
+  - date: "2026-03-27"
+    title: "Co-Packaged Optics (CPO)"
+    bottleneck: optical
+    data_points:
+      - "CPO = $20B market by 2036, 37% CAGR"
+      - "2026 is inflection year: prototypes → volume deployment"
+      - "Required for Nvidia NVL576+ inter-rack connectivity"
+      - "OFC panel: Nvidia, Broadcom, Marvell, AMD, Google, Meta, Oracle all present"
+      - "TSMC SoIC 3D integration for CPO platforms"
+    tickers: [COHR, LITE, CIEN]
+
+# Additional data points from media appearances (Apr 2026):
+media:
+  - date: "2026-04-01"
+    source: "CNBC (Jim Cramer)"
+    claims:
+      - "Google 2026 capex: $175-185B"
+      - "Google FCF projected to drop ~90% from $73.3B to $8.2B"
+      - "Big tech total 2026 AI spending: ~$650B, +80% YoY"
+  - date: "2026-04-02"
+    source: "24/7 Wall St"
+    claims:
+      - "Memory pricing up 600% in some cases over one year"
+      - "Adobe faces existential threat from AI commoditization"
+  - date: "2026-03-01"
+    source: "Latent Space podcast"
+    claims:
+      - "Google: $180B AI infra capex. Amazon: $200B"
+      - "AI-written code: ~10% of GitHub commits (all tools)"
+      - "Claude Code: 2% → 4% of GitHub commits in one month (Jan 2026)"
+      - "Worldwide software developer wages: $2T/year"
+
+# Memory pricing cross-reference (TrendForce, not SemiAnalysis):
+market_data:
+  - date: "2026-03-01"
+    source: "TrendForce"
+    data_points:
+      - "Q1 2026 DRAM contract prices: +90-95% QoQ"
+      - "PC DRAM: +100% contract prices Q1 2026"
+      - "DDR4 spot: $2.10/Gbit — exceeds HBM3e at $1.70/Gbit (unprecedented)"
+      - "AI demand = 30% of total DRAM demand, 20% of wafer capacity in 2026"

@@ -1,0 +1,23 @@
+[2026-04-07T13:21:30] earnings_calendar
+  lookahead_tickers: ASML, TSM
+  report: agents/reports/earnings-alert-2026-04-07.md
+[2026-04-10T04:58:42] earnings_calendar
+  lookahead_tickers: ASML, TSM, EQT, INTC
+  report: none (dry-run)
+
+[2026-04-10T04:59:51] earnings_calendar
+  lookahead_tickers: ASML, TSM, EQT, INTC
+  report: agents/reports/earnings-alert-2026-04-10.md
+
+[2026-04-10T05:30:23] earnings_calendar
+  lookahead_tickers: ASML, TSM, EQT, INTC
+  report: agents/reports/earnings-alert-2026-04-10.md
+
+[2026-04-10T05:35:26] earnings_calendar
+  lookahead_tickers: ASML, TSM, EQT, INTC
+  report: agents/reports/earnings-alert-2026-04-10.md
+
+[2026-04-10T05:37:01] earnings_calendar
+  lookahead_tickers: ASML, TSM, EQT, INTC
+  report: agents/reports/earnings-alert-2026-04-10.md
+

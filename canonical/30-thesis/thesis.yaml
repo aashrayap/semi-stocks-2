@@ -1,0 +1,161 @@
+updated: "2026-04-08"
+
+# Baker cycle framework — applied to each cascade stage
+# cycle_phase: resolved | post_peak | peak_shortage | mid_shortage | early_cycle | pre_cycle
+# See wiki/outputs/baker-cyclicality-thesis.md for full evidence
+baker_hedge_ratio:
+  q4_2025: 0.70   # $2.15B QQQ puts / ~$3B semi longs
+  trend: increasing  # was ~0.40 prior quarter — hedge growing faster than longs
+
+cascade:
+  - name: CoWoS packaging
+    status: played_out
+    cycle_phase: resolved
+    period: "2023"
+    tickers: [ASX, AMAT]
+    notes: "TSMC ramped CoWoS capacity to ~1M wafers/yr by 2026. Nvidia has 60%."
+
+  - name: Power / DC buildout
+    status: played_out
+    cycle_phase: post_peak
+    cycle_signal: "Still monetizable, but increasingly substitution-rich: behind-the-meter engines, fuel cells, batteries, and grid workarounds make power less likely than semiconductors to be the terminal bottleneck."
+    period: "2024"
+    tickers: [VST, CEG, TLN, VRT]
+    signals:
+      - "56 GW of power announced; PJM backlog still 286 GW"
+      - "Power can route around bottlenecks through multiple lanes: combined-cycle turbines, aeroderivatives, reciprocating engines, ship engines, fuel cells, batteries, and grid peak-shaving"
+      - "Updated hierarchy: power remains hard, but the more durable choke points now look upstream in memory, wafers, fabs, and EUV tooling"
+    notes: >
+      56 GW announced. PJM backlog still 286 GW.
+      Leopold still positioned here (BE, miners) — he may see this as unresolved.
+      The newer SemiAnalysis-style read is that power is a real buildout problem but a
+      substitution-rich one, unlike the semiconductor tool chain.
+
+  - name: Memory supercycle
+    status: active
+    cycle_phase: peak_shortage
+    cycle_signal: "Micron just printed a record quarter and guided ~81% gross margin, but Baker already hedged MU. Strong proof, late-cycle risk rising."
+    period: "2025-2026"
+    tickers: [MU, SNDK]
+    signals:
+      - "Micron Q2 FY2026: $23.86B revenue, 74.9% non-GAAP gross margin, and Q3 guide of ~$33.5B revenue / ~81% gross margin"
+      - "Micron says DRAM and NAND remain supply constrained beyond calendar 2026"
+      - "Micron began HBM4 volume shipments for NVIDIA Vera Rubin"
+      - "DRAM contract prices +90-95% QoQ (Q1 2026, TrendForce)"
+      - "DDR4 spot $2.10/Gbit — now exceeds HBM3e at $1.70/Gbit (unprecedented)"
+      - "30% of Big Tech $650B CapEx goes to memory"
+      - "NVIDIA $21.4B inventory includes significant HBM stockpile (Q4 FY2026)"
+    cycle_risk_flags:
+      - "MU fwd P/E compressing to 10-12x on record EPS $12.20 — classic peak signal"
+      - "Micron FY2026 capex is now above $25B — exactly how shortage peaks eventually get overbuilt"
+      - "All 3 vendors (SK Hynix, Samsung, Micron) expanding capacity simultaneously"
+      - "NVIDIA $21.4B inventory = double-ordering at chip level (10x the FY2023 write-down)"
+      - "Google TurboQuant: 6x memory footprint reduction — potential demand destruction"
+    notes: "Baker is long MU + put hedge. Leopold exited MU puts in Q4. Micron now provides direct earnings proof that memory tightness is real."
+
+  - name: N3 logic wafers
+    status: active
+    cycle_phase: mid_shortage
+    cycle_signal: "TSMC and Intel both confirmed AI-driven tightness, but TSMC's $52B-$56B capex and Intel's 18A/14A ramp are visible future relief valves."
+    period: "2025-2027"
+    tickers: [TSM, NVDA, AVGO, INTC]
+    signals:
+      - "TSMC Q4 2025: $33.73B revenue, 62.3% gross margin, and Q1 guide of $34.6B-$35.8B on strong leading-edge demand"
+      - "TSMC 3nm already accounts for 28% of wafer revenue, and advanced nodes are 77% of wafer revenue"
+      - "Intel said revenue would have been materially higher with more supply; DCAI revenue rose 15% sequentially"
+      - "AI = 60% of TSMC N3 output (2026), projected 86% by 2027"
+      - "N3 utilization 100%+ in H2 2026"
+      - "All major AI accelerators moving to N3 simultaneously: Rubin, TPU v7/v8, Trainium3, MI350X"
+      - "NVIDIA supply commitments doubled $50.3B → $95.2B QoQ, capacity secured through CY2027 (Q4 FY2026)"
+      - "Vera Rubin samples shipped, production H2 2026 — six new chips this cycle all on N3"
+    cycle_risk_flags:
+      - "TSMC 2026 capital budget of $52B-$56B is a real supply response"
+      - "Intel 18A / 14A ramp and external-customer decisions could add alternative supply in 2026-2027"
+      - "NVDA $95.2B supply commitments (doubled QoQ) = capacity locked even if demand slows"
+      - "NVDA fwd P/E compressing from 60x+ to 21x — shortage-phase compression underway"
+    notes: >
+      Originally sequenced after memory but SemiAnalysis data shows both binding simultaneously.
+      TSMC is the direct proof of current tightness; Intel is the proof that eventual supply response is forming.
+      Baker massive NVDA long ($1B+). Leopold holds INTC calls ($749M) but exited NVDA.
+
+  - name: Pluggable optics (scale-out)
+    status: active
+    cycle_phase: early_cycle
+    cycle_signal: "COHR and LITE are now printing direct AI-optics revenue, backlog, and guide data. Still early cycle, but consensus crowding is rising."
+    period: "2025-2027"
+    tickers: [COHR, LITE, CIEN]
+    signals:
+      - "Coherent Q2 FY2026: datacenter and communications was 72% of revenue ($1.208B) and Q3 guide is $1.70B-$1.84B"
+      - "Lumentum Q2 FY2026: revenue grew 65.5% YoY and Q3 guide is $780M-$830M"
+      - "Lumentum optical-circuit-switch backlog is already above $400M"
+      - "Every NVL72/NVL144/NVL288 rack uses pluggable optics for scale-out networking"
+      - "NVIDIA networking revenue $11B quarterly (+3.5x YoY), Spectrum-X 'a home run' (Q4 FY2026)"
+    cycle_risk_flags:
+      - "Baker trimmed LITE -42% while Leopold added +604% — directional divergence in consensus zone"
+      - "COHR and LITE now sit squarely in the consensus zone; any guide slip can hit crowded optics names hard"
+    notes: >
+      Revenue is flowing NOW — every rack Nvidia ships has pluggable transceivers, and COHR/LITE are
+      now proving that in reported quarters instead of only via architecture logic.
+      CIEN supplies optical networking switches for scale-out fabrics.
+      Leopold: LITE $479M, COHR $89M. Baker: COHR ~$394M including calls, CIEN $334M, LITE $141M.
+
+  - name: Co-packaged optics / CPO (scale-up)
+    status: next
+    cycle_phase: pre_cycle
+    cycle_signal: "COHR and LITE now have real orders, partnerships, and demos, but revenue still points to 2027+ rather than a current bottleneck."
+    period: "2028-2030"
+    tickers: [COHR, LITE, CIEN, ALAB, SMTC]
+    signals:
+      - "Lumentum disclosed an incremental multi-hundred-million-dollar CPO order for 1H 2027 delivery"
+      - "Coherent's March 2026 NVIDIA partnership added multibillion-dollar purchase commitments, future capacity rights, and a $2B investment"
+      - "Coherent OFC 2026 demos included 6.4T silicon-photonics CPO, VCSEL socketed CPO, and a 400G-per-lane InP-on-silicon path"
+      - "Rubin Ultra NVL576: CPO between racks — explicitly low volume / test only"
+      - "Feynman NVL1152: CPO between racks, copper within rack (base case)"
+      - "448G SerDes challenges (shoreline, reach, power) favor CPO over copper at next speed step"
+    notes: >
+      Volume CPO is a Feynman story (2028+), NOT Rubin Ultra.
+      NVL576 is test/low-volume. Inside every rack through NVL1152 remains copper.
+      Early COHR/LITE orders matter because they improve confidence in the roadmap, but they do not
+      yet move this stage from "next" to "active."
+      ALAB and SMTC benefit from copper persistence inside racks — retimers and signal
+      integrity ICs needed at 200G/lane. Baker: ALAB $268M, SMTC $51M.
+      CPO winners will be whoever integrates optical engines on-package — COHR and LITE
+      are best positioned but volume revenue is years away.
+
+  - name: EUV tools
+    status: next
+    cycle_phase: pre_cycle
+    cycle_signal: "ASML bookings hit record EUR 13.2B (Q4 2025), but the deeper issue is physical throughput: EUV and its supplier chain cap long-run AI-chip output."
+    period: "2028-2030"
+    tickers: [ASML]
+    signals:
+      - "ASML can produce ~100 EUV tools/yr by 2030 (Zeiss optics is the constraint)"
+      - "One gigawatt of Rubin-class capacity needs ~3.5 EUV tools and ~2M EUV wafer passes"
+      - "Installed EUV base could approach ~700 tools by 2030, implying ~200 GW of annual AI-chip output if fully AI-allocated"
+      - "Near-term bottleneck is fab / cleanroom space; later bottleneck rotates to EUV tool throughput"
+    notes: >
+      Neither Leopold nor Baker has significant ASML exposure yet. Watch for early entry.
+      The key distinction versus power is substitution: data centers can route around
+      energy bottlenecks, but leading-edge fabs cannot route around EUV once tool
+      throughput binds.
+
+# Ticker-to-bottleneck mapping (for synthesis lookups)
+ticker_map:
+  COHR:  { bottleneck: pluggable_optics, status: active, also: cpo_next, next_earnings: "2026-05-07" }
+  LITE:  { bottleneck: pluggable_optics, status: active, also: cpo_next, next_earnings: "2026-05-06" }
+  CIEN:  { bottleneck: pluggable_optics, status: active, next_earnings: "2026-06-04" }
+  ALAB:  { bottleneck: copper_signal_integrity, status: active, also: cpo_next, next_earnings: "2026-05-06" }
+  SMTC:  { bottleneck: copper_signal_integrity, status: active, also: cpo_next, next_earnings: "2026-06-04" }
+  MU:    { bottleneck: memory, status: active, next_earnings: "2026-06-25" }
+  SNDK:  { bottleneck: memory, status: active, next_earnings: "2026-05-01" }
+  TSM:   { bottleneck: n3_logic, status: active, next_earnings: "2026-04-17" }
+  NVDA:  { bottleneck: n3_logic, status: active, next_earnings: "2026-05-28" }
+  AVGO:  { bottleneck: n3_logic, status: active, next_earnings: "2026-06-12" }
+  INTC:  { bottleneck: n3_logic, status: active, next_earnings: "2026-04-24" }
+  ASML:  { bottleneck: euv, status: next, next_earnings: "2026-04-16" }
+  CRWV:  { bottleneck: gpu_cloud, status: active, next_earnings: "2026-05-12" }
+  BE:    { bottleneck: power, status: played_out, next_earnings: "2026-05-08" }
+  CORZ:  { bottleneck: power, status: played_out, next_earnings: "2026-05-08" }
+  IREN:  { bottleneck: power, status: played_out, next_earnings: "2026-05-15" }
+  EQT:   { bottleneck: power, status: played_out, next_earnings: "2026-04-23" }
+  TSEM:  { bottleneck: foundry, status: active, next_earnings: "2026-05-14" }
