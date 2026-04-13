@@ -34,3 +34,11 @@
   tickers: ASML, TSM
   files_written: state/predictions/ASML-Q1_2026.yaml, state/predictions/TSM-Q1_2026.yaml
 
+[2026-04-10T12:41:23] pre_earnings_predictor
+  tickers: ASML, TSM
+  files_written: state/predictions/ASML-Q1_2026.yaml, state/predictions/TSM-Q1_2026.yaml
+
+[2026-04-13T07:39:12] pre_earnings_predictor
+  tickers: ASML, TSM
+  files_written: state/predictions/ASML-Q1_2026.yaml, state/predictions/TSM-Q1_2026.yaml
+

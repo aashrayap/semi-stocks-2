@@ -16,7 +16,9 @@ from __future__ import annotations
 import argparse
 import sys
 from datetime import date, datetime, timedelta
+from html import escape
 from pathlib import Path
+import re
 from typing import Any
 
 try:
@@ -102,20 +104,64 @@ def count_drafts() -> dict:
     return counts
 
 
+TIMESTAMP_RE = re.compile(r"^\[(\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}:\d{2})\]")
+
+
+def _parse_log_timestamp(line: str) -> datetime | None:
+    match = TIMESTAMP_RE.match(line)
+    if not match:
+        return None
+    try:
+        return datetime.fromisoformat(match.group(1))
+    except ValueError:
+        return None
+
+
+def _flush_log_entry(entries: list[tuple[datetime, str]], timestamp: datetime | None, lines: list[str]) -> None:
+    if not timestamp or not lines:
+        return
+    text = " | ".join(line.strip() for line in lines if line.strip())
+    if not text:
+        return
+    if " DEBUG " in text or text.endswith("=" * 60):
+        return
+    entries.append((timestamp, text))
+
+
 def recent_logs(n: int = 10) -> list[str]:
-    """Get the most recent log lines across all log files."""
-    lines = []
+    """Get the most recent meaningful log entries across all log files."""
+    entries: list[tuple[datetime, str]] = []
     if not LOGS_DIR.exists():
-        return lines
-    for f in sorted(LOGS_DIR.glob("*.log"), reverse=True):
+        return []
+
+    for f in LOGS_DIR.glob("*.log"):
+        current_ts: datetime | None = None
+        current_lines: list[str] = []
+
         with open(f) as fh:
-            for line in fh:
-                line = line.strip()
-                if line:
-                    lines.append(line)
-                if len(lines) >= n:
-                    return lines
-    return lines
+            for raw_line in fh:
+                line = raw_line.rstrip("\n")
+                ts = _parse_log_timestamp(line)
+
+                if ts is not None:
+                    _flush_log_entry(entries, current_ts, current_lines)
+                    current_ts = ts
+                    current_lines = [line]
+                    continue
+
+                if not line.strip():
+                    _flush_log_entry(entries, current_ts, current_lines)
+                    current_ts = None
+                    current_lines = []
+                    continue
+
+                if current_lines:
+                    current_lines.append(line)
+
+        _flush_log_entry(entries, current_ts, current_lines)
+
+    entries.sort(key=lambda item: item[0], reverse=True)
+    return [entry for _, entry in entries[:n]]
 
 
 # ---------------------------------------------------------------------------
@@ -464,7 +510,7 @@ def build_log_activity() -> str:
         return '<tr><td class="small">No agent activity logged yet.</td></tr>'
     rows = ""
     for line in lines:
-        rows += f'<tr><td class="small">{line[:120]}</td></tr>'
+        rows += f'<tr><td class="small">{escape(line[:220])}</td></tr>'
     return rows
 
 
