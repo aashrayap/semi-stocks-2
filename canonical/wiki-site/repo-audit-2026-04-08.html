@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Repository Audit — 2026-04-08 — Wikiwise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-repo-audit-2026-04-08">
+<header class="masthead">
+  <a class="masthead-mark" href="home.html">
+    <span class="masthead-mark-letter">W</span>
+    <span class="masthead-mark-words">
+      <span class="masthead-mark-word-primary">Wikiwise</span>
+    </span>
+  </a>
+  <div class="masthead-search">
+    <input id="search-input" type="search" placeholder="Search Wikiwise…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+</header>
+<div class="layout">
+<aside class="rail">
+<nav class="rail-nav"><h4>Navigate</h4><ul><li><a href="home.html">Home</a></li><li><a href="index.html">Catalog</a></li><li><a href="map-3d.html">Map</a></li><li><a href="log.html">Recent changes</a></li></ul></nav>
+<section class="toc-block"><h4>Contents</h4><div class="toc"><ul><li><a href="#snapshot">Snapshot</a></li><li><a href="#coverage">Coverage</a></li><li><a href="#core-findings">Core Findings</a></li><ul><li><a href="#raw">Raw</a></li><li><a href="#research">Research</a></li><li><a href="#thesis">Thesis</a></li><li><a href="#report">Report</a></li></ul><li><a href="#source-feed-assessment">Source Feed Assessment</a></li><li><a href="#what-actually-makes-money">What Actually Makes Money</a></li><li><a href="#hard-findings">Hard Findings</a></li><li><a href="#changes-made-during-audit">Changes Made During Audit</a></li><li><a href="#post-fix-impact">Post-Fix Impact</a></li><li><a href="#priority-backlog">Priority Backlog</a></li><ul><li><a href="#p0">P0</a></li><li><a href="#p1">P1</a></li><li><a href="#p2">P2</a></li></ul><li><a href="#bottom-line">Bottom Line</a></li></ul></div></section>
+</aside>
+<div class="article">
+<div class="article-head">
+  <h1 class="article-title">Repository Audit — 2026-04-08</h1>
+
+</div>
+<div class="article-body">
+<h2 id="snapshot">Snapshot</h2>
+<table>
+<thead>
+<tr>
+<th>Lens</th>
+<th>Scope</th>
+<th style="text-align:right">Current State</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raw</td>
+<td><code>wiki/raw/</code></td>
+<td style="text-align:right">2 files</td>
+<td>Provenance too loose</td>
+</tr>
+<tr>
+<td>Research</td>
+<td><code>wiki/sources/</code>, <code>wiki/concepts/</code>, <code>data/sources/</code>, <code>data/companies/</code>, <code>data/research/</code></td>
+<td style="text-align:right">5 source pages, 6 concept pages, 2 company YAMLs</td>
+<td>High signal, thin coverage</td>
+</tr>
+<tr>
+<td>Thesis</td>
+<td><code>data/thesis.yaml</code>, <code>src/synthesis.py</code></td>
+<td style="text-align:right">1 narrative control plane</td>
+<td>Useful, but semantically loose</td>
+</tr>
+<tr>
+<td>Report</td>
+<td><code>src/report.py</code>, <code>reports/</code>, <code>wiki/outputs/</code>, <code>agents/reports/</code></td>
+<td style="text-align:right">3 output surfaces</td>
+<td>Good monitor, weak trade packet</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-text">Truth Path
+external source
+  -&gt; raw
+  -&gt; research
+  -&gt; thesis
+  -&gt; report
+  -&gt; trade
+
+Seam Grade
+raw      -&gt; research   RED
+research -&gt; thesis     RED
+thesis   -&gt; report     YELLOW
+report   -&gt; trade      RED
+</code></pre>
+<h2 id="coverage">Coverage</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align:right">Intended</th>
+<th style="text-align:right">Actual</th>
+<th style="text-align:right">Gap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deep-dive company coverage</td>
+<td style="text-align:right">7</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td>Coverage ratio</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:right">28.6%</td>
+<td style="text-align:right">-71.4 pts</td>
+</tr>
+<tr>
+<td>Raw earnings/filing captures</td>
+<td style="text-align:right">~20 companies target</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">large</td>
+</tr>
+<tr>
+<td>Wiki output trade notes</td>
+<td style="text-align:right">n/a</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">underused in final report</td>
+</tr>
+</tbody>
+</table>
+<p>Deep-dive names configured: <code>CRWV</code>, <code>NVDA</code>, <code>MU</code>, <code>COHR</code>, <code>INTC</code>, <code>TSM</code>, <code>LITE</code><br>
+Structured company coverage today: <code>CRWV</code>, <code>NVDA</code></p>
+<h2 id="core-findings">Core Findings</h2>
+<h3 id="raw">Raw</h3>
+<ul>
+<li><code>wiki/raw/</code> is treated as immutable ingest, but “raw” is not consistently primary-source. <code>wiki/raw/nvda-q4-fy2026-transcript.md</code> is already a compiled artifact from multiple secondary sites.</li>
+<li>The layer has no enforced provenance contract: no canonical source URL standard, no checksum, no primary/secondary marker, no trace-back fields.</li>
+<li>Raw does not make money directly. Its job is preserving exact evidence so later claims can be trusted.</li>
+</ul>
+<h3 id="research">Research</h3>
+<ul>
+<li>This is the strongest layer conceptually. Leopold, Baker, SemiAnalysis, and earnings all exist in both readable and structured form.</li>
+<li>The weakness is penetration, not idea quality. Only 2 of 7 intended deep-dive names have <code>data/companies/*</code> depth, so most thesis claims still depend on manual reconstruction.</li>
+<li>Queryability is convention-driven. A human can traverse it; the codebase does not really execute the documented wiki-first query model.</li>
+</ul>
+<h3 id="thesis">Thesis</h3>
+<ul>
+<li><code>data/thesis.yaml</code> is the real control plane, but it mixes stage state, narrative commentary, cycle logic, and ticker routing in one hand-edited blob.</li>
+<li>Taxonomy drifts across layers. Cascade stages are human names; ticker routing uses tags like <code>gpu_cloud</code>, <code>foundry</code>, and <code>copper_signal_integrity</code> that do not map cleanly back to cascade stages.</li>
+<li>Thesis is good at saying what is true. It is weak at encoding what to trade, when, and with what invalidation.</li>
+</ul>
+<h3 id="report">Report</h3>
+<ul>
+<li>The canonical report is a bottleneck dashboard, not a trading report.</li>
+<li><code>wiki/outputs/*</code> contains the most trade-shaped work, but those outputs are not first-class inputs to <code>src/report.py</code>.</li>
+<li><code>agents/reports/daily-2026-04-07.md</code> is tactically useful, but it can drift from canonical truth because it is not automatically promoted back into <code>wiki/</code> or <code>data/</code>.</li>
+</ul>
+<h2 id="source-feed-assessment">Source Feed Assessment</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Current Role</th>
+<th>Strength</th>
+<th>Limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leopold 13F</td>
+<td>Bottleneck-through-positioning signal</td>
+<td>High conviction, concentrated</td>
+<td>45-day lag, thesis bias</td>
+</tr>
+<tr>
+<td>Baker 13F</td>
+<td>Cycle + supply-chain positioning signal</td>
+<td>Deep semi fluency</td>
+<td>45-day lag, options/hedges need leg-aware handling</td>
+</tr>
+<tr>
+<td>SemiAnalysis</td>
+<td>Supply-chain ground truth proxy</td>
+<td>Earliest bottom-up bottleneck data</td>
+<td>Needs explicit credibility weighting</td>
+</tr>
+<tr>
+<td>Earnings</td>
+<td>Direct operating confirmation</td>
+<td>Most falsifiable source</td>
+<td>Coverage still narrow</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-actually-makes-money">What Actually Makes Money</h2>
+<ul>
+<li>Raw: exact evidence, not insight.</li>
+<li>Research: cross-source compression into comparable, falsifiable claims.</li>
+<li>Thesis: ranking bottlenecks, conflicts, catalysts, and timing.</li>
+<li>Report: emitting a trade packet with trigger, horizon, invalidation, hedge, and review date.</li>
+</ul>
+<p>Right now the repo is strongest at <code>research -&gt; thesis narrative</code>, and weakest at <code>thesis -&gt; report -&gt; trade</code>.</p>
+<h2 id="hard-findings">Hard Findings</h2>
+<ul>
+<li>Multi-leg 13F rows were being collapsed to the first matching leg in the source adapter, which understated Baker exposure in the report and cascade tables.</li>
+<li>The report summary language implied the only full overlap was optical interconnect, while the implementation’s “full agreement” logic also surfaced <code>CRWV</code> and <code>INTC</code>.</li>
+<li>The earnings dashboard was rendering raw SemiAnalysis dict objects instead of readable signal summaries.</li>
+<li>TODO/process tracking is stale relative to the repo state: NVDA is already ingested, but <code>TODO.md</code> still lists it as remaining work.</li>
+</ul>
+<h2 id="changes-made-during-audit">Changes Made During Audit</h2>
+<ul>
+<li>Added a concise four-lens audit mapping to <code>README.md</code>.</li>
+<li>Fixed multi-leg 13F aggregation in <code>src/sources/fund_13f.py</code>.</li>
+<li>Updated summary wording in <code>src/synthesis.py</code> so optical overlap is described more accurately.</li>
+<li>Fixed SemiAnalysis rendering in <code>src/report.py</code> so dashboard rows show human-readable signal summaries.</li>
+<li>Updated <code>TODO.md</code> so remaining deep-dive work matches actual repo state.</li>
+<li>Regenerated the canonical HTML report after the source aggregation fix.</li>
+</ul>
+<h2 id="post-fix-impact">Post-Fix Impact</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align:right">Before</th>
+<th style="text-align:right">After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baker NVDA shown in report</td>
+<td style="text-align:right">$653M</td>
+<td style="text-align:right">$1.01B</td>
+</tr>
+<tr>
+<td>Baker MU shown in report</td>
+<td style="text-align:right">$211M</td>
+<td style="text-align:right">$411M</td>
+</tr>
+<tr>
+<td>Baker COHR shown in report</td>
+<td style="text-align:right">$228M</td>
+<td style="text-align:right">$394M</td>
+</tr>
+<tr>
+<td>Baker N3 stage exposure</td>
+<td style="text-align:right">$671M</td>
+<td style="text-align:right">$1.03B</td>
+</tr>
+<tr>
+<td>Baker memory stage exposure</td>
+<td style="text-align:right">$211M</td>
+<td style="text-align:right">$411M</td>
+</tr>
+<tr>
+<td>Baker pluggable optics stage exposure</td>
+<td style="text-align:right">$703M</td>
+<td style="text-align:right">$869M</td>
+</tr>
+</tbody>
+</table>
+<h2 id="priority-backlog">Priority Backlog</h2>
+<h3 id="p0">P0</h3>
+<ul>
+<li>Define a strict raw provenance contract.</li>
+<li>Complete the remaining 5 deep-dive company YAMLs.</li>
+<li>Add evidence fields to research artifacts: <code>claim_id</code>, <code>source_ref</code>, <code>confidence</code>, <code>last_verified</code>, <code>why_it_matters</code>.</li>
+<li>Add a canonical trade packet layer between thesis and report.</li>
+</ul>
+<h3 id="p1">P1</h3>
+<ul>
+<li>Make wiki querying real, not just documented.</li>
+<li>Add source weighting by freshness, bias, and historical hit rate.</li>
+<li>Promote <code>wiki/outputs/*</code> into the report build path.</li>
+</ul>
+<h3 id="p2">P2</h3>
+<ul>
+<li>Unify thesis taxonomy with stable stage ids.</li>
+<li>Add performance feedback from predictions and thesis calls back into the canonical report.</li>
+</ul>
+<h2 id="bottom-line">Bottom Line</h2>
+<p>The repository already has the right lane structure. The main gap is not conceptual architecture. It is evidence discipline at the left edge, coverage in the middle, and trade packet generation at the right edge.</p>
+
+</div>
+</div>
+</div>
+<script src="search.json.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

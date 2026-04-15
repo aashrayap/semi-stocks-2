@@ -1,9 +1,9 @@
 ---
 title: Bottleneck Cascade
 tags: [thesis, bottleneck, supply-chain, rotation]
-sources: [../../30-thesis/thesis.yaml, raw/dwarkesh-dylan-ai-infrastructure-bottlenecks.md]
+sources: [../../30-thesis/thesis.yaml, raw/dwarkesh-dylan-ai-infrastructure-bottlenecks.md, raw/jstwng-nvidia-margin-illusion.md]
 created: 2026-04-07
-updated: 2026-04-08
+updated: 2026-04-13
 ---
 
 # Bottleneck Cascade
@@ -37,6 +37,17 @@ Leopold and Baker agree on the cascade's existence but disagree on which stage i
 
 Originally these were expected to be sequential. SemiAnalysis data shows memory, N3, and optics are all binding simultaneously. The newer read-through is that power scarcity still matters tactically, but the terminal bottleneck is more likely to sit in the semiconductor tool chain than in electricity generation.
 
+## Value Capture vs. Supply Constraint
+
+The cascade tracks which bottleneck is binding. A complementary lens (see [[concepts/nvda-margin-residual]]) tracks who captures the surplus at each node. Wang's substitutability ranking inverts the market's valuation multiples:
+
+1. **CoWoS packaging** — zero alternatives at scale, 113% demand CAGR. Trade (ASX/AMAT) played out, but the constraint now manifests as TSMC pricing power.
+2. **HBM memory** — 3-player oligopoly, sold out through 2027, long-term contracts replacing spot.
+3. **N3 logic** — TSMC 92% sub-5nm share, but expandable on 18-24 month timelines.
+4. **GPU/accelerator design** — most substitutable. Custom silicon provides credible BATNA.
+
+The most supply-constrained layers trade at the lowest multiples (TSM ~25x, memory 5-12x) while the most substitutable (NVDA 37x) trades at the highest. The implication: physical infrastructure layers are structurally underweight in market pricing.
+
 ## Direct Earnings Proof
 
 - **GPU cloud demand:** CoreWeave Q4 2025 reached $5.13B full-year revenue, backlog expanded to $66.8B, and management said it was still unable to catch up with demand signals.
@@ -45,4 +56,4 @@ Originally these were expected to be sequential. SemiAnalysis data shows memory,
 - **Pluggable optics:** Coherent's datacenter and communications segment was 72% of revenue ($1.208B), and Lumentum's Q2 FY2026 revenue grew 65.5% YoY with OCS backlog above $400M.
 - **CPO:** Coherent and Lumentum now have real CPO demos and orders, but the timing still points to 2027+ and not the current bottleneck.
 
-See also: [[sources/baker-q4-2025]], [[sources/cohr-q2-fy2026]], [[sources/crwv-q4-2025]], [[sources/dwarkesh-dylan-ai-infrastructure-bottlenecks]], [[sources/leopold-q4-2025]], [[sources/lite-q2-fy2026]], [[sources/mu-q2-fy2026]], [[sources/semianalysis-signals]], [[sources/tsm-q4-2025]], [[concepts/euv-tool-bottleneck]], [[concepts/token-economics]]
+See also: [[concepts/nvda-margin-residual]], [[sources/baker-q4-2025]], [[sources/cohr-q2-fy2026]], [[sources/crwv-q4-2025]], [[sources/dwarkesh-dylan-ai-infrastructure-bottlenecks]], [[sources/jstwng-nvidia-margin-illusion]], [[sources/leopold-q4-2025]], [[sources/lite-q2-fy2026]], [[sources/mu-q2-fy2026]], [[sources/semianalysis-signals]], [[sources/tsm-q4-2025]], [[concepts/euv-tool-bottleneck]], [[concepts/token-economics]]

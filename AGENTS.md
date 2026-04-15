@@ -22,6 +22,7 @@ semi-stocks-2 is organized around a canonical propagation model.
 - `canonical/30-thesis/thesis.yaml` is the narrow control plane.
 - `canonical/40-engine/` contains canonical synthesis and render code.
 - `canonical/50-reports/` is for canonical published artifacts and stays separate from `canonical/10-wiki/outputs/`.
+- `canonical/wiki-site/` is a generated integration/export bundle for the external Wikiwise app shell, not a sixth canonical stage.
 - `agents/` is sidecar-only by default.
 - `tmp/` is scratch only.
 
@@ -46,5 +47,7 @@ semi-stocks-2 is organized around a canonical propagation model.
 
 ## Current State
 
-- Use [docs/artifacts/canonical-propagation-model/04_design.md](docs/artifacts/canonical-propagation-model/04_design.md), [docs/artifacts/canonical-propagation-model/05_tasks.md](docs/artifacts/canonical-propagation-model/05_tasks.md), and [docs/artifacts/canonical-propagation-model/06_handoff.md](docs/artifacts/canonical-propagation-model/06_handoff.md) as the migration execution baseline.
+- Use [docs/artifacts/canonical-propagation-model/07_implementation-spec.md](docs/artifacts/canonical-propagation-model/07_implementation-spec.md) as the working repo/app rollout contract.
+- Use [docs/artifacts/canonical-propagation-model/04_design.md](docs/artifacts/canonical-propagation-model/04_design.md) as the canonical lane baseline.
+- Treat [docs/artifacts/canonical-propagation-model/05_tasks.md](docs/artifacts/canonical-propagation-model/05_tasks.md) and [docs/artifacts/canonical-propagation-model/06_handoff.md](docs/artifacts/canonical-propagation-model/06_handoff.md) as historical migration records.
 - The earlier scaffold and flat-root lane layouts are obsolete.

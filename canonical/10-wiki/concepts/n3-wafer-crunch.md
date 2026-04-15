@@ -1,9 +1,9 @@
 ---
 title: N3 Wafer Crunch
 tags: [tsmc, n3, wafers, bottleneck, foundry]
-sources: [../../30-thesis/thesis.yaml, ../../20-data/sources/semianalysis/signals.yaml]
+sources: [../../30-thesis/thesis.yaml, ../../20-data/sources/semianalysis/signals.yaml, raw/jstwng-nvidia-margin-illusion.md]
 created: 2026-04-07
-updated: 2026-04-08
+updated: 2026-04-13
 ---
 
 # N3 Wafer Crunch
@@ -23,6 +23,10 @@ N3 refers to TSMC's 3-nanometer manufacturing process — the most advanced way 
 - Apple should become a smaller share of advanced-node demand as N2 ramps and AI absorbs more allocation
 - NVIDIA supply commitments doubled $50.3B → $95.2B QoQ, capacity secured through CY2027 (Q4 FY2026)
 - Vera Rubin samples shipped, production H2 2026 — six new chips this cycle all on N3
+
+## TSMC Pricing Power Signal
+
+TSMC currently captures only $877-922 per H100 (3-4% of selling price), reflecting historical anchoring from when GPUs were $1K gaming products. A 30% across-the-board TSMC price increase would add only $260-280 per unit — less than 1% of GPU-level revenue. TSMC has announced 5-10% annual sub-5nm hikes starting January 2026. The repricing trajectory has structural room to run for years. TSMC's gross margins guided to 63-65% for early 2026 (up from 62.3% Q4 2025). At ~25x forward P/E, TSMC trades at a discount to the S&P 500 IT sector (~32x) despite holding 92% of sub-5nm logic and a CoWoS packaging monopoly. See [[concepts/nvda-margin-residual]].
 
 ## Counter-Signal
 
@@ -54,4 +58,4 @@ The shortage is real now, but the relief path is visible:
 - **INTC Q4 2025:** Intel said AI-driven demand created supply constraints, DCAI revenue grew 15% sequentially, and revenue would have been higher with more supply. At the same time, 18A/14A are the future relief path.
 - **NVDA Q4 FY2026:** Rubin moving to N3, competing with TPU v7/v8, Trainium3, MI350X for TSMC capacity. Supply commitments nearly doubled. Six new chips all on N3.
 
-See also: [[concepts/bottleneck-cascade]], [[concepts/euv-tool-bottleneck]], [[concepts/memory-supercycle]], [[concepts/pluggable-optics]], [[sources/crwv-q4-2025]], [[sources/dwarkesh-dylan-ai-infrastructure-bottlenecks]], [[sources/intc-q4-2025]], [[sources/nvda-q4-fy2026]], [[sources/tsm-q4-2025]]
+See also: [[concepts/bottleneck-cascade]], [[concepts/euv-tool-bottleneck]], [[concepts/memory-supercycle]], [[concepts/nvda-margin-residual]], [[concepts/pluggable-optics]], [[sources/crwv-q4-2025]], [[sources/dwarkesh-dylan-ai-infrastructure-bottlenecks]], [[sources/intc-q4-2025]], [[sources/jstwng-nvidia-margin-illusion]], [[sources/nvda-q4-fy2026]], [[sources/tsm-q4-2025]]

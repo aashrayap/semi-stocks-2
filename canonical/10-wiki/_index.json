@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-10",
+  "generated_at": "2026-04-13",
   "wiki_root": "/Users/ash/Documents/2026/semi-stocks-2/canonical/10-wiki",
   "stats": {
-    "pages": 20,
-    "concepts": 7,
-    "sources": 11,
-    "outputs": 2,
-    "local_links": 115,
+    "pages": 23,
+    "concepts": 8,
+    "sources": 12,
+    "outputs": 3,
+    "local_links": 148,
     "external_links": 7,
     "dead_links": 0,
     "orphans": 0
@@ -26,10 +26,11 @@
       ],
       "sources": [
         "../../30-thesis/thesis.yaml",
-        "raw/dwarkesh-dylan-ai-infrastructure-bottlenecks.md"
+        "raw/dwarkesh-dylan-ai-infrastructure-bottlenecks.md",
+        "raw/jstwng-nvidia-margin-illusion.md"
       ],
       "created": "2026-04-07",
-      "updated": "2026-04-08",
+      "updated": "2026-04-13",
       "source_created": "",
       "aliases": [],
       "outlinks": [
@@ -37,12 +38,14 @@
         "concepts/euv-tool-bottleneck",
         "concepts/memory-supercycle",
         "concepts/n3-wafer-crunch",
+        "concepts/nvda-margin-residual",
         "concepts/pluggable-optics",
         "concepts/token-economics",
         "sources/baker-q4-2025",
         "sources/cohr-q2-fy2026",
         "sources/crwv-q4-2025",
         "sources/dwarkesh-dylan-ai-infrastructure-bottlenecks",
+        "sources/jstwng-nvidia-margin-illusion",
         "sources/leopold-q4-2025",
         "sources/lite-q2-fy2026",
         "sources/mu-q2-fy2026",
@@ -127,18 +130,21 @@
       ],
       "sources": [
         "../../30-thesis/thesis.yaml",
-        "../../20-data/sources/semianalysis/signals.yaml"
+        "../../20-data/sources/semianalysis/signals.yaml",
+        "raw/jstwng-nvidia-margin-illusion.md"
       ],
       "created": "2026-04-07",
-      "updated": "2026-04-08",
+      "updated": "2026-04-13",
       "source_created": "",
       "aliases": [],
       "outlinks": [
         "concepts/bottleneck-cascade",
         "concepts/euv-tool-bottleneck",
         "concepts/n3-wafer-crunch",
+        "concepts/nvda-margin-residual",
         "sources/crwv-q4-2025",
         "sources/dwarkesh-dylan-ai-infrastructure-bottlenecks",
+        "sources/jstwng-nvidia-margin-illusion",
         "sources/mu-q2-fy2026",
         "sources/nvda-q4-fy2026"
       ],
@@ -160,22 +166,58 @@
       ],
       "sources": [
         "../../30-thesis/thesis.yaml",
-        "../../20-data/sources/semianalysis/signals.yaml"
+        "../../20-data/sources/semianalysis/signals.yaml",
+        "raw/jstwng-nvidia-margin-illusion.md"
       ],
       "created": "2026-04-07",
-      "updated": "2026-04-08",
+      "updated": "2026-04-13",
       "source_created": "",
       "aliases": [],
       "outlinks": [
         "concepts/bottleneck-cascade",
         "concepts/euv-tool-bottleneck",
         "concepts/memory-supercycle",
+        "concepts/nvda-margin-residual",
         "concepts/pluggable-optics",
         "sources/crwv-q4-2025",
         "sources/dwarkesh-dylan-ai-infrastructure-bottlenecks",
         "sources/intc-q4-2025",
+        "sources/jstwng-nvidia-margin-illusion",
         "sources/nvda-q4-fy2026",
         "sources/tsm-q4-2025"
+      ],
+      "external_links": [],
+      "dead_links": []
+    },
+    {
+      "slug": "concepts/nvda-margin-residual",
+      "path": "/Users/ash/Documents/2026/semi-stocks-2/canonical/10-wiki/concepts/nvda-margin-residual.md",
+      "directory": "concepts",
+      "title": "NVDA Margin as Residual",
+      "summary": "NVIDIA's gross margin is not a moat \u2014 it is a residual. The surplus left over after paying two supply-constrained monopolists (TSMC for fabrication + packaging, the HBM oligopoly for memory) and be...",
+      "tags": [
+        "nvda",
+        "margin",
+        "bilateral-monopoly",
+        "value-chain",
+        "pricing-power",
+        "thesis"
+      ],
+      "sources": [
+        "raw/jstwng-nvidia-margin-illusion.md"
+      ],
+      "created": "2026-04-13",
+      "updated": "2026-04-13",
+      "source_created": "",
+      "aliases": [],
+      "outlinks": [
+        "concepts/bottleneck-cascade",
+        "concepts/euv-tool-bottleneck",
+        "concepts/memory-supercycle",
+        "concepts/n3-wafer-crunch",
+        "outputs/baker-cyclicality-thesis",
+        "sources/jstwng-nvidia-margin-illusion",
+        "sources/nvda-q4-fy2026"
       ],
       "external_links": [],
       "dead_links": []
@@ -268,6 +310,56 @@
         "concepts/n3-wafer-crunch",
         "concepts/pluggable-optics",
         "sources/baker-q4-2025"
+      ],
+      "external_links": [],
+      "dead_links": []
+    },
+    {
+      "slug": "outputs/long-term-value-chain-thesis",
+      "path": "/Users/ash/Documents/2026/semi-stocks-2/canonical/10-wiki/outputs/long-term-value-chain-thesis.md",
+      "directory": "outputs",
+      "title": "Long-Term AI Hardware Value Chain Thesis",
+      "summary": "Two independent analytical frameworks \u2014 Wang's structural margin compression and Baker's cyclicality \u2014 converge on the same directional conclusion for NVIDIA but diverge on the physical infrastruct...",
+      "tags": [
+        "thesis",
+        "long-term",
+        "nvda",
+        "tsm",
+        "memory",
+        "margin",
+        "cyclicality",
+        "value-chain",
+        "positioning"
+      ],
+      "sources": [
+        "sources/jstwng-nvidia-margin-illusion",
+        "outputs/baker-cyclicality-thesis",
+        "concepts/nvda-margin-residual",
+        "concepts/bottleneck-cascade",
+        "concepts/memory-supercycle",
+        "concepts/n3-wafer-crunch",
+        "concepts/euv-tool-bottleneck",
+        "sources/nvda-q4-fy2026",
+        "sources/baker-q4-2025",
+        "sources/leopold-q4-2025"
+      ],
+      "created": "2026-04-13",
+      "updated": "2026-04-13",
+      "source_created": "",
+      "aliases": [],
+      "outlinks": [
+        "concepts/bottleneck-cascade",
+        "concepts/euv-tool-bottleneck",
+        "concepts/memory-supercycle",
+        "concepts/n3-wafer-crunch",
+        "concepts/nvda-margin-residual",
+        "concepts/token-economics",
+        "outputs/baker-cyclicality-thesis",
+        "sources/baker-q4-2025",
+        "sources/jstwng-nvidia-margin-illusion",
+        "sources/leopold-q4-2025",
+        "sources/nvda-q4-fy2026",
+        "sources/semianalysis-signals"
       ],
       "external_links": [],
       "dead_links": []
@@ -471,6 +563,43 @@
       "external_links": [
         "raw/intc-q4-2025-primary-sources"
       ],
+      "dead_links": []
+    },
+    {
+      "slug": "sources/jstwng-nvidia-margin-illusion",
+      "path": "/Users/ash/Documents/2026/semi-stocks-2/canonical/10-wiki/sources/jstwng-nvidia-margin-illusion.md",
+      "directory": "sources",
+      "title": "Justin Wang \u2014 NVIDIA's Margin Illusion",
+      "summary": "X article (2026-04-12, 17K+ views) arguing NVIDIA's gross margin is a structural residual \u2014 the surplus left after paying supply-constrained monopolists (TSMC, HBM oligopoly) and before selling to ...",
+      "tags": [
+        "analysis",
+        "nvda",
+        "tsm",
+        "memory",
+        "hbm",
+        "margin",
+        "bilateral-monopoly",
+        "custom-asic",
+        "value-chain"
+      ],
+      "sources": [
+        "raw/jstwng-nvidia-margin-illusion.md"
+      ],
+      "created": "2026-04-13",
+      "updated": "2026-04-13",
+      "source_created": "",
+      "aliases": [],
+      "outlinks": [
+        "concepts/bottleneck-cascade",
+        "concepts/euv-tool-bottleneck",
+        "concepts/memory-supercycle",
+        "concepts/n3-wafer-crunch",
+        "concepts/nvda-margin-residual",
+        "outputs/baker-cyclicality-thesis",
+        "sources/nvda-q4-fy2026",
+        "sources/semianalysis-signals"
+      ],
+      "external_links": [],
       "dead_links": []
     },
     {

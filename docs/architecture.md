@@ -19,6 +19,7 @@ Canonical source-of-truth lane.
 - `canonical/30-thesis/` — narrow control plane
 - `canonical/40-engine/` — engine stage
 - `canonical/50-reports/` — published outputs
+- `canonical/wiki-site/` — generated integration/export bundle for the external Wikiwise app shell; not a canonical propagation stage
 
 ### `agents/`
 
@@ -52,6 +53,7 @@ Structured evidence lane.
 
 - `sources/` — structured source snapshots and position data
 - `companies/` — structured company-level models and claim-tracking state
+- `thesis-proposals/` — structured evidence staging for pending thesis patches before promotion to `30-thesis/thesis.yaml`. One YAML file per proposed change. Evidence from multiple sources accretes into each proposal. Status: `pending` → `applied` | `rejected`.
 
 `canonical/20-data/` does not own thesis or cross-lane process docs.
 
@@ -66,6 +68,10 @@ Canonical synthesis and rendering stage. The stage contains a package-safe `engi
 ### `canonical/50-reports/`
 
 Canonical published artifacts rendered from `canonical/40-engine/`. These are downstream outputs and stay separate from `canonical/10-wiki/outputs/`.
+
+### `canonical/wiki-site/`
+
+Generated Wikiwise integration/export bundle derived from canonical wiki state. This surface is repo-owned export output consumed by the external app shell, not a sixth canonical stage or a hand-maintained UI source tree.
 
 ## Principles
 

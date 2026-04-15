@@ -107,3 +107,26 @@ Updated `schema.md` to describe the canonical `canonical/10-wiki/` root, canonic
 ## [2026-04-10] root-path correction | wiki root references fixed
 
 Corrected the wiki-root references in `schema.md` and `index.md` so the wiki root now points to `../30-thesis/thesis.yaml` and `../20-data/sources/` from `canonical/10-wiki/`.
+
+## [2026-04-13] ingest | Justin Wang — NVIDIA's Margin Illusion
+
+Ingested X article by @jstwng (2026-04-12, 17K+ views) arguing NVIDIA's gross margin is a structural residual exposed to bilateral monopoly compression.
+
+- **Raw:** `raw/jstwng-nvidia-margin-illusion.md` (cleaned article text with footnotes and 28-source bibliography)
+- **Source:** `sources/jstwng-nvidia-margin-illusion.md` (synthesized: core argument, key data, substitutability ranking, 5 forward claims, ticker read-through for NVDA/TSM/MU/AVGO/AMD/ASML)
+- **Concept created:** `concepts/nvda-margin-residual.md` — new framework: NVIDIA margin as residual between supply-constrained monopolists and an oligopsony building alternatives. Vise mechanism, inverted multiples, counter-arguments.
+- **Concepts updated:** `concepts/bottleneck-cascade.md` (value capture vs. supply constraint section, Wang's substitutability ranking), `concepts/memory-supercycle.md` (margin residual signal, LNG contracting analogy, $53B NVDA purchase commitments), `concepts/n3-wafer-crunch.md` (TSMC pricing power signal — $877-922 per H100, 3-4% of ASP, structural repricing runway)
+
+Key thesis challenge: article argues CoWoS is still the *most* supply-constrained node (113% demand CAGR, zero alternatives), but value accrues to TSM pricing power rather than equipment suppliers. Thesis patch proposed but not applied — CoWoS "played_out" status refers to the trade, not the constraint.
+
+## [2026-04-13] query → output | Long-term AI hardware value chain thesis
+
+Filed `outputs/long-term-value-chain-thesis.md`. Synthesized Wang's margin-residual framework with Baker's cyclicality framework and existing cascade/positioning data.
+
+Key finding: Two independent analytical frameworks converge on the same directional call — rotate from chip design (NVDA) into physical infrastructure (TSM, ASML) over next 12 months. NVIDIA faces structural margin compression (bilateral monopoly vise) layered on cyclical multiple compression (Baker) layered on eventual revenue deceleration risk.
+
+Tiered framework: TSM + ASML (Tier 1, highest conviction), MU + AVGO (Tier 2, timing-dependent), NVDA + AMD (Tier 3, reduce/monitor). Three-phase rotation sequence: hold through peak shortage → exit NVDA on cycle-turn signals → buy TSM/ASML aggressively on cyclical drawdown.
+
+## [2026-04-13] rebuild-index | 22 pages indexed, 136 local links, 0 orphan pages, 0 dead links
+
+## [2026-04-13] rebuild-index | 23 pages indexed, 148 local links, 0 orphan pages, 0 dead links

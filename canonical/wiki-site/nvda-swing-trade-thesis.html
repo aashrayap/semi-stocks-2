@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NVDA Pre-Earnings Swing Trade &amp; Iron Condor Thesis — Wikiwise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-nvda-swing-trade-thesis">
+<header class="masthead">
+  <a class="masthead-mark" href="home.html">
+    <span class="masthead-mark-letter">W</span>
+    <span class="masthead-mark-words">
+      <span class="masthead-mark-word-primary">Wikiwise</span>
+    </span>
+  </a>
+  <div class="masthead-search">
+    <input id="search-input" type="search" placeholder="Search Wikiwise…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+</header>
+<div class="layout">
+<aside class="rail">
+<nav class="rail-nav"><h4>Navigate</h4><ul><li><a href="home.html">Home</a></li><li><a href="index.html">Catalog</a></li><li><a href="map-3d.html">Map</a></li><li><a href="log.html">Recent changes</a></li></ul></nav>
+<section class="toc-block"><h4>Contents</h4><div class="toc"><ul><li><a href="#thesis-summary">Thesis Summary</a></li><li><a href="#current-nvda-snapshot-april-7-2026">Current NVDA Snapshot (April 7, 2026)</a></li><li><a href="#earnings-history-pattern">Earnings History Pattern</a></li><li><a href="#fund-positioning-q4-2025-13f">Fund Positioning (Q4 2025 13F)</a></li><li><a href="#swing-trade-hard-rules">Swing Trade: Hard Rules</a></li><ul><li><a href="#entry">Entry</a></li><li><a href="#exit">Exit</a></li><li><a href="#position-sizing">Position Sizing</a></li></ul><li><a href="#iron-condor-range-bound-options-play">Iron Condor: Range-Bound Options Play</a></li><ul><li><a href="#structure">Structure</a></li><li><a href="#riskreward">Risk/Reward</a></li><li><a href="#management-rules">Management Rules</a></li><li><a href="#why-may-16-expiration">Why May 16 Expiration</a></li></ul><li><a href="#alternative-options-strategies">Alternative Options Strategies</a></li><li><a href="#what-breaks-the-range">What Breaks the Range</a></li><li><a href="#thesis-level-grounding">Thesis-Level Grounding</a></li><li><a href="#see-also">See Also</a></li></ul></div></section>
+</aside>
+<div class="article">
+<div class="article-head">
+  <h1 class="article-title">NVDA Pre-Earnings Swing Trade &amp; Iron Condor Thesis</h1>
+
+</div>
+<div class="article-body">
+<table class="infobox"><caption>Source</caption><tr><th>tags</th><td>[nvda, swing-trade, iron-condor, options, trade-plan]</td></tr><tr><th>sources</th><td>[sources/nvda-q4-fy2026, sources/baker-q4-2025, sources/leopold-q4-2025, sources/semianalysis-signals, concepts/bottleneck-cascade, concepts/n3-wafer-crunch]</td></tr><tr><th>created</th><td>2026-04-07</td></tr><tr><th>updated</th><td>2026-04-07</td></tr></table><p>Query: Can we exploit the $170-$190 range in NVDA before earnings, via a swing trade and/or an iron condor?</p>
+<p><strong>Verdict: Yes — the range is technically confirmed and fundamentally supported, but the window closes at earnings (~May 28).</strong></p>
+<h2 id="thesis-summary">Thesis Summary</h2>
+<p>NVDA is trading at ~$177.64, pinned between incredible fundamentals (21x forward P/E, 73% YoY revenue growth, $97B FCF) and macro headwinds (25% semiconductor tariffs, FTC antitrust probe, China competition). This tug-of-war creates a defined trading range.</p>
+<ul>
+<li><strong>$170 is confirmed support</strong> — tested 3x in Q1 2026, bounced each time</li>
+<li><strong>$185-190 is confirmed resistance</strong> — 50-day MA ($182.8) and 200-day MA ($184) form a ceiling; death cross in place</li>
+<li><strong>Baker holds $1B+</strong> including $902M in new call options — a whale buyer defending dips</li>
+<li><strong>Leopold exited entirely</strong> — rotated into CRWV, LITE, power names</li>
+</ul>
+<h2 id="current-nvda-snapshot-april-7-2026">Current NVDA Snapshot (April 7, 2026)</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Price</td>
+<td>$177.64</td>
+</tr>
+<tr>
+<td>52-week range</td>
+<td>$94.46 – $212.19</td>
+</tr>
+<tr>
+<td>Forward P/E</td>
+<td>~21x (5yr avg ~70x)</td>
+</tr>
+<tr>
+<td>PEG ratio</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>Trailing P/E</td>
+<td>~35x</td>
+</tr>
+<tr>
+<td>FY2026 revenue</td>
+<td>$215.9B (+65% YoY)</td>
+</tr>
+<tr>
+<td>Q1 FY2027 guide</td>
+<td>$78B (vs consensus $72.6B)</td>
+</tr>
+<tr>
+<td>Gross margin</td>
+<td>75.2% (non-GAAP)</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>$97B (FY2026)</td>
+</tr>
+<tr>
+<td>Supply commitments</td>
+<td>$95.2B (doubled QoQ)</td>
+</tr>
+<tr>
+<td>Next earnings</td>
+<td>~May 28, 2026</td>
+</tr>
+<tr>
+<td>IV rank</td>
+<td>12.10 (low)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="earnings-history-pattern">Earnings History Pattern</h2>
+<p>NVDA has beaten on both revenue and EPS for 8 consecutive quarters. But 4 of 8 post-earnings reactions were negative despite beating — short-term traders sell the event, institutions accumulate on dips.</p>
+<table>
+<thead>
+<tr>
+<th>Quarter</th>
+<th>Revenue</th>
+<th>Beat</th>
+<th>Post-Earnings Move</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1 FY25</td>
+<td>$26.0B</td>
+<td>+$1.4B</td>
+<td>+9.3%</td>
+</tr>
+<tr>
+<td>Q2 FY25</td>
+<td>$30.0B</td>
+<td>+$1.3B</td>
+<td>-6.4%</td>
+</tr>
+<tr>
+<td>Q3 FY25</td>
+<td>$35.1B</td>
+<td>+$1.9B</td>
+<td>+0.5%</td>
+</tr>
+<tr>
+<td>Q4 FY25</td>
+<td>$39.3B</td>
+<td>+$1.0B</td>
+<td>-8.5%</td>
+</tr>
+<tr>
+<td>Q1 FY26</td>
+<td>$44.1B</td>
+<td>+$0.9B</td>
+<td>+6% (AH)</td>
+</tr>
+<tr>
+<td>Q2 FY26</td>
+<td>$46.7B</td>
+<td>+$0.7B</td>
+<td>-3%</td>
+</tr>
+<tr>
+<td>Q3 FY26</td>
+<td>$57.0B</td>
+<td>+$1.8B</td>
+<td>+2.9%</td>
+</tr>
+<tr>
+<td>Q4 FY26</td>
+<td>$68.1B</td>
+<td>+$1.9B</td>
+<td>-5.5%</td>
+</tr>
+</tbody>
+</table>
+<p>Revenue growth re-accelerated on the Blackwell ramp: QoQ from +6% (Q2 FY26) to +20-22% (Q3/Q4 FY26).</p>
+<h2 id="fund-positioning-q4-2025-13f">Fund Positioning (Q4 2025 13F)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Baker</th>
+<th>Leopold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Position</td>
+<td>$1B+ (common + $902M new calls)</td>
+<td><strong>Exited</strong></td>
+</tr>
+<tr>
+<td>Thesis</td>
+<td>Chip supply = bottleneck, NVDA = pricing power</td>
+<td>Downstream deployment is where value accrues</td>
+</tr>
+<tr>
+<td>Conviction</td>
+<td>Very high</td>
+<td>Negative (rotated into CRWV, LITE, power)</td>
+</tr>
+</tbody>
+</table>
+<p>This is the clearest thesis disagreement. Both can be right on different time horizons, but Baker’s massive position provides a floor — he’s accumulating on any weakness.</p>
+<h2 id="swing-trade-hard-rules">Swing Trade: Hard Rules</h2>
+<h3 id="entry">Entry</h3>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVDA touches $170-172</td>
+<td><strong>BUY</strong> (primary entry, limit at $171)</td>
+</tr>
+<tr>
+<td>NVDA drops 3%+ intraday from above $175, driven by broad market/macro</td>
+<td><strong>BUY</strong> (secondary entry)</td>
+</tr>
+<tr>
+<td>NVDA drops 3%+ on NVDA-specific bad news (antitrust action, export ban)</td>
+<td><strong>WAIT</strong></td>
+</tr>
+<tr>
+<td>VIX &gt; 30</td>
+<td>Wait for 2 consecutive green days on SPY before entering</td>
+</tr>
+<tr>
+<td>NVDA weak but SMH holds</td>
+<td>Caution — weakness is NVDA-specific, not sector</td>
+</tr>
+</tbody>
+</table>
+<h3 id="exit">Exit</h3>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVDA reaches $183-185</td>
+<td><strong>SELL half</strong> (approaching 50/200 DMA resistance)</td>
+</tr>
+<tr>
+<td>NVDA reaches $185+</td>
+<td><strong>SELL remaining</strong> (or trail stop at $180)</td>
+</tr>
+<tr>
+<td>NVDA closes below $165</td>
+<td><strong>STOP OUT</strong> ($170 support broken, next level $155-160)</td>
+</tr>
+<tr>
+<td>May 20 (any price)</td>
+<td><strong>EXIT ALL</strong> (hard time stop, 1 week before earnings)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="position-sizing">Position Sizing</h3>
+<ul>
+<li>Risk no more than 5% of trading capital</li>
+<li>Entry at $172, stop at $165 = $7 downside/share</li>
+<li>Target at $183 = $11 upside/share (1.6:1 reward/risk)</li>
+</ul>
+<h2 id="iron-condor-range-bound-options-play">Iron Condor: Range-Bound Options Play</h2>
+<p>The thesis “NVDA stays between $170 and $190” maps to an <strong>iron condor</strong> — selling volatility within a defined range.</p>
+<h3 id="structure">Structure</h3>
+<table>
+<thead>
+<tr>
+<th>Leg</th>
+<th>Strike</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Long put (protection)</td>
+<td>$160</td>
+<td>Buy</td>
+</tr>
+<tr>
+<td>Short put (floor)</td>
+<td>$170</td>
+<td>Sell</td>
+</tr>
+<tr>
+<td>Short call (ceiling)</td>
+<td>$190</td>
+<td>Sell</td>
+</tr>
+<tr>
+<td>Long call (protection)</td>
+<td>$200</td>
+<td>Buy</td>
+</tr>
+<tr>
+<td><strong>Expiration</strong></td>
+<td><strong>May 16, 2026</strong></td>
+<td><strong>Before earnings</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="riskreward">Risk/Reward</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Estimated net credit</td>
+<td>~$2.40 – $3.00 ($240-300/contract)</td>
+</tr>
+<tr>
+<td>Max loss</td>
+<td>~$7.00 – $7.60 ($700-760/contract)</td>
+</tr>
+<tr>
+<td>Lower break-even</td>
+<td>~$167.30</td>
+</tr>
+<tr>
+<td>Upper break-even</td>
+<td>~$192.70</td>
+</tr>
+<tr>
+<td>Probability of profit</td>
+<td>~55-65%</td>
+</tr>
+<tr>
+<td>Capital at risk</td>
+<td>~$730/contract</td>
+</tr>
+</tbody>
+</table>
+<h3 id="management-rules">Management Rules</h3>
+<ul>
+<li>Close at 50% of max profit (~$135) to improve win rate</li>
+<li>Close if loss reaches 2x credit (~$540) — don’t ride to max loss</li>
+<li>Need ~3 wins to offset 1 max loss at full width</li>
+</ul>
+<h3 id="why-may-16-expiration">Why May 16 Expiration</h3>
+<ul>
+<li>39 DTE = sweet spot for theta decay</li>
+<li><strong>Expires before earnings (~May 28)</strong> — avoids the 8-12% binary move</li>
+<li>Monthly expiration = best liquidity, tightest bid-ask spreads</li>
+<li>IV rank is low (12.10) so premium isn’t huge, but the range is tight enough to work</li>
+</ul>
+<h2 id="alternative-options-strategies">Alternative Options Strategies</h2>
+<table>
+<thead>
+<tr>
+<th>Strategy</th>
+<th>When to Use</th>
+<th>Credit</th>
+<th>Max Loss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Put credit spread</strong> ($170/$160)</td>
+<td>Bullish — “won’t drop below $170” but might rally above $190</td>
+<td>~$1.50</td>
+<td>~$8.50</td>
+</tr>
+<tr>
+<td><strong>Cash-secured put</strong> at $170</td>
+<td>Want to own NVDA at ~$167 effective cost</td>
+<td>~$2.30</td>
+<td>Stock goes to $0</td>
+</tr>
+<tr>
+<td><strong>Covered call</strong> at $190 (if you own shares)</td>
+<td>Generate income, cap upside at $190</td>
+<td>~$2.00</td>
+<td>Full downside exposure</td>
+</tr>
+<tr>
+<td><strong>Short strangle</strong> ($170/$190)</td>
+<td>Same range thesis, more credit, unlimited risk</td>
+<td>~$4.30</td>
+<td>Unlimited (upside)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-breaks-the-range">What Breaks the Range</h2>
+<p><strong>Upward (above $190):</strong></p>
+<ul>
+<li>Q1 FY2027 earnings beat + guidance raise (late May)</li>
+<li>Rubin production ahead of schedule</li>
+<li>Major new AI customer announcement</li>
+<li>Tariff reduction / trade deal</li>
+</ul>
+<p><strong>Downward (below $170):</strong></p>
+<ul>
+<li>New tariff escalation (50%+ or full China ban)</li>
+<li>FTC antitrust enforcement action (not just investigation)</li>
+<li>Hyperscaler capex cut announcement</li>
+<li>Broader market crash (SPY -10%+)</li>
+</ul>
+<h2 id="thesis-level-grounding">Thesis-Level Grounding</h2>
+<p>From <a class="wikilink missing" data-slug="concepts/bottleneck-cascade" href="concepts/bottleneck-cascade.html">concepts/bottleneck-cascade</a>: NVDA sits at the intersection of three active bottlenecks — <a class="wikilink missing" data-slug="concepts/n3-wafer-crunch" href="concepts/n3-wafer-crunch.html">concepts/n3-wafer-crunch</a>, <a class="wikilink missing" data-slug="concepts/memory-supercycle" href="concepts/memory-supercycle.html">concepts/memory-supercycle</a>, and <a class="wikilink missing" data-slug="concepts/pluggable-optics" href="concepts/pluggable-optics.html">concepts/pluggable-optics</a>. The <a class="wikilink missing" data-slug="concepts/token-economics" href="concepts/token-economics.html">concepts/token-economics</a> framework (“compute = revenue”) means GPU demand compounds indefinitely. At 21x forward P/E with $500B revenue visibility and $95.2B in supply commitments, the fundamental floor is real. The stock is compressed by temporary headwinds (tariffs, sentiment), not structural deterioration.</p>
+<p><a class="wikilink missing" data-slug="sources/semianalysis-signals" href="sources/semianalysis-signals.html">sources/semianalysis-signals</a>: N3 utilization 100%+ in H2 2026, AI = 60% of output (86% by 2027). NVDA has the strongest demand curve against constrained supply.</p>
+<p>The swing and the iron condor are complementary. The swing captures directional upside ($170 → $185 = ~8%). The iron condor captures time decay within the range. Both close before earnings.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a class="wikilink missing" data-slug="concepts/bottleneck-cascade" href="concepts/bottleneck-cascade.html">concepts/bottleneck-cascade</a></li>
+<li><a class="wikilink missing" data-slug="concepts/n3-wafer-crunch" href="concepts/n3-wafer-crunch.html">concepts/n3-wafer-crunch</a></li>
+<li><a class="wikilink missing" data-slug="concepts/token-economics" href="concepts/token-economics.html">concepts/token-economics</a></li>
+<li><a class="wikilink missing" data-slug="sources/nvda-q4-fy2026" href="sources/nvda-q4-fy2026.html">sources/nvda-q4-fy2026</a></li>
+<li><a class="wikilink missing" data-slug="sources/baker-q4-2025" href="sources/baker-q4-2025.html">sources/baker-q4-2025</a></li>
+<li><a class="wikilink missing" data-slug="sources/leopold-q4-2025" href="sources/leopold-q4-2025.html">sources/leopold-q4-2025</a></li>
+<li><a class="wikilink missing" data-slug="sources/semianalysis-signals" href="sources/semianalysis-signals.html">sources/semianalysis-signals</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<script src="search.json.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NVDA Margin as Residual — Wikiwise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-nvda-margin-residual">
+<header class="masthead">
+  <a class="masthead-mark" href="home.html">
+    <span class="masthead-mark-letter">W</span>
+    <span class="masthead-mark-words">
+      <span class="masthead-mark-word-primary">Wikiwise</span>
+    </span>
+  </a>
+  <div class="masthead-search">
+    <input id="search-input" type="search" placeholder="Search Wikiwise…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+</header>
+<div class="layout">
+<aside class="rail">
+<nav class="rail-nav"><h4>Navigate</h4><ul><li><a href="home.html">Home</a></li><li><a href="index.html">Catalog</a></li><li><a href="map-3d.html">Map</a></li><li><a href="log.html">Recent changes</a></li></ul></nav>
+<section class="toc-block"><h4>Contents</h4><div class="toc"><ul><li><a href="#the-framework">The Framework</a></li><li><a href="#the-vise-mechanism">The Vise Mechanism</a></li><li><a href="#evidence-of-compression">Evidence of Compression</a></li><li><a href="#inverted-multiples">Inverted Multiples</a></li><li><a href="#relationship-to-bottleneck-cascade">Relationship to Bottleneck Cascade</a></li><li><a href="#counter-arguments">Counter-Arguments</a></li><li><a href="#see-also">See also</a></li></ul></div></section>
+</aside>
+<div class="article">
+<div class="article-head">
+  <h1 class="article-title">NVDA Margin as Residual</h1>
+
+</div>
+<div class="article-body">
+<table class="infobox"><caption>Source</caption><tr><th>tags</th><td>[nvda, margin, bilateral-monopoly, value-chain, pricing-power, thesis]</td></tr><tr><th>sources</th><td>[raw/jstwng-nvidia-margin-illusion.md]</td></tr><tr><th>created</th><td>2026-04-13</td></tr><tr><th>updated</th><td>2026-04-13</td></tr></table><p>NVIDIA’s gross margin is not a moat — it is a residual. The surplus left over after paying two supply-constrained monopolists (TSMC for fabrication + packaging, the HBM oligopoly for memory) and before selling to four hyperscalers who are building their own alternatives. The margin compresses from both directions simultaneously.</p>
+<h2 id="the-framework">The Framework</h2>
+<p>NVIDIA captures ~75% of the GPU selling price while contributing ~14% of the physical BoM. The gap is its vulnerability:</p>
+<pre><code>GPU selling price ($30-40K)
+  minus TSMC fab + CoWoS (~$877-922, 3-4% of ASP)
+  minus HBM ($2,900, 45% of BoM)
+  minus packaging yield + substrate + interposer
+  = NVIDIA's residual margin
+</code></pre>
+<p>Both the numerator (ASP) and denominator (costs) are controlled by concentrated counterparties with independent pricing power:</p>
+<ul>
+<li><strong>Suppliers</strong> (TSMC, SK Hynix, Samsung, Micron) are monopolists/oligopolists charging below their theoretical maximums, anchored to pre-AI pricing norms</li>
+<li><strong>Customers</strong> (MSFT, GOOGL, AMZN, META) form an oligopsony paying above long-run willingness, sustained by a CapEx race no one can exit first</li>
+</ul>
+<h2 id="the-vise-mechanism">The Vise Mechanism</h2>
+<p>NVIDIA cannot pass supplier cost increases through to customers because the customer base has growing alternatives. This creates a structural vise:</p>
+<p><strong>From below (suppliers tightening):</strong></p>
+<ul>
+<li>TSMC: 5-10% annual sub-5nm price hikes, CoWoS packaging monopoly (zero alternatives at scale, 113% demand CAGR)</li>
+<li>HBM vendors: ~20% price increases on HBM3E contracts for 2026, long-term contracts replacing spot</li>
+<li>Each supplier layer reprices independently; the increases compound against NVIDIA’s margin</li>
+</ul>
+<p><strong>From above (customer alternatives growing):</strong></p>
+<ul>
+<li>Google TPU v7: 4,614 FP8 TFLOPS, matching B200 (4,500) on compute density</li>
+<li>Amazon Trainium2: ~$1/hr vs $3/hr for H100, Trainium3 at 4x</li>
+<li>AMD MI355X: cost-per-token below GB300 NVL72 at high concurrency (SemiAnalysis InferenceX)</li>
+<li>Microsoft Maia 200 deploying in Azure</li>
+<li>Broadcom: $53B custom ASIC backlog from hyperscalers</li>
+</ul>
+<p>Custom ASICs do not need to win market share to compress NVIDIA’s margin. They only need to exist as a credible BATNA (Nash/Rubinstein bargaining theory). The threat disciplines pricing even if ASIC share plateaus at 20-25%.</p>
+<h2 id="evidence-of-compression">Evidence of Compression</h2>
+<p>NVIDIA GAAP gross margin: 75.0% (FY2025) → 71.1% (FY2026). Management guided “mid-70s” going forward. Street consensus models 74% → 71% over 5 years, which likely understates the bilateral pressure magnitude.</p>
+<p>The compression compounds:</p>
+<ul>
+<li>TSMC + HBM vendors raise input costs → NVIDIA can absorb (margin compression) or pass through (demand destruction / ASIC acceleration)</li>
+<li>Hyperscaler BATNA improves each year → NVIDIA’s pass-through ability declines</li>
+<li>The prisoner’s dilemma CapEx race temporarily sustains NVIDIA’s ASP, but when spending rationalizes, the highest-margin supplier is first to be renegotiated</li>
+</ul>
+<h2 id="inverted-multiples">Inverted Multiples</h2>
+<p>The market prices the stack inversely to structural positioning:</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Substitutability</th>
+<th>Constraint Duration</th>
+<th>Multiple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CoWoS packaging</td>
+<td>None at scale</td>
+<td>2+ years to expand</td>
+<td>Buried in TSM (~25x fwd)</td>
+</tr>
+<tr>
+<td>HBM memory</td>
+<td>3-player oligopoly</td>
+<td>Sold out through 2027</td>
+<td>5-12x fwd P/E</td>
+</tr>
+<tr>
+<td>N3 logic fabrication</td>
+<td>TSM 92% share</td>
+<td>18-24 month expandable</td>
+<td>TSM ~25x fwd P/E</td>
+</tr>
+<tr>
+<td>GPU/accelerator design</td>
+<td>Growing alternatives</td>
+<td>Credible BATNA exists</td>
+<td>NVDA 37x trailing</td>
+</tr>
+</tbody>
+</table>
+<p>The most competitively exposed layer commands the highest multiple. The most structurally entrenched layers trade at the deepest discounts.</p>
+<h2 id="relationship-to-bottleneck-cascade">Relationship to Bottleneck Cascade</h2>
+<p>This concept complements the <a class="wikilink missing" data-slug="concepts/bottleneck-cascade" href="concepts/bottleneck-cascade.html">concepts/bottleneck-cascade</a> by adding a <em>value capture</em> dimension to the <em>supply constraint</em> dimension. The cascade tracks which bottleneck is binding; this concept tracks who captures the surplus generated at each node.</p>
+<p>Key insight: the CoWoS bottleneck was marked “played_out” as a trade (ASX/AMAT), but CoWoS remains the mechanism through which TSMC’s pricing power compounds. The beneficiary rotated from equipment suppliers to TSMC itself.</p>
+<h2 id="counter-arguments">Counter-Arguments</h2>
+<ul>
+<li><strong>CUDA moat is real:</strong> Software ecosystem switching costs remain high for training workloads. NVIDIA may retain pricing power longer than the bilateral monopoly model predicts.</li>
+<li><strong>Revenue growth may offset margin compression:</strong> If NVIDIA grows data center revenue from $115B to $200B+, EPS can grow even as margins compress.</li>
+<li><strong>Hyperscaler CapEx race may persist:</strong> As long as no individual player can afford to pull back, NVIDIA’s ASP stays elevated regardless of theoretical alternatives.</li>
+<li><strong>ASIC track record is mixed:</strong> Amazon swapped ASIC partners (Marvell → Alchip), Maia is late, MTIA is nascent. Rapid model architecture shifts (dense → MoE, test-time compute) undermine ASIC design cycles.</li>
+</ul>
+<h2 id="see-also">See also</h2>
+<p><a class="wikilink missing" data-slug="concepts/bottleneck-cascade" href="concepts/bottleneck-cascade.html">concepts/bottleneck-cascade</a>, <a class="wikilink missing" data-slug="concepts/memory-supercycle" href="concepts/memory-supercycle.html">concepts/memory-supercycle</a>, <a class="wikilink missing" data-slug="concepts/n3-wafer-crunch" href="concepts/n3-wafer-crunch.html">concepts/n3-wafer-crunch</a>, <a class="wikilink missing" data-slug="concepts/euv-tool-bottleneck" href="concepts/euv-tool-bottleneck.html">concepts/euv-tool-bottleneck</a>, <a class="wikilink missing" data-slug="sources/jstwng-nvidia-margin-illusion" href="sources/jstwng-nvidia-margin-illusion.html">sources/jstwng-nvidia-margin-illusion</a>, <a class="wikilink missing" data-slug="sources/nvda-q4-fy2026" href="sources/nvda-q4-fy2026.html">sources/nvda-q4-fy2026</a>, <a class="wikilink missing" data-slug="outputs/baker-cyclicality-thesis" href="outputs/baker-cyclicality-thesis.html">outputs/baker-cyclicality-thesis</a></p>
+
+</div>
+</div>
+</div>
+<script src="search.json.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

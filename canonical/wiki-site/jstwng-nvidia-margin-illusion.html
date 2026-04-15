@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Justin Wang — NVIDIA's Margin Illusion — Wikiwise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-jstwng-nvidia-margin-illusion">
+<header class="masthead">
+  <a class="masthead-mark" href="home.html">
+    <span class="masthead-mark-letter">W</span>
+    <span class="masthead-mark-words">
+      <span class="masthead-mark-word-primary">Wikiwise</span>
+    </span>
+  </a>
+  <div class="masthead-search">
+    <input id="search-input" type="search" placeholder="Search Wikiwise…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+</header>
+<div class="layout">
+<aside class="rail">
+<nav class="rail-nav"><h4>Navigate</h4><ul><li><a href="home.html">Home</a></li><li><a href="index.html">Catalog</a></li><li><a href="map-3d.html">Map</a></li><li><a href="log.html">Recent changes</a></li></ul></nav>
+<section class="toc-block"><h4>Contents</h4><div class="toc"><ul><li><a href="#core-argument">Core Argument</a></li><li><a href="#key-data-points">Key Data Points</a></li><li><a href="#substitutability-ranking-wangs-framework">Substitutability Ranking (Wang’s Framework)</a></li><li><a href="#forward-claims">Forward Claims</a></li><li><a href="#thesis-signal">Thesis Signal</a></li><li><a href="#ticker-read-through">Ticker Read-Through</a></li><li><a href="#see-also">See also</a></li></ul></div></section>
+</aside>
+<div class="article">
+<div class="article-head">
+  <h1 class="article-title">Justin Wang — NVIDIA's Margin Illusion</h1>
+
+</div>
+<div class="article-body">
+<table class="infobox"><caption>Source</caption><tr><th>tags</th><td>[analysis, nvda, tsm, memory, hbm, margin, bilateral-monopoly, custom-asic, value-chain]</td></tr><tr><th>sources</th><td>[raw/jstwng-nvidia-margin-illusion.md]</td></tr><tr><th>created</th><td>2026-04-13</td></tr><tr><th>updated</th><td>2026-04-13</td></tr></table><p>X article (2026-04-12, 17K+ views) arguing NVIDIA’s gross margin is a structural residual — the surplus left after paying supply-constrained monopolists (TSMC, HBM oligopoly) and before selling to an oligopsony of hyperscalers that are building in-house alternatives. The margin is compressing from both directions and the market has not priced it.</p>
+<h2 id="core-argument">Core Argument</h2>
+<p>NVIDIA captures 75%+ of the GPU selling price while contributing only ~14% of the BoM. The other 86% flows to suppliers with independent pricing power who currently charge below their theoretical maximums, anchored to pre-AI pricing norms. NVIDIA’s margin is the variable that absorbs pressure from every other stack layer — it is a residual, not a moat.</p>
+<p>The squeeze operates as a vise:</p>
+<ul>
+<li><strong>From below:</strong> TSMC raises fab + CoWoS prices 5-10% annually; HBM vendors raise memory prices 20%+</li>
+<li><strong>From above:</strong> Hyperscaler custom silicon (TPU v7, Trainium2/3, Maia 200, AMD MI300X) provides credible BATNA that disciplines NVIDIA’s pricing even if ASICs never capture majority share</li>
+<li><strong>NVIDIA absorbs both</strong> because it cannot fully pass through supplier increases to customers who have growing alternatives</li>
+</ul>
+<h2 id="key-data-points">Key Data Points</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H100 production cost</td>
+<td>~$6,400</td>
+<td>[1]</td>
+</tr>
+<tr>
+<td>H100 selling price</td>
+<td>$30,000-$40,000</td>
+<td>[1]</td>
+</tr>
+<tr>
+<td>NVIDIA BoM contribution</td>
+<td>~14%</td>
+<td>[1]</td>
+</tr>
+<tr>
+<td>HBM cost per GPU</td>
+<td>$2,900 (45% of BoM)</td>
+<td>[1]</td>
+</tr>
+<tr>
+<td>TSMC revenue per H100</td>
+<td>$877-$922 (3-4% of selling price)</td>
+<td>[2]</td>
+</tr>
+<tr>
+<td>CoWoS capacity (early 2026)</td>
+<td>~75K wafers/month</td>
+<td>[5]</td>
+</tr>
+<tr>
+<td>CoWoS demand CAGR</td>
+<td>113%</td>
+<td>[6]</td>
+</tr>
+<tr>
+<td>NVDA GAAP gross margin FY2025 → FY2026</td>
+<td>75.0% → 71.1%</td>
+<td>[14]</td>
+</tr>
+<tr>
+<td>NVDA data center revenue FY2026</td>
+<td>~$115B</td>
+<td>[14]</td>
+</tr>
+<tr>
+<td>NVDA memory purchase commitments</td>
+<td>$53B ($25B+ beyond next quarter)</td>
+<td>article</td>
+</tr>
+<tr>
+<td>TPU v7 (Ironwood) FP8</td>
+<td>4,614 TFLOPS (vs B200 4,500)</td>
+<td>[27]</td>
+</tr>
+<tr>
+<td>Trainium2 cost per chip-hour</td>
+<td>~$1/hr (vs H100 ~$3/hr)</td>
+<td>[17][18]</td>
+</tr>
+<tr>
+<td>AMD MI355X cost-per-token</td>
+<td>Below GB300 NVL72 at high concurrency</td>
+<td>[28]</td>
+</tr>
+<tr>
+<td>Broadcom ASIC backlog</td>
+<td>$73B (~$53B custom AI accelerators)</td>
+<td>[15]</td>
+</tr>
+<tr>
+<td>NVDA trailing P/E</td>
+<td>37x</td>
+<td>[14]</td>
+</tr>
+<tr>
+<td>TSM forward P/E</td>
+<td>~25x</td>
+<td>[24]</td>
+</tr>
+<tr>
+<td>Memory forward P/E</td>
+<td>5-12x</td>
+<td>[24]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="substitutability-ranking-wangs-framework">Substitutability Ranking (Wang’s Framework)</h2>
+<ol>
+<li><strong>CoWoS packaging</strong> — most supply-constrained, least substitutable. Zero alternatives at scale. Every AI chip globally (NVIDIA, Google, Amazon, AMD, Broadcom ASIC) routes through TSMC advanced packaging.</li>
+<li><strong>HBM memory</strong> — 3-player oligopoly (SK Hynix, Samsung, Micron), 95%+ share, sold out through 2027, long-term contracts replacing spot.</li>
+<li><strong>Leading-edge logic (N3/N2)</strong> — TSMC 92% share sub-5nm, but capacity expandable on 18-24 month timelines. Less acute than packaging or memory.</li>
+<li><strong>GPU/accelerator design</strong> — most substitutable. NVIDIA dominant in training (CUDA), but hyperscaler custom silicon provides credible outside option that disciplines pricing.</li>
+</ol>
+<p>This ranking inverts the market’s valuation multiples: the most substitutable layer (NVDA) trades at the highest multiple while the least substitutable (TSM packaging, memory) trade at the deepest discounts.</p>
+<h2 id="forward-claims">Forward Claims</h2>
+<ul>
+<li>“TSMC’s repricing trajectory has structural room to run for years before approaching the theoretical ceiling” — verify against TSMC pricing actions through 2027</li>
+<li>“NVIDIA’s GAAP gross margin has already compressed from 75.0% in FY2025 to 71.1% for FY2026” — verify at NVDA Q1 FY2027 (2026-05-28)</li>
+<li>“Custom ASICs do not need to succeed at scale to compress NVIDIA’s margin — they need only exist as a credible alternative” — verify against NVDA margin trajectory vs. ASIC deployment cadence</li>
+<li>“Street-consensus DCF models (gross margin declining from 74% to 71% over five years) understate the magnitude of bilateral pressure” — verify against actual margin trajectory</li>
+<li>“HBM contracting is trending toward LNG-style long-term agreements, which should compress the cyclical discount on memory multiples” — verify against MU/SK Hynix P/E re-rating</li>
+</ul>
+<h2 id="thesis-signal">Thesis Signal</h2>
+<p><strong>Confirms:</strong></p>
+<ul>
+<li><a class="wikilink missing" data-slug="concepts/memory-supercycle" href="concepts/memory-supercycle.html">concepts/memory-supercycle</a> — HBM as 45% of GPU BoM, 20% price increases, $53B NVDA purchase commitments, long-term contracting reduces cyclical volatility</li>
+<li><a class="wikilink missing" data-slug="concepts/n3-wafer-crunch" href="concepts/n3-wafer-crunch.html">concepts/n3-wafer-crunch</a> — TSMC N3 pricing power under-exercised, 5-10% annual hikes, 92% sub-5nm share</li>
+<li><a class="wikilink missing" data-slug="concepts/euv-tool-bottleneck" href="concepts/euv-tool-bottleneck.html">concepts/euv-tool-bottleneck</a> — ASML bilateral monopoly with TSMC, pricing below theoretical maximum, compounding repricing at each stack layer</li>
+</ul>
+<p><strong>Challenges:</strong></p>
+<ul>
+<li>CoWoS “played_out” thesis status — Wang argues CoWoS is the <em>most</em> supply-constrained and least substitutable node, with 113% demand CAGR and zero alternatives. The trade (ASX/AMAT) may be played out, but CoWoS constraint is the mechanism through which TSMC’s pricing power compounds. Suggests CoWoS capacity constraint should be tracked as a TSM pricing power signal rather than a separate bottleneck trade.</li>
+</ul>
+<p><strong>New signal:</strong></p>
+<ul>
+<li><a class="wikilink missing" data-slug="concepts/nvda-margin-residual" href="concepts/nvda-margin-residual.html">concepts/nvda-margin-residual</a> — NVIDIA margin as structural residual. The margin-as-residual framework is the key analytical addition: it reframes NVDA’s gross margin from “pricing power” to “what’s left after paying monopolists and before selling to an oligopsony building alternatives.” This is bearish NVDA margin on a 2-3 year horizon even if revenue continues growing.</li>
+</ul>
+<p><strong>Valuation signal:</strong></p>
+<ul>
+<li>Market multiples are inverted relative to structural positioning: NVDA 37x (most substitutable) &gt; TSM 25x (least substitutable) &gt; Memory 5-12x (oligopoly with long-term contracts). Wang argues the physical infrastructure layers are underweight.</li>
+</ul>
+<h2 id="ticker-read-through">Ticker Read-Through</h2>
+<table>
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Signal</th>
+<th>Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVDA</td>
+<td>Margin is a residual, compressing from both sides. Revenue may grow but margin ceiling is structural.</td>
+<td>Bearish margin, neutral-to-bullish revenue</td>
+</tr>
+<tr>
+<td>TSM</td>
+<td>Pricing power under-exercised. CoWoS monopoly + 92% sub-5nm = structural repricing runway. 25x fwd P/E is a discount.</td>
+<td>Bullish</td>
+</tr>
+<tr>
+<td>MU</td>
+<td>HBM oligopoly durability, long-term contracting, 5-8x fwd P/E embeds cyclical discount the business may no longer warrant.</td>
+<td>Bullish (re-rating thesis)</td>
+</tr>
+<tr>
+<td>AVGO</td>
+<td>$73B backlog ($53B custom ASIC). Broadcom benefits from hyperscaler custom silicon programs that compress NVDA margin.</td>
+<td>Bullish (ASIC design partner)</td>
+</tr>
+<tr>
+<td>AMD</td>
+<td>MI355X cost-per-token below GB300 NVL72 at high concurrency. Hyperscalers have structural motivation to buoy AMD as second source.</td>
+<td>Bullish (NVDA margin discipline)</td>
+</tr>
+<tr>
+<td>ASML</td>
+<td>Bilateral monopoly with TSMC, pricing below maximum. Repricing at each stack layer compounds.</td>
+<td>Bullish (under-exercised pricing power)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="see-also">See also</h2>
+<p><a class="wikilink missing" data-slug="concepts/nvda-margin-residual" href="concepts/nvda-margin-residual.html">concepts/nvda-margin-residual</a>, <a class="wikilink missing" data-slug="concepts/bottleneck-cascade" href="concepts/bottleneck-cascade.html">concepts/bottleneck-cascade</a>, <a class="wikilink missing" data-slug="concepts/memory-supercycle" href="concepts/memory-supercycle.html">concepts/memory-supercycle</a>, <a class="wikilink missing" data-slug="concepts/n3-wafer-crunch" href="concepts/n3-wafer-crunch.html">concepts/n3-wafer-crunch</a>, <a class="wikilink missing" data-slug="concepts/euv-tool-bottleneck" href="concepts/euv-tool-bottleneck.html">concepts/euv-tool-bottleneck</a>, <a class="wikilink missing" data-slug="sources/nvda-q4-fy2026" href="sources/nvda-q4-fy2026.html">sources/nvda-q4-fy2026</a>, <a class="wikilink missing" data-slug="sources/semianalysis-signals" href="sources/semianalysis-signals.html">sources/semianalysis-signals</a>, <a class="wikilink missing" data-slug="outputs/baker-cyclicality-thesis" href="outputs/baker-cyclicality-thesis.html">outputs/baker-cyclicality-thesis</a></p>
+
+</div>
+</div>
+</div>
+<script src="search.json.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 ---
 title: Memory Supercycle
 tags: [memory, hbm, dram, bottleneck]
-sources: [../../30-thesis/thesis.yaml, ../../20-data/sources/semianalysis/signals.yaml]
+sources: [../../30-thesis/thesis.yaml, ../../20-data/sources/semianalysis/signals.yaml, raw/jstwng-nvidia-margin-illusion.md]
 created: 2026-04-07
-updated: 2026-04-08
+updated: 2026-04-13
 ---
 
 # Memory Supercycle
@@ -30,6 +30,10 @@ AI is consuming so much memory that there isn't enough left for phones, PCs, and
 - The constraint is not just bits per wafer. It is bandwidth per chip edge, memory locality, and how much compute gets stranded while waiting on data.
 - AI can tolerate some slower inference tiers, but the highest-value workloads still prefer speed, so the market keeps bidding for HBM instead of switching cleanly to commodity DRAM.
 
+## Margin Residual Signal
+
+HBM is 45% of GPU production cost and the share rises with each generation (80 GB → 288 GB HBM per GPU across three architectural generations, 3.6x). Samsung and SK Hynix negotiated ~20% price increases on HBM3E contracts for 2026. NVIDIA has $53B in memory purchase commitments ($25B+ beyond next quarter) — securing allocation on the oligopoly's terms. The transition from spot pricing to long-term contracts (paralleling LNG market restructuring) compresses the cyclical volatility that historically justified deep P/E discounts on memory stocks. Current 5-8x forward P/E multiples may embed a cyclical discount that the underlying business structure no longer warrants. See [[concepts/nvda-margin-residual]].
+
 ## Source Positioning
 
 - **Baker:** Long MU ($411M) + put hedge. Believes memory is binding.
@@ -49,4 +53,4 @@ AI is consuming so much memory that there isn't enough left for phones, PCs, and
 - **CRWV Q4 2025:** Every GPU CRWV deploys needs HBM. $30-35B capex = substantial HBM demand pull-through.
 - **NVDA Q4 FY2026:** $21.4B inventory (HBM stockpile). Every GPU shipped needs HBM — NVIDIA GPU volumes are the primary demand driver.
 
-See also: [[concepts/bottleneck-cascade]], [[concepts/euv-tool-bottleneck]], [[concepts/n3-wafer-crunch]], [[sources/crwv-q4-2025]], [[sources/dwarkesh-dylan-ai-infrastructure-bottlenecks]], [[sources/mu-q2-fy2026]], [[sources/nvda-q4-fy2026]]
+See also: [[concepts/bottleneck-cascade]], [[concepts/euv-tool-bottleneck]], [[concepts/n3-wafer-crunch]], [[concepts/nvda-margin-residual]], [[sources/crwv-q4-2025]], [[sources/dwarkesh-dylan-ai-infrastructure-bottlenecks]], [[sources/jstwng-nvidia-margin-illusion]], [[sources/mu-q2-fy2026]], [[sources/nvda-q4-fy2026]]

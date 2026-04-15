@@ -4,13 +4,16 @@
     "concepts/euv-tool-bottleneck",
     "concepts/memory-supercycle",
     "concepts/n3-wafer-crunch",
+    "concepts/nvda-margin-residual",
     "concepts/pluggable-optics",
     "concepts/token-economics",
     "outputs/baker-cyclicality-thesis",
+    "outputs/long-term-value-chain-thesis",
     "outputs/nvda-swing-trade-thesis",
     "sources/baker-q4-2025",
     "sources/crwv-q4-2025",
     "sources/dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "sources/jstwng-nvidia-margin-illusion",
     "sources/leopold-q4-2025",
     "sources/nvda-q4-fy2026",
     "sources/semianalysis-signals"
@@ -26,17 +29,23 @@
     "concepts/bottleneck-cascade",
     "concepts/memory-supercycle",
     "concepts/n3-wafer-crunch",
+    "concepts/nvda-margin-residual",
+    "outputs/long-term-value-chain-thesis",
     "sources/dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "sources/jstwng-nvidia-margin-illusion",
     "sources/semianalysis-signals"
   ],
   "concepts/memory-supercycle": [
     "concepts/bottleneck-cascade",
     "concepts/euv-tool-bottleneck",
     "concepts/n3-wafer-crunch",
+    "concepts/nvda-margin-residual",
     "outputs/baker-cyclicality-thesis",
+    "outputs/long-term-value-chain-thesis",
     "outputs/nvda-swing-trade-thesis",
     "sources/crwv-q4-2025",
     "sources/dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "sources/jstwng-nvidia-margin-illusion",
     "sources/mu-q2-fy2026",
     "sources/nvda-q4-fy2026",
     "sources/semianalysis-signals"
@@ -45,14 +54,24 @@
     "concepts/bottleneck-cascade",
     "concepts/euv-tool-bottleneck",
     "concepts/memory-supercycle",
+    "concepts/nvda-margin-residual",
     "outputs/baker-cyclicality-thesis",
+    "outputs/long-term-value-chain-thesis",
     "outputs/nvda-swing-trade-thesis",
     "sources/baker-q4-2025",
     "sources/dwarkesh-dylan-ai-infrastructure-bottlenecks",
     "sources/intc-q4-2025",
+    "sources/jstwng-nvidia-margin-illusion",
     "sources/nvda-q4-fy2026",
     "sources/semianalysis-signals",
     "sources/tsm-q4-2025"
+  ],
+  "concepts/nvda-margin-residual": [
+    "concepts/bottleneck-cascade",
+    "concepts/memory-supercycle",
+    "concepts/n3-wafer-crunch",
+    "outputs/long-term-value-chain-thesis",
+    "sources/jstwng-nvidia-margin-illusion"
   ],
   "concepts/pluggable-optics": [
     "concepts/bottleneck-cascade",
@@ -69,15 +88,22 @@
   ],
   "concepts/token-economics": [
     "concepts/bottleneck-cascade",
+    "outputs/long-term-value-chain-thesis",
     "outputs/nvda-swing-trade-thesis",
     "sources/dwarkesh-dylan-ai-infrastructure-bottlenecks",
     "sources/nvda-q4-fy2026"
   ],
-  "outputs/baker-cyclicality-thesis": [],
+  "outputs/baker-cyclicality-thesis": [
+    "concepts/nvda-margin-residual",
+    "outputs/long-term-value-chain-thesis",
+    "sources/jstwng-nvidia-margin-illusion"
+  ],
+  "outputs/long-term-value-chain-thesis": [],
   "outputs/nvda-swing-trade-thesis": [],
   "sources/baker-q4-2025": [
     "concepts/bottleneck-cascade",
     "outputs/baker-cyclicality-thesis",
+    "outputs/long-term-value-chain-thesis",
     "outputs/nvda-swing-trade-thesis",
     "sources/cohr-q2-fy2026",
     "sources/dwarkesh-dylan-ai-infrastructure-bottlenecks",
@@ -111,8 +137,16 @@
     "concepts/n3-wafer-crunch",
     "sources/tsm-q4-2025"
   ],
+  "sources/jstwng-nvidia-margin-illusion": [
+    "concepts/bottleneck-cascade",
+    "concepts/memory-supercycle",
+    "concepts/n3-wafer-crunch",
+    "concepts/nvda-margin-residual",
+    "outputs/long-term-value-chain-thesis"
+  ],
   "sources/leopold-q4-2025": [
     "concepts/bottleneck-cascade",
+    "outputs/long-term-value-chain-thesis",
     "outputs/nvda-swing-trade-thesis",
     "sources/baker-q4-2025",
     "sources/cohr-q2-fy2026",
@@ -133,10 +167,13 @@
   "sources/nvda-q4-fy2026": [
     "concepts/memory-supercycle",
     "concepts/n3-wafer-crunch",
+    "concepts/nvda-margin-residual",
     "concepts/pluggable-optics",
+    "outputs/long-term-value-chain-thesis",
     "outputs/nvda-swing-trade-thesis",
     "sources/cohr-q2-fy2026",
     "sources/intc-q4-2025",
+    "sources/jstwng-nvidia-margin-illusion",
     "sources/mu-q2-fy2026",
     "sources/tsm-q4-2025"
   ],
@@ -145,8 +182,10 @@
     "concepts/euv-tool-bottleneck",
     "concepts/pluggable-optics",
     "concepts/token-economics",
+    "outputs/long-term-value-chain-thesis",
     "outputs/nvda-swing-trade-thesis",
-    "sources/dwarkesh-dylan-ai-infrastructure-bottlenecks"
+    "sources/dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "sources/jstwng-nvidia-margin-illusion"
   ],
   "sources/tsm-q4-2025": [
     "concepts/bottleneck-cascade",
