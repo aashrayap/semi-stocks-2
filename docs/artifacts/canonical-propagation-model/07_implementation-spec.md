@@ -227,7 +227,26 @@ Required outcomes:
 - record the app repo branch used for this work
 - record the app-native install, dev, build, and test commands
 
-This repo does not currently contain the external Wikiwise source checkout, so this pinning step is mandatory before app implementation begins.
+Pinned discovery on 2026-04-15:
+
+- `WIKIWISE_CHECKOUT=/Users/ash/Documents/2026/wikiwise`
+- remote repo: `https://github.com/TristanH/wikiwise.git`
+- branch used for rollout work: `main`
+- pinned commit at discovery time: `45579808cf44598ea353fd6703e78f247149f004`
+
+Verified native commands from the app checkout:
+
+- install/bootstrap: `swift build`
+- dev run: `.build/arm64-apple-macosx/debug/Wikiwise`
+- build: `swift build`
+- automated test command: `swift test`
+
+Observed results on this machine:
+
+- `swift build` succeeds on macOS with Swift 6.3
+- `swift test` currently exits with `error: no tests found; create a target in the 'Tests' directory`
+- the checked-in app build does not require a separate Node install step for normal operation because `Sources/Wikiwise/Resources/codemirror-bundle.js` is already vendored into the repo
+- Node tooling under `editor/` is optional and only relevant if the embedded editor bundle is being rebuilt
 
 Done when:
 
@@ -235,10 +254,11 @@ Done when:
 
 Verify:
 
-- `git -C <WIKIWISE_CHECKOUT> status --short`
-- `<app-native install command>`
-- `<app-native build command>`
-- `<app-native test command>`
+- `git -C /Users/ash/Documents/2026/wikiwise status --short`
+- `git -C /Users/ash/Documents/2026/wikiwise rev-parse --abbrev-ref HEAD`
+- `git -C /Users/ash/Documents/2026/wikiwise rev-parse HEAD`
+- `cd /Users/ash/Documents/2026/wikiwise && swift build`
+- `cd /Users/ash/Documents/2026/wikiwise && swift test`
 
 #### A2 — Implement the workflow shell in the app checkout
 
@@ -252,6 +272,17 @@ Required outcomes:
 - shell behavior that consumes repo-side fixture/export data rather than rewriting canonical content
 
 The app-side shell may borrow structure from the current generated outputs, but it should own its own routing, layout, and interactions.
+
+Current implementation truth discovered during `A1`:
+
+- the current Wikiwise app is a native SwiftUI macOS app, not a separate web shell
+- it compiles markdown itself through `Sources/Wikiwise/Resources/build.js`
+- it writes `site/out/` for scaffolded wikis and falls back to `wiki-site/` for legacy/plain folders
+- it currently expects source markdown plus optional `site/` compiler assets; it does not yet consume a foreign repo-owned data-only export contract directly
+
+Implication:
+
+- choosing the data-only path means app-side implementation must add an explicit read-only bundle consumer instead of relying on the existing markdown compiler path
 
 Done when:
 
@@ -293,7 +324,7 @@ Preferred decision:
 
 - keep repo-owned export data
 - move shell ownership fully to the app checkout
-- retain repo-owned HTML only if it is still needed as a generated compatibility fixture
+- retain repo-owned HTML only as a temporary compatibility fixture while the data-only contract is implemented and verified
 
 Done when:
 
@@ -342,10 +373,16 @@ Done when:
 
 ## Gating Assumptions
 
-- The external Wikiwise checkout path is currently unknown inside this repo and must be pinned during `A1`.
-- App-native toolchain commands are not yet recorded here because the checkout is external to this repo.
+- The external Wikiwise checkout is now pinned at `/Users/ash/Documents/2026/wikiwise` on `main` at `45579808cf44598ea353fd6703e78f247149f004` as of 2026-04-15.
+- App-native toolchain commands are now known:
+  - `swift build`
+  - `.build/arm64-apple-macosx/debug/Wikiwise`
+  - `swift test` (currently no test target exists)
 - The current repo already contains a generated `canonical/wiki-site/` bundle; this spec assumes it can be treated as the initial fixture/export surface for app-side work.
 - If repo-side discovers that the current bundle is not reproducible, that becomes the top repo-side blocker before deeper integration proceeds.
+- The chosen integration direction is now data-only, not repo-owned HTML.
+- The current repo export surface does not yet expose a sufficient page-level data contract for data-only rendering. Today it provides shared bundle files such as `search.json`, `previews.json`, `graph.json`, `map.json`, and generated HTML pages, but not a complete per-page data payload the app can render independently.
+- The current Wikiwise app does not yet consume a foreign data-only bundle; it compiles markdown sources itself. That means data-only integration is blocked on explicit app-side consumer work and explicit repo-side page-data export work.
 
 ## Non-Goals
 
@@ -357,8 +394,8 @@ Done when:
 
 ## Open Decisions To Resolve During Execution
 
-- Does the final app consume repo-owned HTML pages, or only lower-level exported data?
-- Should `canonical/wiki-site/` remain a broad static export bundle, or be reduced to the minimum contract payload after the shell lands?
+- What exact page-level data schema should replace repo-owned HTML for the chosen data-only contract?
+- Should `canonical/wiki-site/` remain a broad static export bundle temporarily, or be reduced immediately once the page-data contract exists?
 - Which exact docs should replace the April 10 migration handoff as the live entrypoint for future repo/app work?
 
 ## Definition Of Done
