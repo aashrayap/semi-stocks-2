@@ -381,8 +381,9 @@ Done when:
 - The current repo already contains a generated `canonical/wiki-site/` bundle; this spec assumes it can be treated as the initial fixture/export surface for app-side work.
 - If repo-side discovers that the current bundle is not reproducible, that becomes the top repo-side blocker before deeper integration proceeds.
 - The chosen integration direction is now data-only, not repo-owned HTML.
-- The current repo export surface does not yet expose a sufficient page-level data contract for data-only rendering. Today it provides shared bundle files such as `search.json`, `previews.json`, `graph.json`, `map.json`, and generated HTML pages, but not a complete per-page data payload the app can render independently.
-- The current Wikiwise app does not yet consume a foreign data-only bundle; it compiles markdown sources itself. That means data-only integration is blocked on explicit app-side consumer work and explicit repo-side page-data export work.
+- The current repo export surface is closer to a data-only contract than the HTML bundle suggests. In the live bundle, `previews.json` already carries per-page objects with `title`, `lead`, `rich`, `href`, and `type`, where `rich` contains the full page body rather than a short teaser.
+- The real repo-side gap is not absence of page data; it is lack of an explicitly versioned page-data contract. The chosen data-only path should formalize `previews.json` or replace it with an equivalent page payload that is documented as canonical for app consumption.
+- The current Wikiwise app does not yet consume a foreign data-only bundle; it compiles markdown sources itself. That means data-only integration is blocked on explicit app-side consumer work plus repo-side contract formalization around page payloads and wikilink/deep-link semantics.
 
 ## Non-Goals
 
@@ -394,7 +395,7 @@ Done when:
 
 ## Open Decisions To Resolve During Execution
 
-- What exact page-level data schema should replace repo-owned HTML for the chosen data-only contract?
+- Should the chosen page-level data contract be a formalized `previews.json` schema, or a renamed/split page payload derived from the same underlying fields?
 - Should `canonical/wiki-site/` remain a broad static export bundle temporarily, or be reduced immediately once the page-data contract exists?
 - Which exact docs should replace the April 10 migration handoff as the live entrypoint for future repo/app work?
 
