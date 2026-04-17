@@ -9,6 +9,10 @@ Start here:
 - Use [AGENTS.md](AGENTS.md) or [CLAUDE.md](CLAUDE.md) for agent routing.
 - For the current repo/app rollout, use [docs/artifacts/canonical-propagation-model/07_implementation-spec.md](docs/artifacts/canonical-propagation-model/07_implementation-spec.md).
 
+High-level diagrams:
+- [Current architecture + workflow](docs/diagrams/current-architecture-workflow.png)
+- [Repo structure map](docs/diagrams/repo-structure-map.png)
+
 ## Top-Level Map
 
 - `canonical/` — source-of-truth propagation lanes
