@@ -2,6 +2,12 @@
 
 Automated agents are sidecar workers for `semi-stocks-2`.
 
+## Response Contract
+
+Follow the root [CLAUDE.md](../CLAUDE.md) human response contract for
+non-trivial work: `Result`, `Visual`, `Gate`, `Ledger`, concrete
+`Next Actions`, and `Details` links.
+
 ## Boundary
 
 - Read: `canonical/`, root `config.yaml`, and repo docs.

@@ -2,6 +2,29 @@
 
 `semi-stocks-2` is a canonical propagation repo. Keep the root map, skill routing, and write boundaries explicit.
 
+## Human Response Contract
+
+- For non-trivial work, final responses should return a concise
+  human-readable packet: `Result`, `Visual`, `Gate`, `Ledger`, concrete
+  `Next Actions`, and `Details` links.
+- `Visual` is always a slot. For workflow, architecture, planning, review,
+  decision, or multi-artifact work, link an existing diagram or create/render
+  one. For narrow mechanical work, say why no visual was useful.
+- Use `Ledger` when the session has multiple user requests, corrections, or
+  follow-ups. Track `Captured`, `Done`, `Not Done`, and `Parked`.
+- Treat chat as the receipt. Create durable artifacts only when the work must
+  survive beyond chat, be linked from roadmap/PR/docs, be resumed by another
+  session, or when multiple artifacts need a landing page.
+- Before final response, map the latest user requests to the packet. Every
+  request should be done, parked, or called out as not done.
+- Keep this concise and runtime-portable.
+
+## Runtime Preference
+
+- Codex is Ash's strongly preferred runtime right now.
+- Keep repo instructions portable across Codex and Claude, but bias day-to-day
+  workflow and setup decisions toward Codex unless the user asks otherwise.
+
 ## Start Here
 
 - Read [README.md](README.md) for the repo map.
