@@ -5,8 +5,11 @@ Use this repo as a canonical propagation system. Keep root map, skill routing, a
 ## Human Response Contract
 
 - For non-trivial work, final responses should return a concise
-  human-readable packet: `Result`, `Visual`, `Gate`, `Ledger`, concrete
-  `Next Actions`, and `Details` links.
+  human-readable packet: `This Session Focus`, `Result`, `Visual`, `Gate`,
+  `Ledger`, concrete `Next Actions`, and `Details` links.
+- `This Session Focus` is the first slot. Keep it to 1-2 short lines that
+  remind Ash why this session started and where the work currently stands:
+  first line for purpose, optional second line for current state.
 - `Visual` is always a slot. For workflow, architecture, planning, review,
   decision, or multi-artifact work, link an existing diagram or create/render
   one. For narrow mechanical work, say why no visual was useful.
