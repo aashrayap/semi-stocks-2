@@ -7,7 +7,7 @@ feature: lightweight-visual-layer
 
 ## Execution Order
 
-1. Freeze current Wikiwise changes so they do not keep expanding.
+1. Delete legacy Wikiwise integration surfaces from the repo.
 2. Define `canonical/site-data/` artifact contract.
 3. Add the site-data path contract.
 4. Build deterministic site-data generator from earlier canonical lanes.
@@ -15,43 +15,33 @@ feature: lightweight-visual-layer
 6. Smoke the data output without Wikiwise.
 7. Prototype Justin-style React/Vite reader over `canonical/site-data/` only.
 8. Replace report/wiki visual use with the new reader.
-9. Remove Wikiwise integration surfaces.
+9. Keep Wikiwise out of the active semi-stocks contract.
 
 ## Task List
 
-### T1 — Freeze Current Wikiwise Slice
+### T1 — Delete Legacy Wikiwise Slice
 
 **Files:**
 
-- `canonical/40-engine/wiki_site.py`
-- `canonical/40-engine/engine/wiki_site.py`
-- `canonical/40-engine/engine/paths.py`
-- `canonical/wiki-site/graph.json`
-- `canonical/wiki-site/map.json`
-- `canonical/wiki-site/graph.html`
-- `canonical/wiki-site/map.html`
-- `canonical/wiki-site/map-3d.html`
-- `/Users/ash/Documents/2026/wikiwise/Sources/Wikiwise/ExportBundle.swift`
+- `canonical/wiki-site/`
 
 **Work:**
 
-- Decide whether to commit the current e2e compatibility fix as a checkpoint or
-  discard it after the new reader path exists.
-- Default decision: freeze current Wikiwise changes in place and ignore them
-  during site-data e2e.
+- Delete legacy generated output so it cannot be mistaken for the active
+  contract.
 - Stop adding new semi-stocks behavior to Wikiwise.
 - Keep unrelated agent logs/reports out of this feature branch.
 
 **Acceptance:**
 
-- One explicit decision exists: commit checkpoint, stash, or discard.
+- No tracked `canonical/wiki-site/` files remain.
 - No further task depends on Wikiwise behavior.
 
 **Verify:**
 
 ```bash
 git status --short
-git -C /Users/ash/Documents/2026/wikiwise status --short
+git ls-files canonical/wiki-site | wc -l
 ```
 
 **Estimate:** 0.5-1 hour.
@@ -71,7 +61,7 @@ git -C /Users/ash/Documents/2026/wikiwise status --short
   `entities.json`, `edges.json`, `claims.json`, `thesis.json`,
   `reports.json`, `search.json`, `graph.json`, `schema.json`.
 - Generated `canonical/site-data/*.json` should be checked in at first, matching
-  the repo-owned generated-output pattern used by `canonical/wiki-site/`.
+  the repo-owned generated-output pattern used by `canonical/site-data/`.
 - State that `50-reports` remains a published artifact; report sections enter
   site-data through engine synthesis/report metadata, not HTML scraping.
 - State that the reader consumes only `canonical/site-data/`.
@@ -95,7 +85,7 @@ git -C /Users/ash/Documents/2026/wikiwise status --short
 **Work:**
 
 - Add `SITE_DATA_DIR = CANONICAL_ROOT / "site-data"`.
-- Keep `WIKI_SITE_DIR` only as legacy compatibility.
+- Remove active wiki-site dependency paths.
 - Do not remove `REPORTS_DIR`.
 
 **Acceptance:**
@@ -130,7 +120,7 @@ PY
   `build.json`, `pages.json`, `companies.json`, `signals.json`,
   `entities.json`, `edges.json`, `claims.json`, `thesis.json`,
   `reports.json`, `search.json`, `graph.json`.
-- Reuse current wiki-site graph/link extraction where sensible.
+- Reuse wikilink extraction where sensible.
 - Read `10-wiki`, `20-data`, `30-thesis`, and report metadata; do not scrape
   final report HTML as the primary data source.
 - Represent `20-data` company/source records and `30-thesis` controls
@@ -244,17 +234,17 @@ python3 -m json.tool canonical/site-data/schema.json >/dev/null
 
 - Build a minimal React/Vite reader over JSON only, patterned after Justin's
   graph/table/detail shape.
-- First screen should expose companies and signals as the baseline product
-  surface, with graph/table/detail available immediately.
-- Include thesis/report/company/source/signal filters.
+- First screen should expose categories, companies, and signals as the baseline
+  product surface.
+- Include thesis category/company/source/signal filters.
 - Keep it static and replaceable.
 
 **Acceptance:**
 
 - Reader runs without Wikiwise.
 - Reader does not parse canonical markdown/YAML directly.
-- Reader can show at least one company, one signal, one thesis stage, one report
-  section, one source page, and one typed relationship.
+- Reader can show at least one category, one company, one signal, one thesis
+  stage, one source page, and one prediction/review flow count.
 
 **Verify:**
 
@@ -293,23 +283,21 @@ npm run dev
 
 **Estimate:** 3-6 hours for a small proof.
 
-### T9 — Remove Wikiwise Integration
+### T9 — Keep Wikiwise Removed
 
 **Depends on:** T7.
 
 **Files:**
 
 - docs that still describe Wikiwise as active semi-stocks visual layer
-- `canonical/wiki-site/` generation path, once replacement parity passes
-- possible Wikiwise checkout changes, if no longer needed
+- legacy `canonical/wiki-site/` references outside historical migration context
 
 **Work:**
 
-- Remove or archive Wikiwise-specific integration docs.
-- Stop generating `canonical/wiki-site/` if `canonical/site-data/` + reader
-  replaces it.
-- Decide whether current Wikiwise checkout changes should be reverted, kept in
-  that repo, or ignored as unrelated app work.
+- Remove or archive Wikiwise-specific integration docs that imply active
+  runtime dependency.
+- Keep `canonical/wiki-site/` deleted.
+- Leave external Wikiwise worktree untouched unless its owner asks for more.
 
 **Acceptance:**
 

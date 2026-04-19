@@ -17,6 +17,7 @@ body {
   margin: 0;
   min-width: 320px;
   background: #f6f7f9;
+  overflow-x: hidden;
 }
 
 button,
@@ -30,7 +31,8 @@ button {
 }
 
 .shell {
-  width: min(1480px, calc(100vw - 32px));
+  width: calc(100% - 32px);
+  max-width: 1480px;
   margin: 0 auto;
   padding: 22px 0 32px;
 }
@@ -96,12 +98,17 @@ h1 {
   padding: 18px 0 14px;
 }
 
+.toolbar > * {
+  min-width: 0;
+}
+
 .view-tabs {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   height: 42px;
   border: 1px solid #cbd5e1;
   background: #fff;
+  width: 100%;
 }
 
 .view-tabs button {
@@ -110,6 +117,10 @@ h1 {
   background: transparent;
   color: #475569;
   font-weight: 700;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .view-tabs button:last-child {
@@ -186,6 +197,7 @@ button:focus-visible {
   min-height: 620px;
   border: 1px solid #d9dee7;
   background: #fff;
+  min-width: 0;
 }
 
 .table-wrap {
@@ -234,6 +246,43 @@ tbody tr.selected {
 .ticker {
   color: #0f172a;
   font-weight: 800;
+}
+
+.subtext {
+  display: block;
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.ticker-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.ticker-strip button {
+  min-height: 26px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  padding: 2px 6px;
+  color: #172033;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.ticker-strip button:hover {
+  background: #eef4ff;
+}
+
+.ticker-strip button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.ticker-strip button:disabled:hover {
+  background: #f8fafc;
 }
 
 .evidence {
@@ -313,104 +362,6 @@ tbody tr.selected {
   font-size: 0.9rem;
 }
 
-.graph-panel {
-  min-height: 680px;
-  padding: 14px;
-}
-
-.graph-header {
-  display: flex;
-  min-height: 36px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  color: #475569;
-}
-
-.graph-panel svg {
-  width: 100%;
-  height: 600px;
-  border: 1px solid #e5e7eb;
-  background: #fbfcfe;
-}
-
-.edge {
-  stroke: #94a3b8;
-  stroke-opacity: 0.45;
-  stroke-width: 1.2;
-}
-
-.edge-supports_claim,
-.edge-exposes_company_to {
-  stroke: #2563eb;
-}
-
-.edge-updates_thesis_stage {
-  stroke: #7c3aed;
-}
-
-.node {
-  fill: #f8fafc;
-  stroke: #475569;
-  stroke-width: 1.8;
-}
-
-.node-company {
-  fill: #dbeafe;
-  stroke: #1d4ed8;
-}
-
-.node-bottleneck,
-.node-thesis-stage {
-  fill: #fef3c7;
-  stroke: #b45309;
-}
-
-.node-signal {
-  fill: #dcfce7;
-  stroke: #15803d;
-}
-
-svg text {
-  fill: #334155;
-  font-size: 12px;
-  text-anchor: middle;
-  pointer-events: none;
-}
-
-.report-sections {
-  display: grid;
-  gap: 0;
-}
-
-.section-block {
-  min-height: 112px;
-  border-bottom: 1px solid #e5e7eb;
-  padding: 16px;
-}
-
-.section-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.section-heading h2 {
-  margin: 0 0 8px;
-  font-size: 1.05rem;
-}
-
-.section-heading span {
-  color: #64748b;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.muted {
-  color: #64748b;
-}
-
 @media (max-width: 1180px) {
   .toolbar {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -427,13 +378,12 @@ svg text {
 
 @media (max-width: 760px) {
   .shell {
-    width: min(100vw - 20px, 1480px);
-    padding-top: 12px;
+    width: 100%;
+    padding: 12px 3px 32px;
   }
 
   .topbar,
-  .graph-header,
-  .section-heading {
+  .detail-heading {
     align-items: flex-start;
     flex-direction: column;
   }
@@ -445,8 +395,15 @@ svg text {
   }
 
   .view-tabs {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    height: 84px;
+    grid-template-columns: 1fr;
+    height: 126px;
+    width: calc(100vw - 6px);
+    max-width: calc(100vw - 6px);
+  }
+
+  .view-tabs button {
+    border-right: 0;
+    border-bottom: 1px solid #d9dee7;
   }
 
   th,

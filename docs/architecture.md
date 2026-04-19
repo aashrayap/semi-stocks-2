@@ -19,7 +19,8 @@ Canonical source-of-truth lane.
 - `canonical/30-thesis/` — narrow control plane
 - `canonical/40-engine/` — engine stage
 - `canonical/50-reports/` — published outputs
-- `canonical/wiki-site/` — generated integration/export bundle for the external Wikiwise app shell; not a canonical propagation stage
+- `canonical/site-data/` — generated reader contract; not a canonical propagation stage
+- `canonical/site-reader/` — local static reader over `canonical/site-data/`
 
 ### `agents/`
 
@@ -69,9 +70,13 @@ Canonical synthesis and rendering stage. The stage contains a package-safe `engi
 
 Canonical published artifacts rendered from `canonical/40-engine/`. These are downstream outputs and stay separate from `canonical/10-wiki/outputs/`.
 
-### `canonical/wiki-site/`
+### `canonical/site-data/`
 
-Generated Wikiwise integration/export bundle derived from canonical wiki state. This surface is repo-owned export output consumed by the external app shell, not a sixth canonical stage or a hand-maintained UI source tree.
+Generated JSON contract derived from canonical wiki, structured data, thesis, and engine synthesis state. This surface is repo-owned reader input, not a sixth canonical stage or a hand-maintained source lane.
+
+### `canonical/site-reader/`
+
+Local static reader for `canonical/site-data/`. The reader is presentation only and must not parse canonical markdown or YAML directly.
 
 ## Principles
 
@@ -79,6 +84,7 @@ Generated Wikiwise integration/export bundle derived from canonical wiki state. 
 - Structured numeric and verifiable state lives in `canonical/20-data/`.
 - `canonical/30-thesis/thesis.yaml` stays narrow and machine-readable.
 - `canonical/40-engine/` and `canonical/50-reports/` remain separate authority layers.
+- `canonical/site-data/` and `canonical/site-reader/` remain replaceable generated/presentation surfaces.
 - Sidecar automation reads canonical lanes but writes under `agents/`.
 - Root should show authority, not legacy implementation history.
 

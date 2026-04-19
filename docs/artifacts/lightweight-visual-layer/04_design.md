@@ -17,7 +17,7 @@ feature: lightweight-visual-layer
   canonical markdown/YAML directly.
 - `50-reports` remains as a published report artifact until the site-data
   reader reproduces report-view parity.
-- Generated HTML from Wikiwise should be removed once replacement parity passes.
+- Generated Wikiwise HTML is removed from the active repo contract.
 - Upstream evidence import and downstream visual export are separate moves.
 
 ## Decisions
@@ -88,23 +88,25 @@ and site-data from the same upstream synthesis functions.
 `canonical/40-engine/engine/site_data.py`, `canonical/50-reports/`,
 `canonical/site-data/reports.json`.
 
-### D4 — Make companies and signals the first parity core
+### D4 — Make categories, companies, and signals the first parity core
 
-**Decision:** The first reader parity target is company/signal centered. Emit
-first-class `companies.json` and `signals.json` artifacts instead of hiding
-those concepts only inside generic `entities.json` or report HTML.
+**Decision:** The first reader parity target is category/company/signal
+centered. Emit first-class `companies.json` and `signals.json` artifacts, then
+derive provisional reader categories from thesis stages, company exposure,
+signal flow, review rows, and prediction rows.
 
 **Options considered:**
 
 - Start with whole-wiki page parity.
 - Start with report page parity.
-- Start with company/signal parity and add page/report/graph views around it.
+- Start with category/company/signal parity and add page/report/graph views
+  around it.
 
-**Rationale:** The actual decision loop needs to see company exposure, source
-signals, thesis impact, and report sections quickly. Whole-wiki parity would
-recreate Wikiwise. Report-only parity would be too late in the pipeline.
-Company/signal parity proves the new output machine is using `20-data` and
-`30-thesis` directly.
+**Rationale:** The actual decision loop needs to see the categories that thesis
+reviews and general predictions move through, then the companies and signals in
+those categories. Whole-wiki parity would recreate Wikiwise. Report-only parity
+would be too late in the pipeline. Category/company/signal parity proves the new
+output machine is using `20-data` and `30-thesis` directly.
 
 **Affected areas:** `canonical/site-data/companies.json`,
 `canonical/site-data/signals.json`, `canonical/site-data/entities.json`,
@@ -171,13 +173,12 @@ logic.
 
 ### D8 — Eliminate Wikiwise from semi-stocks visual layer
 
-**Decision:** Remove Wikiwise from the target architecture. Keep only enough
-local compatibility to avoid losing current work while the replacement reader
-is built.
+**Decision:** Remove Wikiwise from the target architecture. No compatibility
+bridge remains in the semi-stocks contract.
 
 **Options considered:**
 
-- Delete current Wikiwise integration immediately.
+- Delete legacy Wikiwise integration immediately.
 - Keep Wikiwise as permanent local authoring/browsing.
 - Build `canonical/site-data/` and a static reader, then stop generating and
   depending on `canonical/wiki-site/`.
@@ -187,13 +188,13 @@ target is an output machine: canonical state in, validated JSON artifacts out,
 static reader over those artifacts. Wikiwise can remain a separate app, but not
 as semi-stocks' visual contract.
 
-**Affected areas:** `canonical/wiki-site/`, Wikiwise checkout,
-`canonical/site-data/`, future reader.
+**Affected areas:** `canonical/wiki-site/`, `canonical/site-data/`, future
+reader.
 
 ### D9 — Build the reader after `site-data`, not before
 
 **Decision:** Build a purpose-specific React/Vite static reader after
-`canonical/site-data` exists. Do not extend the native Wikiwise app.
+`canonical/site-data` exists. Do not extend the old Wikiwise app.
 
 **Options considered:**
 
@@ -204,16 +205,16 @@ as semi-stocks' visual contract.
 **Rationale:** The current problem is contract shape, not UI polish. Once JSON
 is stable, a purpose-built static reader can be small and replaceable. The
 chosen reader path should resemble Justin's stack because graph/table/detail
-state will matter and because the goal is to replace Wikiwise with a focused
-data product, not another generic wiki shell.
+state will matter and because the goal is a focused data product, not another
+generic wiki shell.
 
 **Affected areas:** future `canonical/site-reader/` or `canonical/site/`; not
 Wikiwise.
 
 ## Open Risks
 
-- The repo does not yet have a full tracked compiler for current wiki-site
-  files, and may not need one if `canonical/wiki-site/` is retired.
+- The repo does not yet have a tracked compiler for legacy wiki-site files,
+  and may not need one now that `canonical/wiki-site/` is retired.
 - Current `previews.json` may be good enough to formalize, but its name implies
   teaser data rather than full pages.
 - Claim data exists unevenly across company/source/thesis structures.
@@ -235,13 +236,11 @@ Wikiwise.
 - `canonical/50-reports/latest.html` as optional report artifact metadata, not
   as the primary source of reader data
 
-### Legacy Export / Removal Target
+### Removed Legacy Export
 
-- `canonical/wiki-site/search.json`
-- `canonical/wiki-site/previews.json`
-- `canonical/wiki-site/graph.json`
-- `canonical/wiki-site/map.json`
-- `canonical/wiki-site/*.html`
+- `canonical/wiki-site/` has no tracked active files in this target.
+- Historical docs and diagrams may still mention the old export surface as
+  migration context.
 
 ### New Contract Candidate
 
@@ -280,7 +279,7 @@ Deferred until contract exists. Possible locations:
 
 - Stop treating `/Users/ash/Documents/2026/wikiwise` as part of semi-stocks
   delivery.
-- Stop generating `canonical/wiki-site/` once `canonical/site-data/` + reader
-  passes parity.
-- Remove or archive Wikiwise-specific docs only after replacement smoke checks
-  pass.
+- Do not regenerate `canonical/wiki-site/` now that `canonical/site-data/` +
+  reader own the contract.
+- Remove or archive Wikiwise-specific docs when they describe an active runtime
+  dependency rather than migration history.

@@ -18,9 +18,9 @@ Core conclusion: use Justin's compute stack in two separate ways:
 2. Downstream architecture: schema-first JSON artifacts under
    `canonical/site-data/` become the reader contract after `40-engine`.
 
-Decision update: Wikiwise should be removed from the semi-stocks visual layer.
-`50-reports` should not be removed in the first slice; it remains the canonical
-published report artifact until the new reader can reproduce the report view.
+Decision update: Wikiwise is removed from the semi-stocks visual layer.
+`50-reports` stays in place for now; it remains the canonical published report
+artifact until the new reader can reproduce the report view.
 
 Target split: `40-engine` emits validated `canonical/site-data/` artifacts from
 `10-wiki`, `20-data`, `30-thesis`, and synthesis/report metadata. A replaceable
@@ -48,18 +48,18 @@ frontend polish and prove this chain:
 Reader path chosen: use a Justin-style React/Vite static reader after the data
 contract passes.
 
-First parity core: companies and signals. The reader should prove it can show
-company exposure, source-backed signals, thesis impact, and report sections
-before broader graph polish.
+First parity core: categories, companies, and signals. The reader should prove
+it can show thesis categories, company exposure, source-backed signals, thesis
+impact, and report sections before broader graph polish.
 
 ## Next Actions
 
-1. Freeze current Wikiwise changes as a checkpoint, stash, or discard.
+1. Keep `canonical/site-data/` as the active visual contract surface.
 2. Add `SITE_DATA_DIR` and first `canonical/site-data/` artifacts.
 3. Implement `canonical/40-engine/site_data.py` with validation.
 4. Smoke the generated data without Wikiwise.
 5. Prototype a React/Vite static reader after the data contract passes.
-6. Stop generating `canonical/wiki-site/` only after reader parity passes.
+6. Do not regenerate `canonical/wiki-site/` in this repo.
 
 ## Details
 

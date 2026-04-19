@@ -1,7 +1,23 @@
 import { useMemo, useState } from "react";
-import { siteData, type Company, type GraphNode, type Signal } from "./data";
+import { siteData, type Claim, type Company, type Signal, type ThesisStage } from "./data";
 
-type View = "companies" | "signals" | "graph" | "reports";
+type View = "categories" | "companies" | "signals";
+
+type Category = {
+  id: string;
+  key: string;
+  label: string;
+  status?: string;
+  period?: string;
+  cyclePhase?: string;
+  tickers: string[];
+  thesisSignals: string[];
+  companies: Company[];
+  signals: Signal[];
+  claims: Claim[];
+  reviewCount: number;
+  predictionCount: number;
+};
 
 const numberFormat = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
 const moneyFormat = new Intl.NumberFormat("en-US", {
@@ -18,10 +34,22 @@ const signalKindLabels: Record<string, string> = {
   thesis_proposal_signal: "Proposal"
 };
 
+const categoryAliases: Record<string, string> = {
+  copper_signal_integrity: "co-packaged-optics-cpo-scale-up",
+  cpo_next: "co-packaged-optics-cpo-scale-up",
+  euv: "euv-tools",
+  memory: "memory-supercycle",
+  n3_logic: "n3-logic-wafers",
+  optical: "pluggable-optics-scale-out",
+  pluggable_optics: "pluggable-optics-scale-out",
+  power: "power-dc-buildout"
+};
+
 export function App() {
-  const [view, setView] = useState<View>("companies");
+  const categories = useMemo(() => buildCategories(), []);
+  const [view, setView] = useState<View>("categories");
   const [query, setQuery] = useState("");
-  const [bottleneck, setBottleneck] = useState("all");
+  const [categoryKey, setCategoryKey] = useState("all");
   const [signalKind, setSignalKind] = useState("all");
   const [direction, setDirection] = useState("all");
   const [selectedTicker, setSelectedTicker] = useState(
@@ -30,14 +58,10 @@ export function App() {
       ""
   );
 
-  const bottlenecks = useMemo(() => {
-    const values = new Set<string>();
-    siteData.companies.forEach((company) => company.bottleneck && values.add(company.bottleneck));
-    siteData.signals.forEach((signal) => signal.bottleneck && values.add(signal.bottleneck));
-    siteData.thesis.cascade.forEach((stage) => stage.name && values.add(stage.name));
-    return [...values].sort();
-  }, []);
-
+  const selectedCategory = useMemo(
+    () => categories.find((category) => category.key === categoryKey),
+    [categories, categoryKey]
+  );
   const selectedCompany = useMemo(
     () => siteData.companies.find((company) => company.ticker === selectedTicker) || siteData.companies[0],
     [selectedTicker]
@@ -50,11 +74,12 @@ export function App() {
         !needle ||
         company.ticker.toLowerCase().includes(needle) ||
         company.name.toLowerCase().includes(needle) ||
-        (company.bottleneck || "").toLowerCase().includes(needle);
-      const matchesBottleneck = matchesBottleneckFilter(company.bottleneck, bottleneck);
-      return matchesQuery && matchesBottleneck;
+        (company.bottleneck || "").toLowerCase().includes(needle) ||
+        (company.thesis?.why_now || "").toLowerCase().includes(needle);
+      const matchesCategory = categoryKey === "all" || selectedCategory?.companies.some((item) => item.id === company.id);
+      return matchesQuery && matchesCategory;
     });
-  }, [bottleneck, query]);
+  }, [categoryKey, query, selectedCategory]);
 
   const filteredSignals = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -64,27 +89,39 @@ export function App() {
         !needle ||
         signal.evidence.toLowerCase().includes(needle) ||
         (signal.title || "").toLowerCase().includes(needle) ||
-        tickers.toLowerCase().includes(needle);
-      const matchesBottleneck = matchesBottleneckFilter(signal.bottleneck, bottleneck);
+        tickers.toLowerCase().includes(needle) ||
+        (signal.bottleneck || "").toLowerCase().includes(needle);
+      const matchesCategory = categoryKey === "all" || selectedCategory?.signals.some((item) => item.id === signal.id);
       const matchesKind = signalKind === "all" || signal.kind === signalKind;
       const matchesDirection = direction === "all" || signal.direction === direction;
-      return matchesQuery && matchesBottleneck && matchesKind && matchesDirection;
+      return matchesQuery && matchesCategory && matchesKind && matchesDirection;
     });
-  }, [bottleneck, direction, query, signalKind]);
+  }, [categoryKey, direction, query, selectedCategory, signalKind]);
+
+  const filteredCategories = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    return categories.filter((category) => {
+      const matchesQuery =
+        !needle ||
+        category.label.toLowerCase().includes(needle) ||
+        category.tickers.join(" ").toLowerCase().includes(needle) ||
+        category.thesisSignals.join(" ").toLowerCase().includes(needle);
+      return matchesQuery;
+    });
+  }, [categories, query]);
 
   const selectedSignals = useMemo(() => signalsForTicker(selectedTicker), [selectedTicker]);
   const selectedClaims = useMemo(
     () => siteData.claims.filter((claim) => claim.ticker === selectedTicker),
     [selectedTicker]
   );
-  const filteredSignalsCount = filteredSignals.length;
 
   return (
     <main className="shell">
       <header className="topbar">
         <div>
           <p className="eyebrow">semi-stocks</p>
-          <h1>Site Data Reader</h1>
+          <h1>Signal Desk</h1>
         </div>
         <div className="build-meta">
           <span>{siteData.build.generator}</span>
@@ -95,7 +132,7 @@ export function App() {
 
       <section className="toolbar" aria-label="Reader filters">
         <div className="view-tabs" role="tablist" aria-label="Views">
-          {(["companies", "signals", "graph", "reports"] as View[]).map((item) => (
+          {(["categories", "companies", "signals"] as View[]).map((item) => (
             <button
               className={view === item ? "active" : ""}
               key={item}
@@ -109,15 +146,15 @@ export function App() {
         </div>
         <label>
           <span>Search</span>
-          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ticker, source, signal" />
+          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ticker, category, signal" />
         </label>
         <label>
-          <span>Bottleneck</span>
-          <select value={bottleneck} onChange={(event) => setBottleneck(event.target.value)}>
+          <span>Category</span>
+          <select value={categoryKey} onChange={(event) => setCategoryKey(event.target.value)}>
             <option value="all">All</option>
-            {bottlenecks.map((item) => (
-              <option key={item} value={item}>
-                {title(item)}
+            {categories.map((category) => (
+              <option key={category.key} value={category.key}>
+                {category.label}
               </option>
             ))}
           </select>
@@ -147,15 +184,23 @@ export function App() {
       </section>
 
       <section className="stats-grid" aria-label="Site data counts">
-        <Stat label="Companies" value={siteData.companies.length} />
-        <Stat label="Signals" value={filteredSignalsCount} />
-        <Stat label="Claims" value={siteData.claims.length} />
-        <Stat label="Edges" value={siteData.edges.length} />
-        <Stat label="Report sections" value={siteData.reports[0]?.sections.length || 0} />
+        <Stat label="Categories" value={categories.length} />
+        <Stat label="Companies" value={filteredCompanies.length} />
+        <Stat label="Signals" value={filteredSignals.length} />
+        <Stat label="Reviews" value={sumCategories(categories, "reviewCount")} />
+        <Stat label="Predictions" value={sumCategories(categories, "predictionCount")} />
       </section>
 
       <section className="workspace">
         <div className="primary-pane">
+          {view === "categories" && (
+            <CategoryTable
+              categories={filteredCategories}
+              selectedKey={categoryKey}
+              onSelectCategory={setCategoryKey}
+              onSelectTicker={setSelectedTicker}
+            />
+          )}
           {view === "companies" && (
             <CompanyTable
               companies={filteredCompanies}
@@ -164,12 +209,83 @@ export function App() {
             />
           )}
           {view === "signals" && <SignalTable signals={filteredSignals} onSelectTicker={setSelectedTicker} />}
-          {view === "graph" && <GraphPanel selectedTicker={selectedTicker} onSelectTicker={setSelectedTicker} />}
-          {view === "reports" && <ReportsPanel />}
         </div>
-        <CompanyDetail company={selectedCompany} claims={selectedClaims} signals={selectedSignals} />
+        <InsightDetail
+          category={selectedCategory}
+          company={selectedCompany}
+          claims={selectedClaims}
+          signals={selectedSignals}
+        />
       </section>
     </main>
+  );
+}
+
+function CategoryTable({
+  categories,
+  selectedKey,
+  onSelectCategory,
+  onSelectTicker
+}: {
+  categories: Category[];
+  selectedKey: string;
+  onSelectCategory: (key: string) => void;
+  onSelectTicker: (ticker: string) => void;
+}) {
+  const companyTickers = new Set(siteData.companies.map((company) => company.ticker));
+
+  return (
+    <div className="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Status</th>
+            <th>Companies</th>
+            <th>Signals</th>
+            <th>Reviews</th>
+            <th>Predictions</th>
+            <th>Tickers</th>
+          </tr>
+        </thead>
+        <tbody>
+          {categories.map((category) => (
+            <tr
+              className={category.key === selectedKey ? "selected" : ""}
+              key={category.id}
+              onClick={() => onSelectCategory(category.key)}
+            >
+              <td>
+                <strong>{category.label}</strong>
+                <span className="subtext">{category.period || category.cyclePhase || "mapped category"}</span>
+              </td>
+              <td>{title(category.status || "unmapped")}</td>
+              <td>{category.companies.length}</td>
+              <td>{category.signals.length}</td>
+              <td>{category.reviewCount}</td>
+              <td>{category.predictionCount}</td>
+              <td>
+                <div className="ticker-strip">
+                  {category.tickers.slice(0, 8).map((ticker) => (
+                    <button
+                      disabled={!companyTickers.has(ticker)}
+                      key={ticker}
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        if (companyTickers.has(ticker)) onSelectTicker(ticker);
+                      }}
+                      type="button"
+                    >
+                      {ticker}
+                    </button>
+                  ))}
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
 
@@ -189,7 +305,7 @@ function CompanyTable({
           <tr>
             <th>Ticker</th>
             <th>Company</th>
-            <th>Bottleneck</th>
+            <th>Category</th>
             <th>Signals</th>
             <th>Claims</th>
             <th>Next</th>
@@ -205,9 +321,13 @@ function CompanyTable({
               <td className="ticker">{company.ticker}</td>
               <td>{company.name}</td>
               <td>{title(company.bottleneck || "unmapped")}</td>
-              <td>{(company.signal_counts?.confirms || 0) + (company.signal_counts?.contradicts || 0) + (company.signal_counts?.semi || 0)}</td>
+              <td>
+                {(company.signal_counts?.confirms || 0) +
+                  (company.signal_counts?.contradicts || 0) +
+                  (company.signal_counts?.semi || 0)}
+              </td>
               <td>{company.claim_counts?.pending || 0} pending</td>
-              <td>{company.next_earnings || "—"}</td>
+              <td>{company.next_earnings || "-"}</td>
             </tr>
           ))}
         </tbody>
@@ -230,7 +350,7 @@ function SignalTable({
           <tr>
             <th>Source</th>
             <th>Ticker</th>
-            <th>Bottleneck</th>
+            <th>Category</th>
             <th>Direction</th>
             <th>Evidence</th>
           </tr>
@@ -241,7 +361,7 @@ function SignalTable({
             return (
               <tr key={signal.id} onClick={() => ticker && onSelectTicker(ticker)}>
                 <td>{signalKindLabels[signal.kind] || title(signal.kind)}</td>
-                <td className="ticker">{ticker || "—"}</td>
+                <td className="ticker">{ticker || "-"}</td>
                 <td>{title(signal.bottleneck || "unmapped")}</td>
                 <td>{title(signal.direction || "signal")}</td>
                 <td className="evidence">{signal.evidence}</td>
@@ -254,81 +374,15 @@ function SignalTable({
   );
 }
 
-function GraphPanel({
-  selectedTicker,
-  onSelectTicker
-}: {
-  selectedTicker: string;
-  onSelectTicker: (ticker: string) => void;
-}) {
-  const visible = useMemo(() => graphForTicker(selectedTicker), [selectedTicker]);
-  const width = 920;
-  const height = 560;
-  const positioned = positionNodes(visible.nodes, width, height);
-
-  return (
-    <div className="graph-panel">
-      <div className="graph-header">
-        <strong>{selectedTicker} relationship graph</strong>
-        <span>{visible.nodes.length} nodes / {visible.links.length} links</span>
-      </div>
-      <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label="Filtered site-data graph">
-        {visible.links.map((link) => {
-          const source = positioned.get(link.source);
-          const target = positioned.get(link.target);
-          if (!source || !target) return null;
-          return (
-            <line
-              className={`edge edge-${link.type}`}
-              key={`${link.source}-${link.target}-${link.type}`}
-              x1={source.x}
-              x2={target.x}
-              y1={source.y}
-              y2={target.y}
-            />
-          );
-        })}
-        {[...positioned.values()].map((node) => {
-          const ticker = node.id.startsWith("company:") ? node.id.split(":")[1] : "";
-          return (
-            <g key={node.id} onClick={() => ticker && onSelectTicker(ticker)}>
-              <circle className={`node node-${node.type.replace(/[:_]/g, "-")}`} cx={node.x} cy={node.y} r={node.r} />
-              <text x={node.x} y={node.y + node.r + 15}>{shortLabel(node.label)}</text>
-            </g>
-          );
-        })}
-      </svg>
-    </div>
-  );
-}
-
-function ReportsPanel() {
-  const report = siteData.reports[0];
-  return (
-    <div className="report-sections">
-      {report.sections.map((section) => (
-        <section className="section-block" key={section.id}>
-          <div className="section-heading">
-            <h2>{section.title}</h2>
-            <span>{section.kind}</span>
-          </div>
-          {section.body_html && <p>{plainTextFromHtml(section.body_html)}</p>}
-          {section.rows && (
-            <p className="muted">{section.rows.length} structured rows available in reports.json.</p>
-          )}
-        </section>
-      ))}
-    </div>
-  );
-}
-
-function CompanyDetail({
+function InsightDetail({
+  category,
   company,
   claims,
   signals
 }: {
+  category?: Category;
   company?: Company;
-  claims: Array<{ id: string; claim: string; status: string; verify_at?: string }>;
+  claims: Claim[];
   signals: Signal[];
 }) {
   if (!company) return null;
@@ -346,16 +400,32 @@ function CompanyDetail({
       <h3>{company.name}</h3>
       <p>{company.thesis?.why_now || company.thesis?.bottleneck_role || "No thesis note yet."}</p>
       <div className="detail-metrics">
-        <Stat label="Exposure" value={exposure ? moneyFormat.format(exposure) : "—"} />
+        <Stat label="Exposure" value={exposure ? moneyFormat.format(exposure) : "-"} />
         <Stat label="Signals" value={signals.length} />
         <Stat label="Claims" value={claims.length} />
       </div>
+      {category && (
+        <section>
+          <h4>{category.label}</h4>
+          <div className="compact-row">
+            <strong>Status</strong>
+            <span>{title(category.status || "unmapped")}</span>
+          </div>
+          <div className="compact-row">
+            <strong>Flow</strong>
+            <span>{category.reviewCount} reviews / {category.predictionCount} predictions</span>
+          </div>
+          {category.thesisSignals.slice(0, 3).map((signal) => (
+            <p className="detail-item" key={signal}>{signal}</p>
+          ))}
+        </section>
+      )}
       <section>
         <h4>Positions</h4>
         {(company.positions || []).slice(0, 4).map((position) => (
           <div className="compact-row" key={`${position.source}-${position.type}`}>
             <strong>{title(position.source)}</strong>
-            <span>{position.value ? moneyFormat.format(position.value) : "—"} / {position.type || "common"}</span>
+            <span>{position.value ? moneyFormat.format(position.value) : "-"} / {position.type || "common"}</span>
           </div>
         ))}
       </section>
@@ -387,6 +457,83 @@ function Stat({ label, value }: { label: string; value: number | string }) {
   );
 }
 
+function buildCategories() {
+  const categories = new Map<string, Category>();
+
+  const put = (stage: Partial<ThesisStage> & { name: string }) => {
+    const key = categoryKey(stage.name);
+    if (!categories.has(key)) {
+      categories.set(key, {
+        id: `category:${key}`,
+        key,
+        label: stage.name,
+        status: stage.status,
+        period: stage.period,
+        cyclePhase: stage.cycle_phase,
+        tickers: dedupe(stage.tickers || []),
+        thesisSignals: stage.signals || [],
+        companies: [],
+        signals: [],
+        claims: [],
+        reviewCount: 0,
+        predictionCount: 0
+      });
+    }
+    return categories.get(key)!;
+  };
+
+  siteData.thesis.cascade.forEach((stage) => put(stage));
+
+  siteData.companies.forEach((company) => {
+    const category = findCategoryForValue(categories, company.bottleneck) || put({ name: company.bottleneck || "Unmapped" });
+    category.companies = pushUnique(category.companies, company, (item) => item.id);
+    category.tickers = dedupe([...category.tickers, company.ticker]);
+  });
+
+  siteData.signals.forEach((signal) => {
+    const category = findCategoryForValue(categories, signal.bottleneck) || put({ name: signal.bottleneck || "Unmapped" });
+    category.signals = pushUnique(category.signals, signal, (item) => item.id);
+    const tickers = [signal.ticker, ...(signal.tickers || [])].filter(Boolean) as string[];
+    category.tickers = dedupe([...category.tickers, ...tickers]);
+  });
+
+  siteData.claims.forEach((claim) => {
+    const company = siteData.companies.find((item) => item.ticker === claim.ticker);
+    const category = findCategoryForValue(categories, company?.bottleneck) || categories.get("unmapped");
+    if (category) category.claims = pushUnique(category.claims, claim, (item) => item.id);
+  });
+
+  return [...categories.values()]
+    .map((category) => ({
+      ...category,
+      companies: category.companies.sort((a, b) => a.ticker.localeCompare(b.ticker)),
+      signals: category.signals.sort((a, b) => a.id.localeCompare(b.id)),
+      claims: category.claims.sort((a, b) => a.id.localeCompare(b.id)),
+      tickers: dedupe(category.tickers).sort(),
+      reviewCount: category.signals.filter((signal) => signal.kind !== "thesis_proposal_signal").length,
+      predictionCount:
+        category.claims.length +
+        category.signals.filter((signal) => signal.kind === "thesis_proposal_signal" || signal.direction === "proposed").length
+    }))
+    .sort((a, b) => categorySort(a) - categorySort(b) || a.label.localeCompare(b.label));
+}
+
+function findCategoryForValue(categories: Map<string, Category>, value?: string) {
+  if (!value) return undefined;
+  const direct = categories.get(categoryKey(value));
+  if (direct) return direct;
+  return [...categories.values()].find((category) => matchesCategory(value, category.label) || matchesCategory(value, category.key));
+}
+
+function categorySort(category: Category) {
+  const statusOrder: Record<string, number> = { active: 0, next: 1, played_out: 2, unmapped: 3 };
+  return statusOrder[category.status || "unmapped"] ?? 4;
+}
+
+function sumCategories(categories: Category[], key: "reviewCount" | "predictionCount") {
+  return categories.reduce((sum, category) => sum + category[key], 0);
+}
+
 function signalsForTicker(ticker: string) {
   return siteData.signals.filter((signal) => {
     const tickers = [signal.ticker, ...(signal.tickers || [])].filter(Boolean);
@@ -394,42 +541,12 @@ function signalsForTicker(ticker: string) {
   });
 }
 
-function graphForTicker(ticker: string) {
-  const companyId = `company:${ticker}`;
-  const related = new Set([companyId]);
-  siteData.graph.links.forEach((link) => {
-    if (link.source === companyId) related.add(link.target);
-    if (link.target === companyId) related.add(link.source);
-  });
-  siteData.graph.links.forEach((link) => {
-    if (related.has(link.source) || related.has(link.target)) {
-      related.add(link.source);
-      related.add(link.target);
-    }
-  });
-  const nodes = siteData.graph.nodes.filter((node) => related.has(node.id)).slice(0, 44);
-  const nodeIds = new Set(nodes.map((node) => node.id));
-  const links = siteData.graph.links.filter((link) => nodeIds.has(link.source) && nodeIds.has(link.target)).slice(0, 90);
-  return { nodes, links };
+function pushUnique<T>(items: T[], next: T, idFor: (item: T) => string) {
+  return items.some((item) => idFor(item) === idFor(next)) ? items : [...items, next];
 }
 
-function positionNodes(nodes: GraphNode[], width: number, height: number) {
-  const centerX = width / 2;
-  const centerY = height / 2;
-  const radius = Math.min(width, height) * 0.36;
-  const positioned = new Map<string, GraphNode & { x: number; y: number; r: number }>();
-  nodes.forEach((node, index) => {
-    const angle = (Math.PI * 2 * index) / Math.max(nodes.length, 1) - Math.PI / 2;
-    const nodeRadius = Math.max(7, Math.min(18, 6 + (node.val || 1)));
-    const isCompany = node.id.startsWith("company:");
-    positioned.set(node.id, {
-      ...node,
-      x: isCompany ? centerX : centerX + Math.cos(angle) * radius,
-      y: isCompany ? centerY : centerY + Math.sin(angle) * radius,
-      r: isCompany ? 22 : nodeRadius
-    });
-  });
-  return positioned;
+function dedupe(values: string[]) {
+  return [...new Set(values.filter(Boolean))];
 }
 
 function title(value: string) {
@@ -440,8 +557,12 @@ function slug(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
-function matchesBottleneckFilter(value: string | undefined, selected: string) {
-  if (selected === "all") return true;
+function categoryKey(value: string) {
+  const key = slug(value || "unmapped");
+  return categoryAliases[key.replace(/-/g, "_")] || categoryAliases[key] || key;
+}
+
+function matchesCategory(value: string | undefined, selected: string) {
   if (!value) return false;
   const valueSlug = slug(value);
   const selectedSlug = slug(selected);
@@ -451,12 +572,4 @@ function matchesBottleneckFilter(value: string | undefined, selected: string) {
     selectedSlug.includes(valueSlug) ||
     valueSlug.includes(selectedSlug)
   );
-}
-
-function plainTextFromHtml(value: string) {
-  return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
-}
-
-function shortLabel(value: string) {
-  return value.length > 18 ? `${value.slice(0, 15)}...` : value;
 }

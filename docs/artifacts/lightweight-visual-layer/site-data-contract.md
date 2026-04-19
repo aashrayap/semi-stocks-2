@@ -42,8 +42,9 @@ The reader consumes `canonical/site-data/` only. It must not parse
 
 ## First Parity Core
 
-The first reader parity target is **companies + signals**:
+The first reader parity target is **categories + companies + signals**:
 
+- thesis categories that reviews and predictions move through
 - company exposure and ticker mapping
 - source-backed signal rows
 - thesis impact or stage mapping
@@ -51,7 +52,8 @@ The first reader parity target is **companies + signals**:
 - links back to wiki/source pages
 
 This is intentionally narrower than whole-wiki parity and more useful than
-report-HTML parity.
+report-HTML parity. Category taxonomy is provisional until the thesis review and
+prediction flow settles.
 
 ## Source Inputs
 

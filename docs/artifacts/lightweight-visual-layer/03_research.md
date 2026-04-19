@@ -7,12 +7,9 @@ feature: lightweight-visual-layer
 
 ## Flagged Items
 
-- **Full wiki-site compiler missing from semi-stocks.** The current untracked
-  repo-side code refreshes graph/map and HTML payloads, but does not regenerate
-  all page HTML, `search.json`, or `previews.json`. Confidence: Medium.
-- **Wikiwise still repairs repo data.** The app copies `canonical/wiki-site/`
-  into a temp shell and rebuilds graph/map links from canonical markdown, so the
-  app is still more than a thin reader. Confidence: High.
+- **Legacy wiki-site bundle exists only as removable output.** The active
+  builder is `canonical/40-engine/site_data.py`; the old generated bundle is not
+  part of the target contract. Confidence: High.
 - **Justin's artifact schema has a small mismatch.** Built `deals.json` includes
   generated `source_category` and `target_category`, but released schema still
   describes only input deal fields with `additionalProperties: false`.
@@ -21,40 +18,35 @@ feature: lightweight-visual-layer
   Public docs describe `source_slug -> target_slug` as money/chips/equity flow,
   but equipment examples can read supplier-to-customer. Semi-stocks needs typed
   flows or direction notes. Confidence: Medium.
-- **Current work spans two repos.** `semi-stocks-2` has untracked/modified
-  wiki-site refresh artifacts; `wikiwise` has one modified app file. Confidence:
-  High.
-- **Decision update after research:** `canonical/site-data/` is now the chosen
-  contract location, and Wikiwise is an exit target rather than a compatibility
-  target. Confidence: High.
+- **Current work spans multiple worktrees.** `semi-stocks-2` carries the active
+  site-data contract and removal work. Confidence: High.
+- **Decision update after research:** `canonical/site-data/` is the chosen
+  contract location, and Wikiwise is an exit target. Confidence: High.
 
 ## Findings
 
 ### Codebase
 
-#### Q1 — Current `canonical/wiki-site/` generation
+#### Q1 — Current `canonical/site-data/` generation
 
-**Answer:** `semi-stocks-2` now has an untracked repo-side refresh entrypoint at
-`canonical/40-engine/wiki_site.py`, backed by
-`canonical/40-engine/engine/wiki_site.py`. It refreshes `graph.json`,
-`map.json`, and inlined graph/map payloads in `graph.html`, `map.html`, and
-`map-3d.html`. It depends on the newly added `WIKI_SITE_DIR` path in
-`canonical/40-engine/engine/paths.py`.
+**Answer:** `semi-stocks-2` now has the active repo-side builder at
+`canonical/40-engine/site_data.py`, backed by
+`canonical/40-engine/engine/site_data.py`. It writes the schema-first
+`canonical/site-data/*.json` contract from the canonical lanes and validates it
+on request.
 
-**Evidence:** `canonical/40-engine/wiki_site.py`,
-`canonical/40-engine/engine/wiki_site.py`, `canonical/40-engine/engine/paths.py`.
+**Evidence:** `canonical/40-engine/site_data.py`,
+`canonical/40-engine/engine/site_data.py`, `canonical/40-engine/engine/paths.py`.
 
-**Confidence:** High for current refresh behavior; Medium that no full compiler
-exists in this repo because this is based on repo search.
+**Confidence:** High.
 
 **Contract split:**
 
-- Data-like artifacts: `previews.json`, `search.json`, `graph.json`, `map.json`.
-- Presentation artifacts: page HTML, `graph.html`, `map.html`, `map-3d.html`,
-  `style.css`, `app.js`, likely `search.json.js`.
-- Strongest current page-data candidate: `previews.json`, because prior docs
-  record `title`, `lead`, `rich`, `href`, and `type`, with `rich` carrying full
-  body content.
+- Data-like artifacts: `build.json`, `schema.json`, `pages.json`,
+  `companies.json`, `signals.json`, `entities.json`, `edges.json`,
+  `claims.json`, `thesis.json`, `reports.json`, `search.json`, `graph.json`.
+- Presentation work now belongs in `canonical/site-reader/`, not in generated
+  repo-owned HTML.
 
 #### Q2 — Canonical lanes that can feed a lighter visual layer
 
@@ -78,35 +70,24 @@ them:
 
 **Confidence:** High.
 
-#### Q3 — Wikiwise app consumption path
+#### Q3 — Legacy wiki-site removal path
 
-**Answer:** Wikiwise discovers a bundle by checking for `previews.json`,
-`search.json`, `graph.json`, and `map.json`; opening the semi-stocks repo root
-should resolve `<repo>/canonical/wiki-site`. It copies the whole bundle into a
-temporary shell, normalizes HTML links, rebuilds graph/map from canonical
-markdown, and writes generated shell HTML. The app contract therefore still
-requires both the generated bundle and canonical markdown fallback.
+**Answer:** No active Wikiwise consumption path is required for the semi-stocks
+reader now. Legacy `canonical/wiki-site/` files can be removed without changing
+the site-data contract.
 
-**Evidence:** `/Users/ash/Documents/2026/wikiwise/Sources/Wikiwise/ExportBundle.swift`
-discovers bundle files, builds a slug index from `10-wiki/{concepts,sources,outputs,raw}`,
-copies to `wikiwise-export-shell`, rebuilds graph/map, and writes map/graph
-HTML. `ContentView.swift` opens export bundles with `compiler = nil`.
+**Evidence:** repo search plus the active `canonical/site-data/` builder and
+`canonical/site-reader/` worktree.
 
 **Confidence:** High.
 
 #### Q4 — Current uncommitted changes
 
-**Answer:**
+**Answer:** The active work in `semi-stocks-2` is the site-data contract and
+removal of the legacy `canonical/wiki-site/` bundle. No `wikiwise` worktree
+dependency is required for this branch.
 
-- `semi-stocks-2`: modified agent logs/reports/predictions, modified
-  `canonical/40-engine/engine/paths.py`, modified `canonical/wiki-site/graph*`
-  and `map*`, untracked wiki-site refresh files, untracked compute/Wikiwise
-  diagrams, untracked `canonical/.obsidian/`, and this feature artifact set.
-- `wikiwise`: modified `Sources/Wikiwise/ExportBundle.swift` only. Relevant
-  changes prefer authored wiki pages before raw files and inline map/previews/
-  graph JSON into generated `map.html`.
-
-**Evidence:** `git status --short` in both worktrees.
+**Evidence:** `git status --short` in the repo worktree.
 
 **Confidence:** High.
 
@@ -114,13 +95,13 @@ HTML. `ContentView.swift` opens export bundles with `compiler = nil`.
 
 #### Q5 — Authority and write boundaries
 
-**Answer:** Repo docs consistently define five canonical stages plus one
-generated app surface:
+**Answer:** Repo docs should define five canonical stages plus one generated
+reader contract:
 
 `canonical/10-wiki -> canonical/20-data -> canonical/30-thesis -> canonical/40-engine -> canonical/50-reports`
 
-`canonical/wiki-site/` is generated integration/export output for the external
-Wikiwise app, not a sixth canonical stage.
+`canonical/site-data/` is generated reader input, and `canonical/site-reader/`
+is the local presentation layer.
 
 **Evidence:** `AGENTS.md`, `README.md`, `docs/architecture.md`,
 `docs/doc-contract.md`, and
@@ -130,13 +111,10 @@ Wikiwise app, not a sixth canonical stage.
 
 #### Q6 — Current propagation model alignment
 
-**Answer:** The current model already points toward a data-only future. It says
-Wikiwise may consume the generated bundle short-term, but long-term should not
-depend on repo-owned presentational HTML if lower-level page/export data is
-available. It also explicitly flags `previews.json` as closer to a page-data
-contract than its name suggests.
+**Answer:** The current model should be treated as historical migration
+context. The active contract is now `canonical/site-data/` plus the reader.
 
-**Evidence:** `docs/artifacts/canonical-propagation-model/07_implementation-spec.md`.
+**Evidence:** repo docs and the active site-data artifact set.
 
 **Confidence:** High.
 
@@ -148,8 +126,8 @@ contract than its name suggests.
   semi-stocks wide-to-narrow research funnel.
 - `compute-stack-insertion-point.png`: compute-style contract belongs after
   `40-engine`, not inside canonical thinking loop.
-- `compute-stack-migration-path.png`: keep Wikiwise alive while building the
-  lighter contract/reader.
+- `compute-stack-migration-path.png`: migration path from the old integration
+  surface to the lighter contract/reader.
 - `compute-data-feed-vs-stack-copy.png`: separate upstream evidence import from
   downstream architecture borrowing.
 
@@ -196,12 +174,12 @@ claim/evidence provenance, multi-role companies, or thesis support/conflict.
 
 **Answer:** semi-stocks already prefers deterministic `uv run python ...`
 entrypoints under `canonical/40-engine/`. Report generation writes
-`canonical/50-reports/latest.html`; wiki-site refresh prints graph/map counts.
-Existing task docs use `py_compile`, generator commands, and file-shape smoke
-checks.
+`canonical/50-reports/latest.html`; site-data generation writes the new reader
+contract. Existing task docs use `py_compile`, generator commands, and
+file-shape smoke checks.
 
 **Evidence:** `canonical/40-engine/report.py`,
-`canonical/40-engine/wiki_site.py`, `docs/artifacts/canonical-propagation-model/05_tasks.md`,
+`canonical/40-engine/site_data.py`, `docs/artifacts/canonical-propagation-model/05_tasks.md`,
 `06_handoff.md`, `07_implementation-spec.md`.
 
 **Confidence:** High.
@@ -251,10 +229,10 @@ Keep those moves separate:
 
 #### Q14 — Smallest migration slice
 
-**Answer:** First slice should freeze current Wikiwise work, then formalize
-`canonical/site-data/`, generate it deterministically from current canonical
-state, and validate its schema. Wikiwise should not receive new semi-stocks
-behavior.
+**Answer:** First slice should delete the legacy wiki-site bundle, then
+formalize `canonical/site-data/`, generate it deterministically from current
+canonical state, and validate its schema. Wikiwise should not receive new
+semi-stocks behavior.
 
 **Confidence:** High.
 
@@ -280,7 +258,7 @@ behavior.
 **Decide now:**
 
 - JSON artifacts become the reader contract.
-- Wikiwise is removed from the target architecture after reader parity.
+- Wikiwise is removed from the target architecture.
 - Justin's public data is an optional evidence input, not a new authority layer.
 - Visual layer is derived from canonical lanes after `40-engine`.
 - Reader path is a Justin-style React/Vite static app after the data contract
@@ -290,7 +268,6 @@ behavior.
 
 **Defer:**
 
-- Exact timing for stopping `canonical/wiki-site/` generation.
 - Whether compute data gets a dedicated importer in the first implementation
   slice.
 - Final public/private distribution mechanism.
@@ -306,18 +283,18 @@ behavior.
 - Semi-stocks needs richer relationships than Justin's single directed edge:
   `flow_type`, `supports_claim`, `contradicts_claim`, `exposes_company_to`,
   `belongs_to_bottleneck`, and `derived_from_source`.
-- `previews.json` is already an accidental page-data contract; formalizing or
-  replacing it is lower risk than inventing everything from scratch.
-- Wikiwise app-side graph repair is useful as a bridge, but bad as a permanent
+- `pages.json` is the new page-data contract; keep it explicit rather than
+  implicit.
+- Wikiwise app-side graph repair is no longer part of the semi-stocks
   contract.
 
 ## Core Docs Summary
 
 - `README.md` and `docs/architecture.md`: five canonical stages plus generated
-  `wiki-site`.
+  reader contract.
 - `AGENTS.md`: write ownership and wiki write rules.
-- `docs/doc-contract.md`: root docs stay minimal; generated bundle is
-  repo-owned export output.
+- `docs/doc-contract.md`: root docs stay minimal; generated reader input is
+  repo-owned output.
 - `07_implementation-spec.md`: current app/repo handoff; already recommends
   reducing dependence on repo-owned HTML once lower-level page data is stable.
 - `canonical/10-wiki/schema.md`: wiki edits require schema/index/generated
@@ -325,10 +302,8 @@ behavior.
 
 ## Open Questions
 
-- How fast should `canonical/wiki-site/` be retired after `canonical/site-data/`
-  exists?
-- Should first execution formalize current `previews.json` or introduce
-  `pages.json` and leave `previews.json` only as legacy bundle data?
+- Which legacy `canonical/wiki-site/` files, if any, should be archived before
+  deletion?
 - Should compute-deal-map-data be ingested now, or only used as design
   reference until the reader contract exists?
 - What minimum claim schema exists today, given claims are present in company

@@ -24,9 +24,10 @@ from existing canonical lanes. The reader comes after the contract passes.
 `50-reports` remains as the canonical published report artifact until the new
 reader can reproduce the report view.
 
-The first reader parity target is company/signal centered, not whole-wiki
-parity: companies, source-backed signals, thesis impact, and report metadata/key
-sections should work before broader graph polish.
+The first reader parity target is category/company/signal centered, not
+whole-wiki parity: thesis categories, companies, source-backed signals, thesis
+impact, and report metadata/key sections should work before broader graph
+polish.
 
 ## Users and Workflows
 
@@ -55,10 +56,11 @@ sections should work before broader graph polish.
   forced through wiki pages or scraped from final report HTML.
 - Companies and signals are first-class reader artifacts, not only generic graph
   nodes.
+- Categories are provisional reader groupings over thesis stages, company
+  exposure, signal flow, review rows, and prediction rows.
 - `50-reports` is represented in site-data as report metadata/sections while
   remaining a separate published artifact for now.
-- Wikiwise integration has an explicit exit path and no new semi-stocks behavior
-  depends on it.
+- Wikiwise is not a required runtime or delivery path for semi-stocks.
 
 ## Boundaries
 
@@ -78,15 +80,15 @@ sections should work before broader graph polish.
 
 - Risk: copying the visible site shape could flatten semi-stocks' richer
   thesis/evidence workflow.
-- Risk: keeping Wikiwise compatibility too long could preserve duplicate
-  contracts and app-side repair behavior.
+- Risk: keeping legacy wiki-site output around too long could preserve duplicate
+  contracts and stale repair behavior.
 - Risk: removing `50-reports` before report-view parity could destroy the only
   current published artifact.
 - Risk: moving too much into generated JSON could hide source provenance from
   the research loop.
 - Dependency: Justin's public data repo and live site are separate surfaces and
   must be analyzed separately.
-- Dependency: current semi-stocks export and Wikiwise app changes may be
-  uncommitted across two repos.
+- Dependency: current semi-stocks export and reader changes may be uncommitted
+  across multiple worktrees.
 - Dependency: any durable wiki writes must follow `canonical/10-wiki/schema.md`
   and update wiki index/generated state/log.

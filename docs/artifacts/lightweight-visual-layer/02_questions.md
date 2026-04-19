@@ -7,20 +7,21 @@ feature: lightweight-visual-layer
 
 ## Codebase
 
-1. What files and commands currently generate `canonical/wiki-site/`, and which
+1. What files and commands currently generate `canonical/site-data/`, and which
    generated artifacts are data contracts versus presentation shells?
 2. Which canonical lanes currently contain company, source, claim, thesis, and
    report data that could feed a lighter visual layer?
-3. Where does the current Wikiwise app consume, repair, or reinterpret
-   `canonical/wiki-site/` data?
-4. What uncommitted changes already exist in `semi-stocks-2` and `wikiwise`
-   that affect this migration path?
+3. What legacy `canonical/wiki-site/` references still remain in the repo, and
+   which can be deleted outright?
+4. What uncommitted changes already exist in `semi-stocks-2` that affect this
+   migration path?
 
 ## Docs
 
 1. What do repo docs define as the authoritative lane ownership and write
-   boundaries for wiki, data, thesis, engine, reports, and `wiki-site`?
-2. What does the current canonical propagation model say about the Wikiwise
+   boundaries for wiki, data, thesis, engine, reports, `site-data`, and the
+   reader?
+2. What does the current canonical propagation model say about the site-data
    contract, and is it still aligned with the live code?
 3. What durable diagrams or idea notes already describe the compute-stack
    comparison, insertion point, migration path, and upstream evidence feed?
@@ -45,8 +46,8 @@ feature: lightweight-visual-layer
 
 1. Which Justin pattern should enter semi-stocks upstream as evidence import,
    and which should enter downstream as visual/export architecture?
-2. What is the smallest migration slice that reduces Wikiwise weight while
-   keeping current reports/wiki outputs usable?
+2. What is the smallest migration slice that removes Wikiwise dependency while
+   keeping current reports usable?
 3. What target data contract should exist between `40-engine` and a future
    visual reader: pages, entities, edges, claims, sources, reports, thesis, or a
    different split?

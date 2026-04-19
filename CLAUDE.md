@@ -7,7 +7,7 @@ Use this repo as a canonical propagation system. Keep root map, skill routing, a
 - Repo map: [README.md](README.md)
 - Architecture: [docs/architecture.md](docs/architecture.md)
 - Doc contract: [docs/doc-contract.md](docs/doc-contract.md)
-- Current repo/Wikiwise contract: [docs/artifacts/canonical-propagation-model/07_implementation-spec.md](docs/artifacts/canonical-propagation-model/07_implementation-spec.md)
+- Active site-data/site-reader contract: [docs/artifacts/lightweight-visual-layer/site-data-contract.md](docs/artifacts/lightweight-visual-layer/site-data-contract.md)
 - Wiki ingest/query/lint skill: [.claude/skills/ingest-semi/SKILL.md](.claude/skills/ingest-semi/SKILL.md)
 
 ## Authority Model
@@ -19,7 +19,8 @@ Use this repo as a canonical propagation system. Keep root map, skill routing, a
 - `canonical/30-thesis/thesis.yaml` owns the thesis control plane.
 - `canonical/40-engine/` owns synthesis and render code.
 - `canonical/50-reports/` owns canonical reports.
-- `canonical/wiki-site/` is generated Wikiwise integration output, not a canonical stage.
+- `canonical/site-data/` is generated reader input, not a canonical stage.
+- `canonical/site-reader/` is the local presentation layer for that input.
 - `agents/` is sidecar-only unless the user explicitly asks for promotion.
 - `tmp/` is scratch only.
 
@@ -37,8 +38,6 @@ Use this repo as a canonical propagation system. Keep root map, skill routing, a
 - Canonical report command: `uv run python canonical/40-engine/report.py`.
 - Engine module root: `canonical/40-engine/engine/`.
 - Keep `config.yaml` at repo root unless explicitly asked to move it.
-- Wikiwise source checkout is separate: `/Users/ash/Documents/2026/wikiwise`.
-- Installed Wikiwise app is `/Applications/Wikiwise.app`; it consumes `canonical/wiki-site/`.
 
 <important if="editing wiki content">
 Use the local `ingest-semi` skill. If `canonical/10-wiki/schema.md` is missing, stop and say wiki migration is not complete. Read the schema first. Never edit `canonical/10-wiki/raw/`. After wiki writes, update `canonical/10-wiki/index.md`, rebuild generated state, and append to `canonical/10-wiki/log.md`.
