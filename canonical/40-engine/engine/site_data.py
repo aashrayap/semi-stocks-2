@@ -6,7 +6,7 @@ import hashlib
 import json
 import re
 import shutil
-from datetime import date, datetime, timezone
+from datetime import date, datetime
 from pathlib import Path
 from typing import Any
 
@@ -891,7 +891,7 @@ def _build_manifest(
     return {
         "id": "build:site-data",
         "generator": GENERATOR_VERSION,
-        "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "generated_at": f"{_source_updated_date()}T00:00:00Z",
         "source_hash": _source_hash(),
         "source_counts": {
             "wiki_markdown": len(list(WIKI_DIR.rglob("*.md"))),
@@ -1165,3 +1165,29 @@ def _source_hash() -> str:
         digest.update(path.read_bytes())
         digest.update(b"\0")
     return digest.hexdigest()
+
+
+def _source_updated_date() -> str:
+    """Return the latest metadata date in source files for deterministic builds."""
+    dates: list[str] = []
+    for path in sorted(WIKI_DIR.rglob("*.md")):
+        frontmatter, _ = _split_frontmatter(path.read_text(encoding="utf-8"))
+        dates.extend(_metadata_dates(frontmatter))
+    for path in sorted(DATA_DIR.rglob("*.yaml")):
+        dates.extend(_metadata_dates(_read_yaml(path)))
+    dates.extend(_metadata_dates(_read_yaml(THESIS_PATH)))
+    return max(dates) if dates else "1970-01-01"
+
+
+def _metadata_dates(value: Any) -> list[str]:
+    if isinstance(value, dict):
+        results: list[str] = []
+        for key, item in value.items():
+            if key in {"created", "updated", "date", "period", "filed", "earnings_date"}:
+                match = re.search(r"\d{4}-\d{2}-\d{2}", str(item))
+                if match:
+                    results.append(match.group(0))
+            elif isinstance(item, dict):
+                results.extend(_metadata_dates(item))
+        return results
+    return []
