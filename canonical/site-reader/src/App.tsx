@@ -51,7 +51,7 @@ export function App() {
         company.ticker.toLowerCase().includes(needle) ||
         company.name.toLowerCase().includes(needle) ||
         (company.bottleneck || "").toLowerCase().includes(needle);
-      const matchesBottleneck = bottleneck === "all" || company.bottleneck === bottleneck;
+      const matchesBottleneck = matchesBottleneckFilter(company.bottleneck, bottleneck);
       return matchesQuery && matchesBottleneck;
     });
   }, [bottleneck, query]);
@@ -65,8 +65,7 @@ export function App() {
         signal.evidence.toLowerCase().includes(needle) ||
         (signal.title || "").toLowerCase().includes(needle) ||
         tickers.toLowerCase().includes(needle);
-      const matchesBottleneck =
-        bottleneck === "all" || signal.bottleneck === bottleneck || signal.bottleneck_id?.endsWith(slug(bottleneck));
+      const matchesBottleneck = matchesBottleneckFilter(signal.bottleneck, bottleneck);
       const matchesKind = signalKind === "all" || signal.kind === signalKind;
       const matchesDirection = direction === "all" || signal.direction === direction;
       return matchesQuery && matchesBottleneck && matchesKind && matchesDirection;
@@ -78,6 +77,7 @@ export function App() {
     () => siteData.claims.filter((claim) => claim.ticker === selectedTicker),
     [selectedTicker]
   );
+  const filteredSignalsCount = filteredSignals.length;
 
   return (
     <main className="shell">
@@ -148,7 +148,7 @@ export function App() {
 
       <section className="stats-grid" aria-label="Site data counts">
         <Stat label="Companies" value={siteData.companies.length} />
-        <Stat label="Signals" value={siteData.signals.length} />
+        <Stat label="Signals" value={filteredSignalsCount} />
         <Stat label="Claims" value={siteData.claims.length} />
         <Stat label="Edges" value={siteData.edges.length} />
         <Stat label="Report sections" value={siteData.reports[0]?.sections.length || 0} />
@@ -312,9 +312,7 @@ function ReportsPanel() {
             <h2>{section.title}</h2>
             <span>{section.kind}</span>
           </div>
-          {section.body_html && (
-            <p dangerouslySetInnerHTML={{ __html: section.body_html }} />
-          )}
+          {section.body_html && <p>{plainTextFromHtml(section.body_html)}</p>}
           {section.rows && (
             <p className="muted">{section.rows.length} structured rows available in reports.json.</p>
           )}
@@ -440,6 +438,23 @@ function title(value: string) {
 
 function slug(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function matchesBottleneckFilter(value: string | undefined, selected: string) {
+  if (selected === "all") return true;
+  if (!value) return false;
+  const valueSlug = slug(value);
+  const selectedSlug = slug(selected);
+  return (
+    value === selected ||
+    valueSlug === selectedSlug ||
+    selectedSlug.includes(valueSlug) ||
+    valueSlug.includes(selectedSlug)
+  );
+}
+
+function plainTextFromHtml(value: string) {
+  return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 }
 
 function shortLabel(value: string) {
