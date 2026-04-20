@@ -7,11 +7,6 @@ Start here:
 - Read [docs/doc-contract.md](docs/doc-contract.md) for root-doc and subsystem-doc boundaries.
 - Read [docs/ash.md](docs/ash.md) for a visual explainer of the repository.
 - Use [AGENTS.md](AGENTS.md) or [CLAUDE.md](CLAUDE.md) for agent routing.
-- For the current repo/app rollout, use [docs/artifacts/canonical-propagation-model/07_implementation-spec.md](docs/artifacts/canonical-propagation-model/07_implementation-spec.md).
-
-High-level diagrams:
-- [Current architecture + workflow](docs/diagrams/current-architecture-workflow.png)
-- [Repo structure map](docs/diagrams/repo-structure-map.png)
 
 ## Top-Level Map
 
@@ -30,8 +25,9 @@ High-level diagrams:
 - `canonical/40-engine/` — engine stage wrapper and package-safe Python module root
 - `canonical/50-reports/` — canonical published artifacts
 
-## Generated Integration Surface
+## Generated App Surfaces
 
-- `canonical/wiki-site/` — generated Wikiwise export bundle consumed by the external app shell; not a sixth canonical stage
+- `canonical/site-data/` — generated JSON contract for repo-owned web readers and review surfaces; not a canonical stage
+- `canonical/site-reader/` — repo-owned web reader source that consumes `canonical/site-data/`; not a canonical stage
 
 Use `uv run ...` for Python commands. Wiki ingest, query, and lint work should route through the repo-local `ingest-semi` skill rather than generic wiki discovery.

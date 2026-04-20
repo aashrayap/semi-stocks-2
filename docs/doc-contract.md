@@ -46,7 +46,8 @@ A document should live near its subsystem when it is tightly coupled to that sub
 Examples:
 
 - `canonical/10-wiki/schema.md` stays under the wiki lane
-- `canonical/wiki-site/` stays under `canonical/` as a generated integration bundle owned by the repo-side export build
+- `canonical/site-data/` stays under `canonical/` as generated app data owned by the engine build
+- `canonical/site-reader/` stays under `canonical/` as repo-owned web reader source
 - agent-only operational notes may live under `agents/`
 - engine-internal notes may live under `canonical/40-engine/`
 
