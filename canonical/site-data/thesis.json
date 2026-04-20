@@ -1,0 +1,400 @@
+{
+  "baker_hedge_ratio": {
+    "ratio": 0.7,
+    "trend": "increasing"
+  },
+  "cascade": [
+    {
+      "company_ids": [
+        "company:ASX",
+        "company:AMAT"
+      ],
+      "cycle_action": "—",
+      "cycle_phase": "resolved",
+      "cycle_risk": 0,
+      "cycle_risk_flags": [],
+      "cycle_signal": "",
+      "id": "thesis-stage:cowos-packaging",
+      "name": "CoWoS packaging",
+      "notes": "TSMC ramped CoWoS capacity to ~1M wafers/yr by 2026. Nvidia has 60%.",
+      "period": "2023",
+      "signals": [],
+      "status": "played_out",
+      "tickers": [
+        "ASX",
+        "AMAT"
+      ]
+    },
+    {
+      "company_ids": [
+        "company:VST",
+        "company:CEG",
+        "company:TLN",
+        "company:VRT"
+      ],
+      "cycle_action": "Avoid",
+      "cycle_phase": "post_peak",
+      "cycle_risk": 1,
+      "cycle_risk_flags": [],
+      "cycle_signal": "Still monetizable, but increasingly substitution-rich: behind-the-meter engines, fuel cells, batteries, and grid workarounds make power less likely than semiconductors to be the terminal bottleneck.",
+      "id": "thesis-stage:power-dc-buildout",
+      "name": "Power / DC buildout",
+      "notes": "56 GW announced. PJM backlog still 286 GW. Leopold still positioned here (BE, miners) — he may see this as unresolved. The newer SemiAnalysis-style read is that power is a real buildout problem but a substitution-rich one, unlike the semiconductor tool chain.\n",
+      "period": "2024",
+      "signals": [
+        "56 GW of power announced; PJM backlog still 286 GW",
+        "Power can route around bottlenecks through multiple lanes: combined-cycle turbines, aeroderivatives, reciprocating engines, ship engines, fuel cells, batteries, and grid peak-shaving",
+        "Updated hierarchy: power remains hard, but the more durable choke points now look upstream in memory, wafers, fabs, and EUV tooling"
+      ],
+      "status": "played_out",
+      "tickers": [
+        "VST",
+        "CEG",
+        "TLN",
+        "VRT"
+      ]
+    },
+    {
+      "company_ids": [
+        "company:MU",
+        "company:SNDK"
+      ],
+      "cycle_action": "Long + Puts",
+      "cycle_phase": "peak_shortage",
+      "cycle_risk": 3,
+      "cycle_risk_flags": [
+        "MU fwd P/E compressing to 10-12x on record EPS $12.20 — classic peak signal",
+        "Micron FY2026 capex is now above $25B — exactly how shortage peaks eventually get overbuilt",
+        "All 3 vendors (SK Hynix, Samsung, Micron) expanding capacity simultaneously",
+        "NVIDIA $21.4B inventory = double-ordering at chip level (10x the FY2023 write-down)",
+        "Google TurboQuant: 6x memory footprint reduction — potential demand destruction"
+      ],
+      "cycle_signal": "Micron just printed a record quarter and guided ~81% gross margin, but Baker already hedged MU. Strong proof, late-cycle risk rising.",
+      "id": "thesis-stage:memory-supercycle",
+      "name": "Memory supercycle",
+      "notes": "Baker is long MU + put hedge. Leopold exited MU puts in Q4. Micron now provides direct earnings proof that memory tightness is real.",
+      "period": "2025-2026",
+      "signals": [
+        "Micron Q2 FY2026: $23.86B revenue, 74.9% non-GAAP gross margin, and Q3 guide of ~$33.5B revenue / ~81% gross margin",
+        "Micron says DRAM and NAND remain supply constrained beyond calendar 2026",
+        "Micron began HBM4 volume shipments for NVIDIA Vera Rubin",
+        "DRAM contract prices +90-95% QoQ (Q1 2026, TrendForce)",
+        "DDR4 spot $2.10/Gbit — now exceeds HBM3e at $1.70/Gbit (unprecedented)",
+        "30% of Big Tech $650B CapEx goes to memory",
+        "NVIDIA $21.4B inventory includes significant HBM stockpile (Q4 FY2026)"
+      ],
+      "status": "active",
+      "tickers": [
+        "MU",
+        "SNDK"
+      ]
+    },
+    {
+      "company_ids": [
+        "company:TSM",
+        "company:NVDA",
+        "company:AVGO",
+        "company:INTC"
+      ],
+      "cycle_action": "Long + Hedge",
+      "cycle_phase": "mid_shortage",
+      "cycle_risk": 2,
+      "cycle_risk_flags": [
+        "TSMC 2026 capital budget of $52B-$56B is a real supply response",
+        "Intel 18A / 14A ramp and external-customer decisions could add alternative supply in 2026-2027",
+        "NVDA $95.2B supply commitments (doubled QoQ) = capacity locked even if demand slows",
+        "NVDA fwd P/E compressing from 60x+ to 21x — shortage-phase compression underway"
+      ],
+      "cycle_signal": "TSMC and Intel both confirmed AI-driven tightness, but TSMC's $52B-$56B capex and Intel's 18A/14A ramp are visible future relief valves.",
+      "id": "thesis-stage:n3-logic-wafers",
+      "name": "N3 logic wafers",
+      "notes": "Originally sequenced after memory but SemiAnalysis data shows both binding simultaneously. TSMC is the direct proof of current tightness; Intel is the proof that eventual supply response is forming. Baker massive NVDA long ($1B+). Leopold holds INTC calls ($749M) but exited NVDA.\n",
+      "period": "2025-2027",
+      "signals": [
+        "TSMC Q4 2025: $33.73B revenue, 62.3% gross margin, and Q1 guide of $34.6B-$35.8B on strong leading-edge demand",
+        "TSMC 3nm already accounts for 28% of wafer revenue, and advanced nodes are 77% of wafer revenue",
+        "Intel said revenue would have been materially higher with more supply; DCAI revenue rose 15% sequentially",
+        "AI = 60% of TSMC N3 output (2026), projected 86% by 2027",
+        "N3 utilization 100%+ in H2 2026",
+        "All major AI accelerators moving to N3 simultaneously: Rubin, TPU v7/v8, Trainium3, MI350X",
+        "NVIDIA supply commitments doubled $50.3B → $95.2B QoQ, capacity secured through CY2027 (Q4 FY2026)",
+        "Vera Rubin samples shipped, production H2 2026 — six new chips this cycle all on N3"
+      ],
+      "status": "active",
+      "tickers": [
+        "TSM",
+        "NVDA",
+        "AVGO",
+        "INTC"
+      ]
+    },
+    {
+      "company_ids": [
+        "company:COHR",
+        "company:LITE",
+        "company:CIEN"
+      ],
+      "cycle_action": "Long",
+      "cycle_phase": "early_cycle",
+      "cycle_risk": 1,
+      "cycle_risk_flags": [
+        "Baker trimmed LITE -42% while Leopold added +604% — directional divergence in consensus zone",
+        "COHR and LITE now sit squarely in the consensus zone; any guide slip can hit crowded optics names hard"
+      ],
+      "cycle_signal": "COHR and LITE are now printing direct AI-optics revenue, backlog, and guide data. Still early cycle, but consensus crowding is rising.",
+      "id": "thesis-stage:pluggable-optics-scale-out",
+      "name": "Pluggable optics (scale-out)",
+      "notes": "Revenue is flowing NOW — every rack Nvidia ships has pluggable transceivers, and COHR/LITE are now proving that in reported quarters instead of only via architecture logic. CIEN supplies optical networking switches for scale-out fabrics. Leopold: LITE $479M, COHR $89M. Baker: COHR ~$394M including calls, CIEN $334M, LITE $141M.\n",
+      "period": "2025-2027",
+      "signals": [
+        "Coherent Q2 FY2026: datacenter and communications was 72% of revenue ($1.208B) and Q3 guide is $1.70B-$1.84B",
+        "Lumentum Q2 FY2026: revenue grew 65.5% YoY and Q3 guide is $780M-$830M",
+        "Lumentum optical-circuit-switch backlog is already above $400M",
+        "Every NVL72/NVL144/NVL288 rack uses pluggable optics for scale-out networking",
+        "NVIDIA networking revenue $11B quarterly (+3.5x YoY), Spectrum-X 'a home run' (Q4 FY2026)"
+      ],
+      "status": "active",
+      "tickers": [
+        "COHR",
+        "LITE",
+        "CIEN"
+      ]
+    },
+    {
+      "company_ids": [
+        "company:COHR",
+        "company:LITE",
+        "company:CIEN",
+        "company:ALAB",
+        "company:SMTC"
+      ],
+      "cycle_action": "Watch",
+      "cycle_phase": "pre_cycle",
+      "cycle_risk": 0,
+      "cycle_risk_flags": [],
+      "cycle_signal": "COHR and LITE now have real orders, partnerships, and demos, but revenue still points to 2027+ rather than a current bottleneck.",
+      "id": "thesis-stage:co-packaged-optics-cpo-scale-up",
+      "name": "Co-packaged optics / CPO (scale-up)",
+      "notes": "Volume CPO is a Feynman story (2028+), NOT Rubin Ultra. NVL576 is test/low-volume. Inside every rack through NVL1152 remains copper. Early COHR/LITE orders matter because they improve confidence in the roadmap, but they do not yet move this stage from \"next\" to \"active.\" ALAB and SMTC benefit from copper persistence inside racks — retimers and signal integrity ICs needed at 200G/lane. Baker: ALAB $268M, SMTC $51M. CPO winners will be whoever integrates optical engines on-package — COHR and LITE are best positioned but volume revenue is years away.\n",
+      "period": "2028-2030",
+      "signals": [
+        "Lumentum disclosed an incremental multi-hundred-million-dollar CPO order for 1H 2027 delivery",
+        "Coherent's March 2026 NVIDIA partnership added multibillion-dollar purchase commitments, future capacity rights, and a $2B investment",
+        "Coherent OFC 2026 demos included 6.4T silicon-photonics CPO, VCSEL socketed CPO, and a 400G-per-lane InP-on-silicon path",
+        "Rubin Ultra NVL576: CPO between racks — explicitly low volume / test only",
+        "Feynman NVL1152: CPO between racks, copper within rack (base case)",
+        "448G SerDes challenges (shoreline, reach, power) favor CPO over copper at next speed step"
+      ],
+      "status": "next",
+      "tickers": [
+        "COHR",
+        "LITE",
+        "CIEN",
+        "ALAB",
+        "SMTC"
+      ]
+    },
+    {
+      "company_ids": [
+        "company:ASML"
+      ],
+      "cycle_action": "Watch",
+      "cycle_phase": "pre_cycle",
+      "cycle_risk": 0,
+      "cycle_risk_flags": [],
+      "cycle_signal": "ASML bookings hit record EUR 13.2B (Q4 2025), but the deeper issue is physical throughput: EUV and its supplier chain cap long-run AI-chip output.",
+      "id": "thesis-stage:euv-tools",
+      "name": "EUV tools",
+      "notes": "Neither Leopold nor Baker has significant ASML exposure yet. Watch for early entry. The key distinction versus power is substitution: data centers can route around energy bottlenecks, but leading-edge fabs cannot route around EUV once tool throughput binds.\n",
+      "period": "2028-2030",
+      "signals": [
+        "ASML can produce ~100 EUV tools/yr by 2030 (Zeiss optics is the constraint)",
+        "One gigawatt of Rubin-class capacity needs ~3.5 EUV tools and ~2M EUV wafer passes",
+        "Installed EUV base could approach ~700 tools by 2030, implying ~200 GW of annual AI-chip output if fully AI-allocated",
+        "Near-term bottleneck is fab / cleanroom space; later bottleneck rotates to EUV tool throughput"
+      ],
+      "status": "next",
+      "tickers": [
+        "ASML"
+      ]
+    }
+  ],
+  "id": "thesis:current",
+  "path": "canonical/30-thesis/thesis.yaml",
+  "proposals": [
+    {
+      "created": "2026-04-13",
+      "id": "proposal:hbm-contracting-structure-shift",
+      "path": "canonical/20-data/thesis-proposals/hbm-contracting-structure-shift.yaml",
+      "proposal": "Add a structural signal to the Memory supercycle stage: the shift from spot pricing to long-term contracted HBM supply (18-24 month forward commitments) may compress the cyclical volatility that historically defined memory. Analogous to LNG market restructuring in the 2010s — if it holds, the 5-8x fwd P/E on memory companies embeds a cyclical discount the business may no longer warrant. This is a thesis-level question, not a settled conclusion.",
+      "status": "pending",
+      "target_sections": [
+        {
+          "add": "HBM contracting shifting from spot to 18-24 month forward commitments. NVIDIA $53B memory purchase commitments. 3-player oligopoly (95%+ share) with non-cancellable contracts dampens spot volatility that historically enabled buyers to play suppliers against each other.\n",
+          "path": "cascade[Memory supercycle].signals"
+        },
+        {
+          "add": "Counter-signal to LNG re-rating thesis: Baker's framework says every shortage → glut regardless of contract structure. All 3 vendors expanding simultaneously. Watch whether long-term contracts actually prevent the inventory cycle or merely delay it.\n",
+          "path": "cascade[Memory supercycle].cycle_risk_flags"
+        }
+      ],
+      "updated": "2026-04-13"
+    },
+    {
+      "created": "2026-04-13",
+      "id": "proposal:nvda-margin-compression",
+      "path": "canonical/20-data/thesis-proposals/nvda-margin-compression.yaml",
+      "proposal": "Add NVDA margin compression as a tracked signal across the N3 and Memory cascade stages. NVIDIA's gross margin is a structural residual that absorbs bilateral pressure from suppliers (TSMC pricing hikes, HBM price increases) and customers (hyperscaler custom silicon as credible BATNA). This is not cyclical — it operates even while demand is growing.",
+      "status": "pending",
+      "target_sections": [
+        {
+          "add": "NVIDIA $53B memory purchase commitments ($25B+ beyond next quarter) — securing HBM on oligopoly terms",
+          "path": "cascade[Memory supercycle].signals"
+        },
+        {
+          "add": "TSMC captures only $877-922 per H100 (3-4% of ASP) — structural repricing runway of years",
+          "path": "cascade[N3 logic wafers].signals"
+        },
+        {
+          "add": "NVDA GAAP gross margin compressed 75.0% → 71.1% (FY2025 → FY2026) — bilateral monopoly vise",
+          "path": "cascade[N3 logic wafers].cycle_risk_flags"
+        }
+      ],
+      "updated": "2026-04-13"
+    },
+    {
+      "created": "2026-04-13",
+      "id": "proposal:tsm-pricing-power-reclassification",
+      "path": "canonical/20-data/thesis-proposals/tsm-pricing-power-reclassification.yaml",
+      "proposal": "Reclassify CoWoS from pure \"played_out\" to acknowledge that the constraint is still binding but the value now accrues through TSMC pricing power rather than equipment suppliers (ASX/AMAT). The trade is played out; the structural constraint is not. Add a pricing_power_signal to the CoWoS stage and enrich the N3 stage with TSMC under-exercised pricing data.",
+      "status": "pending",
+      "target_sections": [
+        {
+          "add_field": "pricing_power_signal",
+          "path": "cascade[CoWoS packaging]",
+          "value": "CoWoS is still the most supply-constrained node (113% demand CAGR, zero alternatives at scale, fully booked through 2026). The equipment trade (ASX/AMAT) is played out, but the constraint now manifests as TSMC pricing power. Every AI accelerator globally (NVIDIA, Google, Amazon, AMD, Broadcom ASIC) routes through TSMC advanced packaging. TSMC's packaging pricing power is structural and under-exercised.\n"
+        },
+        {
+          "add": "TSMC captures $877-922 per H100 (3-4% of $25-30K ASP). Historical anchoring from $1K gaming GPUs. 30% price increase = $260-280/unit, <1% of GPU revenue. Repricing runway is years long. Gross margins guided 63-65% early 2026, 5-10% annual sub-5nm hikes announced.\n",
+          "path": "cascade[N3 logic wafers].signals"
+        }
+      ],
+      "updated": "2026-04-13"
+    }
+  ],
+  "ticker_map": {
+    "ALAB": {
+      "also": "cpo_next",
+      "bottleneck": "copper_signal_integrity",
+      "company_id": "company:ALAB",
+      "next_earnings": "2026-05-06",
+      "status": "active"
+    },
+    "ASML": {
+      "bottleneck": "euv",
+      "company_id": "company:ASML",
+      "next_earnings": "2026-04-16",
+      "status": "next"
+    },
+    "AVGO": {
+      "bottleneck": "n3_logic",
+      "company_id": "company:AVGO",
+      "next_earnings": "2026-06-12",
+      "status": "active"
+    },
+    "BE": {
+      "bottleneck": "power",
+      "company_id": "company:BE",
+      "next_earnings": "2026-05-08",
+      "status": "played_out"
+    },
+    "CIEN": {
+      "bottleneck": "pluggable_optics",
+      "company_id": "company:CIEN",
+      "next_earnings": "2026-06-04",
+      "status": "active"
+    },
+    "COHR": {
+      "also": "cpo_next",
+      "bottleneck": "pluggable_optics",
+      "company_id": "company:COHR",
+      "next_earnings": "2026-05-07",
+      "status": "active"
+    },
+    "CORZ": {
+      "bottleneck": "power",
+      "company_id": "company:CORZ",
+      "next_earnings": "2026-05-08",
+      "status": "played_out"
+    },
+    "CRWV": {
+      "bottleneck": "gpu_cloud",
+      "company_id": "company:CRWV",
+      "next_earnings": "2026-05-12",
+      "status": "active"
+    },
+    "EQT": {
+      "bottleneck": "power",
+      "company_id": "company:EQT",
+      "next_earnings": "2026-04-23",
+      "status": "played_out"
+    },
+    "INTC": {
+      "bottleneck": "n3_logic",
+      "company_id": "company:INTC",
+      "next_earnings": "2026-04-24",
+      "status": "active"
+    },
+    "IREN": {
+      "bottleneck": "power",
+      "company_id": "company:IREN",
+      "next_earnings": "2026-05-15",
+      "status": "played_out"
+    },
+    "LITE": {
+      "also": "cpo_next",
+      "bottleneck": "pluggable_optics",
+      "company_id": "company:LITE",
+      "next_earnings": "2026-05-06",
+      "status": "active"
+    },
+    "MU": {
+      "bottleneck": "memory",
+      "company_id": "company:MU",
+      "next_earnings": "2026-06-25",
+      "status": "active"
+    },
+    "NVDA": {
+      "bottleneck": "n3_logic",
+      "company_id": "company:NVDA",
+      "next_earnings": "2026-05-28",
+      "status": "active"
+    },
+    "SMTC": {
+      "also": "cpo_next",
+      "bottleneck": "copper_signal_integrity",
+      "company_id": "company:SMTC",
+      "next_earnings": "2026-06-04",
+      "status": "active"
+    },
+    "SNDK": {
+      "bottleneck": "memory",
+      "company_id": "company:SNDK",
+      "next_earnings": "2026-05-01",
+      "status": "active"
+    },
+    "TSEM": {
+      "bottleneck": "foundry",
+      "company_id": "company:TSEM",
+      "next_earnings": "2026-05-14",
+      "status": "active"
+    },
+    "TSM": {
+      "bottleneck": "n3_logic",
+      "company_id": "company:TSM",
+      "next_earnings": "2026-04-17",
+      "status": "active"
+    }
+  },
+  "updated": "2026-04-08"
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_counts": {
+    "claims": 43,
+    "companies": 40,
+    "edges": 678,
+    "entities": 93,
+    "pages": 34,
+    "reports": 1,
+    "signals": 67,
+    "thesis_stages": 7
+  },
+  "generated_at": "2026-04-20T12:49:43Z",
+  "generator": "site-data-v0.1",
+  "id": "build:site-data",
+  "source_counts": {
+    "data_yaml": 14,
+    "reports": 2,
+    "wiki_markdown": 36
+  },
+  "source_hash": "4ea073725bf06a1267125a05a66fceb2b597f6133a6747ee4108cc56c9ccd896",
+  "warnings": []
+}

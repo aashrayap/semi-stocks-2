@@ -2,6 +2,18 @@
 
 Second-iteration semi-stocks workspace organized as a canonical propagation system.
 
+## Current State
+
+![Current app state](docs/diagrams/signal-desk-current-state.png)
+
+The active app path is repo-owned and data-contract first:
+
+```text
+canonical truth -> canonical/40-engine -> canonical/site-data -> canonical/site-reader
+```
+
+`canonical/site-data/` is generated. `canonical/site-reader/` is a web-only reader that consumes generated data and must not become a source of truth.
+
 Start here:
 - Read [docs/architecture.md](docs/architecture.md) for lane ownership and propagation order.
 - Read [docs/doc-contract.md](docs/doc-contract.md) for root-doc and subsystem-doc boundaries.
