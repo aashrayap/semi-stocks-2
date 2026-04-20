@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "artifacts": {
+    "build.json": {
+      "type": "object"
+    },
+    "claims.json": {
+      "type": "array"
+    },
+    "companies.json": {
+      "type": "array"
+    },
+    "edges.json": {
+      "type": "array"
+    },
+    "entities.json": {
+      "type": "array"
+    },
+    "graph.json": {
+      "type": "object"
+    },
+    "pages.json": {
+      "type": "array"
+    },
+    "reports.json": {
+      "type": "array"
+    },
+    "schema.json": {
+      "type": "object"
+    },
+    "search.json": {
+      "type": "array"
+    },
+    "signal_desk.json": {
+      "type": "object"
+    },
+    "signals.json": {
+      "type": "array"
+    },
+    "thesis.json": {
+      "type": "object"
+    }
+  },
+  "edge_types": [
+    "belongs_to_bottleneck",
+    "contradicts_claim",
+    "derived_from_source",
+    "exposes_company_to",
+    "links_to",
+    "mentions_ticker",
+    "published_in_report",
+    "supports_claim",
+    "updates_thesis_stage"
+  ],
+  "required_record_fields": {
+    "claim": [
+      "id",
+      "ticker",
+      "claim",
+      "status"
+    ],
+    "company": [
+      "id",
+      "ticker",
+      "name"
+    ],
+    "edge": [
+      "id",
+      "type",
+      "source",
+      "target"
+    ],
+    "page": [
+      "id",
+      "slug",
+      "title",
+      "type",
+      "path"
+    ],
+    "report": [
+      "id",
+      "title",
+      "path",
+      "sections"
+    ],
+    "signal": [
+      "id",
+      "kind",
+      "evidence"
+    ]
+  },
+  "title": "semi-stocks site-data contract",
+  "version": "site-data-v0.1"
+}

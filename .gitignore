@@ -2,3 +2,6 @@
 .venv/
 __pycache__/
 *.pyc
+canonical/site-reader/node_modules/
+canonical/site-reader/dist/
+canonical/site-reader/public/site-data/

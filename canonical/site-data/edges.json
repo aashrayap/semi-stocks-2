@@ -1,0 +1,5176 @@
+[
+  {
+    "id": "edge:00001",
+    "source": "page:bottleneck-cascade",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00002",
+    "source": "page:bottleneck-cascade",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00003",
+    "source": "page:bottleneck-cascade",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00004",
+    "source": "page:bottleneck-cascade",
+    "target": "page:co-packaged-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00005",
+    "source": "page:bottleneck-cascade",
+    "target": "page:euv-tool-bottleneck",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00006",
+    "source": "page:bottleneck-cascade",
+    "target": "page:neocloud-business-models",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00007",
+    "source": "page:bottleneck-cascade",
+    "target": "page:nvda-margin-residual",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00008",
+    "source": "page:bottleneck-cascade",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00009",
+    "source": "page:bottleneck-cascade",
+    "target": "page:cohr-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00010",
+    "source": "page:bottleneck-cascade",
+    "target": "page:crwv-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00011",
+    "source": "page:bottleneck-cascade",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00012",
+    "source": "page:bottleneck-cascade",
+    "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00013",
+    "source": "page:bottleneck-cascade",
+    "target": "page:jstwng-nvidia-margin-illusion",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00014",
+    "source": "page:bottleneck-cascade",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00015",
+    "source": "page:bottleneck-cascade",
+    "target": "page:lite-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00016",
+    "source": "page:bottleneck-cascade",
+    "target": "page:mu-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00017",
+    "source": "page:bottleneck-cascade",
+    "target": "page:semianalysis-signals",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00018",
+    "source": "page:bottleneck-cascade",
+    "target": "page:tsm-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00019",
+    "source": "page:bottleneck-cascade",
+    "target": "page:token-economics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00020",
+    "source": "page:bottleneck-cascade",
+    "target": "company:ALAB",
+    "ticker": "ALAB",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00021",
+    "source": "page:bottleneck-cascade",
+    "target": "company:ASML",
+    "ticker": "ASML",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00022",
+    "source": "page:bottleneck-cascade",
+    "target": "company:AVGO",
+    "ticker": "AVGO",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00023",
+    "source": "page:bottleneck-cascade",
+    "target": "company:CIEN",
+    "ticker": "CIEN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00024",
+    "source": "page:bottleneck-cascade",
+    "target": "company:CIFR",
+    "ticker": "CIFR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00025",
+    "source": "page:bottleneck-cascade",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00026",
+    "source": "page:bottleneck-cascade",
+    "target": "company:CORZ",
+    "ticker": "CORZ",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00027",
+    "source": "page:bottleneck-cascade",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00028",
+    "source": "page:bottleneck-cascade",
+    "target": "company:INTC",
+    "ticker": "INTC",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00029",
+    "source": "page:bottleneck-cascade",
+    "target": "company:IREN",
+    "ticker": "IREN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00030",
+    "source": "page:bottleneck-cascade",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00031",
+    "source": "page:bottleneck-cascade",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00032",
+    "source": "page:bottleneck-cascade",
+    "target": "company:NBIS",
+    "ticker": "NBIS",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00033",
+    "source": "page:bottleneck-cascade",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00034",
+    "source": "page:bottleneck-cascade",
+    "target": "company:SMTC",
+    "ticker": "SMTC",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00035",
+    "source": "page:bottleneck-cascade",
+    "target": "company:SNDK",
+    "ticker": "SNDK",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00036",
+    "source": "page:bottleneck-cascade",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00037",
+    "source": "page:bottleneck-cascade",
+    "target": "company:WULF",
+    "ticker": "WULF",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00038",
+    "source": "page:co-packaged-optics",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00039",
+    "source": "page:co-packaged-optics",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00040",
+    "source": "page:co-packaged-optics",
+    "target": "page:cohr-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00041",
+    "source": "page:co-packaged-optics",
+    "target": "page:lite-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00042",
+    "source": "page:co-packaged-optics",
+    "target": "company:ALAB",
+    "ticker": "ALAB",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00043",
+    "source": "page:co-packaged-optics",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00044",
+    "source": "page:co-packaged-optics",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00045",
+    "source": "page:co-packaged-optics",
+    "target": "company:SMTC",
+    "ticker": "SMTC",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00046",
+    "source": "page:euv-tool-bottleneck",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00047",
+    "source": "page:euv-tool-bottleneck",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00048",
+    "source": "page:euv-tool-bottleneck",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00049",
+    "source": "page:euv-tool-bottleneck",
+    "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00050",
+    "source": "page:euv-tool-bottleneck",
+    "target": "page:semianalysis-signals",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00051",
+    "source": "page:euv-tool-bottleneck",
+    "target": "company:ASML",
+    "ticker": "ASML",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00052",
+    "source": "page:euv-tool-bottleneck",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00053",
+    "source": "page:euv-tool-bottleneck",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00054",
+    "source": "page:euv-tool-bottleneck",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00055",
+    "source": "page:memory-supercycle",
+    "target": "page:nvda-margin-residual",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00056",
+    "source": "page:memory-supercycle",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00057",
+    "source": "page:memory-supercycle",
+    "target": "page:euv-tool-bottleneck",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00058",
+    "source": "page:memory-supercycle",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00059",
+    "source": "page:memory-supercycle",
+    "target": "page:crwv-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00060",
+    "source": "page:memory-supercycle",
+    "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00061",
+    "source": "page:memory-supercycle",
+    "target": "page:jstwng-nvidia-margin-illusion",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00062",
+    "source": "page:memory-supercycle",
+    "target": "page:mu-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00063",
+    "source": "page:memory-supercycle",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00064",
+    "source": "page:memory-supercycle",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00065",
+    "source": "page:memory-supercycle",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00066",
+    "source": "page:memory-supercycle",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00067",
+    "source": "page:memory-supercycle",
+    "target": "company:SNDK",
+    "ticker": "SNDK",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00068",
+    "source": "page:n3-wafer-crunch",
+    "target": "page:nvda-margin-residual",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00069",
+    "source": "page:n3-wafer-crunch",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00070",
+    "source": "page:n3-wafer-crunch",
+    "target": "page:euv-tool-bottleneck",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00071",
+    "source": "page:n3-wafer-crunch",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00072",
+    "source": "page:n3-wafer-crunch",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00073",
+    "source": "page:n3-wafer-crunch",
+    "target": "page:crwv-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00074",
+    "source": "page:n3-wafer-crunch",
+    "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00075",
+    "source": "page:n3-wafer-crunch",
+    "target": "page:intc-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00076",
+    "source": "page:n3-wafer-crunch",
+    "target": "page:jstwng-nvidia-margin-illusion",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00077",
+    "source": "page:n3-wafer-crunch",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00078",
+    "source": "page:n3-wafer-crunch",
+    "target": "page:tsm-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00079",
+    "source": "page:n3-wafer-crunch",
+    "target": "company:AVGO",
+    "ticker": "AVGO",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00080",
+    "source": "page:n3-wafer-crunch",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00081",
+    "source": "page:n3-wafer-crunch",
+    "target": "company:INTC",
+    "ticker": "INTC",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00082",
+    "source": "page:n3-wafer-crunch",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00083",
+    "source": "page:n3-wafer-crunch",
+    "target": "company:TSEM",
+    "ticker": "TSEM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00084",
+    "source": "page:n3-wafer-crunch",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00085",
+    "source": "page:neocloud-business-models",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00086",
+    "source": "page:neocloud-business-models",
+    "target": "page:token-economics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00087",
+    "source": "page:neocloud-business-models",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00088",
+    "source": "page:neocloud-business-models",
+    "target": "page:crwv-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00089",
+    "source": "page:neocloud-business-models",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00090",
+    "source": "page:neocloud-business-models",
+    "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00091",
+    "source": "page:neocloud-business-models",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00092",
+    "source": "page:neocloud-business-models",
+    "target": "company:IREN",
+    "ticker": "IREN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00093",
+    "source": "page:nvda-margin-residual",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00094",
+    "source": "page:nvda-margin-residual",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00095",
+    "source": "page:nvda-margin-residual",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00096",
+    "source": "page:nvda-margin-residual",
+    "target": "page:euv-tool-bottleneck",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00097",
+    "source": "page:nvda-margin-residual",
+    "target": "page:jstwng-nvidia-margin-illusion",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00098",
+    "source": "page:nvda-margin-residual",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00099",
+    "source": "page:nvda-margin-residual",
+    "target": "page:baker-cyclicality-thesis",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00100",
+    "source": "page:nvda-margin-residual",
+    "target": "company:AMZN",
+    "ticker": "AMZN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00101",
+    "source": "page:nvda-margin-residual",
+    "target": "company:GOOGL",
+    "ticker": "GOOGL",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00102",
+    "source": "page:nvda-margin-residual",
+    "target": "company:MSFT",
+    "ticker": "MSFT",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00103",
+    "source": "page:nvda-margin-residual",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00104",
+    "source": "page:nvda-margin-residual",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00105",
+    "source": "page:pluggable-optics",
+    "target": "page:co-packaged-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00106",
+    "source": "page:pluggable-optics",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00107",
+    "source": "page:pluggable-optics",
+    "target": "page:cohr-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00108",
+    "source": "page:pluggable-optics",
+    "target": "page:crwv-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00109",
+    "source": "page:pluggable-optics",
+    "target": "page:lite-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00110",
+    "source": "page:pluggable-optics",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00111",
+    "source": "page:pluggable-optics",
+    "target": "page:semianalysis-signals",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00112",
+    "source": "page:pluggable-optics",
+    "target": "company:CIEN",
+    "ticker": "CIEN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00113",
+    "source": "page:pluggable-optics",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00114",
+    "source": "page:pluggable-optics",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00115",
+    "source": "page:pluggable-optics",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00116",
+    "source": "page:pluggable-optics",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00117",
+    "source": "page:token-economics",
+    "target": "page:neocloud-business-models",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00118",
+    "source": "page:token-economics",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00119",
+    "source": "page:token-economics",
+    "target": "page:semianalysis-signals",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00120",
+    "source": "page:token-economics",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00121",
+    "source": "page:token-economics",
+    "target": "company:ASML",
+    "ticker": "ASML",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00122",
+    "source": "page:baker-q4-2025",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00123",
+    "source": "page:baker-q4-2025",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00124",
+    "source": "page:baker-q4-2025",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00125",
+    "source": "page:baker-q4-2025",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00126",
+    "source": "page:baker-q4-2025",
+    "target": "company:ALAB",
+    "ticker": "ALAB",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00127",
+    "source": "page:baker-q4-2025",
+    "target": "company:AVGO",
+    "ticker": "AVGO",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00128",
+    "source": "page:baker-q4-2025",
+    "target": "company:CIEN",
+    "ticker": "CIEN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00129",
+    "source": "page:baker-q4-2025",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00130",
+    "source": "page:baker-q4-2025",
+    "target": "company:GNRC",
+    "ticker": "GNRC",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00131",
+    "source": "page:baker-q4-2025",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00132",
+    "source": "page:baker-q4-2025",
+    "target": "company:MSFT",
+    "ticker": "MSFT",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00133",
+    "source": "page:baker-q4-2025",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00134",
+    "source": "page:baker-q4-2025",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00135",
+    "source": "page:baker-q4-2025",
+    "target": "company:PSTG",
+    "ticker": "PSTG",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00136",
+    "source": "page:baker-q4-2025",
+    "target": "company:QQQ",
+    "ticker": "QQQ",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00137",
+    "source": "page:baker-q4-2025",
+    "target": "company:SMTC",
+    "ticker": "SMTC",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00138",
+    "source": "page:cohr-q2-fy2026",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00139",
+    "source": "page:cohr-q2-fy2026",
+    "target": "page:co-packaged-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00140",
+    "source": "page:cohr-q2-fy2026",
+    "target": "page:cohr-q2-fy2026-primary-sources",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00141",
+    "source": "page:cohr-q2-fy2026",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00142",
+    "source": "page:cohr-q2-fy2026",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00143",
+    "source": "page:cohr-q2-fy2026",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00144",
+    "source": "page:cohr-q2-fy2026",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00145",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00146",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "page:neocloud-business-models",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00147",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "page:token-economics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00148",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "page:crwv-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00149",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00150",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00151",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00152",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "company:CIFR",
+    "ticker": "CIFR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00153",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "company:CORZ",
+    "ticker": "CORZ",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00154",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00155",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "company:GLXY",
+    "ticker": "GLXY",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00156",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "company:IREN",
+    "ticker": "IREN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00157",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "company:NBIS",
+    "ticker": "NBIS",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00158",
+    "source": "page:creative-strategies-neoclouds-three-business-models",
+    "target": "company:WULF",
+    "ticker": "WULF",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00159",
+    "source": "page:crwv-q4-2025",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00160",
+    "source": "page:crwv-q4-2025",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00161",
+    "source": "page:crwv-q4-2025",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00162",
+    "source": "page:crwv-q4-2025",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00163",
+    "source": "page:crwv-q4-2025",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00164",
+    "source": "page:crwv-q4-2025",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00165",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00166",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00167",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00168",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00169",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "page:euv-tool-bottleneck",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00170",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "page:semianalysis-signals",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00171",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00172",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "page:token-economics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00173",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "company:ASML",
+    "ticker": "ASML",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00174",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00175",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00176",
+    "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00177",
+    "source": "page:intc-q4-2025",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00178",
+    "source": "page:intc-q4-2025",
+    "target": "page:intc-q4-2025-primary-sources",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00179",
+    "source": "page:intc-q4-2025",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00180",
+    "source": "page:intc-q4-2025",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00181",
+    "source": "page:intc-q4-2025",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00182",
+    "source": "page:intc-q4-2025",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00183",
+    "source": "page:intc-q4-2025",
+    "target": "company:INTC",
+    "ticker": "INTC",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00184",
+    "source": "page:intc-q4-2025",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00185",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00186",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00187",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "page:euv-tool-bottleneck",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00188",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "page:nvda-margin-residual",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00189",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00190",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00191",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "page:semianalysis-signals",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00192",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "page:baker-cyclicality-thesis",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00193",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "company:ASML",
+    "ticker": "ASML",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00194",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "company:AVGO",
+    "ticker": "AVGO",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00195",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00196",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00197",
+    "source": "page:jstwng-nvidia-margin-illusion",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00198",
+    "source": "page:leopold-q4-2025",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00199",
+    "source": "page:leopold-q4-2025",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00200",
+    "source": "page:leopold-q4-2025",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00201",
+    "source": "page:leopold-q4-2025",
+    "target": "company:APLD",
+    "ticker": "APLD",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00202",
+    "source": "page:leopold-q4-2025",
+    "target": "company:AVGO",
+    "ticker": "AVGO",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00203",
+    "source": "page:leopold-q4-2025",
+    "target": "company:BE",
+    "ticker": "BE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00204",
+    "source": "page:leopold-q4-2025",
+    "target": "company:BITF",
+    "ticker": "BITF",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00205",
+    "source": "page:leopold-q4-2025",
+    "target": "company:BTDR",
+    "ticker": "BTDR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00206",
+    "source": "page:leopold-q4-2025",
+    "target": "company:BW",
+    "ticker": "BW",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00207",
+    "source": "page:leopold-q4-2025",
+    "target": "company:CIFR",
+    "ticker": "CIFR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00208",
+    "source": "page:leopold-q4-2025",
+    "target": "company:CLSK",
+    "ticker": "CLSK",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00209",
+    "source": "page:leopold-q4-2025",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00210",
+    "source": "page:leopold-q4-2025",
+    "target": "company:CORZ",
+    "ticker": "CORZ",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00211",
+    "source": "page:leopold-q4-2025",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00212",
+    "source": "page:leopold-q4-2025",
+    "target": "company:EQT",
+    "ticker": "EQT",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00213",
+    "source": "page:leopold-q4-2025",
+    "target": "company:HUT",
+    "ticker": "HUT",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00214",
+    "source": "page:leopold-q4-2025",
+    "target": "company:INFY",
+    "ticker": "INFY",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00215",
+    "source": "page:leopold-q4-2025",
+    "target": "company:INTC",
+    "ticker": "INTC",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00216",
+    "source": "page:leopold-q4-2025",
+    "target": "company:IREN",
+    "ticker": "IREN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00217",
+    "source": "page:leopold-q4-2025",
+    "target": "company:KRC",
+    "ticker": "KRC",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00218",
+    "source": "page:leopold-q4-2025",
+    "target": "company:LBRT",
+    "ticker": "LBRT",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00219",
+    "source": "page:leopold-q4-2025",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00220",
+    "source": "page:leopold-q4-2025",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00221",
+    "source": "page:leopold-q4-2025",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00222",
+    "source": "page:leopold-q4-2025",
+    "target": "company:PSIX",
+    "ticker": "PSIX",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00223",
+    "source": "page:leopold-q4-2025",
+    "target": "company:PUMP",
+    "ticker": "PUMP",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00224",
+    "source": "page:leopold-q4-2025",
+    "target": "company:RIOT",
+    "ticker": "RIOT",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00225",
+    "source": "page:leopold-q4-2025",
+    "target": "company:SEI",
+    "ticker": "SEI",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00226",
+    "source": "page:leopold-q4-2025",
+    "target": "company:SNDK",
+    "ticker": "SNDK",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00227",
+    "source": "page:leopold-q4-2025",
+    "target": "company:TSEM",
+    "ticker": "TSEM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00228",
+    "source": "page:leopold-q4-2025",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00229",
+    "source": "page:leopold-q4-2025",
+    "target": "company:WYFI",
+    "ticker": "WYFI",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00230",
+    "source": "page:lite-q2-fy2026",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00231",
+    "source": "page:lite-q2-fy2026",
+    "target": "page:co-packaged-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00232",
+    "source": "page:lite-q2-fy2026",
+    "target": "page:lite-q2-fy2026-primary-sources",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00233",
+    "source": "page:lite-q2-fy2026",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00234",
+    "source": "page:lite-q2-fy2026",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00235",
+    "source": "page:lite-q2-fy2026",
+    "target": "page:cohr-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00236",
+    "source": "page:lite-q2-fy2026",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00237",
+    "source": "page:lite-q2-fy2026",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00238",
+    "source": "page:mu-q2-fy2026",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00239",
+    "source": "page:mu-q2-fy2026",
+    "target": "page:mu-q2-fy2026-primary-sources",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00240",
+    "source": "page:mu-q2-fy2026",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00241",
+    "source": "page:mu-q2-fy2026",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00242",
+    "source": "page:mu-q2-fy2026",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00243",
+    "source": "page:nvda-q4-fy2026",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00244",
+    "source": "page:nvda-q4-fy2026",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00245",
+    "source": "page:nvda-q4-fy2026",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00246",
+    "source": "page:nvda-q4-fy2026",
+    "target": "page:crwv-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00247",
+    "source": "page:nvda-q4-fy2026",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00248",
+    "source": "page:nvda-q4-fy2026",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00249",
+    "source": "page:nvda-q4-fy2026",
+    "target": "page:token-economics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00250",
+    "source": "page:nvda-q4-fy2026",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00251",
+    "source": "page:nvda-q4-fy2026",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00252",
+    "source": "page:nvda-q4-fy2026",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00253",
+    "source": "page:nvda-q4-fy2026",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00254",
+    "source": "page:nvda-q4-fy2026",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00255",
+    "source": "page:semianalysis-signals",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00256",
+    "source": "page:semianalysis-signals",
+    "target": "page:euv-tool-bottleneck",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00257",
+    "source": "page:semianalysis-signals",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00258",
+    "source": "page:semianalysis-signals",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00259",
+    "source": "page:semianalysis-signals",
+    "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00260",
+    "source": "page:semianalysis-signals",
+    "target": "company:ASML",
+    "ticker": "ASML",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00261",
+    "source": "page:semianalysis-signals",
+    "target": "company:CIEN",
+    "ticker": "CIEN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00262",
+    "source": "page:semianalysis-signals",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00263",
+    "source": "page:semianalysis-signals",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00264",
+    "source": "page:semianalysis-signals",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00265",
+    "source": "page:semianalysis-signals",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00266",
+    "source": "page:semianalysis-signals",
+    "target": "company:SNDK",
+    "ticker": "SNDK",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00267",
+    "source": "page:semianalysis-signals",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00268",
+    "source": "page:tsm-q4-2025",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00269",
+    "source": "page:tsm-q4-2025",
+    "target": "page:tsm-q4-2025-primary-sources",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00270",
+    "source": "page:tsm-q4-2025",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00271",
+    "source": "page:tsm-q4-2025",
+    "target": "page:intc-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00272",
+    "source": "page:tsm-q4-2025",
+    "target": "company:INTC",
+    "ticker": "INTC",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00273",
+    "source": "page:tsm-q4-2025",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00274",
+    "source": "page:tsm-q4-2025",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00275",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00276",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00277",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00278",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "page:co-packaged-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00279",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00280",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00281",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "company:ALAB",
+    "ticker": "ALAB",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00282",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "company:ASML",
+    "ticker": "ASML",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00283",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "company:AVGO",
+    "ticker": "AVGO",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00284",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00285",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00286",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00287",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "company:QQQ",
+    "ticker": "QQQ",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00288",
+    "source": "page:baker-cyclicality-thesis",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00289",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:nvda-margin-residual",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00290",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00291",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00292",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00293",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:euv-tool-bottleneck",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00294",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:token-economics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00295",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:baker-cyclicality-thesis",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00296",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:jstwng-nvidia-margin-illusion",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00297",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00298",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00299",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00300",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "page:semianalysis-signals",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00301",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "company:AMZN",
+    "ticker": "AMZN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00302",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "company:ASML",
+    "ticker": "ASML",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00303",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "company:AVGO",
+    "ticker": "AVGO",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00304",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "company:GOOGL",
+    "ticker": "GOOGL",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00305",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "company:MSFT",
+    "ticker": "MSFT",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00306",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00307",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00308",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "company:QQQ",
+    "ticker": "QQQ",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00309",
+    "source": "page:long-term-value-chain-thesis",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00310",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00311",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00312",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00313",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00314",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "page:token-economics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00315",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "page:semianalysis-signals",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00316",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00317",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00318",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00319",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00320",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00321",
+    "source": "page:nvda-swing-trade-thesis",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00322",
+    "source": "page:index",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00323",
+    "source": "page:index",
+    "target": "page:euv-tool-bottleneck",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00324",
+    "source": "page:index",
+    "target": "page:memory-supercycle",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00325",
+    "source": "page:index",
+    "target": "page:n3-wafer-crunch",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00326",
+    "source": "page:index",
+    "target": "page:pluggable-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00327",
+    "source": "page:index",
+    "target": "page:co-packaged-optics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00328",
+    "source": "page:index",
+    "target": "page:token-economics",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00329",
+    "source": "page:index",
+    "target": "page:nvda-margin-residual",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00330",
+    "source": "page:index",
+    "target": "page:neocloud-business-models",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00331",
+    "source": "page:index",
+    "target": "page:leopold-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00332",
+    "source": "page:index",
+    "target": "page:baker-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00333",
+    "source": "page:index",
+    "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00334",
+    "source": "page:index",
+    "target": "page:semianalysis-signals",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00335",
+    "source": "page:index",
+    "target": "page:crwv-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00336",
+    "source": "page:index",
+    "target": "page:nvda-q4-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00337",
+    "source": "page:index",
+    "target": "page:mu-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00338",
+    "source": "page:index",
+    "target": "page:tsm-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00339",
+    "source": "page:index",
+    "target": "page:intc-q4-2025",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00340",
+    "source": "page:index",
+    "target": "page:cohr-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00341",
+    "source": "page:index",
+    "target": "page:lite-q2-fy2026",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00342",
+    "source": "page:index",
+    "target": "page:jstwng-nvidia-margin-illusion",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00343",
+    "source": "page:index",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00344",
+    "source": "page:index",
+    "target": "page:nvda-swing-trade-thesis",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00345",
+    "source": "page:index",
+    "target": "page:baker-cyclicality-thesis",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00346",
+    "source": "page:index",
+    "target": "page:long-term-value-chain-thesis",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00347",
+    "source": "page:index",
+    "target": "company:ASML",
+    "ticker": "ASML",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00348",
+    "source": "page:index",
+    "target": "company:AVGO",
+    "ticker": "AVGO",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00349",
+    "source": "page:index",
+    "target": "company:CIEN",
+    "ticker": "CIEN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00350",
+    "source": "page:index",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00351",
+    "source": "page:index",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00352",
+    "source": "page:index",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00353",
+    "source": "page:index",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00354",
+    "source": "page:index",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00355",
+    "source": "page:log",
+    "target": "company:ASML",
+    "ticker": "ASML",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00356",
+    "source": "page:log",
+    "target": "company:AVGO",
+    "ticker": "AVGO",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00357",
+    "source": "page:log",
+    "target": "company:CIFR",
+    "ticker": "CIFR",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00358",
+    "source": "page:log",
+    "target": "company:CORZ",
+    "ticker": "CORZ",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00359",
+    "source": "page:log",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00360",
+    "source": "page:log",
+    "target": "company:GLXY",
+    "ticker": "GLXY",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00361",
+    "source": "page:log",
+    "target": "company:IREN",
+    "ticker": "IREN",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00362",
+    "source": "page:log",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00363",
+    "source": "page:log",
+    "target": "company:NBIS",
+    "ticker": "NBIS",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00364",
+    "source": "page:log",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00365",
+    "source": "page:log",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00366",
+    "source": "page:log",
+    "target": "company:WULF",
+    "ticker": "WULF",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00367",
+    "source": "page:schema",
+    "target": "page:bottleneck-cascade",
+    "type": "links_to"
+  },
+  {
+    "id": "edge:00368",
+    "source": "page:crwv-q4-2025-transcript",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00369",
+    "source": "page:shanu-mathew-dc-capacity-2026",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00370",
+    "source": "page:shanu-mathew-dc-capacity-2026",
+    "target": "company:MSFT",
+    "ticker": "MSFT",
+    "type": "mentions_ticker"
+  },
+  {
+    "id": "edge:00371",
+    "source": "company:ALAB",
+    "target": "bottleneck:copper-signal-integrity",
+    "ticker": "ALAB",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00372",
+    "source": "company:ALAB",
+    "target": "report:latest",
+    "ticker": "ALAB",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00373",
+    "source": "company:AMSC",
+    "target": "report:latest",
+    "ticker": "AMSC",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00374",
+    "source": "company:AMZN",
+    "target": "report:latest",
+    "ticker": "AMZN",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00375",
+    "source": "company:APLD",
+    "target": "report:latest",
+    "ticker": "APLD",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00376",
+    "source": "company:ASML",
+    "target": "bottleneck:euv",
+    "ticker": "ASML",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00377",
+    "source": "company:ASML",
+    "target": "report:latest",
+    "ticker": "ASML",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00378",
+    "source": "company:AVGO",
+    "target": "bottleneck:n3-logic",
+    "ticker": "AVGO",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00379",
+    "source": "company:AVGO",
+    "target": "report:latest",
+    "ticker": "AVGO",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00380",
+    "source": "company:BE",
+    "target": "bottleneck:power",
+    "ticker": "BE",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00381",
+    "source": "company:BE",
+    "target": "report:latest",
+    "ticker": "BE",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00382",
+    "source": "company:BITF",
+    "target": "report:latest",
+    "ticker": "BITF",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00383",
+    "source": "company:BTDR",
+    "target": "report:latest",
+    "ticker": "BTDR",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00384",
+    "source": "company:BW",
+    "target": "report:latest",
+    "ticker": "BW",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00385",
+    "source": "company:CIEN",
+    "target": "bottleneck:pluggable-optics",
+    "ticker": "CIEN",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00386",
+    "source": "company:CIEN",
+    "target": "report:latest",
+    "ticker": "CIEN",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00387",
+    "source": "company:CIFR",
+    "target": "bottleneck:power",
+    "ticker": "CIFR",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00388",
+    "source": "company:CIFR",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "ticker": "CIFR",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00389",
+    "source": "company:CIFR",
+    "target": "report:latest",
+    "ticker": "CIFR",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00390",
+    "source": "company:CLSK",
+    "target": "report:latest",
+    "ticker": "CLSK",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00391",
+    "source": "company:COHR",
+    "target": "bottleneck:pluggable-optics",
+    "ticker": "COHR",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00392",
+    "source": "company:COHR",
+    "target": "page:cohr-q2-fy2026",
+    "ticker": "COHR",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00393",
+    "source": "company:COHR",
+    "target": "report:latest",
+    "ticker": "COHR",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00394",
+    "source": "company:CORZ",
+    "target": "bottleneck:power",
+    "ticker": "CORZ",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00395",
+    "source": "company:CORZ",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "ticker": "CORZ",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00396",
+    "source": "company:CORZ",
+    "target": "report:latest",
+    "ticker": "CORZ",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00397",
+    "source": "company:CRWV",
+    "target": "bottleneck:gpu-cloud",
+    "ticker": "CRWV",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00398",
+    "source": "company:CRWV",
+    "target": "page:crwv-q4-2025",
+    "ticker": "CRWV",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00399",
+    "source": "company:CRWV",
+    "target": "report:latest",
+    "ticker": "CRWV",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00400",
+    "source": "company:EQT",
+    "target": "bottleneck:power",
+    "ticker": "EQT",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00401",
+    "source": "company:EQT",
+    "target": "report:latest",
+    "ticker": "EQT",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00402",
+    "source": "company:GLXY",
+    "target": "bottleneck:power",
+    "ticker": "GLXY",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00403",
+    "source": "company:GLXY",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "ticker": "GLXY",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00404",
+    "source": "company:GLXY",
+    "target": "report:latest",
+    "ticker": "GLXY",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00405",
+    "source": "company:GNRC",
+    "target": "report:latest",
+    "ticker": "GNRC",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00406",
+    "source": "company:GOOGL",
+    "target": "report:latest",
+    "ticker": "GOOGL",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00407",
+    "source": "company:HUT",
+    "target": "report:latest",
+    "ticker": "HUT",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00408",
+    "source": "company:INFY",
+    "target": "report:latest",
+    "ticker": "INFY",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00409",
+    "source": "company:INTC",
+    "target": "bottleneck:n3-logic",
+    "ticker": "INTC",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00410",
+    "source": "company:INTC",
+    "target": "page:intc-q4-2025",
+    "ticker": "INTC",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00411",
+    "source": "company:INTC",
+    "target": "report:latest",
+    "ticker": "INTC",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00412",
+    "source": "company:IREN",
+    "target": "bottleneck:power",
+    "ticker": "IREN",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00413",
+    "source": "company:IREN",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "ticker": "IREN",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00414",
+    "source": "company:IREN",
+    "target": "report:latest",
+    "ticker": "IREN",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00415",
+    "source": "company:KRC",
+    "target": "report:latest",
+    "ticker": "KRC",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00416",
+    "source": "company:LBRT",
+    "target": "report:latest",
+    "ticker": "LBRT",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00417",
+    "source": "company:LITE",
+    "target": "bottleneck:pluggable-optics",
+    "ticker": "LITE",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00418",
+    "source": "company:LITE",
+    "target": "page:lite-q2-fy2026",
+    "ticker": "LITE",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00419",
+    "source": "company:LITE",
+    "target": "report:latest",
+    "ticker": "LITE",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00420",
+    "source": "company:MSFT",
+    "target": "report:latest",
+    "ticker": "MSFT",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00421",
+    "source": "company:MU",
+    "target": "bottleneck:memory",
+    "ticker": "MU",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00422",
+    "source": "company:MU",
+    "target": "page:mu-q2-fy2026",
+    "ticker": "MU",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00423",
+    "source": "company:MU",
+    "target": "report:latest",
+    "ticker": "MU",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00424",
+    "source": "company:NBIS",
+    "target": "bottleneck:gpu-cloud",
+    "ticker": "NBIS",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00425",
+    "source": "company:NBIS",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "ticker": "NBIS",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00426",
+    "source": "company:NBIS",
+    "target": "report:latest",
+    "ticker": "NBIS",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00427",
+    "source": "company:NVDA",
+    "target": "bottleneck:n3-logic",
+    "ticker": "NVDA",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00428",
+    "source": "company:NVDA",
+    "target": "page:nvda-q4-fy2026",
+    "ticker": "NVDA",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00429",
+    "source": "company:NVDA",
+    "target": "report:latest",
+    "ticker": "NVDA",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00430",
+    "source": "company:PSIX",
+    "target": "report:latest",
+    "ticker": "PSIX",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00431",
+    "source": "company:PSTG",
+    "target": "report:latest",
+    "ticker": "PSTG",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00432",
+    "source": "company:PUMP",
+    "target": "report:latest",
+    "ticker": "PUMP",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00433",
+    "source": "company:QQQ",
+    "target": "report:latest",
+    "ticker": "QQQ",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00434",
+    "source": "company:RIOT",
+    "target": "report:latest",
+    "ticker": "RIOT",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00435",
+    "source": "company:SEI",
+    "target": "report:latest",
+    "ticker": "SEI",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00436",
+    "source": "company:SMTC",
+    "target": "bottleneck:copper-signal-integrity",
+    "ticker": "SMTC",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00437",
+    "source": "company:SMTC",
+    "target": "report:latest",
+    "ticker": "SMTC",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00438",
+    "source": "company:SNDK",
+    "target": "bottleneck:memory",
+    "ticker": "SNDK",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00439",
+    "source": "company:SNDK",
+    "target": "report:latest",
+    "ticker": "SNDK",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00440",
+    "source": "company:TSEM",
+    "target": "bottleneck:foundry",
+    "ticker": "TSEM",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00441",
+    "source": "company:TSEM",
+    "target": "report:latest",
+    "ticker": "TSEM",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00442",
+    "source": "company:TSM",
+    "target": "bottleneck:n3-logic",
+    "ticker": "TSM",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00443",
+    "source": "company:TSM",
+    "target": "page:tsm-q4-2025",
+    "ticker": "TSM",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00444",
+    "source": "company:TSM",
+    "target": "report:latest",
+    "ticker": "TSM",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00445",
+    "source": "company:WULF",
+    "target": "bottleneck:power",
+    "ticker": "WULF",
+    "type": "exposes_company_to"
+  },
+  {
+    "id": "edge:00446",
+    "source": "company:WULF",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "ticker": "WULF",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00447",
+    "source": "company:WULF",
+    "target": "report:latest",
+    "ticker": "WULF",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00448",
+    "source": "company:WYFI",
+    "target": "report:latest",
+    "ticker": "WYFI",
+    "type": "published_in_report"
+  },
+  {
+    "id": "edge:00449",
+    "source": "thesis-stage:cowos-packaging",
+    "target": "bottleneck:cowos-packaging",
+    "type": "belongs_to_bottleneck"
+  },
+  {
+    "id": "edge:00450",
+    "source": "thesis-stage:power-dc-buildout",
+    "target": "bottleneck:power-dc-buildout",
+    "type": "belongs_to_bottleneck"
+  },
+  {
+    "id": "edge:00451",
+    "source": "thesis-stage:memory-supercycle",
+    "target": "bottleneck:memory-supercycle",
+    "type": "belongs_to_bottleneck"
+  },
+  {
+    "id": "edge:00452",
+    "source": "thesis-stage:n3-logic-wafers",
+    "target": "bottleneck:n3-logic-wafers",
+    "type": "belongs_to_bottleneck"
+  },
+  {
+    "id": "edge:00453",
+    "source": "thesis-stage:pluggable-optics-scale-out",
+    "target": "bottleneck:pluggable-optics-scale-out",
+    "type": "belongs_to_bottleneck"
+  },
+  {
+    "id": "edge:00454",
+    "source": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "target": "bottleneck:co-packaged-optics-cpo-scale-up",
+    "type": "belongs_to_bottleneck"
+  },
+  {
+    "id": "edge:00455",
+    "source": "thesis-stage:euv-tools",
+    "target": "bottleneck:euv-tools",
+    "type": "belongs_to_bottleneck"
+  },
+  {
+    "id": "edge:00456",
+    "source": "signal:company:CIFR:q1-2026:01",
+    "target": "company:CIFR",
+    "ticker": "CIFR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00457",
+    "source": "signal:company:CIFR:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00458",
+    "source": "signal:company:CIFR:q1-2026:01",
+    "target": "bottleneck:power",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00459",
+    "source": "signal:company:CIFR:q1-2026:02",
+    "target": "company:CIFR",
+    "ticker": "CIFR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00460",
+    "source": "signal:company:CIFR:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00461",
+    "source": "signal:company:CIFR:q1-2026:02",
+    "target": "bottleneck:power",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00462",
+    "source": "signal:company:COHR:q2-fy2026:01",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00463",
+    "source": "signal:company:COHR:q2-fy2026:01",
+    "target": "page:cohr-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00464",
+    "source": "signal:company:COHR:q2-fy2026:01",
+    "target": "bottleneck:pluggable-optics",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00465",
+    "source": "signal:company:COHR:q2-fy2026:01",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00466",
+    "source": "signal:company:COHR:q2-fy2026:02",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00467",
+    "source": "signal:company:COHR:q2-fy2026:02",
+    "target": "page:cohr-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00468",
+    "source": "signal:company:COHR:q2-fy2026:02",
+    "target": "bottleneck:pluggable-optics",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00469",
+    "source": "signal:company:COHR:q2-fy2026:02",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00470",
+    "source": "signal:company:COHR:q2-fy2026:03",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00471",
+    "source": "signal:company:COHR:q2-fy2026:03",
+    "target": "page:cohr-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00472",
+    "source": "signal:company:COHR:q2-fy2026:03",
+    "target": "bottleneck:cpo-next",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00473",
+    "source": "signal:company:COHR:q2-fy2026:03",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00474",
+    "source": "signal:company:COHR:q2-fy2026:04",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00475",
+    "source": "signal:company:COHR:q2-fy2026:04",
+    "target": "page:cohr-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00476",
+    "source": "signal:company:COHR:q2-fy2026:04",
+    "target": "bottleneck:cpo-next",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00477",
+    "source": "signal:company:COHR:q2-fy2026:04",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00478",
+    "source": "signal:company:CORZ:q1-2026:01",
+    "target": "company:CORZ",
+    "ticker": "CORZ",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00479",
+    "source": "signal:company:CORZ:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00480",
+    "source": "signal:company:CORZ:q1-2026:01",
+    "target": "bottleneck:power",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00481",
+    "source": "signal:company:CORZ:q1-2026:02",
+    "target": "company:CORZ",
+    "ticker": "CORZ",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00482",
+    "source": "signal:company:CORZ:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00483",
+    "source": "signal:company:CORZ:q1-2026:02",
+    "target": "bottleneck:gpu-cloud",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00484",
+    "source": "signal:company:CRWV:q4-2025:01",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00485",
+    "source": "signal:company:CRWV:q4-2025:01",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00486",
+    "source": "signal:company:CRWV:q4-2025:01",
+    "target": "bottleneck:gpu-cloud",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00487",
+    "source": "signal:company:CRWV:q4-2025:02",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00488",
+    "source": "signal:company:CRWV:q4-2025:02",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00489",
+    "source": "signal:company:CRWV:q4-2025:02",
+    "target": "bottleneck:n3-logic",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00490",
+    "source": "signal:company:CRWV:q4-2025:03",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00491",
+    "source": "signal:company:CRWV:q4-2025:03",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00492",
+    "source": "signal:company:CRWV:q4-2025:03",
+    "target": "bottleneck:memory",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00493",
+    "source": "signal:company:CRWV:q4-2025:04",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00494",
+    "source": "signal:company:CRWV:q4-2025:04",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00495",
+    "source": "signal:company:CRWV:q4-2025:04",
+    "target": "bottleneck:power",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00496",
+    "source": "signal:company:CRWV:q4-2025:05",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00497",
+    "source": "signal:company:CRWV:q4-2025:05",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00498",
+    "source": "signal:company:CRWV:q4-2025:05",
+    "target": "bottleneck:pluggable-optics",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00499",
+    "source": "signal:company:GLXY:q1-2026:01",
+    "target": "company:GLXY",
+    "ticker": "GLXY",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00500",
+    "source": "signal:company:GLXY:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00501",
+    "source": "signal:company:GLXY:q1-2026:01",
+    "target": "bottleneck:power",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00502",
+    "source": "signal:company:GLXY:q1-2026:02",
+    "target": "company:GLXY",
+    "ticker": "GLXY",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00503",
+    "source": "signal:company:GLXY:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00504",
+    "source": "signal:company:GLXY:q1-2026:02",
+    "target": "bottleneck:power",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00505",
+    "source": "signal:company:INTC:q4-2025:01",
+    "target": "company:INTC",
+    "ticker": "INTC",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00506",
+    "source": "signal:company:INTC:q4-2025:01",
+    "target": "page:intc-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00507",
+    "source": "signal:company:INTC:q4-2025:01",
+    "target": "bottleneck:n3-logic",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00508",
+    "source": "signal:company:INTC:q4-2025:01",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00509",
+    "source": "signal:company:INTC:q4-2025:02",
+    "target": "company:INTC",
+    "ticker": "INTC",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00510",
+    "source": "signal:company:INTC:q4-2025:02",
+    "target": "company:INTC",
+    "ticker": "INTC",
+    "type": "contradicts_claim"
+  },
+  {
+    "id": "edge:00511",
+    "source": "signal:company:INTC:q4-2025:02",
+    "target": "page:intc-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00512",
+    "source": "signal:company:INTC:q4-2025:02",
+    "target": "bottleneck:n3-logic",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00513",
+    "source": "signal:company:INTC:q4-2025:02",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00514",
+    "source": "signal:company:INTC:q4-2025:03",
+    "target": "company:INTC",
+    "ticker": "INTC",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00515",
+    "source": "signal:company:INTC:q4-2025:03",
+    "target": "page:intc-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00516",
+    "source": "signal:company:INTC:q4-2025:03",
+    "target": "bottleneck:memory",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00517",
+    "source": "signal:company:INTC:q4-2025:03",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00518",
+    "source": "signal:company:IREN:q1-2026:01",
+    "target": "company:IREN",
+    "ticker": "IREN",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00519",
+    "source": "signal:company:IREN:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00520",
+    "source": "signal:company:IREN:q1-2026:01",
+    "target": "bottleneck:power",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00521",
+    "source": "signal:company:IREN:q1-2026:02",
+    "target": "company:IREN",
+    "ticker": "IREN",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00522",
+    "source": "signal:company:IREN:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00523",
+    "source": "signal:company:IREN:q1-2026:02",
+    "target": "bottleneck:gpu-cloud",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00524",
+    "source": "signal:company:LITE:q2-fy2026:01",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00525",
+    "source": "signal:company:LITE:q2-fy2026:01",
+    "target": "page:lite-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00526",
+    "source": "signal:company:LITE:q2-fy2026:01",
+    "target": "bottleneck:pluggable-optics",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00527",
+    "source": "signal:company:LITE:q2-fy2026:01",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00528",
+    "source": "signal:company:LITE:q2-fy2026:02",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00529",
+    "source": "signal:company:LITE:q2-fy2026:02",
+    "target": "page:lite-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00530",
+    "source": "signal:company:LITE:q2-fy2026:02",
+    "target": "bottleneck:pluggable-optics",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00531",
+    "source": "signal:company:LITE:q2-fy2026:02",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00532",
+    "source": "signal:company:LITE:q2-fy2026:03",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00533",
+    "source": "signal:company:LITE:q2-fy2026:03",
+    "target": "page:lite-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00534",
+    "source": "signal:company:LITE:q2-fy2026:03",
+    "target": "bottleneck:cpo-next",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00535",
+    "source": "signal:company:LITE:q2-fy2026:03",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00536",
+    "source": "signal:company:MU:q2-fy2026:01",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00537",
+    "source": "signal:company:MU:q2-fy2026:01",
+    "target": "page:mu-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00538",
+    "source": "signal:company:MU:q2-fy2026:01",
+    "target": "bottleneck:memory",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00539",
+    "source": "signal:company:MU:q2-fy2026:01",
+    "target": "thesis-stage:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00540",
+    "source": "signal:company:MU:q2-fy2026:02",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00541",
+    "source": "signal:company:MU:q2-fy2026:02",
+    "target": "page:mu-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00542",
+    "source": "signal:company:MU:q2-fy2026:02",
+    "target": "bottleneck:memory",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00543",
+    "source": "signal:company:MU:q2-fy2026:02",
+    "target": "thesis-stage:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00544",
+    "source": "signal:company:MU:q2-fy2026:03",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00545",
+    "source": "signal:company:MU:q2-fy2026:03",
+    "target": "page:mu-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00546",
+    "source": "signal:company:MU:q2-fy2026:03",
+    "target": "bottleneck:memory",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00547",
+    "source": "signal:company:MU:q2-fy2026:03",
+    "target": "thesis-stage:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00548",
+    "source": "signal:company:NBIS:q1-2026:01",
+    "target": "company:NBIS",
+    "ticker": "NBIS",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00549",
+    "source": "signal:company:NBIS:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00550",
+    "source": "signal:company:NBIS:q1-2026:01",
+    "target": "bottleneck:gpu-cloud",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00551",
+    "source": "signal:company:NBIS:q1-2026:02",
+    "target": "company:NBIS",
+    "ticker": "NBIS",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00552",
+    "source": "signal:company:NBIS:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00553",
+    "source": "signal:company:NBIS:q1-2026:02",
+    "target": "bottleneck:power",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00554",
+    "source": "signal:company:NVDA:q4-fy2026:01",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00555",
+    "source": "signal:company:NVDA:q4-fy2026:01",
+    "target": "page:nvda-q4-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00556",
+    "source": "signal:company:NVDA:q4-fy2026:01",
+    "target": "bottleneck:n3-logic",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00557",
+    "source": "signal:company:NVDA:q4-fy2026:01",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00558",
+    "source": "signal:company:NVDA:q4-fy2026:02",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00559",
+    "source": "signal:company:NVDA:q4-fy2026:02",
+    "target": "page:nvda-q4-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00560",
+    "source": "signal:company:NVDA:q4-fy2026:02",
+    "target": "bottleneck:memory",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00561",
+    "source": "signal:company:NVDA:q4-fy2026:02",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00562",
+    "source": "signal:company:NVDA:q4-fy2026:03",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00563",
+    "source": "signal:company:NVDA:q4-fy2026:03",
+    "target": "page:nvda-q4-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00564",
+    "source": "signal:company:NVDA:q4-fy2026:03",
+    "target": "bottleneck:pluggable-optics",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00565",
+    "source": "signal:company:NVDA:q4-fy2026:03",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00566",
+    "source": "signal:company:NVDA:q4-fy2026:04",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00567",
+    "source": "signal:company:NVDA:q4-fy2026:04",
+    "target": "page:nvda-q4-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00568",
+    "source": "signal:company:NVDA:q4-fy2026:04",
+    "target": "bottleneck:gpu-cloud",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00569",
+    "source": "signal:company:NVDA:q4-fy2026:04",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00570",
+    "source": "signal:company:TSM:q4-2025:01",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00571",
+    "source": "signal:company:TSM:q4-2025:01",
+    "target": "page:tsm-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00572",
+    "source": "signal:company:TSM:q4-2025:01",
+    "target": "bottleneck:n3-logic",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00573",
+    "source": "signal:company:TSM:q4-2025:01",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00574",
+    "source": "signal:company:TSM:q4-2025:02",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00575",
+    "source": "signal:company:TSM:q4-2025:02",
+    "target": "page:tsm-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00576",
+    "source": "signal:company:TSM:q4-2025:02",
+    "target": "bottleneck:n3-logic",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00577",
+    "source": "signal:company:TSM:q4-2025:02",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00578",
+    "source": "signal:company:TSM:q4-2025:03",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00579",
+    "source": "signal:company:TSM:q4-2025:03",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "contradicts_claim"
+  },
+  {
+    "id": "edge:00580",
+    "source": "signal:company:TSM:q4-2025:03",
+    "target": "page:tsm-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00581",
+    "source": "signal:company:TSM:q4-2025:03",
+    "target": "bottleneck:n3-logic",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00582",
+    "source": "signal:company:TSM:q4-2025:03",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00583",
+    "source": "signal:company:WULF:q1-2026:01",
+    "target": "company:WULF",
+    "ticker": "WULF",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00584",
+    "source": "signal:company:WULF:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00585",
+    "source": "signal:company:WULF:q1-2026:01",
+    "target": "bottleneck:power",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00586",
+    "source": "signal:company:WULF:q1-2026:02",
+    "target": "company:WULF",
+    "ticker": "WULF",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00587",
+    "source": "signal:company:WULF:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00588",
+    "source": "signal:company:WULF:q1-2026:02",
+    "target": "bottleneck:power",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00589",
+    "source": "signal:proposal:hbm-contracting-structure-shift:01",
+    "target": "source:sources-jstwng-nvidia-margin-illusion",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00590",
+    "source": "signal:proposal:neocloud-business-model-reclassification:01",
+    "target": "source:sources-creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00591",
+    "source": "signal:proposal:neocloud-business-model-reclassification:02",
+    "target": "source:sources-creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00592",
+    "source": "signal:proposal:nvda-margin-compression:01",
+    "target": "source:sources-jstwng-nvidia-margin-illusion",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00593",
+    "source": "signal:proposal:tsm-pricing-power-reclassification:01",
+    "target": "source:sources-jstwng-nvidia-margin-illusion",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00594",
+    "source": "signal:semianalysis:2025-12-15:05",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00595",
+    "source": "signal:semianalysis:2025-12-15:05",
+    "target": "bottleneck:memory",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00596",
+    "source": "signal:semianalysis:2025-12-15:05",
+    "target": "source:semianalysis-dylan-patel",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00597",
+    "source": "signal:semianalysis:2026-02-09:04",
+    "target": "company:INTC",
+    "ticker": "INTC",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00598",
+    "source": "signal:semianalysis:2026-02-09:04",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00599",
+    "source": "signal:semianalysis:2026-02-09:04",
+    "target": "bottleneck:n3-logic",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00600",
+    "source": "signal:semianalysis:2026-02-09:04",
+    "target": "source:semianalysis-dylan-patel",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00601",
+    "source": "signal:semianalysis:2026-03-15:02",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00602",
+    "source": "signal:semianalysis:2026-03-15:02",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00603",
+    "source": "signal:semianalysis:2026-03-15:02",
+    "target": "company:MU",
+    "ticker": "MU",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00604",
+    "source": "signal:semianalysis:2026-03-15:02",
+    "target": "bottleneck:n3-logic",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00605",
+    "source": "signal:semianalysis:2026-03-15:02",
+    "target": "source:semianalysis-dylan-patel",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00606",
+    "source": "signal:semianalysis:2026-03-15:03",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00607",
+    "source": "signal:semianalysis:2026-03-15:03",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00608",
+    "source": "signal:semianalysis:2026-03-15:03",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00609",
+    "source": "signal:semianalysis:2026-03-15:03",
+    "target": "company:CIEN",
+    "ticker": "CIEN",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00610",
+    "source": "signal:semianalysis:2026-03-15:03",
+    "target": "bottleneck:optical",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00611",
+    "source": "signal:semianalysis:2026-03-15:03",
+    "target": "source:semianalysis-dylan-patel",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00612",
+    "source": "signal:semianalysis:2026-03-27:06",
+    "target": "company:COHR",
+    "ticker": "COHR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00613",
+    "source": "signal:semianalysis:2026-03-27:06",
+    "target": "company:LITE",
+    "ticker": "LITE",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00614",
+    "source": "signal:semianalysis:2026-03-27:06",
+    "target": "company:CIEN",
+    "ticker": "CIEN",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00615",
+    "source": "signal:semianalysis:2026-03-27:06",
+    "target": "bottleneck:optical",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00616",
+    "source": "signal:semianalysis:2026-03-27:06",
+    "target": "source:semianalysis-dylan-patel",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00617",
+    "source": "signal:semianalysis:2026-04-02:01",
+    "target": "company:NVDA",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00618",
+    "source": "signal:semianalysis:2026-04-02:01",
+    "target": "company:CRWV",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00619",
+    "source": "signal:semianalysis:2026-04-02:01",
+    "target": "company:TSM",
+    "ticker": "TSM",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00620",
+    "source": "signal:semianalysis:2026-04-02:01",
+    "target": "bottleneck:n3-logic",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00621",
+    "source": "signal:semianalysis:2026-04-02:01",
+    "target": "source:semianalysis-dylan-patel",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00622",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:01",
+    "target": "bottleneck:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00623",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:01",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00624",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:02",
+    "target": "bottleneck:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00625",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:02",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00626",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:03",
+    "target": "bottleneck:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00627",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:03",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00628",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:04",
+    "target": "bottleneck:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00629",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:04",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00630",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:05",
+    "target": "bottleneck:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00631",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:05",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00632",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:06",
+    "target": "bottleneck:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00633",
+    "source": "signal:thesis:co-packaged-optics-cpo-scale-up:06",
+    "target": "thesis-stage:co-packaged-optics-cpo-scale-up",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00634",
+    "source": "signal:thesis:euv-tools:01",
+    "target": "bottleneck:euv-tools",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00635",
+    "source": "signal:thesis:euv-tools:01",
+    "target": "thesis-stage:euv-tools",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00636",
+    "source": "signal:thesis:euv-tools:02",
+    "target": "bottleneck:euv-tools",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00637",
+    "source": "signal:thesis:euv-tools:02",
+    "target": "thesis-stage:euv-tools",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00638",
+    "source": "signal:thesis:euv-tools:03",
+    "target": "bottleneck:euv-tools",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00639",
+    "source": "signal:thesis:euv-tools:03",
+    "target": "thesis-stage:euv-tools",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00640",
+    "source": "signal:thesis:euv-tools:04",
+    "target": "bottleneck:euv-tools",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00641",
+    "source": "signal:thesis:euv-tools:04",
+    "target": "thesis-stage:euv-tools",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00642",
+    "source": "signal:thesis:memory-supercycle:01",
+    "target": "bottleneck:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00643",
+    "source": "signal:thesis:memory-supercycle:01",
+    "target": "thesis-stage:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00644",
+    "source": "signal:thesis:memory-supercycle:02",
+    "target": "bottleneck:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00645",
+    "source": "signal:thesis:memory-supercycle:02",
+    "target": "thesis-stage:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00646",
+    "source": "signal:thesis:memory-supercycle:03",
+    "target": "bottleneck:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00647",
+    "source": "signal:thesis:memory-supercycle:03",
+    "target": "thesis-stage:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00648",
+    "source": "signal:thesis:memory-supercycle:04",
+    "target": "bottleneck:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00649",
+    "source": "signal:thesis:memory-supercycle:04",
+    "target": "thesis-stage:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00650",
+    "source": "signal:thesis:memory-supercycle:05",
+    "target": "bottleneck:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00651",
+    "source": "signal:thesis:memory-supercycle:05",
+    "target": "thesis-stage:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00652",
+    "source": "signal:thesis:memory-supercycle:06",
+    "target": "bottleneck:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00653",
+    "source": "signal:thesis:memory-supercycle:06",
+    "target": "thesis-stage:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00654",
+    "source": "signal:thesis:memory-supercycle:07",
+    "target": "bottleneck:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00655",
+    "source": "signal:thesis:memory-supercycle:07",
+    "target": "thesis-stage:memory-supercycle",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00656",
+    "source": "signal:thesis:n3-logic-wafers:01",
+    "target": "bottleneck:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00657",
+    "source": "signal:thesis:n3-logic-wafers:01",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00658",
+    "source": "signal:thesis:n3-logic-wafers:02",
+    "target": "bottleneck:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00659",
+    "source": "signal:thesis:n3-logic-wafers:02",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00660",
+    "source": "signal:thesis:n3-logic-wafers:03",
+    "target": "bottleneck:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00661",
+    "source": "signal:thesis:n3-logic-wafers:03",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00662",
+    "source": "signal:thesis:n3-logic-wafers:04",
+    "target": "bottleneck:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00663",
+    "source": "signal:thesis:n3-logic-wafers:04",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00664",
+    "source": "signal:thesis:n3-logic-wafers:05",
+    "target": "bottleneck:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00665",
+    "source": "signal:thesis:n3-logic-wafers:05",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00666",
+    "source": "signal:thesis:n3-logic-wafers:06",
+    "target": "bottleneck:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00667",
+    "source": "signal:thesis:n3-logic-wafers:06",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00668",
+    "source": "signal:thesis:n3-logic-wafers:07",
+    "target": "bottleneck:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00669",
+    "source": "signal:thesis:n3-logic-wafers:07",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00670",
+    "source": "signal:thesis:n3-logic-wafers:08",
+    "target": "bottleneck:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00671",
+    "source": "signal:thesis:n3-logic-wafers:08",
+    "target": "thesis-stage:n3-logic-wafers",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00672",
+    "source": "signal:thesis:pluggable-optics-scale-out:01",
+    "target": "bottleneck:pluggable-optics-scale-out",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00673",
+    "source": "signal:thesis:pluggable-optics-scale-out:01",
+    "target": "thesis-stage:pluggable-optics-scale-out",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00674",
+    "source": "signal:thesis:pluggable-optics-scale-out:02",
+    "target": "bottleneck:pluggable-optics-scale-out",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00675",
+    "source": "signal:thesis:pluggable-optics-scale-out:02",
+    "target": "thesis-stage:pluggable-optics-scale-out",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00676",
+    "source": "signal:thesis:pluggable-optics-scale-out:03",
+    "target": "bottleneck:pluggable-optics-scale-out",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00677",
+    "source": "signal:thesis:pluggable-optics-scale-out:03",
+    "target": "thesis-stage:pluggable-optics-scale-out",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00678",
+    "source": "signal:thesis:pluggable-optics-scale-out:04",
+    "target": "bottleneck:pluggable-optics-scale-out",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00679",
+    "source": "signal:thesis:pluggable-optics-scale-out:04",
+    "target": "thesis-stage:pluggable-optics-scale-out",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00680",
+    "source": "signal:thesis:pluggable-optics-scale-out:05",
+    "target": "bottleneck:pluggable-optics-scale-out",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00681",
+    "source": "signal:thesis:pluggable-optics-scale-out:05",
+    "target": "thesis-stage:pluggable-optics-scale-out",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00682",
+    "source": "signal:thesis:power-dc-buildout:01",
+    "target": "bottleneck:power-dc-buildout",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00683",
+    "source": "signal:thesis:power-dc-buildout:01",
+    "target": "thesis-stage:power-dc-buildout",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00684",
+    "source": "signal:thesis:power-dc-buildout:02",
+    "target": "bottleneck:power-dc-buildout",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00685",
+    "source": "signal:thesis:power-dc-buildout:02",
+    "target": "thesis-stage:power-dc-buildout",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00686",
+    "source": "signal:thesis:power-dc-buildout:03",
+    "target": "bottleneck:power-dc-buildout",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00687",
+    "source": "signal:thesis:power-dc-buildout:03",
+    "target": "thesis-stage:power-dc-buildout",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00688",
+    "source": "signal:thesis:power-dc-buildout:04",
+    "target": "bottleneck:power-dc-buildout",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00689",
+    "source": "signal:thesis:power-dc-buildout:04",
+    "target": "thesis-stage:power-dc-buildout",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00690",
+    "source": "signal:thesis:power-dc-buildout:05",
+    "target": "bottleneck:power-dc-buildout",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00691",
+    "source": "signal:thesis:power-dc-buildout:05",
+    "target": "thesis-stage:power-dc-buildout",
+    "type": "updates_thesis_stage"
+  },
+  {
+    "id": "edge:00692",
+    "source": "company:CIFR",
+    "target": "claim:CIFR:q1-2026:01",
+    "ticker": "CIFR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00693",
+    "source": "claim:CIFR:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00694",
+    "source": "company:CIFR",
+    "target": "claim:CIFR:q1-2026:02",
+    "ticker": "CIFR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00695",
+    "source": "claim:CIFR:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00696",
+    "source": "company:COHR",
+    "target": "claim:COHR:q2-fy2026:01",
+    "ticker": "COHR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00697",
+    "source": "claim:COHR:q2-fy2026:01",
+    "target": "page:cohr-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00698",
+    "source": "company:COHR",
+    "target": "claim:COHR:q2-fy2026:02",
+    "ticker": "COHR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00699",
+    "source": "claim:COHR:q2-fy2026:02",
+    "target": "page:cohr-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00700",
+    "source": "company:COHR",
+    "target": "claim:COHR:q2-fy2026:03",
+    "ticker": "COHR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00701",
+    "source": "claim:COHR:q2-fy2026:03",
+    "target": "page:cohr-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00702",
+    "source": "company:COHR",
+    "target": "claim:COHR:q2-fy2026:04",
+    "ticker": "COHR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00703",
+    "source": "claim:COHR:q2-fy2026:04",
+    "target": "page:cohr-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00704",
+    "source": "company:COHR",
+    "target": "claim:COHR:q2-fy2026:05",
+    "ticker": "COHR",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00705",
+    "source": "claim:COHR:q2-fy2026:05",
+    "target": "page:cohr-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00706",
+    "source": "company:CORZ",
+    "target": "claim:CORZ:q1-2026:01",
+    "ticker": "CORZ",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00707",
+    "source": "claim:CORZ:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00708",
+    "source": "company:CORZ",
+    "target": "claim:CORZ:q1-2026:02",
+    "ticker": "CORZ",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00709",
+    "source": "claim:CORZ:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00710",
+    "source": "company:CRWV",
+    "target": "claim:CRWV:q4-2025:01",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00711",
+    "source": "claim:CRWV:q4-2025:01",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00712",
+    "source": "company:CRWV",
+    "target": "claim:CRWV:q4-2025:02",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00713",
+    "source": "claim:CRWV:q4-2025:02",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00714",
+    "source": "company:CRWV",
+    "target": "claim:CRWV:q4-2025:03",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00715",
+    "source": "claim:CRWV:q4-2025:03",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00716",
+    "source": "company:CRWV",
+    "target": "claim:CRWV:q4-2025:04",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00717",
+    "source": "claim:CRWV:q4-2025:04",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00718",
+    "source": "company:CRWV",
+    "target": "claim:CRWV:q4-2025:05",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00719",
+    "source": "claim:CRWV:q4-2025:05",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00720",
+    "source": "company:CRWV",
+    "target": "claim:CRWV:q4-2025:06",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00721",
+    "source": "claim:CRWV:q4-2025:06",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00722",
+    "source": "company:CRWV",
+    "target": "claim:CRWV:q4-2025:07",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00723",
+    "source": "claim:CRWV:q4-2025:07",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00724",
+    "source": "company:CRWV",
+    "target": "claim:CRWV:q4-2025:08",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00725",
+    "source": "claim:CRWV:q4-2025:08",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00726",
+    "source": "company:CRWV",
+    "target": "claim:CRWV:q4-2025:09",
+    "ticker": "CRWV",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00727",
+    "source": "claim:CRWV:q4-2025:09",
+    "target": "page:crwv-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00728",
+    "source": "company:GLXY",
+    "target": "claim:GLXY:q1-2026:01",
+    "ticker": "GLXY",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00729",
+    "source": "claim:GLXY:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00730",
+    "source": "company:GLXY",
+    "target": "claim:GLXY:q1-2026:02",
+    "ticker": "GLXY",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00731",
+    "source": "claim:GLXY:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00732",
+    "source": "company:INTC",
+    "target": "claim:INTC:q4-2025:01",
+    "ticker": "INTC",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00733",
+    "source": "claim:INTC:q4-2025:01",
+    "target": "page:intc-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00734",
+    "source": "company:INTC",
+    "target": "claim:INTC:q4-2025:02",
+    "ticker": "INTC",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00735",
+    "source": "claim:INTC:q4-2025:02",
+    "target": "page:intc-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00736",
+    "source": "company:INTC",
+    "target": "claim:INTC:q4-2025:03",
+    "ticker": "INTC",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00737",
+    "source": "claim:INTC:q4-2025:03",
+    "target": "page:intc-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00738",
+    "source": "company:INTC",
+    "target": "claim:INTC:q4-2025:04",
+    "ticker": "INTC",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00739",
+    "source": "claim:INTC:q4-2025:04",
+    "target": "page:intc-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00740",
+    "source": "company:INTC",
+    "target": "claim:INTC:q4-2025:05",
+    "ticker": "INTC",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00741",
+    "source": "claim:INTC:q4-2025:05",
+    "target": "page:intc-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00742",
+    "source": "company:INTC",
+    "target": "claim:INTC:q4-2025:06",
+    "ticker": "INTC",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00743",
+    "source": "claim:INTC:q4-2025:06",
+    "target": "page:intc-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00744",
+    "source": "company:IREN",
+    "target": "claim:IREN:q1-2026:01",
+    "ticker": "IREN",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00745",
+    "source": "claim:IREN:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00746",
+    "source": "company:IREN",
+    "target": "claim:IREN:q1-2026:02",
+    "ticker": "IREN",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00747",
+    "source": "claim:IREN:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00748",
+    "source": "company:LITE",
+    "target": "claim:LITE:q2-fy2026:01",
+    "ticker": "LITE",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00749",
+    "source": "claim:LITE:q2-fy2026:01",
+    "target": "page:lite-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00750",
+    "source": "company:LITE",
+    "target": "claim:LITE:q2-fy2026:02",
+    "ticker": "LITE",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00751",
+    "source": "claim:LITE:q2-fy2026:02",
+    "target": "page:lite-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00752",
+    "source": "company:LITE",
+    "target": "claim:LITE:q2-fy2026:03",
+    "ticker": "LITE",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00753",
+    "source": "claim:LITE:q2-fy2026:03",
+    "target": "page:lite-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00754",
+    "source": "company:LITE",
+    "target": "claim:LITE:q2-fy2026:04",
+    "ticker": "LITE",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00755",
+    "source": "claim:LITE:q2-fy2026:04",
+    "target": "page:lite-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00756",
+    "source": "company:LITE",
+    "target": "claim:LITE:q2-fy2026:05",
+    "ticker": "LITE",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00757",
+    "source": "claim:LITE:q2-fy2026:05",
+    "target": "page:lite-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00758",
+    "source": "company:MU",
+    "target": "claim:MU:q2-fy2026:01",
+    "ticker": "MU",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00759",
+    "source": "claim:MU:q2-fy2026:01",
+    "target": "page:mu-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00760",
+    "source": "company:MU",
+    "target": "claim:MU:q2-fy2026:02",
+    "ticker": "MU",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00761",
+    "source": "claim:MU:q2-fy2026:02",
+    "target": "page:mu-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00762",
+    "source": "company:MU",
+    "target": "claim:MU:q2-fy2026:03",
+    "ticker": "MU",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00763",
+    "source": "claim:MU:q2-fy2026:03",
+    "target": "page:mu-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00764",
+    "source": "company:MU",
+    "target": "claim:MU:q2-fy2026:04",
+    "ticker": "MU",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00765",
+    "source": "claim:MU:q2-fy2026:04",
+    "target": "page:mu-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00766",
+    "source": "company:MU",
+    "target": "claim:MU:q2-fy2026:05",
+    "ticker": "MU",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00767",
+    "source": "claim:MU:q2-fy2026:05",
+    "target": "page:mu-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00768",
+    "source": "company:MU",
+    "target": "claim:MU:q2-fy2026:06",
+    "ticker": "MU",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00769",
+    "source": "claim:MU:q2-fy2026:06",
+    "target": "page:mu-q2-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00770",
+    "source": "company:NBIS",
+    "target": "claim:NBIS:q1-2026:01",
+    "ticker": "NBIS",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00771",
+    "source": "claim:NBIS:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00772",
+    "source": "company:NBIS",
+    "target": "claim:NBIS:q1-2026:02",
+    "ticker": "NBIS",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00773",
+    "source": "claim:NBIS:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00774",
+    "source": "company:NVDA",
+    "target": "claim:NVDA:q4-fy2026:01",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00775",
+    "source": "claim:NVDA:q4-fy2026:01",
+    "target": "page:nvda-q4-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00776",
+    "source": "company:NVDA",
+    "target": "claim:NVDA:q4-fy2026:02",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00777",
+    "source": "claim:NVDA:q4-fy2026:02",
+    "target": "page:nvda-q4-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00778",
+    "source": "company:NVDA",
+    "target": "claim:NVDA:q4-fy2026:03",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00779",
+    "source": "claim:NVDA:q4-fy2026:03",
+    "target": "page:nvda-q4-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00780",
+    "source": "company:NVDA",
+    "target": "claim:NVDA:q4-fy2026:04",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00781",
+    "source": "claim:NVDA:q4-fy2026:04",
+    "target": "page:nvda-q4-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00782",
+    "source": "company:NVDA",
+    "target": "claim:NVDA:q4-fy2026:05",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00783",
+    "source": "claim:NVDA:q4-fy2026:05",
+    "target": "page:nvda-q4-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00784",
+    "source": "company:NVDA",
+    "target": "claim:NVDA:q4-fy2026:06",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00785",
+    "source": "claim:NVDA:q4-fy2026:06",
+    "target": "page:nvda-q4-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00786",
+    "source": "company:NVDA",
+    "target": "claim:NVDA:q4-fy2026:07",
+    "ticker": "NVDA",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00787",
+    "source": "claim:NVDA:q4-fy2026:07",
+    "target": "page:nvda-q4-fy2026",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00788",
+    "source": "company:TSM",
+    "target": "claim:TSM:q4-2025:01",
+    "ticker": "TSM",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00789",
+    "source": "claim:TSM:q4-2025:01",
+    "target": "page:tsm-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00790",
+    "source": "company:TSM",
+    "target": "claim:TSM:q4-2025:02",
+    "ticker": "TSM",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00791",
+    "source": "claim:TSM:q4-2025:02",
+    "target": "page:tsm-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00792",
+    "source": "company:TSM",
+    "target": "claim:TSM:q4-2025:03",
+    "ticker": "TSM",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00793",
+    "source": "claim:TSM:q4-2025:03",
+    "target": "page:tsm-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00794",
+    "source": "company:TSM",
+    "target": "claim:TSM:q4-2025:04",
+    "ticker": "TSM",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00795",
+    "source": "claim:TSM:q4-2025:04",
+    "target": "page:tsm-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00796",
+    "source": "company:TSM",
+    "target": "claim:TSM:q4-2025:05",
+    "ticker": "TSM",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00797",
+    "source": "claim:TSM:q4-2025:05",
+    "target": "page:tsm-q4-2025",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00798",
+    "source": "company:WULF",
+    "target": "claim:WULF:q1-2026:01",
+    "ticker": "WULF",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00799",
+    "source": "claim:WULF:q1-2026:01",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00800",
+    "source": "company:WULF",
+    "target": "claim:WULF:q1-2026:02",
+    "ticker": "WULF",
+    "type": "supports_claim"
+  },
+  {
+    "id": "edge:00801",
+    "source": "claim:WULF:q1-2026:02",
+    "target": "page:creative-strategies-neoclouds-three-business-models",
+    "type": "derived_from_source"
+  },
+  {
+    "id": "edge:00802",
+    "source": "thesis:current",
+    "target": "report:latest",
+    "type": "published_in_report"
+  }
+]

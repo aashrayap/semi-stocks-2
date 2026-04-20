@@ -1,0 +1,3132 @@
+{
+  "links": [
+    {
+      "source": "company:ALAB",
+      "target": "bottleneck:copper-signal-integrity",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:ALAB",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:AMSC",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:AMZN",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:APLD",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:ASML",
+      "target": "bottleneck:euv",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:ASML",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:AVGO",
+      "target": "bottleneck:n3-logic",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:AVGO",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:BE",
+      "target": "bottleneck:power",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:BE",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:BITF",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:BTDR",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:BW",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:CIEN",
+      "target": "bottleneck:pluggable-optics",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:CIEN",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:CIFR",
+      "target": "bottleneck:power",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:CIFR",
+      "target": "page:creative-strategies-neoclouds-three-business-models",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:CIFR",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:CLSK",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:COHR",
+      "target": "bottleneck:pluggable-optics",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:COHR",
+      "target": "page:cohr-q2-fy2026",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:COHR",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:CORZ",
+      "target": "bottleneck:power",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:CORZ",
+      "target": "page:creative-strategies-neoclouds-three-business-models",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:CORZ",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:CRWV",
+      "target": "bottleneck:gpu-cloud",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:CRWV",
+      "target": "page:crwv-q4-2025",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:CRWV",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:EQT",
+      "target": "bottleneck:power",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:EQT",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:GLXY",
+      "target": "bottleneck:power",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:GLXY",
+      "target": "page:creative-strategies-neoclouds-three-business-models",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:GLXY",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:GNRC",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:GOOGL",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:HUT",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:INFY",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:INTC",
+      "target": "bottleneck:n3-logic",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:INTC",
+      "target": "page:intc-q4-2025",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:INTC",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:IREN",
+      "target": "bottleneck:power",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:IREN",
+      "target": "page:creative-strategies-neoclouds-three-business-models",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:IREN",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:KRC",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:LBRT",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:LITE",
+      "target": "bottleneck:pluggable-optics",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:LITE",
+      "target": "page:lite-q2-fy2026",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:LITE",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:MSFT",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:MU",
+      "target": "bottleneck:memory",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:MU",
+      "target": "page:mu-q2-fy2026",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:MU",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:NBIS",
+      "target": "bottleneck:gpu-cloud",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:NBIS",
+      "target": "page:creative-strategies-neoclouds-three-business-models",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:NBIS",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:NVDA",
+      "target": "bottleneck:n3-logic",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:NVDA",
+      "target": "page:nvda-q4-fy2026",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:NVDA",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:PSIX",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:PSTG",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:PUMP",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:QQQ",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:RIOT",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:SEI",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:SMTC",
+      "target": "bottleneck:copper-signal-integrity",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:SMTC",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:SNDK",
+      "target": "bottleneck:memory",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:SNDK",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:TSEM",
+      "target": "bottleneck:foundry",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:TSEM",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:TSM",
+      "target": "bottleneck:n3-logic",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:TSM",
+      "target": "page:tsm-q4-2025",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:TSM",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:WULF",
+      "target": "bottleneck:power",
+      "type": "exposes_company_to"
+    },
+    {
+      "source": "company:WULF",
+      "target": "page:creative-strategies-neoclouds-three-business-models",
+      "type": "derived_from_source"
+    },
+    {
+      "source": "company:WULF",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "company:WYFI",
+      "target": "report:latest",
+      "type": "published_in_report"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "company:ALAB",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "company:ASML",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "company:AVGO",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "company:QQQ",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "page:co-packaged-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:baker-cyclicality-thesis",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:ALAB",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:AVGO",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:CIEN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:GNRC",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:LITE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:MSFT",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:PSTG",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:QQQ",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "company:SMTC",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:baker-q4-2025",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:ALAB",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:ASML",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:AVGO",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:CIEN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:CIFR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:CORZ",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:INTC",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:IREN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:LITE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:NBIS",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:SMTC",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:SNDK",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "company:WULF",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:co-packaged-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:cohr-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:creative-strategies-neoclouds-three-business-models",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:crwv-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:euv-tool-bottleneck",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:jstwng-nvidia-margin-illusion",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:lite-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:mu-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:neocloud-business-models",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:nvda-margin-residual",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:semianalysis-signals",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:token-economics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:bottleneck-cascade",
+      "target": "page:tsm-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:co-packaged-optics",
+      "target": "company:ALAB",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:co-packaged-optics",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:co-packaged-optics",
+      "target": "company:LITE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:co-packaged-optics",
+      "target": "company:SMTC",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:co-packaged-optics",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:co-packaged-optics",
+      "target": "page:cohr-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:co-packaged-optics",
+      "target": "page:lite-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:co-packaged-optics",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:cohr-q2-fy2026",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:cohr-q2-fy2026",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:cohr-q2-fy2026",
+      "target": "page:co-packaged-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:cohr-q2-fy2026",
+      "target": "page:cohr-q2-fy2026-primary-sources",
+      "type": "links_to"
+    },
+    {
+      "source": "page:cohr-q2-fy2026",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:cohr-q2-fy2026",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:cohr-q2-fy2026",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "company:CIFR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "company:CORZ",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "company:GLXY",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "company:IREN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "company:NBIS",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "company:WULF",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "page:crwv-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "type": "links_to"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "page:neocloud-business-models",
+      "type": "links_to"
+    },
+    {
+      "source": "page:creative-strategies-neoclouds-three-business-models",
+      "target": "page:token-economics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:crwv-q4-2025",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:crwv-q4-2025",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:crwv-q4-2025",
+      "target": "company:LITE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:crwv-q4-2025",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:crwv-q4-2025",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:crwv-q4-2025",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:crwv-q4-2025-transcript",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "company:ASML",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "page:euv-tool-bottleneck",
+      "type": "links_to"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "page:semianalysis-signals",
+      "type": "links_to"
+    },
+    {
+      "source": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "target": "page:token-economics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:euv-tool-bottleneck",
+      "target": "company:ASML",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:euv-tool-bottleneck",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:euv-tool-bottleneck",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:euv-tool-bottleneck",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:euv-tool-bottleneck",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:euv-tool-bottleneck",
+      "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "type": "links_to"
+    },
+    {
+      "source": "page:euv-tool-bottleneck",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:euv-tool-bottleneck",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:euv-tool-bottleneck",
+      "target": "page:semianalysis-signals",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "company:ASML",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:index",
+      "target": "company:AVGO",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:index",
+      "target": "company:CIEN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:index",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:index",
+      "target": "company:LITE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:index",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:index",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:index",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:index",
+      "target": "page:baker-cyclicality-thesis",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:co-packaged-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:cohr-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:creative-strategies-neoclouds-three-business-models",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:crwv-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:euv-tool-bottleneck",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:intc-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:jstwng-nvidia-margin-illusion",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:lite-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:long-term-value-chain-thesis",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:mu-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:neocloud-business-models",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:nvda-margin-residual",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:nvda-swing-trade-thesis",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:semianalysis-signals",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:token-economics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:index",
+      "target": "page:tsm-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:intc-q4-2025",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:intc-q4-2025",
+      "target": "company:INTC",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:intc-q4-2025",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:intc-q4-2025",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:intc-q4-2025",
+      "target": "page:intc-q4-2025-primary-sources",
+      "type": "links_to"
+    },
+    {
+      "source": "page:intc-q4-2025",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:intc-q4-2025",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:intc-q4-2025",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "company:ASML",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "company:AVGO",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "page:baker-cyclicality-thesis",
+      "type": "links_to"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "page:euv-tool-bottleneck",
+      "type": "links_to"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "page:nvda-margin-residual",
+      "type": "links_to"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:jstwng-nvidia-margin-illusion",
+      "target": "page:semianalysis-signals",
+      "type": "links_to"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:APLD",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:AVGO",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:BE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:BITF",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:BTDR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:BW",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:CIFR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:CLSK",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:CORZ",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:EQT",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:HUT",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:INFY",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:INTC",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:IREN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:KRC",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:LBRT",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:LITE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:PSIX",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:PUMP",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:RIOT",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:SEI",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:SNDK",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:TSEM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "company:WYFI",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:leopold-q4-2025",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:lite-q2-fy2026",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:lite-q2-fy2026",
+      "target": "company:LITE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:lite-q2-fy2026",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:lite-q2-fy2026",
+      "target": "page:co-packaged-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:lite-q2-fy2026",
+      "target": "page:cohr-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:lite-q2-fy2026",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:lite-q2-fy2026",
+      "target": "page:lite-q2-fy2026-primary-sources",
+      "type": "links_to"
+    },
+    {
+      "source": "page:lite-q2-fy2026",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:log",
+      "target": "company:ASML",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:log",
+      "target": "company:AVGO",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:log",
+      "target": "company:CIFR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:log",
+      "target": "company:CORZ",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:log",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:log",
+      "target": "company:GLXY",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:log",
+      "target": "company:IREN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:log",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:log",
+      "target": "company:NBIS",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:log",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:log",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:log",
+      "target": "company:WULF",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "company:AMZN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "company:ASML",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "company:AVGO",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "company:GOOGL",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "company:MSFT",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "company:QQQ",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:baker-cyclicality-thesis",
+      "type": "links_to"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:euv-tool-bottleneck",
+      "type": "links_to"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:jstwng-nvidia-margin-illusion",
+      "type": "links_to"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:nvda-margin-residual",
+      "type": "links_to"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:semianalysis-signals",
+      "type": "links_to"
+    },
+    {
+      "source": "page:long-term-value-chain-thesis",
+      "target": "page:token-economics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "company:SNDK",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "page:crwv-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "type": "links_to"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "page:euv-tool-bottleneck",
+      "type": "links_to"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "page:jstwng-nvidia-margin-illusion",
+      "type": "links_to"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "page:mu-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "page:nvda-margin-residual",
+      "type": "links_to"
+    },
+    {
+      "source": "page:memory-supercycle",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:mu-q2-fy2026",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:mu-q2-fy2026",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:mu-q2-fy2026",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:mu-q2-fy2026",
+      "target": "page:mu-q2-fy2026-primary-sources",
+      "type": "links_to"
+    },
+    {
+      "source": "page:mu-q2-fy2026",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "company:AVGO",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "company:INTC",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "company:TSEM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "page:crwv-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "type": "links_to"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "page:euv-tool-bottleneck",
+      "type": "links_to"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "page:intc-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "page:jstwng-nvidia-margin-illusion",
+      "type": "links_to"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "page:nvda-margin-residual",
+      "type": "links_to"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:n3-wafer-crunch",
+      "target": "page:tsm-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:neocloud-business-models",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:neocloud-business-models",
+      "target": "company:IREN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:neocloud-business-models",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:neocloud-business-models",
+      "target": "page:creative-strategies-neoclouds-three-business-models",
+      "type": "links_to"
+    },
+    {
+      "source": "page:neocloud-business-models",
+      "target": "page:crwv-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:neocloud-business-models",
+      "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "type": "links_to"
+    },
+    {
+      "source": "page:neocloud-business-models",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:neocloud-business-models",
+      "target": "page:token-economics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "company:AMZN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "company:GOOGL",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "company:MSFT",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "page:baker-cyclicality-thesis",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "page:euv-tool-bottleneck",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "page:jstwng-nvidia-margin-illusion",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-margin-residual",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "company:LITE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "page:crwv-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-q4-fy2026",
+      "target": "page:token-economics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "company:LITE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "page:baker-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "page:leopold-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "page:pluggable-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "page:semianalysis-signals",
+      "type": "links_to"
+    },
+    {
+      "source": "page:nvda-swing-trade-thesis",
+      "target": "page:token-economics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "company:CIEN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "company:LITE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "page:co-packaged-optics",
+      "type": "links_to"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "page:cohr-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "page:crwv-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "page:lite-q2-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:pluggable-optics",
+      "target": "page:semianalysis-signals",
+      "type": "links_to"
+    },
+    {
+      "source": "page:schema",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "company:ASML",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "company:CIEN",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "company:COHR",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "company:LITE",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "company:MU",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "company:SNDK",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "type": "links_to"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "page:euv-tool-bottleneck",
+      "type": "links_to"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "page:memory-supercycle",
+      "type": "links_to"
+    },
+    {
+      "source": "page:semianalysis-signals",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:shanu-mathew-dc-capacity-2026",
+      "target": "company:CRWV",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:shanu-mathew-dc-capacity-2026",
+      "target": "company:MSFT",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:token-economics",
+      "target": "company:ASML",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:token-economics",
+      "target": "page:bottleneck-cascade",
+      "type": "links_to"
+    },
+    {
+      "source": "page:token-economics",
+      "target": "page:creative-strategies-neoclouds-three-business-models",
+      "type": "links_to"
+    },
+    {
+      "source": "page:token-economics",
+      "target": "page:neocloud-business-models",
+      "type": "links_to"
+    },
+    {
+      "source": "page:token-economics",
+      "target": "page:semianalysis-signals",
+      "type": "links_to"
+    },
+    {
+      "source": "page:tsm-q4-2025",
+      "target": "company:INTC",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:tsm-q4-2025",
+      "target": "company:NVDA",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:tsm-q4-2025",
+      "target": "company:TSM",
+      "type": "mentions_ticker"
+    },
+    {
+      "source": "page:tsm-q4-2025",
+      "target": "page:intc-q4-2025",
+      "type": "links_to"
+    },
+    {
+      "source": "page:tsm-q4-2025",
+      "target": "page:n3-wafer-crunch",
+      "type": "links_to"
+    },
+    {
+      "source": "page:tsm-q4-2025",
+      "target": "page:nvda-q4-fy2026",
+      "type": "links_to"
+    },
+    {
+      "source": "page:tsm-q4-2025",
+      "target": "page:tsm-q4-2025-primary-sources",
+      "type": "links_to"
+    },
+    {
+      "source": "thesis-stage:co-packaged-optics-cpo-scale-up",
+      "target": "bottleneck:co-packaged-optics-cpo-scale-up",
+      "type": "belongs_to_bottleneck"
+    },
+    {
+      "source": "thesis-stage:cowos-packaging",
+      "target": "bottleneck:cowos-packaging",
+      "type": "belongs_to_bottleneck"
+    },
+    {
+      "source": "thesis-stage:euv-tools",
+      "target": "bottleneck:euv-tools",
+      "type": "belongs_to_bottleneck"
+    },
+    {
+      "source": "thesis-stage:memory-supercycle",
+      "target": "bottleneck:memory-supercycle",
+      "type": "belongs_to_bottleneck"
+    },
+    {
+      "source": "thesis-stage:n3-logic-wafers",
+      "target": "bottleneck:n3-logic-wafers",
+      "type": "belongs_to_bottleneck"
+    },
+    {
+      "source": "thesis-stage:pluggable-optics-scale-out",
+      "target": "bottleneck:pluggable-optics-scale-out",
+      "type": "belongs_to_bottleneck"
+    },
+    {
+      "source": "thesis-stage:power-dc-buildout",
+      "target": "bottleneck:power-dc-buildout",
+      "type": "belongs_to_bottleneck"
+    },
+    {
+      "source": "thesis:current",
+      "target": "report:latest",
+      "type": "published_in_report"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bottleneck:co-packaged-optics-cpo-scale-up",
+      "label": "Co-packaged optics / CPO (scale-up)",
+      "type": "bottleneck",
+      "val": 2
+    },
+    {
+      "id": "bottleneck:copper-signal-integrity",
+      "label": "Copper Signal Integrity",
+      "type": "bottleneck",
+      "val": 3
+    },
+    {
+      "id": "bottleneck:cowos-packaging",
+      "label": "CoWoS packaging",
+      "type": "bottleneck",
+      "val": 2
+    },
+    {
+      "id": "bottleneck:cpo-next",
+      "label": "Cpo Next",
+      "type": "bottleneck",
+      "val": 1
+    },
+    {
+      "id": "bottleneck:euv",
+      "label": "Euv",
+      "type": "bottleneck",
+      "val": 2
+    },
+    {
+      "id": "bottleneck:euv-tools",
+      "label": "EUV tools",
+      "type": "bottleneck",
+      "val": 2
+    },
+    {
+      "id": "bottleneck:foundry",
+      "label": "Foundry",
+      "type": "bottleneck",
+      "val": 2
+    },
+    {
+      "id": "bottleneck:gpu-cloud",
+      "label": "Gpu Cloud",
+      "type": "bottleneck",
+      "val": 3
+    },
+    {
+      "id": "bottleneck:memory",
+      "label": "Memory",
+      "type": "bottleneck",
+      "val": 3
+    },
+    {
+      "id": "bottleneck:memory-supercycle",
+      "label": "Memory supercycle",
+      "type": "bottleneck",
+      "val": 2
+    },
+    {
+      "id": "bottleneck:n3-logic",
+      "label": "N3 Logic",
+      "type": "bottleneck",
+      "val": 5
+    },
+    {
+      "id": "bottleneck:n3-logic-wafers",
+      "label": "N3 logic wafers",
+      "type": "bottleneck",
+      "val": 2
+    },
+    {
+      "id": "bottleneck:optical",
+      "label": "Optical",
+      "type": "bottleneck",
+      "val": 1
+    },
+    {
+      "id": "bottleneck:pluggable-optics",
+      "label": "Pluggable Optics",
+      "type": "bottleneck",
+      "val": 4
+    },
+    {
+      "id": "bottleneck:pluggable-optics-scale-out",
+      "label": "Pluggable optics (scale-out)",
+      "type": "bottleneck",
+      "val": 2
+    },
+    {
+      "id": "bottleneck:power",
+      "label": "Power",
+      "type": "bottleneck",
+      "val": 8
+    },
+    {
+      "id": "bottleneck:power-dc-buildout",
+      "label": "Power / DC buildout",
+      "type": "bottleneck",
+      "val": 2
+    },
+    {
+      "id": "company:ALAB",
+      "label": "Astera Labs",
+      "type": "company",
+      "val": 7
+    },
+    {
+      "id": "company:AMSC",
+      "label": "American Superconductor",
+      "type": "company",
+      "val": 2
+    },
+    {
+      "id": "company:AMZN",
+      "label": "Amazon",
+      "type": "company",
+      "val": 4
+    },
+    {
+      "id": "company:APLD",
+      "label": "Applied Digital",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:ASML",
+      "label": "ASML",
+      "type": "company",
+      "val": 13
+    },
+    {
+      "id": "company:AVGO",
+      "label": "AVGO",
+      "type": "company",
+      "val": 12
+    },
+    {
+      "id": "company:BE",
+      "label": "Bloom Energy",
+      "type": "company",
+      "val": 4
+    },
+    {
+      "id": "company:BITF",
+      "label": "Bitfarms",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:BTDR",
+      "label": "Bitdeer Technologies",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:BW",
+      "label": "Babcock & Wilcox",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:CIEN",
+      "label": "Ciena Corp",
+      "type": "company",
+      "val": 8
+    },
+    {
+      "id": "company:CIFR",
+      "label": "Cipher Mining",
+      "type": "company",
+      "val": 8
+    },
+    {
+      "id": "company:CLSK",
+      "label": "CleanSpark",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:COHR",
+      "label": "Coherent Corp.",
+      "type": "company",
+      "val": 17
+    },
+    {
+      "id": "company:CORZ",
+      "label": "Core Scientific",
+      "type": "company",
+      "val": 8
+    },
+    {
+      "id": "company:CRWV",
+      "label": "CoreWeave",
+      "type": "company",
+      "val": 17
+    },
+    {
+      "id": "company:EQT",
+      "label": "EQT Corp",
+      "type": "company",
+      "val": 4
+    },
+    {
+      "id": "company:GLXY",
+      "label": "Galaxy Digital",
+      "type": "company",
+      "val": 6
+    },
+    {
+      "id": "company:GNRC",
+      "label": "Generac Holdings",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:GOOGL",
+      "label": "Alphabet",
+      "type": "company",
+      "val": 4
+    },
+    {
+      "id": "company:HUT",
+      "label": "Hut 8 Corp",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:INFY",
+      "label": "Infosys",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:INTC",
+      "label": "Intel Corporation",
+      "type": "company",
+      "val": 9
+    },
+    {
+      "id": "company:IREN",
+      "label": "IREN",
+      "type": "company",
+      "val": 9
+    },
+    {
+      "id": "company:KRC",
+      "label": "Kilroy Realty",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:LBRT",
+      "label": "Liberty Energy",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:LITE",
+      "label": "Lumentum Holdings Inc.",
+      "type": "company",
+      "val": 15
+    },
+    {
+      "id": "company:MSFT",
+      "label": "Microsoft",
+      "type": "company",
+      "val": 6
+    },
+    {
+      "id": "company:MU",
+      "label": "Micron Technology, Inc.",
+      "type": "company",
+      "val": 18
+    },
+    {
+      "id": "company:NBIS",
+      "label": "Nebius",
+      "type": "company",
+      "val": 7
+    },
+    {
+      "id": "company:NVDA",
+      "label": "NVIDIA Corporation",
+      "type": "company",
+      "val": 22
+    },
+    {
+      "id": "company:PSIX",
+      "label": "Power Solutions Intl",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:PSTG",
+      "label": "Pure Storage",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:PUMP",
+      "label": "ProPetro Holdings",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:QQQ",
+      "label": "Invesco QQQ Trust",
+      "type": "company",
+      "val": 5
+    },
+    {
+      "id": "company:RIOT",
+      "label": "Riot Platforms",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:SEI",
+      "label": "Solaris Energy Infrastructure",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "company:SMTC",
+      "label": "Semtech",
+      "type": "company",
+      "val": 6
+    },
+    {
+      "id": "company:SNDK",
+      "label": "SanDisk",
+      "type": "company",
+      "val": 7
+    },
+    {
+      "id": "company:TSEM",
+      "label": "Tower Semiconductor",
+      "type": "company",
+      "val": 5
+    },
+    {
+      "id": "company:TSM",
+      "label": "Taiwan Semiconductor Manufacturing Company Limited",
+      "type": "company",
+      "val": 17
+    },
+    {
+      "id": "company:WULF",
+      "label": "TeraWulf",
+      "type": "company",
+      "val": 7
+    },
+    {
+      "id": "company:WYFI",
+      "label": "WhiteFiber",
+      "type": "company",
+      "val": 3
+    },
+    {
+      "id": "concept:bottleneck-cascade",
+      "label": "Bottleneck Cascade",
+      "type": "concept",
+      "val": 1
+    },
+    {
+      "id": "concept:co-packaged-optics",
+      "label": "Co-Packaged Optics (CPO)",
+      "type": "concept",
+      "val": 1
+    },
+    {
+      "id": "concept:euv-tool-bottleneck",
+      "label": "EUV Tool Bottleneck",
+      "type": "concept",
+      "val": 1
+    },
+    {
+      "id": "concept:memory-supercycle",
+      "label": "Memory Supercycle",
+      "type": "concept",
+      "val": 1
+    },
+    {
+      "id": "concept:n3-wafer-crunch",
+      "label": "N3 Wafer Crunch",
+      "type": "concept",
+      "val": 1
+    },
+    {
+      "id": "concept:neocloud-business-models",
+      "label": "Neocloud Business Models",
+      "type": "concept",
+      "val": 1
+    },
+    {
+      "id": "concept:nvda-margin-residual",
+      "label": "NVDA Margin as Residual",
+      "type": "concept",
+      "val": 1
+    },
+    {
+      "id": "concept:pluggable-optics",
+      "label": "Pluggable Optics (Scale-Out)",
+      "type": "concept",
+      "val": 1
+    },
+    {
+      "id": "concept:token-economics",
+      "label": "Token Economics (Tokconomics)",
+      "type": "concept",
+      "val": 1
+    },
+    {
+      "id": "output:baker-cyclicality-thesis",
+      "label": "Baker's Cyclicality Thesis — Every Shortage Is Followed by a Glut",
+      "type": "output",
+      "val": 1
+    },
+    {
+      "id": "output:long-term-value-chain-thesis",
+      "label": "Long-Term AI Hardware Value Chain Thesis",
+      "type": "output",
+      "val": 1
+    },
+    {
+      "id": "output:nvda-swing-trade-thesis",
+      "label": "NVDA Pre-Earnings Swing Trade & Iron Condor Thesis",
+      "type": "output",
+      "val": 1
+    },
+    {
+      "href": "baker-cyclicality-thesis.html",
+      "id": "page:baker-cyclicality-thesis",
+      "label": "Baker's Cyclicality Thesis — Every Shortage Is Followed by a Glut",
+      "type": "page:output",
+      "val": 19
+    },
+    {
+      "href": "baker-q4-2025.html",
+      "id": "page:baker-q4-2025",
+      "label": "Gavin Baker — Q4 2025 13F",
+      "type": "page:source",
+      "val": 30
+    },
+    {
+      "href": "bottleneck-cascade.html",
+      "id": "page:bottleneck-cascade",
+      "label": "Bottleneck Cascade",
+      "type": "page:concept",
+      "val": 59
+    },
+    {
+      "href": "co-packaged-optics.html",
+      "id": "page:co-packaged-optics",
+      "label": "Co-Packaged Optics (CPO)",
+      "type": "page:concept",
+      "val": 15
+    },
+    {
+      "href": "cohr-q2-fy2026.html",
+      "id": "page:cohr-q2-fy2026",
+      "label": "Coherent Q2 FY2026 Earnings",
+      "type": "page:source",
+      "val": 14
+    },
+    {
+      "href": "cohr-q2-fy2026-primary-sources.html",
+      "id": "page:cohr-q2-fy2026-primary-sources",
+      "label": "Coherent Corp. Q2 FY2026 Primary Sources",
+      "type": "page:raw",
+      "val": 2
+    },
+    {
+      "href": "creative-strategies-neoclouds-three-business-models.html",
+      "id": "page:creative-strategies-neoclouds-three-business-models",
+      "label": "Creative Strategies - Neoclouds and the Three Business Models",
+      "type": "page:source",
+      "val": 25
+    },
+    {
+      "href": "crwv-q4-2025.html",
+      "id": "page:crwv-q4-2025",
+      "label": "CoreWeave Q4 2025 Earnings",
+      "type": "page:source",
+      "val": 16
+    },
+    {
+      "href": "crwv-q4-2025-transcript.html",
+      "id": "page:crwv-q4-2025-transcript",
+      "label": "CoreWeave, Inc. (CRWV) Q4 2025 Earnings Call Transcript",
+      "type": "page:raw",
+      "val": 2
+    },
+    {
+      "href": "dwarkesh-dylan-ai-infrastructure-bottlenecks.html",
+      "id": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "label": "Dwarkesh x Dylan Patel — AI Infrastructure Bottlenecks",
+      "type": "page:source",
+      "val": 21
+    },
+    {
+      "href": "euv-tool-bottleneck.html",
+      "id": "page:euv-tool-bottleneck",
+      "label": "EUV Tool Bottleneck",
+      "type": "page:concept",
+      "val": 19
+    },
+    {
+      "href": "index.html",
+      "id": "page:index",
+      "label": "Wiki Index — semi-stocks",
+      "type": "page:meta",
+      "val": 34
+    },
+    {
+      "href": "intc-q4-2025.html",
+      "id": "page:intc-q4-2025",
+      "label": "Intel Q4 2025 Earnings",
+      "type": "page:source",
+      "val": 13
+    },
+    {
+      "href": "intc-q4-2025-primary-sources.html",
+      "id": "page:intc-q4-2025-primary-sources",
+      "label": "Intel Q4 2025 Primary Sources",
+      "type": "page:raw",
+      "val": 2
+    },
+    {
+      "href": "jstwng-nvidia-margin-illusion.html",
+      "id": "page:jstwng-nvidia-margin-illusion",
+      "label": "Justin Wang — NVIDIA's Margin Illusion",
+      "type": "page:source",
+      "val": 20
+    },
+    {
+      "href": "leopold-q4-2025.html",
+      "id": "page:leopold-q4-2025",
+      "label": "Leopold Aschenbrenner — Q4 2025 13F",
+      "type": "page:source",
+      "val": 45
+    },
+    {
+      "href": "lite-q2-fy2026.html",
+      "id": "page:lite-q2-fy2026",
+      "label": "Lumentum Q2 FY2026 Earnings",
+      "type": "page:source",
+      "val": 14
+    },
+    {
+      "href": "lite-q2-fy2026-primary-sources.html",
+      "id": "page:lite-q2-fy2026-primary-sources",
+      "label": "Lumentum Q2 FY2026 Primary Sources",
+      "type": "page:raw",
+      "val": 2
+    },
+    {
+      "href": "log.html",
+      "id": "page:log",
+      "label": "Wiki Log — semi-stocks",
+      "type": "page:meta",
+      "val": 13
+    },
+    {
+      "href": "long-term-value-chain-thesis.html",
+      "id": "page:long-term-value-chain-thesis",
+      "label": "Long-Term AI Hardware Value Chain Thesis",
+      "type": "page:output",
+      "val": 23
+    },
+    {
+      "href": "memory-supercycle.html",
+      "id": "page:memory-supercycle",
+      "label": "Memory Supercycle",
+      "type": "page:concept",
+      "val": 28
+    },
+    {
+      "href": "mu-q2-fy2026.html",
+      "id": "page:mu-q2-fy2026",
+      "label": "Micron Q2 FY2026 Earnings",
+      "type": "page:source",
+      "val": 10
+    },
+    {
+      "href": "mu-q2-fy2026-primary-sources.html",
+      "id": "page:mu-q2-fy2026-primary-sources",
+      "label": "Micron Technology Q2 FY2026 Primary Sources",
+      "type": "page:raw",
+      "val": 2
+    },
+    {
+      "href": "n3-wafer-crunch.html",
+      "id": "page:n3-wafer-crunch",
+      "label": "N3 Wafer Crunch",
+      "type": "page:concept",
+      "val": 33
+    },
+    {
+      "href": "neocloud-business-models.html",
+      "id": "page:neocloud-business-models",
+      "label": "Neocloud Business Models",
+      "type": "page:concept",
+      "val": 13
+    },
+    {
+      "href": "nvda-margin-residual.html",
+      "id": "page:nvda-margin-residual",
+      "label": "NVDA Margin as Residual",
+      "type": "page:concept",
+      "val": 19
+    },
+    {
+      "href": "nvda-q4-fy2026.html",
+      "id": "page:nvda-q4-fy2026",
+      "label": "NVIDIA — Q4 FY2026 Earnings",
+      "type": "page:source",
+      "val": 26
+    },
+    {
+      "href": "nvda-q4-fy2026-transcript.html",
+      "id": "page:nvda-q4-fy2026-transcript",
+      "label": "NVIDIA Q4 FY2026 Earnings Call",
+      "type": "page:raw",
+      "val": 1
+    },
+    {
+      "href": "nvda-swing-trade-thesis.html",
+      "id": "page:nvda-swing-trade-thesis",
+      "label": "NVDA Pre-Earnings Swing Trade & Iron Condor Thesis",
+      "type": "page:output",
+      "val": 14
+    },
+    {
+      "href": "pluggable-optics.html",
+      "id": "page:pluggable-optics",
+      "label": "Pluggable Optics (Scale-Out)",
+      "type": "page:concept",
+      "val": 25
+    },
+    {
+      "href": "schema.html",
+      "id": "page:schema",
+      "label": "Wiki Schema — semi-stocks",
+      "type": "page:meta",
+      "val": 2
+    },
+    {
+      "href": "semianalysis-signals.html",
+      "id": "page:semianalysis-signals",
+      "label": "SemiAnalysis Signals",
+      "type": "page:source",
+      "val": 23
+    },
+    {
+      "href": "shanu-mathew-dc-capacity-2026.html",
+      "id": "page:shanu-mathew-dc-capacity-2026",
+      "label": "How Much Data Center Capacity Is Actually Coming Online Per Year — And Who Is Absorbing It?",
+      "type": "page:raw",
+      "val": 3
+    },
+    {
+      "href": "token-economics.html",
+      "id": "page:token-economics",
+      "label": "Token Economics (Tokconomics)",
+      "type": "page:concept",
+      "val": 14
+    },
+    {
+      "href": "tsm-q4-2025.html",
+      "id": "page:tsm-q4-2025",
+      "label": "TSMC Q4 2025 Earnings",
+      "type": "page:source",
+      "val": 12
+    },
+    {
+      "href": "tsm-q4-2025-primary-sources.html",
+      "id": "page:tsm-q4-2025-primary-sources",
+      "label": "TSMC Q4 2025 Primary Sources",
+      "type": "page:raw",
+      "val": 2
+    },
+    {
+      "id": "report:latest",
+      "label": "semi-stocks latest report",
+      "type": "report",
+      "val": 45
+    },
+    {
+      "id": "source:atreides-management-lp",
+      "label": "Atreides Management LP",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:baker-q4-2025",
+      "label": "Gavin Baker — Q4 2025 13F",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:cohr-q2-fy2026",
+      "label": "Coherent Q2 FY2026 Earnings",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:creative-strategies-neoclouds-three-business-models",
+      "label": "Creative Strategies - Neoclouds and the Three Business Models",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:crwv-q4-2025",
+      "label": "CoreWeave Q4 2025 Earnings",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+      "label": "Dwarkesh x Dylan Patel — AI Infrastructure Bottlenecks",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:intc-q4-2025",
+      "label": "Intel Q4 2025 Earnings",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:jstwng-nvidia-margin-illusion",
+      "label": "Justin Wang — NVIDIA's Margin Illusion",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:leopold-q4-2025",
+      "label": "Leopold Aschenbrenner — Q4 2025 13F",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:lite-q2-fy2026",
+      "label": "Lumentum Q2 FY2026 Earnings",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:mu-q2-fy2026",
+      "label": "Micron Q2 FY2026 Earnings",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:nvda-q4-fy2026",
+      "label": "NVIDIA — Q4 FY2026 Earnings",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:semianalysis-dylan-patel",
+      "label": "SemiAnalysis (Dylan Patel)",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:semianalysis-signals",
+      "label": "SemiAnalysis Signals",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:situational-awareness-lp",
+      "label": "Situational Awareness LP",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:sources-creative-strategies-neoclouds-three-business-models",
+      "label": "sources/creative-strategies-neoclouds-three-business-models",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:sources-jstwng-nvidia-margin-illusion",
+      "label": "sources/jstwng-nvidia-margin-illusion",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "source:tsm-q4-2025",
+      "label": "TSMC Q4 2025 Earnings",
+      "type": "source",
+      "val": 1
+    },
+    {
+      "id": "thesis-stage:co-packaged-optics-cpo-scale-up",
+      "label": "Co-packaged optics / CPO (scale-up)",
+      "type": "thesis_stage",
+      "val": 2
+    },
+    {
+      "id": "thesis-stage:cowos-packaging",
+      "label": "CoWoS packaging",
+      "type": "thesis_stage",
+      "val": 2
+    },
+    {
+      "id": "thesis-stage:euv-tools",
+      "label": "EUV tools",
+      "type": "thesis_stage",
+      "val": 2
+    },
+    {
+      "id": "thesis-stage:memory-supercycle",
+      "label": "Memory supercycle",
+      "type": "thesis_stage",
+      "val": 2
+    },
+    {
+      "id": "thesis-stage:n3-logic-wafers",
+      "label": "N3 logic wafers",
+      "type": "thesis_stage",
+      "val": 2
+    },
+    {
+      "id": "thesis-stage:pluggable-optics-scale-out",
+      "label": "Pluggable optics (scale-out)",
+      "type": "thesis_stage",
+      "val": 2
+    },
+    {
+      "id": "thesis-stage:power-dc-buildout",
+      "label": "Power / DC buildout",
+      "type": "thesis_stage",
+      "val": 2
+    },
+    {
+      "id": "thesis:current",
+      "label": "Current thesis",
+      "type": "thesis",
+      "val": 2
+    }
+  ]
+}

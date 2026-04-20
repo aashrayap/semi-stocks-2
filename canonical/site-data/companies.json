@@ -1,0 +1,2337 @@
+[
+  {
+    "also": "cpo_next",
+    "bottleneck": "copper_signal_integrity",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:ALAB",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Astera Labs",
+    "next_earnings": "2026-05-06",
+    "positions": [
+      {
+        "change_vs_prior": "+2497%",
+        "notes": "PCIe/CXL retimers — interconnect bottleneck play. From 62K to 1.6M shares.",
+        "pct_portfolio": 0.033,
+        "source": "baker",
+        "type": "common",
+        "value": 268000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "ALAB"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:AMSC",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "American Superconductor",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "+35%",
+        "notes": "",
+        "pct_portfolio": 0.004,
+        "source": "baker",
+        "type": "common",
+        "value": 30000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "AMSC"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:AMZN",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Amazon",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "+4%",
+        "notes": "",
+        "pct_portfolio": 0.019,
+        "source": "baker",
+        "type": "common",
+        "value": 159000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "AMZN"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:APLD",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Applied Digital",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "+86%",
+        "notes": "",
+        "pct_portfolio": 0.05,
+        "source": "leopold",
+        "type": "common",
+        "value": 278000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "APLD"
+  },
+  {
+    "also": null,
+    "bottleneck": "euv",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:ASML",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "ASML",
+    "next_earnings": "2026-04-16",
+    "positions": [],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": "next",
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "ASML"
+  },
+  {
+    "also": null,
+    "bottleneck": "n3_logic",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:AVGO",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "AVGO",
+    "next_earnings": "2026-06-12",
+    "positions": [],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "AVGO"
+  },
+  {
+    "also": null,
+    "bottleneck": "power",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:BE",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Bloom Energy",
+    "next_earnings": "2026-05-08",
+    "positions": [
+      {
+        "change_vs_prior": "+1970%",
+        "notes": "",
+        "pct_portfolio": 0.165,
+        "source": "leopold",
+        "type": "common",
+        "value": 911000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": "played_out",
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "BE"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:BITF",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Bitfarms",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "",
+        "pct_portfolio": 0.003,
+        "source": "leopold",
+        "type": "common",
+        "value": 16000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "BITF"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:BTDR",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Bitdeer Technologies",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "+92%",
+        "notes": "",
+        "pct_portfolio": 0.004,
+        "source": "leopold",
+        "type": "common",
+        "value": 20000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "BTDR"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:BW",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Babcock & Wilcox",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "",
+        "pct_portfolio": 0.002,
+        "source": "leopold",
+        "type": "common",
+        "value": 8600000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "BW"
+  },
+  {
+    "also": null,
+    "bottleneck": "pluggable_optics",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:CIEN",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Ciena Corp",
+    "next_earnings": "2026-06-04",
+    "positions": [
+      {
+        "change_vs_prior": "+2%",
+        "notes": "",
+        "pct_portfolio": 0.041,
+        "source": "baker",
+        "type": "common",
+        "value": 334000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 2
+    },
+    "source_page": null,
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "CIEN"
+  },
+  {
+    "also": null,
+    "bottleneck": "power",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 2
+    },
+    "id": "company:CIFR",
+    "latest_packet": "canonical/20-data/companies/CIFR/q1_2026_neocloud.yaml",
+    "metrics": {
+      "guidance": {},
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": "Q1 2026",
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Cipher Mining",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "+115%",
+        "notes": "",
+        "pct_portfolio": 0.028,
+        "source": "leopold",
+        "type": "common",
+        "value": 155000000
+      }
+    ],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/CIFR/q1_2026_neocloud.yaml",
+        "period": "2026-04-14",
+        "quarter": "Q1 2026"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 1,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": "creative-strategies-neoclouds-three-business-models",
+    "status": "played_out",
+    "thesis": {
+      "bottleneck_role": "Cipher tests whether credit-backed power-landlord leases can earn high-NOI infrastructure returns while avoiding GPU obsolescence.\n",
+      "break_conditions": [
+        "ERCOT queue exposure delays pipeline conversion.",
+        "Tenant/backstop structure proves weaker than assumed.",
+        "Project-level debt costs compress equity economics."
+      ],
+      "confirms_next": [
+        "Black Pearl and Barber Lake construction remains on schedule.",
+        "AWS / Fluidstack / Google-linked lease economics convert into NOI.",
+        "Stingray receives firm-load progress toward late-2026 target."
+      ],
+      "why_now": "AWS and Google-linked contract structures improve backlog quality, but ERCOT queue exposure still separates contracted MW from energizable MW.\n"
+    },
+    "ticker": "CIFR"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:CLSK",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "CleanSpark",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "",
+        "pct_portfolio": 0.003,
+        "source": "leopold",
+        "type": "common",
+        "value": 17000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "CLSK"
+  },
+  {
+    "also": "cpo_next",
+    "bottleneck": "pluggable_optics",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 4,
+      "missed": 0,
+      "pending": 5
+    },
+    "id": "company:COHR",
+    "latest_packet": "canonical/20-data/companies/COHR/q2_fy2026.yaml",
+    "metrics": {
+      "guidance": {
+        "eps_non_gaap": [
+          1.28,
+          1.48
+        ],
+        "gross_margin_non_gaap": [
+          0.385,
+          0.405
+        ],
+        "opex_non_gaap": [
+          320000000,
+          340000000
+        ],
+        "revenue": [
+          1700000000,
+          1840000000
+        ],
+        "tax_rate_non_gaap": [
+          0.18,
+          0.2
+        ]
+      },
+      "guidance_period": "q3_fy2026",
+      "margin_label": "Gross Margin",
+      "margin_value": 0.39,
+      "quarter": "Q2 FY2026",
+      "revenue_label": "Revenue",
+      "revenue_value": 1686000000
+    },
+    "name": "Coherent Corp.",
+    "next_earnings": "2026-05-07",
+    "positions": [
+      {
+        "change_vs_prior": "+211%",
+        "notes": "",
+        "pct_portfolio": 0.016,
+        "source": "leopold",
+        "type": "common",
+        "value": 89000000
+      },
+      {
+        "change_vs_prior": "+35%",
+        "notes": "Combined COHR = $394M (common + calls)",
+        "pct_portfolio": 0.048,
+        "source": "baker",
+        "type": "common+call",
+        "value": 394000000
+      }
+    ],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/COHR/q2_fy2026.yaml",
+        "period": "2025-12-31",
+        "quarter": "Q2 FY2026"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 4,
+      "contradicts": 0,
+      "semi": 2
+    },
+    "source_page": "cohr-q2-fy2026",
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "Current pluggable-optics revenue play with credible optionality into co-packaged optics. Coherent supplies lasers, optical engines, and packaging technologies needed for AI scale-out links today and higher-density optical architectures tomorrow.\n",
+      "break_conditions": [
+        "Datacenter and communications growth slows sharply or loses mix share.",
+        "Capacity expansion fails to convert into revenue or gross margin.",
+        "CPO stays experimental without visible program revenue moving toward 2027."
+      ],
+      "confirms_next": [
+        "Q3 FY2026 lands inside or above the $1.70B-$1.84B revenue guide.",
+        "Datacenter and communications remains the dominant segment with margins staying near 40%.",
+        "NVIDIA capacity commitments and new AI optics programs show up in backlog or shipment commentary."
+      ],
+      "why_now": "Datacenter and communications was 72% of Q2 revenue, management guided another up-quarter, and March 2026 artifacts show direct NVIDIA capacity commitments plus OFC demos across 6.4T CPO, 400G-per-lane InP modulation, and 1.6T/XPO-related platforms.\n"
+    },
+    "ticker": "COHR"
+  },
+  {
+    "also": null,
+    "bottleneck": "power",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 2
+    },
+    "id": "company:CORZ",
+    "latest_packet": "canonical/20-data/companies/CORZ/q1_2026_neocloud.yaml",
+    "metrics": {
+      "guidance": {},
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": "Q1 2026",
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Core Scientific",
+    "next_earnings": "2026-05-08",
+    "positions": [
+      {
+        "change_vs_prior": "+42%",
+        "notes": "9.4% activist stake — 13D filed Aug 2025",
+        "pct_portfolio": 0.076,
+        "source": "leopold",
+        "type": "common",
+        "value": 419000000
+      }
+    ],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/CORZ/q1_2026_neocloud.yaml",
+        "period": "2026-04-14",
+        "quarter": "Q1 2026"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 2,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": "creative-strategies-neoclouds-three-business-models",
+    "status": "played_out",
+    "thesis": {
+      "bottleneck_role": "Purest listed example of power-landlord economics in the report: lower revenue density than full-stack GPU cloud, but much lower exposure to hardware refresh and utilization risk.\n",
+      "break_conditions": [
+        "CoreWeave tenant concentration becomes a financing or renewal problem.",
+        "Deployment delays prevent contracted capacity from converting into billed MW.",
+        "Retrofit costs exceed offset assumptions."
+      ],
+      "confirms_next": [
+        "CoreWeave-contracted megawatts continue deploying and billing.",
+        "Hosting margin trends toward the 75%-80% target.",
+        "Customer-funded retrofit offsets keep net capex per MW low."
+      ],
+      "why_now": "The CoreWeave lease, customer-funded capex offsets, and energized-site position make Core Scientific a test case for durable contract economics below the technology-refresh cycle.\n"
+    },
+    "ticker": "CORZ"
+  },
+  {
+    "also": null,
+    "bottleneck": "gpu_cloud",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 2,
+      "missed": 0,
+      "pending": 9
+    },
+    "id": "company:CRWV",
+    "latest_packet": "canonical/20-data/companies/CRWV/q4_2025.yaml",
+    "metrics": {
+      "guidance": {
+        "active_power_ye2026": "~1.7 GW (double current)",
+        "adjusted_operating_income": [
+          900000000,
+          1100000000
+        ],
+        "capex": [
+          30000000000,
+          35000000000
+        ],
+        "exit_2027_run_rate": 30000000000,
+        "exit_run_rate_revenue": [
+          17000000000,
+          19000000000
+        ],
+        "long_term_adj_operating_margin": [
+          0.25,
+          0.3
+        ],
+        "revenue": [
+          12000000000,
+          13000000000
+        ],
+        "revenue_growth": "~140%"
+      },
+      "guidance_period": "fy_2026",
+      "margin_label": "Adj EBITDA Margin",
+      "margin_value": 0.57,
+      "quarter": "Q4 2025",
+      "revenue_label": "Revenue",
+      "revenue_value": 1570000000
+    },
+    "name": "CoreWeave",
+    "next_earnings": "2026-05-12",
+    "positions": [
+      {
+        "change_vs_prior": "+116%",
+        "notes": "",
+        "pct_portfolio": 0.219,
+        "source": "leopold",
+        "type": "call",
+        "value": 1200000000
+      },
+      {
+        "change_vs_prior": "+864%",
+        "notes": "Tiny vs Leopold's $1.2B — different conviction level",
+        "pct_portfolio": 0.005,
+        "source": "baker",
+        "type": "common",
+        "value": 43000000
+      }
+    ],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/CRWV/q4_2025.yaml",
+        "period": "2025-12-31",
+        "quarter": "Q4 2025"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 5,
+      "contradicts": 0,
+      "semi": 1
+    },
+    "source_page": "crwv-q4-2025",
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "Primary read-through on downstream AI infrastructure demand. CoreWeave is not the upstream bottleneck itself; it is the proof that GPU cloud demand is strong enough to keep pulling on chips, memory, optics, and power simultaneously.\n",
+      "break_conditions": [
+        "Customer demand or backlog conversion weakens enough to expose the leverage.",
+        "Interest expense and capex stay so high that scale fails to turn into margin.",
+        "GPU availability improves while CoreWeave still cannot earn through the balance sheet."
+      ],
+      "confirms_next": [
+        "Q1 2026 revenue lands inside the $1.9B-$2.0B guide and operating income avoids a deeper trough.",
+        "Backlog, power capacity, or reserved-instance commentary keeps moving up rather than flattening.",
+        "Rubin deployment timing and lower financing costs show up as visible execution progress in 2026."
+      ],
+      "why_now": "Q4 2025 revenue reached $1.57B, backlog expanded to $66.8B, management said it still could not catch up with demand, and virtually all 2026 capacity was already allocated. That makes CoreWeave the strongest current demand validator in the repo.\n"
+    },
+    "ticker": "CRWV"
+  },
+  {
+    "also": null,
+    "bottleneck": "power",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:EQT",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "EQT Corp",
+    "next_earnings": "2026-04-23",
+    "positions": [
+      {
+        "change_vs_prior": "+161%",
+        "notes": "",
+        "pct_portfolio": 0.031,
+        "source": "leopold",
+        "type": "common",
+        "value": 171000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": "played_out",
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "EQT"
+  },
+  {
+    "also": null,
+    "bottleneck": "power",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 2
+    },
+    "id": "company:GLXY",
+    "latest_packet": "canonical/20-data/companies/GLXY/q1_2026_neocloud.yaml",
+    "metrics": {
+      "guidance": {},
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": "Q1 2026",
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Galaxy Digital",
+    "next_earnings": null,
+    "positions": [],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/GLXY/q1_2026_neocloud.yaml",
+        "period": "2026-04-14",
+        "quarter": "Q1 2026"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 1,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": "creative-strategies-neoclouds-three-business-models",
+    "status": "watch",
+    "thesis": {
+      "bottleneck_role": "Reinforces that AI infrastructure value can accrue to approved power, campus control, project finance, and long-duration offtake rather than only to GPU ownership.\n",
+      "break_conditions": [
+        "Transmission or substation work delays Helios energization.",
+        "Digital-assets exposure dominates public-company valuation and obscures infrastructure value.",
+        "CoreWeave concentration creates renewal or financing pressure."
+      ],
+      "confirms_next": [
+        "Initial 800MW CoreWeave commitment converts into revenue.",
+        "Next 830MW energization proceeds in the 2028-2029 window.",
+        "Additional load-study requests progress toward approved capacity."
+      ],
+      "why_now": "Helios is a large-scale example of approved power plus CoreWeave offtake, but Galaxy remains a mixed-exposure public comp rather than a clean landlord.\n"
+    },
+    "ticker": "GLXY"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:GNRC",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Generac Holdings",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "",
+        "pct_portfolio": 0.003,
+        "source": "baker",
+        "type": "common",
+        "value": 25000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "GNRC"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:GOOGL",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Alphabet",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "-7%",
+        "notes": "",
+        "pct_portfolio": 0.02,
+        "source": "baker",
+        "type": "common",
+        "value": 161000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "GOOGL"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:HUT",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Hut 8 Corp",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "+43%",
+        "notes": "",
+        "pct_portfolio": 0.007,
+        "source": "leopold",
+        "type": "common",
+        "value": 40000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "HUT"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:INFY",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Infosys",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "Only short position",
+        "pct_portfolio": 0.002,
+        "source": "leopold",
+        "type": "put",
+        "value": 8900000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "INFY"
+  },
+  {
+    "also": null,
+    "bottleneck": "n3_logic",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 2,
+      "missed": 0,
+      "pending": 6
+    },
+    "id": "company:INTC",
+    "latest_packet": "canonical/20-data/companies/INTC/q4_2025.yaml",
+    "metrics": {
+      "guidance": {
+        "eps_non_gaap": 0.0,
+        "gross_margin_non_gaap": 0.345,
+        "revenue": [
+          11700000000,
+          12700000000
+        ],
+        "tax_rate": 0.11
+      },
+      "guidance_period": "q1_2026",
+      "margin_label": "Gross Margin",
+      "margin_value": 0.379,
+      "quarter": "Q4 2025",
+      "revenue_label": "Revenue",
+      "revenue_value": 13700000000
+    },
+    "name": "Intel Corporation",
+    "next_earnings": "2026-04-24",
+    "positions": [
+      {
+        "change_vs_prior": "+10%",
+        "notes": "",
+        "pct_portfolio": 0.136,
+        "source": "leopold",
+        "type": "call",
+        "value": 749000000
+      },
+      {
+        "change_vs_prior": "-81%",
+        "notes": "Dumping — opposite direction vs Leopold who holds $749M in INTC calls",
+        "pct_portfolio": 0.002,
+        "source": "baker",
+        "type": "common",
+        "value": 18000000
+      }
+    ],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/INTC/q4_2025.yaml",
+        "period": "2025-12-27",
+        "quarter": "Q4 2025"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 2,
+      "contradicts": 1,
+      "semi": 1
+    },
+    "source_page": "intc-q4-2025",
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "Potential alternative supply source for leading-edge logic and advanced packaging. Intel can both validate current scarcity and eventually soften it if 18A/14A ramp well.\n",
+      "break_conditions": [
+        "18A yield improvements stall and foundry losses widen further.",
+        "Server demand shifts to competitors faster than Intel can supply.",
+        "Capex discipline prevents Intel from building enough capacity to matter."
+      ],
+      "confirms_next": [
+        "Q1/Q2 2026 supply actually improves and DCAI remains strong.",
+        "Intel Foundry posts the promised double-digit Q1 QoQ growth.",
+        "External 14A customer decisions begin landing in H2 2026."
+      ],
+      "why_now": "Intel said AI-driven demand materially outstripped available supply, DCAI had its fastest sequential growth of the decade, and Foundry revenue rose on EUV mix. At the same time, 18A and 14A milestones mean the company is trying to become a real future supply response.\n"
+    },
+    "ticker": "INTC"
+  },
+  {
+    "also": null,
+    "bottleneck": "power",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 2
+    },
+    "id": "company:IREN",
+    "latest_packet": "canonical/20-data/companies/IREN/q1_2026_neocloud.yaml",
+    "metrics": {
+      "guidance": {},
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": "Q1 2026",
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "IREN",
+    "next_earnings": "2026-05-15",
+    "positions": [
+      {
+        "change_vs_prior": "+20%",
+        "notes": "",
+        "pct_portfolio": 0.06,
+        "source": "leopold",
+        "type": "common",
+        "value": 329000000
+      }
+    ],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/IREN/q1_2026_neocloud.yaml",
+        "period": "2026-04-14",
+        "quarter": "Q1 2026"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 1,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": "creative-strategies-neoclouds-three-business-models",
+    "status": "played_out",
+    "thesis": {
+      "bottleneck_role": "Tests whether direct power ownership plus GPU hardware can produce durable economics without full-stack software differentiation.\n",
+      "break_conditions": [
+        "Hardware pricing or utilization weakens before owned GPUs earn through the cycle.",
+        "Software/yield gap versus CoreWeave becomes visible in renewal or pricing.",
+        "Power buildout slips despite direct control."
+      ],
+      "confirms_next": [
+        "Sweetwater Phase 1 energizes toward the mid-2026 target.",
+        "Microsoft prepayments continue to de-risk hardware procurement.",
+        "GPU utilization supports the five-year / 20% residual assumption."
+      ],
+      "why_now": "Creative Strategies ranks IREN highest on near-term deliverability because it controls power assets directly and has a Microsoft-backed contract and prepayment structure.\n"
+    },
+    "ticker": "IREN"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:KRC",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Kilroy Realty",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "DC real estate play",
+        "pct_portfolio": 0.009,
+        "source": "leopold",
+        "type": "common",
+        "value": 50000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "KRC"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:LBRT",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Liberty Energy",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "",
+        "pct_portfolio": 0.002,
+        "source": "leopold",
+        "type": "common",
+        "value": 11000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "LBRT"
+  },
+  {
+    "also": "cpo_next",
+    "bottleneck": "pluggable_optics",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 3,
+      "missed": 0,
+      "pending": 5
+    },
+    "id": "company:LITE",
+    "latest_packet": "canonical/20-data/companies/LITE/q2_fy2026.yaml",
+    "metrics": {
+      "guidance": {
+        "eps_non_gaap": [
+          2.15,
+          2.35
+        ],
+        "operating_margin_non_gaap": [
+          0.3,
+          0.31
+        ],
+        "revenue": [
+          780000000,
+          830000000
+        ]
+      },
+      "guidance_period": "q3_fy2026",
+      "margin_label": "Gross Margin",
+      "margin_value": 0.425,
+      "quarter": "Q2 FY2026",
+      "revenue_label": "Revenue",
+      "revenue_value": 665500000
+    },
+    "name": "Lumentum Holdings Inc.",
+    "next_earnings": "2026-05-06",
+    "positions": [
+      {
+        "change_vs_prior": "+604%",
+        "notes": "",
+        "pct_portfolio": 0.087,
+        "source": "leopold",
+        "type": "common",
+        "value": 479000000
+      },
+      {
+        "change_vs_prior": "-42%",
+        "notes": "Trimming — opposite direction vs Leopold who added +604%",
+        "pct_portfolio": 0.017,
+        "source": "baker",
+        "type": "common",
+        "value": 141000000
+      }
+    ],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/LITE/q2_fy2026.yaml",
+        "period": "2025-12-27",
+        "quarter": "Q2 FY2026"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 3,
+      "contradicts": 0,
+      "semi": 2
+    },
+    "source_page": "lite-q2-fy2026",
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "Direct expression of AI scale-out optics demand today with visible optionality into scale-up / CPO. Lumentum now monetizes both components and systems rather than only long-dated architecture hopes.\n",
+      "break_conditions": [
+        "Optical demand is concentrated and customers pause orders after the first AI buildout wave.",
+        "OCS backlog slips or gets pushed out.",
+        "CPO remains real but too delayed to support valuation."
+      ],
+      "confirms_next": [
+        "Q3 FY2026 hits the $780M-$830M guide with 30%-31% non-GAAP operating margin.",
+        "OCS backlog converts into systems revenue rather than remaining pipeline.",
+        "CPO orders and NVIDIA partnership show up in capacity or shipment commentary through 2026-2027."
+      ],
+      "why_now": "Q2 FY2026 revenue grew 65.5% YoY, Q3 guide implies another major step up, OCS backlog is above $400M, CPO already has a multi-hundred-million-dollar order for 1H 2027 delivery, and NVIDIA committed both capital and future purchase rights in March 2026.\n"
+    },
+    "ticker": "LITE"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:MSFT",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Microsoft",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "",
+        "pct_portfolio": 0.011,
+        "source": "baker",
+        "type": "common",
+        "value": 88000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "MSFT"
+  },
+  {
+    "also": null,
+    "bottleneck": "memory",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 2,
+      "missed": 0,
+      "pending": 6
+    },
+    "id": "company:MU",
+    "latest_packet": "canonical/20-data/companies/MU/q2_fy2026.yaml",
+    "metrics": {
+      "guidance": {
+        "eps_gaap": [
+          18.5,
+          19.3
+        ],
+        "eps_non_gaap": [
+          18.75,
+          19.55
+        ],
+        "gross_margin_gaap": 0.81,
+        "gross_margin_non_gaap": 0.81,
+        "opex_gaap": 1600000000,
+        "opex_non_gaap": 1400000000,
+        "revenue": [
+          32750000000,
+          34250000000
+        ],
+        "tax_rate": 0.151
+      },
+      "guidance_period": "q3_fy2026",
+      "margin_label": "Gross Margin",
+      "margin_value": 0.749,
+      "quarter": "Q2 FY2026",
+      "revenue_label": "Revenue",
+      "revenue_value": 23860000000
+    },
+    "name": "Micron Technology, Inc.",
+    "next_earnings": "2026-06-25",
+    "positions": [
+      {
+        "change_vs_prior": "+2%",
+        "notes": "Long common + put hedge = nuanced conviction. Believes in cycle but hedging timing.",
+        "pct_portfolio": 0.05,
+        "source": "baker",
+        "type": "common+put",
+        "value": 411000000
+      }
+    ],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/MU/q2_fy2026.yaml",
+        "period": "2026-02-26",
+        "quarter": "Q2 FY2026"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 3,
+      "contradicts": 0,
+      "semi": 2
+    },
+    "source_page": "mu-q2-fy2026",
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "Pure memory supercycle exposure. Micron is where AI demand shows up as higher bits per system, tighter supply, stronger pricing, and aggressive cleanroom / packaging capex.\n",
+      "break_conditions": [
+        "Pricing weakens faster than expected as supply additions arrive.",
+        "HBM share or yield execution slips versus peers.",
+        "Customer digestion or over-ordering causes margin compression before 2027."
+      ],
+      "confirms_next": [
+        "Q3 FY2026 prints near the $33.5B guide with gross margin around 81%.",
+        "HBM4/HBM4E ramp commentary stays constructive and supply remains tight.",
+        "Industry tightness persists even as capex rises and cleanroom construction accelerates."
+      ],
+      "why_now": "The quarter set records across revenue, gross margin, EPS, and free cash flow, while management explicitly said DRAM and NAND should remain supply constrained beyond calendar 2026. HBM4 volume shipments for NVIDIA Vera Rubin connect the memory thesis directly to the 2026 GPU ramp.\n"
+    },
+    "ticker": "MU"
+  },
+  {
+    "also": null,
+    "bottleneck": "gpu_cloud",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 2
+    },
+    "id": "company:NBIS",
+    "latest_packet": "canonical/20-data/companies/NBIS/q1_2026_neocloud.yaml",
+    "metrics": {
+      "guidance": {},
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": "Q1 2026",
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Nebius",
+    "next_earnings": null,
+    "positions": [],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/NBIS/q1_2026_neocloud.yaml",
+        "period": "2026-04-14",
+        "quarter": "Q1 2026"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 1,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": "creative-strategies-neoclouds-three-business-models",
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "Full-stack AI platform read-through on external hyperscaler capacity demand, with more greenfield deliverability risk than owned-power or brownfield landlord models.\n",
+      "break_conditions": [
+        "Permitting or interconnection delays push capacity beyond contract timelines.",
+        "Platform software fails to command premium economics.",
+        "Hardware refresh cadence compresses returns before greenfield capacity earns through."
+      ],
+      "confirms_next": [
+        "Active MW ramps materially toward the 3GW end-2026 target.",
+        "Aether and Token Factory show measurable platform yield or switching-cost evidence.",
+        "Meta / Microsoft commitments convert into deployed capacity."
+      ],
+      "why_now": "Meta's up-to-$27B deal and large backlog show real external demand, but the gap between active MW and target GW makes deliverability the core risk.\n"
+    },
+    "ticker": "NBIS"
+  },
+  {
+    "also": null,
+    "bottleneck": "n3_logic",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 3,
+      "missed": 0,
+      "pending": 7
+    },
+    "id": "company:NVDA",
+    "latest_packet": "canonical/20-data/companies/NVDA/q4_fy2026.yaml",
+    "metrics": {
+      "guidance": {
+        "beat_vs_consensus": "+$5.4B",
+        "china_dc_excluded": true,
+        "consensus_was": 72600000000,
+        "gross_margin_gaap": 0.749,
+        "gross_margin_non_gaap": 0.75,
+        "notes": "Starting Q1, SBC included in non-GAAP results",
+        "opex_gaap": 7700000000,
+        "opex_non_gaap": 7500000000,
+        "revenue": 78000000000,
+        "tax_rate_fy2027": [
+          0.17,
+          0.19
+        ]
+      },
+      "guidance_period": "q1_fy2027",
+      "margin_label": "Gross Margin",
+      "margin_value": 0.752,
+      "quarter": "Q4 FY2026",
+      "revenue_label": "Revenue",
+      "revenue_value": 68127000000
+    },
+    "name": "NVIDIA Corporation",
+    "next_earnings": "2026-05-28",
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "Combined NVDA exposure = $1.01B (12.4% of portfolio)",
+        "pct_portfolio": 0.124,
+        "source": "baker",
+        "type": "call+common",
+        "value": 1012000000
+      }
+    ],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/NVDA/q4_fy2026.yaml",
+        "period": "2026-01-25",
+        "quarter": "Q4 FY2026"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 4,
+      "contradicts": 0,
+      "semi": 3
+    },
+    "source_page": "nvda-q4-fy2026",
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "Core consumer and monetizer of the active semiconductor bottlenecks. NVIDIA does not just benefit from scarcity; its own roadmap and shipment volume are what make N3, memory, and optics binding.\n",
+      "break_conditions": [
+        "Rubin slips or Blackwell-to-Rubin transitions slow enough to weaken supply pressure.",
+        "Networking growth stalls, undermining the optics read-through.",
+        "China restrictions or competitor catch-up force margin compression before FY2027."
+      ],
+      "confirms_next": [
+        "Q1 FY2027 reaches the $78B +/-2% guide with margins still in the mid-70s.",
+        "Rubin production timing, supply commitments, and networking growth stay on track through 2026.",
+        "Inventory and customer backlog keep supporting the $500B visibility claim."
+      ],
+      "why_now": "Q4 FY2026 printed $68.1B revenue, $11B of networking revenue, and $95.2B of supply commitments, while management guided another step up to $78B in Q1 and pushed Rubin production into H2 2026. That combination keeps NVIDIA at the center of the current cascade.\n"
+    },
+    "ticker": "NVDA"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:PSIX",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Power Solutions Intl",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "",
+        "pct_portfolio": 0.004,
+        "source": "leopold",
+        "type": "common",
+        "value": 25000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "PSIX"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:PSTG",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Pure Storage",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "+2%",
+        "notes": "Combined PSTG = $381M (common + calls)",
+        "pct_portfolio": 0.046,
+        "source": "baker",
+        "type": "common+call",
+        "value": 381000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "PSTG"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:PUMP",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "ProPetro Holdings",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "",
+        "pct_portfolio": 0.002,
+        "source": "leopold",
+        "type": "common",
+        "value": 8700000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "PUMP"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:QQQ",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Invesco QQQ Trust",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "+75%",
+        "notes": "Portfolio hedge — doubled from 2M to 3.5M shares",
+        "pct_portfolio": 0.263,
+        "source": "baker",
+        "type": "put",
+        "value": 2150000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "QQQ"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:RIOT",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Riot Platforms",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "+71%",
+        "notes": "",
+        "pct_portfolio": 0.014,
+        "source": "leopold",
+        "type": "common",
+        "value": 78000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "RIOT"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:SEI",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Solaris Energy Infrastructure",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "+62%",
+        "notes": "",
+        "pct_portfolio": 0.016,
+        "source": "leopold",
+        "type": "common",
+        "value": 86000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "SEI"
+  },
+  {
+    "also": "cpo_next",
+    "bottleneck": "copper_signal_integrity",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:SMTC",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Semtech",
+    "next_earnings": "2026-06-04",
+    "positions": [
+      {
+        "change_vs_prior": "+2%",
+        "notes": "",
+        "pct_portfolio": 0.006,
+        "source": "baker",
+        "type": "common",
+        "value": 51000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "SMTC"
+  },
+  {
+    "also": null,
+    "bottleneck": "memory",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:SNDK",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "SanDisk",
+    "next_earnings": "2026-05-01",
+    "positions": [
+      {
+        "change_vs_prior": "+816%",
+        "notes": "",
+        "pct_portfolio": 0.045,
+        "source": "leopold",
+        "type": "common",
+        "value": 250000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "SNDK"
+  },
+  {
+    "also": null,
+    "bottleneck": "foundry",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:TSEM",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "Tower Semiconductor",
+    "next_earnings": "2026-05-14",
+    "positions": [
+      {
+        "change_vs_prior": "+53%",
+        "notes": "",
+        "pct_portfolio": 0.015,
+        "source": "leopold",
+        "type": "common",
+        "value": 85000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "TSEM"
+  },
+  {
+    "also": null,
+    "bottleneck": "n3_logic",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 3,
+      "missed": 0,
+      "pending": 5
+    },
+    "id": "company:TSM",
+    "latest_packet": "canonical/20-data/companies/TSM/q4_2025.yaml",
+    "metrics": {
+      "guidance": {
+        "gross_margin": [
+          0.63,
+          0.65
+        ],
+        "operating_margin": [
+          0.54,
+          0.56
+        ],
+        "revenue_usd": [
+          34600000000,
+          35800000000
+        ]
+      },
+      "guidance_period": "q1_2026",
+      "margin_label": "Net Margin",
+      "margin_value": 0.483,
+      "quarter": "Q4 2025",
+      "revenue_label": "Revenue",
+      "revenue_value": 33730000000
+    },
+    "name": "Taiwan Semiconductor Manufacturing Company Limited",
+    "next_earnings": "2026-04-17",
+    "positions": [],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/TSM/q4_2025.yaml",
+        "period": "2025-12-31",
+        "quarter": "Q4 2025"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 2,
+      "contradicts": 1,
+      "semi": 3
+    },
+    "source_page": "tsm-q4-2025",
+    "status": "active",
+    "thesis": {
+      "bottleneck_role": "Foundational logic bottleneck. If leading-edge wafer capacity is tight, the entire AI stack backs up. If TSMC overbuilds or demand softens, the shortage starts to break.\n",
+      "break_conditions": [
+        "Leading-edge demand cools enough to pull revenue/margins below guide.",
+        "Massive capex results in faster-than-expected supply relief.",
+        "AI customers digest inventory and node mix stops moving up."
+      ],
+      "confirms_next": [
+        "Q1 2026 lands near the $34.6B-$35.8B guide with margins staying above 63%.",
+        "2026 USD revenue growth remains close to 30%.",
+        "Advanced-node mix keeps rising rather than flattening."
+      ],
+      "why_now": "Q4 2025 showed continued strong leading-edge demand, 3nm already at 28% of wafer revenue, advanced nodes at 77%, and another strong guide into Q1 2026 alongside a $52B-$56B capex plan.\n"
+    },
+    "ticker": "TSM"
+  },
+  {
+    "also": null,
+    "bottleneck": "power",
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 2
+    },
+    "id": "company:WULF",
+    "latest_packet": "canonical/20-data/companies/WULF/q1_2026_neocloud.yaml",
+    "metrics": {
+      "guidance": {},
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": "Q1 2026",
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "TeraWulf",
+    "next_earnings": null,
+    "positions": [],
+    "quarters": [
+      {
+        "path": "canonical/20-data/companies/WULF/q1_2026_neocloud.yaml",
+        "period": "2026-04-14",
+        "quarter": "Q1 2026"
+      }
+    ],
+    "signal_counts": {
+      "confirms": 1,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": "creative-strategies-neoclouds-three-business-models",
+    "status": "played_out",
+    "thesis": {
+      "bottleneck_role": "Tests whether brownfield power access and generation flexibility create durable landlord economics after the broad power trade is consensus.\n",
+      "break_conditions": [
+        "Utilization-linked rent escalators create more variability than landlord framing implies.",
+        "BYOG execution slips or costs rise.",
+        "Financing cost offsets contract durability."
+      ],
+      "confirms_next": [
+        "Abernathy lease converts into contracted, backstopped revenue.",
+        "Hawesville and Morgantown progress without major interconnection delays.",
+        "PUE and environmental profile help permitting/community acceptance."
+      ],
+      "why_now": "Hawesville's energized substation and Morgantown's BYOG model give TeraWulf a different route around interconnection and grid-delay bottlenecks.\n"
+    },
+    "ticker": "WULF"
+  },
+  {
+    "also": null,
+    "bottleneck": null,
+    "claim_counts": {
+      "confirmed": 0,
+      "due_next": 0,
+      "missed": 0,
+      "pending": 0
+    },
+    "id": "company:WYFI",
+    "latest_packet": null,
+    "metrics": {
+      "guidance": null,
+      "guidance_period": null,
+      "margin_label": null,
+      "margin_value": null,
+      "quarter": null,
+      "revenue_label": null,
+      "revenue_value": null
+    },
+    "name": "WhiteFiber",
+    "next_earnings": null,
+    "positions": [
+      {
+        "change_vs_prior": "new",
+        "notes": "",
+        "pct_portfolio": 0.005,
+        "source": "leopold",
+        "type": "common",
+        "value": 28000000
+      }
+    ],
+    "quarters": [],
+    "signal_counts": {
+      "confirms": 0,
+      "contradicts": 0,
+      "semi": 0
+    },
+    "source_page": null,
+    "status": null,
+    "thesis": {
+      "bottleneck_role": "",
+      "break_conditions": [],
+      "confirms_next": [],
+      "why_now": ""
+    },
+    "ticker": "WYFI"
+  }
+]

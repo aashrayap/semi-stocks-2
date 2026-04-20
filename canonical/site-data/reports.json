@@ -1,0 +1,1373 @@
+[
+  {
+    "exists": true,
+    "id": "report:latest",
+    "path": "canonical/50-reports/latest.html",
+    "sections": [
+      {
+        "body_html": "<strong>Where we are:</strong> The semiconductor supply chain has a sequence of physical constraints that limit how fast AI can scale. Each one gets solved eventually, but the next one becomes the new ceiling. Right now, <strong>Memory supercycle and N3 logic wafers and Pluggable optics (scale-out)</strong> are the active constraints — they're happening simultaneously, not sequentially as originally expected.<br><br><strong>What the money says:</strong> Leopold Aschenbrenner's fund ($5.5B) and Gavin Baker's fund ($8.2B) are both betting heavily on AI infrastructure but disagree on <em>where</em> the constraint is tightest. Leopold has exited chip companies entirely and loaded up on power infrastructure and GPU cloud operators. Baker has done the opposite — $1B+ in Nvidia alone — betting that chips themselves remain scarce. The cleanest three-source overlap is <strong>optical interconnect (LITE, COHR)</strong>, which makes it the highest-conviction, lowest-divergence-risk zone in the entire thesis.",
+        "id": "report-section:latest:summary",
+        "kind": "summary",
+        "title": "Summary"
+      },
+      {
+        "id": "report-section:latest:cascade-cycle-risk",
+        "kind": "table",
+        "rows": [
+          {
+            "cycle_action": "—",
+            "cycle_label": "Resolved",
+            "cycle_phase": "resolved",
+            "cycle_risk": 0,
+            "cycle_risk_flags": [],
+            "cycle_signal": "",
+            "name": "CoWoS packaging",
+            "period": "2023",
+            "status": "played_out",
+            "tickers": [
+              "ASX",
+              "AMAT"
+            ]
+          },
+          {
+            "cycle_action": "Avoid",
+            "cycle_label": "Post-Peak",
+            "cycle_phase": "post_peak",
+            "cycle_risk": 1,
+            "cycle_risk_flags": [
+              "Deliverable-power bottlenecks can delay revenue even where contracts and GPUs exist: switchgear ~1yr, transformers 2+yrs, high-voltage substations 3-5yrs",
+              "Hyperscaler self-build capacity can compress outsourced renewal pricing once acute supply scarcity eases",
+              "Power-landlord contracts reduce hardware refresh exposure but concentrate tenant and renewal risk"
+            ],
+            "cycle_signal": "Still monetizable, but increasingly substitution-rich: behind-the-meter engines, fuel cells, batteries, and grid workarounds make power less likely than semiconductors to be the terminal bottleneck.",
+            "name": "Power / DC buildout",
+            "period": "2024",
+            "status": "played_out",
+            "tickers": [
+              "VST",
+              "CEG",
+              "TLN",
+              "VRT"
+            ]
+          },
+          {
+            "cycle_action": "Long + Puts",
+            "cycle_label": "Peak Shortage",
+            "cycle_phase": "peak_shortage",
+            "cycle_risk": 3,
+            "cycle_risk_flags": [
+              "MU fwd P/E compressing to 10-12x on record EPS $12.20 — classic peak signal",
+              "Micron FY2026 capex is now above $25B — exactly how shortage peaks eventually get overbuilt",
+              "All 3 vendors (SK Hynix, Samsung, Micron) expanding capacity simultaneously",
+              "NVIDIA $21.4B inventory = double-ordering at chip level (10x the FY2023 write-down)",
+              "Google TurboQuant: 6x memory footprint reduction — potential demand destruction"
+            ],
+            "cycle_signal": "Micron just printed a record quarter and guided ~81% gross margin, but Baker already hedged MU. Strong proof, late-cycle risk rising.",
+            "name": "Memory supercycle",
+            "period": "2025-2026",
+            "status": "active",
+            "tickers": [
+              "MU",
+              "SNDK"
+            ]
+          },
+          {
+            "cycle_action": "Long + Hedge",
+            "cycle_label": "Mid Shortage",
+            "cycle_phase": "mid_shortage",
+            "cycle_risk": 2,
+            "cycle_risk_flags": [
+              "TSMC 2026 capital budget of $52B-$56B is a real supply response",
+              "Intel 18A / 14A ramp and external-customer decisions could add alternative supply in 2026-2027",
+              "NVDA $95.2B supply commitments (doubled QoQ) = capacity locked even if demand slows",
+              "NVDA fwd P/E compressing from 60x+ to 21x — shortage-phase compression underway"
+            ],
+            "cycle_signal": "TSMC and Intel both confirmed AI-driven tightness, but TSMC's $52B-$56B capex and Intel's 18A/14A ramp are visible future relief valves.",
+            "name": "N3 logic wafers",
+            "period": "2025-2027",
+            "status": "active",
+            "tickers": [
+              "TSM",
+              "NVDA",
+              "AVGO",
+              "INTC"
+            ]
+          },
+          {
+            "cycle_action": "Long",
+            "cycle_label": "Early Cycle",
+            "cycle_phase": "early_cycle",
+            "cycle_risk": 1,
+            "cycle_risk_flags": [
+              "Baker trimmed LITE -42% while Leopold added +604% — directional divergence in consensus zone",
+              "COHR and LITE now sit squarely in the consensus zone; any guide slip can hit crowded optics names hard"
+            ],
+            "cycle_signal": "COHR and LITE are now printing direct AI-optics revenue, backlog, and guide data. Still early cycle, but consensus crowding is rising.",
+            "name": "Pluggable optics (scale-out)",
+            "period": "2025-2027",
+            "status": "active",
+            "tickers": [
+              "COHR",
+              "LITE",
+              "CIEN"
+            ]
+          },
+          {
+            "cycle_action": "Watch",
+            "cycle_label": "Pre-Cycle",
+            "cycle_phase": "pre_cycle",
+            "cycle_risk": 0,
+            "cycle_risk_flags": [],
+            "cycle_signal": "COHR and LITE now have real orders, partnerships, and demos, but revenue still points to 2027+ rather than a current bottleneck.",
+            "name": "Co-packaged optics / CPO (scale-up)",
+            "period": "2028-2030",
+            "status": "next",
+            "tickers": [
+              "COHR",
+              "LITE",
+              "CIEN",
+              "ALAB",
+              "SMTC"
+            ]
+          },
+          {
+            "cycle_action": "Watch",
+            "cycle_label": "Pre-Cycle",
+            "cycle_phase": "pre_cycle",
+            "cycle_risk": 0,
+            "cycle_risk_flags": [],
+            "cycle_signal": "ASML bookings hit record EUR 13.2B (Q4 2025), but the deeper issue is physical throughput: EUV and its supplier chain cap long-run AI-chip output.",
+            "name": "EUV tools",
+            "period": "2028-2030",
+            "status": "next",
+            "tickers": [
+              "ASML"
+            ]
+          }
+        ],
+        "title": "Cascade + Cycle Risk"
+      },
+      {
+        "id": "report-section:latest:positions-signals",
+        "kind": "table",
+        "rows": [
+          {
+            "agreement": "full",
+            "baker_pct": 0.005,
+            "baker_value": 43000000,
+            "bottleneck": "gpu_cloud",
+            "held_by": [
+              "leopold",
+              "baker",
+              "semianalysis"
+            ],
+            "leopold_pct": 0.219,
+            "leopold_value": 1200000000,
+            "next_earnings": "2026-05-12",
+            "semi_signals": 1,
+            "status": "active",
+            "ticker": "CRWV"
+          },
+          {
+            "agreement": "full",
+            "baker_pct": 0.002,
+            "baker_value": 18000000,
+            "bottleneck": "n3_logic",
+            "held_by": [
+              "leopold",
+              "baker",
+              "semianalysis"
+            ],
+            "leopold_pct": 0.136,
+            "leopold_value": 749000000,
+            "next_earnings": "2026-04-24",
+            "semi_signals": 1,
+            "status": "active",
+            "ticker": "INTC"
+          },
+          {
+            "agreement": "full",
+            "baker_pct": 0.017,
+            "baker_value": 141000000,
+            "bottleneck": "pluggable_optics",
+            "held_by": [
+              "leopold",
+              "baker",
+              "semianalysis"
+            ],
+            "leopold_pct": 0.087,
+            "leopold_value": 479000000,
+            "next_earnings": "2026-05-06",
+            "semi_signals": 2,
+            "status": "active",
+            "ticker": "LITE"
+          },
+          {
+            "agreement": "full",
+            "baker_pct": 0.048,
+            "baker_value": 394000000,
+            "bottleneck": "pluggable_optics",
+            "held_by": [
+              "leopold",
+              "baker",
+              "semianalysis"
+            ],
+            "leopold_pct": 0.016,
+            "leopold_value": 89000000,
+            "next_earnings": "2026-05-07",
+            "semi_signals": 2,
+            "status": "active",
+            "ticker": "COHR"
+          },
+          {
+            "agreement": "partial",
+            "baker_pct": 0.124,
+            "baker_value": 1012000000,
+            "bottleneck": "n3_logic",
+            "held_by": [
+              "baker",
+              "semianalysis"
+            ],
+            "leopold_pct": null,
+            "leopold_value": null,
+            "next_earnings": "2026-05-28",
+            "semi_signals": 3,
+            "status": "active",
+            "ticker": "NVDA"
+          },
+          {
+            "agreement": "partial",
+            "baker_pct": 0.05,
+            "baker_value": 411000000,
+            "bottleneck": "memory",
+            "held_by": [
+              "baker",
+              "semianalysis"
+            ],
+            "leopold_pct": null,
+            "leopold_value": null,
+            "next_earnings": "2026-06-25",
+            "semi_signals": 2,
+            "status": "active",
+            "ticker": "MU"
+          },
+          {
+            "agreement": "partial",
+            "baker_pct": 0.041,
+            "baker_value": 334000000,
+            "bottleneck": "pluggable_optics",
+            "held_by": [
+              "baker",
+              "semianalysis"
+            ],
+            "leopold_pct": null,
+            "leopold_value": null,
+            "next_earnings": "2026-06-04",
+            "semi_signals": 2,
+            "status": "active",
+            "ticker": "CIEN"
+          },
+          {
+            "agreement": "single",
+            "baker_pct": null,
+            "baker_value": null,
+            "bottleneck": "power",
+            "held_by": [
+              "leopold"
+            ],
+            "leopold_pct": 0.165,
+            "leopold_value": 911000000,
+            "next_earnings": "2026-05-08",
+            "semi_signals": 0,
+            "status": "played_out",
+            "ticker": "BE"
+          },
+          {
+            "agreement": "single",
+            "baker_pct": null,
+            "baker_value": null,
+            "bottleneck": "power",
+            "held_by": [
+              "leopold"
+            ],
+            "leopold_pct": 0.076,
+            "leopold_value": 419000000,
+            "next_earnings": "2026-05-08",
+            "semi_signals": 0,
+            "status": "played_out",
+            "ticker": "CORZ"
+          },
+          {
+            "agreement": "single",
+            "baker_pct": null,
+            "baker_value": null,
+            "bottleneck": "power",
+            "held_by": [
+              "leopold"
+            ],
+            "leopold_pct": 0.06,
+            "leopold_value": 329000000,
+            "next_earnings": "2026-05-15",
+            "semi_signals": 0,
+            "status": "played_out",
+            "ticker": "IREN"
+          },
+          {
+            "agreement": "single",
+            "baker_pct": 0.033,
+            "baker_value": 268000000,
+            "bottleneck": "copper_signal_integrity",
+            "held_by": [
+              "baker"
+            ],
+            "leopold_pct": null,
+            "leopold_value": null,
+            "next_earnings": "2026-05-06",
+            "semi_signals": 0,
+            "status": "active",
+            "ticker": "ALAB"
+          },
+          {
+            "agreement": "single",
+            "baker_pct": null,
+            "baker_value": null,
+            "bottleneck": "memory",
+            "held_by": [
+              "leopold"
+            ],
+            "leopold_pct": 0.045,
+            "leopold_value": 250000000,
+            "next_earnings": "2026-05-01",
+            "semi_signals": 0,
+            "status": "active",
+            "ticker": "SNDK"
+          },
+          {
+            "agreement": "single",
+            "baker_pct": null,
+            "baker_value": null,
+            "bottleneck": "power",
+            "held_by": [
+              "leopold"
+            ],
+            "leopold_pct": 0.031,
+            "leopold_value": 171000000,
+            "next_earnings": "2026-04-23",
+            "semi_signals": 0,
+            "status": "played_out",
+            "ticker": "EQT"
+          },
+          {
+            "agreement": "single",
+            "baker_pct": null,
+            "baker_value": null,
+            "bottleneck": "power",
+            "held_by": [
+              "leopold"
+            ],
+            "leopold_pct": 0.028,
+            "leopold_value": 155000000,
+            "next_earnings": null,
+            "semi_signals": 0,
+            "status": "played_out",
+            "ticker": "CIFR"
+          },
+          {
+            "agreement": "single",
+            "baker_pct": null,
+            "baker_value": null,
+            "bottleneck": "foundry",
+            "held_by": [
+              "leopold"
+            ],
+            "leopold_pct": 0.015,
+            "leopold_value": 85000000,
+            "next_earnings": "2026-05-14",
+            "semi_signals": 0,
+            "status": "active",
+            "ticker": "TSEM"
+          },
+          {
+            "agreement": "single",
+            "baker_pct": 0.006,
+            "baker_value": 51000000,
+            "bottleneck": "copper_signal_integrity",
+            "held_by": [
+              "baker"
+            ],
+            "leopold_pct": null,
+            "leopold_value": null,
+            "next_earnings": "2026-06-04",
+            "semi_signals": 0,
+            "status": "active",
+            "ticker": "SMTC"
+          },
+          {
+            "agreement": "single",
+            "baker_pct": null,
+            "baker_value": null,
+            "bottleneck": "n3_logic",
+            "held_by": [
+              "semianalysis"
+            ],
+            "leopold_pct": null,
+            "leopold_value": null,
+            "next_earnings": "2026-04-17",
+            "semi_signals": 3,
+            "status": "active",
+            "ticker": "TSM"
+          }
+        ],
+        "title": "Positions + Signals"
+      },
+      {
+        "id": "report-section:latest:earnings-proof-gates",
+        "kind": "table",
+        "rows": [
+          {
+            "bottleneck": "n3_logic",
+            "bottleneck_role": "Foundational logic bottleneck. If leading-edge wafer capacity is tight, the entire AI stack backs up. If TSMC overbuilds or demand softens, the shortage starts to break.\n",
+            "bottleneck_status": "active",
+            "break_conditions": [
+              "Leading-edge demand cools enough to pull revenue/margins below guide.",
+              "Massive capex results in faster-than-expected supply relief.",
+              "AI customers digest inventory and node mix stops moving up."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 3,
+            "claims_missed": 0,
+            "claims_pending": 5,
+            "company": "Taiwan Semiconductor Manufacturing Company Limited",
+            "confirm_signal": "3nm already accounted for 28% of wafer revenue, and 7nm-and-below advanced nodes were 77% of total wafer revenue, showing AI demand remains concentrated in constrained leading-edge supply.",
+            "confirms_next": [
+              "Q1 2026 lands near the $34.6B-$35.8B guide with margins staying above 63%.",
+              "2026 USD revenue growth remains close to 30%.",
+              "Advanced-node mix keeps rising rather than flattening."
+            ],
+            "contradict_signal": "A 2026 capital budget of $52B-$56B is a real supply response. It does not break the shortage today, but it is exactly the kind of capex that can eventually ease logic tightness.",
+            "due_claims": [
+              {
+                "claim": "Q1 2026 revenue of $34.6B-$35.8B",
+                "verify_at": "Q1 2026 earnings"
+              },
+              {
+                "claim": "Q1 2026 gross margin of 63%-65%",
+                "verify_at": "Q1 2026 earnings"
+              }
+            ],
+            "guidance": {
+              "gross_margin": [
+                0.63,
+                0.65
+              ],
+              "operating_margin": [
+                0.54,
+                0.56
+              ],
+              "revenue_usd": [
+                34600000000,
+                35800000000
+              ]
+            },
+            "guidance_period": "q1_2026",
+            "margin_label": "Net Margin",
+            "margin_value": 0.483,
+            "next_earnings": "2026-04-17",
+            "quarter": "Q4 2025",
+            "quarter_key": "q4",
+            "revenue_label": "Revenue",
+            "revenue_value": 33730000000,
+            "semi_signals": [
+              {
+                "bottleneck": "n3_logic",
+                "data_points": [
+                  "H100 1yr rental: $1.70/hr (Oct 2025) → $2.35/hr (Mar 2026), +40%",
+                  "AWS p6-b200 spot: $14/hr/GPU",
+                  "Month-on-month rental increases 15-20% (Jan-Mar 2026)",
+                  "All new capacity through Aug-Sep 2026 already booked",
+                  "Blackwell deployment lead times extended to Jun-Jul 2026",
+                  "Anthropic ARR: $9B (end 2025) → $25B (early 2026)"
+                ],
+                "date": "2026-04-02",
+                "tickers": [
+                  "NVDA",
+                  "CRWV",
+                  "TSM"
+                ],
+                "title": "The Great GPU Shortage — Rental Capacity"
+              },
+              {
+                "bottleneck": "n3_logic",
+                "data_points": [
+                  "AI = 60% of TSMC N3 output (2026), projected 86% by 2027",
+                  "Reallocating 5% smartphone N3 wafers = ~100K Rubin GPUs or ~300K TPU v7s",
+                  "Reallocating 25% = ~700K Rubin GPUs or ~1.5M TPU v7s",
+                  "Google 2026 capex roughly doubled vs prior expectations",
+                  "Anthropic added $6B ARR in Feb 2026 alone (Claude Code driven)",
+                  "HBM consumes ~3x more wafer capacity than commodity DRAM, widening to ~4x with HBM4",
+                  "All major AI accelerators moving to N3 simultaneously: Rubin, TPU v7/v8, Trainium3, MI350X"
+                ],
+                "date": "2026-03-15",
+                "tickers": [
+                  "TSM",
+                  "NVDA",
+                  "MU"
+                ],
+                "title": "The Great AI Silicon Shortage"
+              }
+            ],
+            "signals_confirms": 2,
+            "signals_contradicts": 1,
+            "source_page": "wiki/sources/tsm-q4-2025.md",
+            "ticker": "TSM",
+            "why_now": "Q4 2025 showed continued strong leading-edge demand, 3nm already at 28% of wafer revenue, advanced nodes at 77%, and another strong guide into Q1 2026 alongside a $52B-$56B capex plan.\n"
+          },
+          {
+            "bottleneck": "n3_logic",
+            "bottleneck_role": "Potential alternative supply source for leading-edge logic and advanced packaging. Intel can both validate current scarcity and eventually soften it if 18A/14A ramp well.\n",
+            "bottleneck_status": "active",
+            "break_conditions": [
+              "18A yield improvements stall and foundry losses widen further.",
+              "Server demand shifts to competitors faster than Intel can supply.",
+              "Capex discipline prevents Intel from building enough capacity to matter."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 2,
+            "claims_missed": 0,
+            "claims_pending": 6,
+            "company": "Intel Corporation",
+            "confirm_signal": "Intel flagged rising DRAM, NAND, and substrate pricing due to intense AI infrastructure demand, showing upstream component constraints are now feeding through into Intel's model.",
+            "confirms_next": [
+              "Q1/Q2 2026 supply actually improves and DCAI remains strong.",
+              "Intel Foundry posts the promised double-digit Q1 QoQ growth.",
+              "External 14A customer decisions begin landing in H2 2026."
+            ],
+            "contradict_signal": "Intel Foundry is ramping 18A, raising EUV wafer mix, and engaging external customers on 14A, which is precisely the kind of alternative leading-edge supply response that could ease the crunch later.",
+            "due_claims": [
+              {
+                "claim": "Q1 2026 revenue of $11.7B-$12.7B",
+                "verify_at": "Q1 2026 earnings"
+              },
+              {
+                "claim": "Intel Foundry revenue up double digits QoQ in Q1 2026",
+                "verify_at": "Q1 2026 earnings"
+              }
+            ],
+            "guidance": {
+              "eps_non_gaap": 0.0,
+              "gross_margin_non_gaap": 0.345,
+              "revenue": [
+                11700000000,
+                12700000000
+              ],
+              "tax_rate": 0.11
+            },
+            "guidance_period": "q1_2026",
+            "margin_label": "Gross Margin",
+            "margin_value": 0.379,
+            "next_earnings": "2026-04-24",
+            "quarter": "Q4 2025",
+            "quarter_key": "q4",
+            "revenue_label": "Revenue",
+            "revenue_value": 13700000000,
+            "semi_signals": [
+              {
+                "bottleneck": "n3_logic",
+                "data_points": [
+                  "AMD Venice: up to 256 cores, 1.7x perf/watt vs Turin",
+                  "Intel Diamond Rapids: up to 256 cores, ~40% faster than Granite Rapids",
+                  "Nvidia Vera: 2x performance over Grace, 6 dies",
+                  "SoftBank acquired Ampere Computing for $6.5B",
+                  "ARM datacenter royalty revenue more than doubled YoY, >1B Neoverse cores deployed"
+                ],
+                "date": "2026-02-09",
+                "notes": "CPUs competing with GPUs for N3 capacity intensifies silicon shortage",
+                "tickers": [
+                  "INTC",
+                  "TSM"
+                ],
+                "title": "CPUs are Back: The Datacenter CPU Landscape in 2026"
+              }
+            ],
+            "signals_confirms": 2,
+            "signals_contradicts": 1,
+            "source_page": "wiki/sources/intc-q4-2025.md",
+            "ticker": "INTC",
+            "why_now": "Intel said AI-driven demand materially outstripped available supply, DCAI had its fastest sequential growth of the decade, and Foundry revenue rose on EUV mix. At the same time, 18A and 14A milestones mean the company is trying to become a real future supply response.\n"
+          },
+          {
+            "bottleneck": "pluggable_optics",
+            "bottleneck_role": "Direct expression of AI scale-out optics demand today with visible optionality into scale-up / CPO. Lumentum now monetizes both components and systems rather than only long-dated architecture hopes.\n",
+            "bottleneck_status": "active",
+            "break_conditions": [
+              "Optical demand is concentrated and customers pause orders after the first AI buildout wave.",
+              "OCS backlog slips or gets pushed out.",
+              "CPO remains real but too delayed to support valuation."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 3,
+            "claims_missed": 0,
+            "claims_pending": 5,
+            "company": "Lumentum Holdings Inc.",
+            "confirm_signal": "Management disclosed an incremental multi-hundred-million-dollar CPO order for 1H 2027 delivery, while NVIDIA added a $2B investment, a multibillion purchase commitment, and future capacity rights for advanced laser components.",
+            "confirms_next": [
+              "Q3 FY2026 hits the $780M-$830M guide with 30%-31% non-GAAP operating margin.",
+              "OCS backlog converts into systems revenue rather than remaining pipeline.",
+              "CPO orders and NVIDIA partnership show up in capacity or shipment commentary through 2026-2027."
+            ],
+            "contradict_signal": "",
+            "due_claims": [
+              {
+                "claim": "Q3 FY2026 revenue of $780M-$830M",
+                "verify_at": "Q3 FY2026 earnings"
+              },
+              {
+                "claim": "Q3 FY2026 non-GAAP operating margin of 30%-31%",
+                "verify_at": "Q3 FY2026 earnings"
+              }
+            ],
+            "guidance": {
+              "eps_non_gaap": [
+                2.15,
+                2.35
+              ],
+              "operating_margin_non_gaap": [
+                0.3,
+                0.31
+              ],
+              "revenue": [
+                780000000,
+                830000000
+              ]
+            },
+            "guidance_period": "q3_fy2026",
+            "margin_label": "Gross Margin",
+            "margin_value": 0.425,
+            "next_earnings": "2026-05-06",
+            "quarter": "Q2 FY2026",
+            "quarter_key": "q2",
+            "revenue_label": "Revenue",
+            "revenue_value": 665500000,
+            "semi_signals": [
+              {
+                "bottleneck": "optical",
+                "data_points": [
+                  "Nvidia acquired Groq for ~$20B",
+                  "Rubin Ultra NVL144: 144 GPUs/rack, 72 NVLink 7 switches, 28.8Tbit/s per switch",
+                  "NVL576 (Rubin Ultra): CPO optics required between racks",
+                  "CPO market projected $20B by 2036, 37% CAGR",
+                  "Vera CPU: 88 cores, 1.5TB LPDDR5X, 1.8TB/s NVLink-C2C (2x Grace)"
+                ],
+                "date": "2026-03-15",
+                "tickers": [
+                  "NVDA",
+                  "COHR",
+                  "LITE",
+                  "CIEN"
+                ],
+                "title": "Nvidia — The Inference Kingdom Expands (GTC 2026)"
+              },
+              {
+                "bottleneck": "optical",
+                "data_points": [
+                  "CPO = $20B market by 2036, 37% CAGR",
+                  "2026 is inflection year: prototypes → volume deployment",
+                  "Required for Nvidia NVL576+ inter-rack connectivity",
+                  "OFC panel: Nvidia, Broadcom, Marvell, AMD, Google, Meta, Oracle all present",
+                  "TSMC SoIC 3D integration for CPO platforms"
+                ],
+                "date": "2026-03-27",
+                "tickers": [
+                  "COHR",
+                  "LITE",
+                  "CIEN"
+                ],
+                "title": "Co-Packaged Optics (CPO)"
+              }
+            ],
+            "signals_confirms": 3,
+            "signals_contradicts": 0,
+            "source_page": "wiki/sources/lite-q2-fy2026.md",
+            "ticker": "LITE",
+            "why_now": "Q2 FY2026 revenue grew 65.5% YoY, Q3 guide implies another major step up, OCS backlog is above $400M, CPO already has a multi-hundred-million-dollar order for 1H 2027 delivery, and NVIDIA committed both capital and future purchase rights in March 2026.\n"
+          },
+          {
+            "bottleneck": "pluggable_optics",
+            "bottleneck_role": "Current pluggable-optics revenue play with credible optionality into co-packaged optics. Coherent supplies lasers, optical engines, and packaging technologies needed for AI scale-out links today and higher-density optical architectures tomorrow.\n",
+            "bottleneck_status": "active",
+            "break_conditions": [
+              "Datacenter and communications growth slows sharply or loses mix share.",
+              "Capacity expansion fails to convert into revenue or gross margin.",
+              "CPO stays experimental without visible program revenue moving toward 2027."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 4,
+            "claims_missed": 0,
+            "claims_pending": 5,
+            "company": "Coherent Corp.",
+            "confirm_signal": "March 2026 NVIDIA partnership added a multibillion-dollar purchase commitment, future capacity rights for advanced laser and optical networking products, and a $2B NVIDIA investment to expand Coherent's U.S. manufacturing and R&D base.",
+            "confirms_next": [
+              "Q3 FY2026 lands inside or above the $1.70B-$1.84B revenue guide.",
+              "Datacenter and communications remains the dominant segment with margins staying near 40%.",
+              "NVIDIA capacity commitments and new AI optics programs show up in backlog or shipment commentary."
+            ],
+            "contradict_signal": "",
+            "due_claims": [
+              {
+                "claim": "Q3 FY2026 revenue of $1.70B-$1.84B",
+                "verify_at": "Q3 FY2026 earnings"
+              },
+              {
+                "claim": "Q3 FY2026 non-GAAP gross margin of 38.5%-40.5%",
+                "verify_at": "Q3 FY2026 earnings"
+              }
+            ],
+            "guidance": {
+              "eps_non_gaap": [
+                1.28,
+                1.48
+              ],
+              "gross_margin_non_gaap": [
+                0.385,
+                0.405
+              ],
+              "opex_non_gaap": [
+                320000000,
+                340000000
+              ],
+              "revenue": [
+                1700000000,
+                1840000000
+              ],
+              "tax_rate_non_gaap": [
+                0.18,
+                0.2
+              ]
+            },
+            "guidance_period": "q3_fy2026",
+            "margin_label": "Gross Margin",
+            "margin_value": 0.39,
+            "next_earnings": "2026-05-07",
+            "quarter": "Q2 FY2026",
+            "quarter_key": "q2",
+            "revenue_label": "Revenue",
+            "revenue_value": 1686000000,
+            "semi_signals": [
+              {
+                "bottleneck": "optical",
+                "data_points": [
+                  "Nvidia acquired Groq for ~$20B",
+                  "Rubin Ultra NVL144: 144 GPUs/rack, 72 NVLink 7 switches, 28.8Tbit/s per switch",
+                  "NVL576 (Rubin Ultra): CPO optics required between racks",
+                  "CPO market projected $20B by 2036, 37% CAGR",
+                  "Vera CPU: 88 cores, 1.5TB LPDDR5X, 1.8TB/s NVLink-C2C (2x Grace)"
+                ],
+                "date": "2026-03-15",
+                "tickers": [
+                  "NVDA",
+                  "COHR",
+                  "LITE",
+                  "CIEN"
+                ],
+                "title": "Nvidia — The Inference Kingdom Expands (GTC 2026)"
+              },
+              {
+                "bottleneck": "optical",
+                "data_points": [
+                  "CPO = $20B market by 2036, 37% CAGR",
+                  "2026 is inflection year: prototypes → volume deployment",
+                  "Required for Nvidia NVL576+ inter-rack connectivity",
+                  "OFC panel: Nvidia, Broadcom, Marvell, AMD, Google, Meta, Oracle all present",
+                  "TSMC SoIC 3D integration for CPO platforms"
+                ],
+                "date": "2026-03-27",
+                "tickers": [
+                  "COHR",
+                  "LITE",
+                  "CIEN"
+                ],
+                "title": "Co-Packaged Optics (CPO)"
+              }
+            ],
+            "signals_confirms": 4,
+            "signals_contradicts": 0,
+            "source_page": "wiki/sources/cohr-q2-fy2026.md",
+            "ticker": "COHR",
+            "why_now": "Datacenter and communications was 72% of Q2 revenue, management guided another up-quarter, and March 2026 artifacts show direct NVIDIA capacity commitments plus OFC demos across 6.4T CPO, 400G-per-lane InP modulation, and 1.6T/XPO-related platforms.\n"
+          },
+          {
+            "bottleneck": "power",
+            "bottleneck_role": "Purest listed example of power-landlord economics in the report: lower revenue density than full-stack GPU cloud, but much lower exposure to hardware refresh and utilization risk.\n",
+            "bottleneck_status": "played_out",
+            "break_conditions": [
+              "CoreWeave tenant concentration becomes a financing or renewal problem.",
+              "Deployment delays prevent contracted capacity from converting into billed MW.",
+              "Retrofit costs exceed offset assumptions."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 0,
+            "claims_missed": 0,
+            "claims_pending": 2,
+            "company": "Core Scientific",
+            "confirm_signal": "Core Scientific controls energized sites and leases powered capacity to CoreWeave while avoiding GPU ownership and refresh risk.",
+            "confirms_next": [
+              "CoreWeave-contracted megawatts continue deploying and billing.",
+              "Hosting margin trends toward the 75%-80% target.",
+              "Customer-funded retrofit offsets keep net capex per MW low."
+            ],
+            "contradict_signal": "",
+            "due_claims": [],
+            "guidance": {},
+            "guidance_period": null,
+            "margin_label": null,
+            "margin_value": null,
+            "next_earnings": "2026-05-08",
+            "quarter": "Q1 2026",
+            "quarter_key": null,
+            "revenue_label": null,
+            "revenue_value": null,
+            "semi_signals": [],
+            "signals_confirms": 2,
+            "signals_contradicts": 0,
+            "source_page": "wiki/sources/creative-strategies-neoclouds-three-business-models.md",
+            "ticker": "CORZ",
+            "why_now": "The CoreWeave lease, customer-funded capex offsets, and energized-site position make Core Scientific a test case for durable contract economics below the technology-refresh cycle.\n"
+          },
+          {
+            "bottleneck": "gpu_cloud",
+            "bottleneck_role": "Primary read-through on downstream AI infrastructure demand. CoreWeave is not the upstream bottleneck itself; it is the proof that GPU cloud demand is strong enough to keep pulling on chips, memory, optics, and power simultaneously.\n",
+            "bottleneck_status": "active",
+            "break_conditions": [
+              "Customer demand or backlog conversion weakens enough to expose the leverage.",
+              "Interest expense and capex stay so high that scale fails to turn into margin.",
+              "GPU availability improves while CoreWeave still cannot earn through the balance sheet."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 2,
+            "claims_missed": 0,
+            "claims_pending": 9,
+            "company": "CoreWeave",
+            "confirm_signal": "Delivered 50K GB200s in Q4 to single customer. Nvidia GPUs 'remain in short supply' per Intrator. Massive capex plan ($30-35B) = enormous chip demand.",
+            "confirms_next": [
+              "Q1 2026 revenue lands inside the $1.9B-$2.0B guide and operating income avoids a deeper trough.",
+              "Backlog, power capacity, or reserved-instance commentary keeps moving up rather than flattening.",
+              "Rubin deployment timing and lower financing costs show up as visible execution progress in 2026."
+            ],
+            "contradict_signal": "",
+            "due_claims": [
+              {
+                "claim": "Q1 represents the trough in annual margin trajectory — margins ramp from low single digits in Q1, expanding each quarter, to low double-digits by Q4 2026",
+                "verify_at": "Q1 2026 earnings"
+              },
+              {
+                "claim": "We expect to continue reducing our weighted average cost of capital",
+                "verify_at": "Q1 2026 earnings"
+              }
+            ],
+            "guidance": {
+              "active_power_ye2026": "~1.7 GW (double current)",
+              "adjusted_operating_income": [
+                900000000,
+                1100000000
+              ],
+              "capex": [
+                30000000000,
+                35000000000
+              ],
+              "exit_2027_run_rate": 30000000000,
+              "exit_run_rate_revenue": [
+                17000000000,
+                19000000000
+              ],
+              "long_term_adj_operating_margin": [
+                0.25,
+                0.3
+              ],
+              "revenue": [
+                12000000000,
+                13000000000
+              ],
+              "revenue_growth": "~140%"
+            },
+            "guidance_period": "fy_2026",
+            "margin_label": "Adj EBITDA Margin",
+            "margin_value": 0.57,
+            "next_earnings": "2026-05-12",
+            "quarter": "Q4 2025",
+            "quarter_key": "q4",
+            "revenue_label": "Revenue",
+            "revenue_value": 1570000000,
+            "semi_signals": [
+              {
+                "bottleneck": "n3_logic",
+                "data_points": [
+                  "H100 1yr rental: $1.70/hr (Oct 2025) → $2.35/hr (Mar 2026), +40%",
+                  "AWS p6-b200 spot: $14/hr/GPU",
+                  "Month-on-month rental increases 15-20% (Jan-Mar 2026)",
+                  "All new capacity through Aug-Sep 2026 already booked",
+                  "Blackwell deployment lead times extended to Jun-Jul 2026",
+                  "Anthropic ARR: $9B (end 2025) → $25B (early 2026)"
+                ],
+                "date": "2026-04-02",
+                "tickers": [
+                  "NVDA",
+                  "CRWV",
+                  "TSM"
+                ],
+                "title": "The Great GPU Shortage — Rental Capacity"
+              }
+            ],
+            "signals_confirms": 5,
+            "signals_contradicts": 0,
+            "source_page": "wiki/sources/crwv-q4-2025.md",
+            "ticker": "CRWV",
+            "why_now": "Q4 2025 revenue reached $1.57B, backlog expanded to $66.8B, management said it still could not catch up with demand, and virtually all 2026 capacity was already allocated. That makes CoreWeave the strongest current demand validator in the repo.\n"
+          },
+          {
+            "bottleneck": "power",
+            "bottleneck_role": "Tests whether direct power ownership plus GPU hardware can produce durable economics without full-stack software differentiation.\n",
+            "bottleneck_status": "played_out",
+            "break_conditions": [
+              "Hardware pricing or utilization weakens before owned GPUs earn through the cycle.",
+              "Software/yield gap versus CoreWeave becomes visible in renewal or pricing.",
+              "Power buildout slips despite direct control."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 0,
+            "claims_missed": 0,
+            "claims_pending": 2,
+            "company": "IREN",
+            "confirm_signal": "Direct control of ~810MW operating high-density capacity and ~4.5GW secured grid-connected power makes IREN the strongest near-term deliverability case in the Creative Strategies ranking.",
+            "confirms_next": [
+              "Sweetwater Phase 1 energizes toward the mid-2026 target.",
+              "Microsoft prepayments continue to de-risk hardware procurement.",
+              "GPU utilization supports the five-year / 20% residual assumption."
+            ],
+            "contradict_signal": "",
+            "due_claims": [],
+            "guidance": {},
+            "guidance_period": null,
+            "margin_label": null,
+            "margin_value": null,
+            "next_earnings": "2026-05-15",
+            "quarter": "Q1 2026",
+            "quarter_key": null,
+            "revenue_label": null,
+            "revenue_value": null,
+            "semi_signals": [],
+            "signals_confirms": 1,
+            "signals_contradicts": 0,
+            "source_page": "wiki/sources/creative-strategies-neoclouds-three-business-models.md",
+            "ticker": "IREN",
+            "why_now": "Creative Strategies ranks IREN highest on near-term deliverability because it controls power assets directly and has a Microsoft-backed contract and prepayment structure.\n"
+          },
+          {
+            "bottleneck": "n3_logic",
+            "bottleneck_role": "Core consumer and monetizer of the active semiconductor bottlenecks. NVIDIA does not just benefit from scarcity; its own roadmap and shipment volume are what make N3, memory, and optics binding.\n",
+            "bottleneck_status": "active",
+            "break_conditions": [
+              "Rubin slips or Blackwell-to-Rubin transitions slow enough to weaken supply pressure.",
+              "Networking growth stalls, undermining the optics read-through.",
+              "China restrictions or competitor catch-up force margin compression before FY2027."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 3,
+            "claims_missed": 0,
+            "claims_pending": 7,
+            "company": "NVIDIA Corporation",
+            "confirm_signal": "Rubin moving to N3, competing with TPU v7/v8, Trainium3, MI350X for TSMC capacity. $95.2B supply commitments (nearly doubled QoQ) = enormous wafer demand. Vera Rubin production H2 2026 adds further N3 pressure. Six new chips this cycle — all need N3.",
+            "confirms_next": [
+              "Q1 FY2027 reaches the $78B +/-2% guide with margins still in the mid-70s.",
+              "Rubin production timing, supply commitments, and networking growth stay on track through 2026.",
+              "Inventory and customer backlog keep supporting the $500B visibility claim."
+            ],
+            "contradict_signal": "",
+            "due_claims": [
+              {
+                "claim": "Q1 FY2027 revenue of $78B ±2%",
+                "verify_at": "Q1 FY2027 earnings (~May 2026)"
+              },
+              {
+                "claim": "Mid-70s gross margins sustainable through FY2027",
+                "verify_at": "FY2027 quarterly results"
+              }
+            ],
+            "guidance": {
+              "beat_vs_consensus": "+$5.4B",
+              "china_dc_excluded": true,
+              "consensus_was": 72600000000,
+              "gross_margin_gaap": 0.749,
+              "gross_margin_non_gaap": 0.75,
+              "notes": "Starting Q1, SBC included in non-GAAP results",
+              "opex_gaap": 7700000000,
+              "opex_non_gaap": 7500000000,
+              "revenue": 78000000000,
+              "tax_rate_fy2027": [
+                0.17,
+                0.19
+              ]
+            },
+            "guidance_period": "q1_fy2027",
+            "margin_label": "Gross Margin",
+            "margin_value": 0.752,
+            "next_earnings": "2026-05-28",
+            "quarter": "Q4 FY2026",
+            "quarter_key": "q4",
+            "revenue_label": "Revenue",
+            "revenue_value": 68127000000,
+            "semi_signals": [
+              {
+                "bottleneck": "n3_logic",
+                "data_points": [
+                  "H100 1yr rental: $1.70/hr (Oct 2025) → $2.35/hr (Mar 2026), +40%",
+                  "AWS p6-b200 spot: $14/hr/GPU",
+                  "Month-on-month rental increases 15-20% (Jan-Mar 2026)",
+                  "All new capacity through Aug-Sep 2026 already booked",
+                  "Blackwell deployment lead times extended to Jun-Jul 2026",
+                  "Anthropic ARR: $9B (end 2025) → $25B (early 2026)"
+                ],
+                "date": "2026-04-02",
+                "tickers": [
+                  "NVDA",
+                  "CRWV",
+                  "TSM"
+                ],
+                "title": "The Great GPU Shortage — Rental Capacity"
+              },
+              {
+                "bottleneck": "n3_logic",
+                "data_points": [
+                  "AI = 60% of TSMC N3 output (2026), projected 86% by 2027",
+                  "Reallocating 5% smartphone N3 wafers = ~100K Rubin GPUs or ~300K TPU v7s",
+                  "Reallocating 25% = ~700K Rubin GPUs or ~1.5M TPU v7s",
+                  "Google 2026 capex roughly doubled vs prior expectations",
+                  "Anthropic added $6B ARR in Feb 2026 alone (Claude Code driven)",
+                  "HBM consumes ~3x more wafer capacity than commodity DRAM, widening to ~4x with HBM4",
+                  "All major AI accelerators moving to N3 simultaneously: Rubin, TPU v7/v8, Trainium3, MI350X"
+                ],
+                "date": "2026-03-15",
+                "tickers": [
+                  "TSM",
+                  "NVDA",
+                  "MU"
+                ],
+                "title": "The Great AI Silicon Shortage"
+              }
+            ],
+            "signals_confirms": 4,
+            "signals_contradicts": 0,
+            "source_page": "wiki/sources/nvda-q4-fy2026.md",
+            "ticker": "NVDA",
+            "why_now": "Q4 FY2026 printed $68.1B revenue, $11B of networking revenue, and $95.2B of supply commitments, while management guided another step up to $78B in Q1 and pushed Rubin production into H2 2026. That combination keeps NVIDIA at the center of the current cascade.\n"
+          },
+          {
+            "bottleneck": "memory",
+            "bottleneck_role": "Pure memory supercycle exposure. Micron is where AI demand shows up as higher bits per system, tighter supply, stronger pricing, and aggressive cleanroom / packaging capex.\n",
+            "bottleneck_status": "active",
+            "break_conditions": [
+              "Pricing weakens faster than expected as supply additions arrive.",
+              "HBM share or yield execution slips versus peers.",
+              "Customer digestion or over-ordering causes margin compression before 2027."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 2,
+            "claims_missed": 0,
+            "claims_pending": 6,
+            "company": "Micron Technology, Inc.",
+            "confirm_signal": "Micron has begun HBM4 volume shipments for NVIDIA Vera Rubin and is investing above $25B in FY2026 capex, reinforcing that memory capacity is being pulled hard by the 2026 accelerator ramp.",
+            "confirms_next": [
+              "Q3 FY2026 prints near the $33.5B guide with gross margin around 81%.",
+              "HBM4/HBM4E ramp commentary stays constructive and supply remains tight.",
+              "Industry tightness persists even as capex rises and cleanroom construction accelerates."
+            ],
+            "contradict_signal": "",
+            "due_claims": [
+              {
+                "claim": "Q3 FY2026 revenue of $33.5B +/- $750M",
+                "verify_at": "Q3 FY2026 earnings"
+              },
+              {
+                "claim": "Q3 FY2026 gross margin of approximately 81%",
+                "verify_at": "Q3 FY2026 earnings"
+              }
+            ],
+            "guidance": {
+              "eps_gaap": [
+                18.5,
+                19.3
+              ],
+              "eps_non_gaap": [
+                18.75,
+                19.55
+              ],
+              "gross_margin_gaap": 0.81,
+              "gross_margin_non_gaap": 0.81,
+              "opex_gaap": 1600000000,
+              "opex_non_gaap": 1400000000,
+              "revenue": [
+                32750000000,
+                34250000000
+              ],
+              "tax_rate": 0.151
+            },
+            "guidance_period": "q3_fy2026",
+            "margin_label": "Gross Margin",
+            "margin_value": 0.749,
+            "next_earnings": "2026-06-25",
+            "quarter": "Q2 FY2026",
+            "quarter_key": "q2",
+            "revenue_label": "Revenue",
+            "revenue_value": 23860000000,
+            "semi_signals": [
+              {
+                "bottleneck": "n3_logic",
+                "data_points": [
+                  "AI = 60% of TSMC N3 output (2026), projected 86% by 2027",
+                  "Reallocating 5% smartphone N3 wafers = ~100K Rubin GPUs or ~300K TPU v7s",
+                  "Reallocating 25% = ~700K Rubin GPUs or ~1.5M TPU v7s",
+                  "Google 2026 capex roughly doubled vs prior expectations",
+                  "Anthropic added $6B ARR in Feb 2026 alone (Claude Code driven)",
+                  "HBM consumes ~3x more wafer capacity than commodity DRAM, widening to ~4x with HBM4",
+                  "All major AI accelerators moving to N3 simultaneously: Rubin, TPU v7/v8, Trainium3, MI350X"
+                ],
+                "date": "2026-03-15",
+                "tickers": [
+                  "TSM",
+                  "NVDA",
+                  "MU"
+                ],
+                "title": "The Great AI Silicon Shortage"
+              },
+              {
+                "bottleneck": "memory",
+                "data_points": [
+                  "HBM 85% less dense than DDR equivalent (0.16 vs 0.296 Gb/mm2)",
+                  "12-layer HBM stack yield ~87% (at 99% per-layer)",
+                  "HBM market: $35B (2025) → $54.6B (2026)",
+                  "HBM bit share of DRAM: 19% (2025) → 23% (2026)",
+                  "China CXMT matching Micron TSV capacity by end 2025, ~2M stacks (enough for ~250K Ascend 910Cs)",
+                  "Rubin Ultra projected 1,024GB HBM4E per GPU"
+                ],
+                "date": "2025-12-15",
+                "tickers": [
+                  "MU"
+                ],
+                "title": "Scaling the Memory Wall: The Rise and Roadmap of HBM"
+              }
+            ],
+            "signals_confirms": 3,
+            "signals_contradicts": 0,
+            "source_page": "wiki/sources/mu-q2-fy2026.md",
+            "ticker": "MU",
+            "why_now": "The quarter set records across revenue, gross margin, EPS, and free cash flow, while management explicitly said DRAM and NAND should remain supply constrained beyond calendar 2026. HBM4 volume shipments for NVIDIA Vera Rubin connect the memory thesis directly to the 2026 GPU ramp.\n"
+          },
+          {
+            "bottleneck": "power",
+            "bottleneck_role": "Cipher tests whether credit-backed power-landlord leases can earn high-NOI infrastructure returns while avoiding GPU obsolescence.\n",
+            "bottleneck_status": "played_out",
+            "break_conditions": [
+              "ERCOT queue exposure delays pipeline conversion.",
+              "Tenant/backstop structure proves weaker than assumed.",
+              "Project-level debt costs compress equity economics."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 0,
+            "claims_missed": 0,
+            "claims_pending": 2,
+            "company": "Cipher Mining",
+            "confirm_signal": "Cipher's $9.3B flagship leases show powered AI sites can be financed as contract-backed infrastructure.",
+            "confirms_next": [
+              "Black Pearl and Barber Lake construction remains on schedule.",
+              "AWS / Fluidstack / Google-linked lease economics convert into NOI.",
+              "Stingray receives firm-load progress toward late-2026 target."
+            ],
+            "contradict_signal": "",
+            "due_claims": [],
+            "guidance": {},
+            "guidance_period": null,
+            "margin_label": null,
+            "margin_value": null,
+            "next_earnings": null,
+            "quarter": "Q1 2026",
+            "quarter_key": null,
+            "revenue_label": null,
+            "revenue_value": null,
+            "semi_signals": [],
+            "signals_confirms": 1,
+            "signals_contradicts": 0,
+            "source_page": "wiki/sources/creative-strategies-neoclouds-three-business-models.md",
+            "ticker": "CIFR",
+            "why_now": "AWS and Google-linked contract structures improve backlog quality, but ERCOT queue exposure still separates contracted MW from energizable MW.\n"
+          },
+          {
+            "bottleneck": "power",
+            "bottleneck_role": "Reinforces that AI infrastructure value can accrue to approved power, campus control, project finance, and long-duration offtake rather than only to GPU ownership.\n",
+            "bottleneck_status": "watch",
+            "break_conditions": [
+              "Transmission or substation work delays Helios energization.",
+              "Digital-assets exposure dominates public-company valuation and obscures infrastructure value.",
+              "CoreWeave concentration creates renewal or financing pressure."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 0,
+            "claims_missed": 0,
+            "claims_pending": 2,
+            "company": "Galaxy Digital",
+            "confirm_signal": "Helios shows that approved, utility-contracted power capacity can be converted into long-duration AI infrastructure offtake.",
+            "confirms_next": [
+              "Initial 800MW CoreWeave commitment converts into revenue.",
+              "Next 830MW energization proceeds in the 2028-2029 window.",
+              "Additional load-study requests progress toward approved capacity."
+            ],
+            "contradict_signal": "",
+            "due_claims": [],
+            "guidance": {},
+            "guidance_period": null,
+            "margin_label": null,
+            "margin_value": null,
+            "next_earnings": null,
+            "quarter": "Q1 2026",
+            "quarter_key": null,
+            "revenue_label": null,
+            "revenue_value": null,
+            "semi_signals": [],
+            "signals_confirms": 1,
+            "signals_contradicts": 0,
+            "source_page": "wiki/sources/creative-strategies-neoclouds-three-business-models.md",
+            "ticker": "GLXY",
+            "why_now": "Helios is a large-scale example of approved power plus CoreWeave offtake, but Galaxy remains a mixed-exposure public comp rather than a clean landlord.\n"
+          },
+          {
+            "bottleneck": "gpu_cloud",
+            "bottleneck_role": "Full-stack AI platform read-through on external hyperscaler capacity demand, with more greenfield deliverability risk than owned-power or brownfield landlord models.\n",
+            "bottleneck_status": "active",
+            "break_conditions": [
+              "Permitting or interconnection delays push capacity beyond contract timelines.",
+              "Platform software fails to command premium economics.",
+              "Hardware refresh cadence compresses returns before greenfield capacity earns through."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 0,
+            "claims_missed": 0,
+            "claims_pending": 2,
+            "company": "Nebius",
+            "confirm_signal": "Meta's up-to-$27B commitment and large backlog validate external AI cloud demand beyond hyperscaler first-party footprints.",
+            "confirms_next": [
+              "Active MW ramps materially toward the 3GW end-2026 target.",
+              "Aether and Token Factory show measurable platform yield or switching-cost evidence.",
+              "Meta / Microsoft commitments convert into deployed capacity."
+            ],
+            "contradict_signal": "",
+            "due_claims": [],
+            "guidance": {},
+            "guidance_period": null,
+            "margin_label": null,
+            "margin_value": null,
+            "next_earnings": null,
+            "quarter": "Q1 2026",
+            "quarter_key": null,
+            "revenue_label": null,
+            "revenue_value": null,
+            "semi_signals": [],
+            "signals_confirms": 1,
+            "signals_contradicts": 0,
+            "source_page": "wiki/sources/creative-strategies-neoclouds-three-business-models.md",
+            "ticker": "NBIS",
+            "why_now": "Meta's up-to-$27B deal and large backlog show real external demand, but the gap between active MW and target GW makes deliverability the core risk.\n"
+          },
+          {
+            "bottleneck": "power",
+            "bottleneck_role": "Tests whether brownfield power access and generation flexibility create durable landlord economics after the broad power trade is consensus.\n",
+            "bottleneck_status": "played_out",
+            "break_conditions": [
+              "Utilization-linked rent escalators create more variability than landlord framing implies.",
+              "BYOG execution slips or costs rise.",
+              "Financing cost offsets contract durability."
+            ],
+            "claims_confirmed": 0,
+            "claims_due_next": 0,
+            "claims_missed": 0,
+            "claims_pending": 2,
+            "company": "TeraWulf",
+            "confirm_signal": "TeraWulf's Hawesville and Morgantown sites show why brownfield and BYOG strategies can be more valuable than announced greenfield MW.",
+            "confirms_next": [
+              "Abernathy lease converts into contracted, backstopped revenue.",
+              "Hawesville and Morgantown progress without major interconnection delays.",
+              "PUE and environmental profile help permitting/community acceptance."
+            ],
+            "contradict_signal": "",
+            "due_claims": [],
+            "guidance": {},
+            "guidance_period": null,
+            "margin_label": null,
+            "margin_value": null,
+            "next_earnings": null,
+            "quarter": "Q1 2026",
+            "quarter_key": null,
+            "revenue_label": null,
+            "revenue_value": null,
+            "semi_signals": [],
+            "signals_confirms": 1,
+            "signals_contradicts": 0,
+            "source_page": "wiki/sources/creative-strategies-neoclouds-three-business-models.md",
+            "ticker": "WULF",
+            "why_now": "Hawesville's energized substation and Morgantown's BYOG model give TeraWulf a different route around interconnection and grid-delay bottlenecks.\n"
+          }
+        ],
+        "title": "Earnings + Proof Gates"
+      },
+      {
+        "id": "report-section:latest:drift",
+        "kind": "table",
+        "rows": [
+          {
+            "detail": "Cipher's $9.3B flagship leases show powered AI sites can be financed as contract-backed infrastructure.",
+            "quarter": "Q1 2026",
+            "stage": "power",
+            "ticker": "CIFR",
+            "type": "earnings_signal_missing"
+          },
+          {
+            "detail": "600MW is contracted, but the longer 3.4GW pipeline remains exposed to ERCOT batch-study timing.",
+            "quarter": "Q1 2026",
+            "stage": "power",
+            "ticker": "CIFR",
+            "type": "earnings_signal_missing"
+          },
+          {
+            "detail": "CoreWeave's willingness to commit $10.2B over 12 years validates external hosting demand for scarce powered AI sites.",
+            "quarter": "Q1 2026",
+            "stage": "gpu_cloud",
+            "ticker": "CORZ",
+            "type": "earnings_signal_missing"
+          },
+          {
+            "detail": "Direct control of ~810MW operating high-density capacity and ~4.5GW secured grid-connected power makes IREN the stronges",
+            "quarter": "Q1 2026",
+            "stage": "power",
+            "ticker": "IREN",
+            "type": "earnings_signal_missing"
+          },
+          {
+            "detail": "Meta's up-to-$27B commitment and large backlog validate external AI cloud demand beyond hyperscaler first-party footprin",
+            "quarter": "Q1 2026",
+            "stage": "gpu_cloud",
+            "ticker": "NBIS",
+            "type": "earnings_signal_missing"
+          },
+          {
+            "detail": "Nebius has a 3GW target but only ~170MW active in late 2025, making greenfield deliverability and interconnection risk c",
+            "quarter": "Q1 2026",
+            "stage": "power",
+            "ticker": "NBIS",
+            "type": "earnings_signal_missing"
+          }
+        ],
+        "title": "Drift Warnings"
+      }
+    ],
+    "size_bytes": 41106,
+    "source": "canonical/40-engine/engine/report.py",
+    "title": "semi-stocks latest report"
+  }
+]
