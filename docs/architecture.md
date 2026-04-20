@@ -19,7 +19,8 @@ Canonical source-of-truth lane.
 - `canonical/30-thesis/` — narrow control plane
 - `canonical/40-engine/` — engine stage
 - `canonical/50-reports/` — published outputs
-- `canonical/wiki-site/` — generated integration/export bundle for the external Wikiwise app shell; not a canonical propagation stage
+- `canonical/site-data/` — generated data contract for repo-owned web readers; not a canonical propagation stage
+- `canonical/site-reader/` — repo-owned web reader source consuming generated site data; not a canonical propagation stage
 
 ### `agents/`
 
@@ -69,9 +70,13 @@ Canonical synthesis and rendering stage. The stage contains a package-safe `engi
 
 Canonical published artifacts rendered from `canonical/40-engine/`. These are downstream outputs and stay separate from `canonical/10-wiki/outputs/`.
 
-### `canonical/wiki-site/`
+### `canonical/site-data/`
 
-Generated Wikiwise integration/export bundle derived from canonical wiki state. This surface is repo-owned export output consumed by the external app shell, not a sixth canonical stage or a hand-maintained UI source tree.
+Generated JSON data contracts derived from canonical wiki, data, thesis, and report state. This is the preferred repo-owned app boundary for new web reader surfaces such as Signal Desk. It may be deleted and rebuilt from `canonical/40-engine/`.
+
+### `canonical/site-reader/`
+
+Repo-owned web reader source that consumes `canonical/site-data/` only. It is presentation/source code for a reader, not canonical research content and not a propagation stage.
 
 ## Principles
 
@@ -79,6 +84,7 @@ Generated Wikiwise integration/export bundle derived from canonical wiki state. 
 - Structured numeric and verifiable state lives in `canonical/20-data/`.
 - `canonical/30-thesis/thesis.yaml` stays narrow and machine-readable.
 - `canonical/40-engine/` and `canonical/50-reports/` remain separate authority layers.
+- Generated app surfaces (`site-data`, `site-reader`) must not become new sources of truth.
 - Sidecar automation reads canonical lanes but writes under `agents/`.
 - Root should show authority, not legacy implementation history.
 

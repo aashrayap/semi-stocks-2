@@ -7,7 +7,6 @@
 - Read [README.md](README.md) for the repo map.
 - Read [docs/architecture.md](docs/architecture.md) for canonical lane ownership.
 - Read [docs/doc-contract.md](docs/doc-contract.md) before adding docs.
-- Use [docs/artifacts/canonical-propagation-model/07_implementation-spec.md](docs/artifacts/canonical-propagation-model/07_implementation-spec.md) for the current repo/Wikiwise contract.
 
 ## Authority Model
 
@@ -22,7 +21,8 @@ Write ownership:
 - `canonical/30-thesis/thesis.yaml` owns the narrow thesis control plane.
 - `canonical/40-engine/` owns synthesis and render code.
 - `canonical/50-reports/` owns canonical published reports.
-- `canonical/wiki-site/` is generated integration output for Wikiwise, not a sixth canonical stage.
+- `canonical/site-data/` is generated app data for repo-owned web readers, not a canonical stage.
+- `canonical/site-reader/` is repo-owned web reader source that consumes generated site data, not a canonical stage.
 - `agents/` is sidecar-only unless the user explicitly asks to promote changes.
 - `tmp/` is scratch only.
 
@@ -40,8 +40,6 @@ Write ownership:
 - Use `uv run python canonical/40-engine/report.py` for canonical report generation.
 - The package-safe engine module root is `canonical/40-engine/engine/`.
 - Keep `config.yaml` at repo root unless the user explicitly asks to move it.
-- Wikiwise source checkout is separate: `/Users/ash/Documents/2026/wikiwise`.
-- Installed Wikiwise app is `/Applications/Wikiwise.app`; it consumes `canonical/wiki-site/`.
 
 ## Wiki Writes
 
@@ -55,4 +53,4 @@ Write ownership:
 - Root docs stay minimal: `README.md`, `AGENTS.md`, `CLAUDE.md`.
 - Repo-wide process docs live under `docs/process/`.
 - Subsystem-local docs stay near their owner.
-- Historical migration docs remain under `docs/artifacts/`; do not use them as current runtime authority unless `07_implementation-spec.md` points there.
+- Historical migration docs remain under `docs/artifacts/`; do not use them as current runtime authority unless current root docs point there.
