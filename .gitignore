@@ -6,3 +6,4 @@ canonical/site-reader/node_modules/
 canonical/site-reader/dist/
 canonical/site-reader/public/site-data/
 canonical/site-reader/test-results/
+canonical/site-reader/.vite/
