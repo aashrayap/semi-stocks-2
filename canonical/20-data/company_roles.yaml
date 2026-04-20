@@ -1,0 +1,279 @@
+# Explicit company-role map for Signal Desk.
+#
+# This is presentation/integration metadata for the generated web reader. It is
+# intentionally separate from thesis bottlenecks in canonical/30-thesis/thesis.yaml.
+# Do not infer roles from bottleneck slugs in the generator.
+
+roles:
+  equipment:
+    id: company-role:equipment
+    label: Equipment
+    rank: 0
+    aliases: []
+    description: Semiconductor and infrastructure equipment suppliers.
+    search_text: equipment semiconductor equipment tools
+  foundry:
+    id: company-role:foundry
+    label: Foundry
+    rank: 1
+    aliases: []
+    description: Semiconductor fabrication and foundry providers.
+    search_text: foundry fab manufacturing semiconductor
+  memory:
+    id: company-role:memory
+    label: Memory
+    rank: 1
+    aliases: [hbm, dram, nand]
+    description: Memory and storage semiconductor manufacturers.
+    search_text: memory hbm dram nand
+  packaging:
+    id: company-role:packaging
+    label: Packaging
+    rank: 1
+    aliases: [advanced-packaging]
+    description: Advanced packaging and assembly providers.
+    search_text: packaging cowos advanced packaging
+  chip-designer:
+    id: company-role:chip-designer
+    label: Chip designers
+    rank: 2
+    aliases: [fabless, accelerator]
+    description: Companies primarily designing semiconductors or accelerators.
+    search_text: chip designer semiconductor accelerator fabless gpu asic
+  networking:
+    id: company-role:networking
+    label: Networking
+    rank: 3
+    aliases: []
+    description: Network switching, interconnect, and signal-integrity suppliers.
+    search_text: networking switches interconnect signal integrity
+  optics:
+    id: company-role:optics
+    label: Optics
+    rank: 3
+    aliases: [optical, photonics]
+    description: Optical component, transceiver, and photonics suppliers.
+    search_text: optics optical photonics transceiver cpo pluggable
+  server-oem:
+    id: company-role:server-oem
+    label: Server OEMs
+    rank: 3
+    aliases: [storage-infrastructure]
+    description: Server, storage, and rack-scale infrastructure suppliers.
+    search_text: server oem storage infrastructure racks
+  power-infrastructure:
+    id: company-role:power-infrastructure
+    label: Power infrastructure
+    rank: 3
+    aliases: [power, energy]
+    description: Power, energy, generation, and power-adjacent infrastructure.
+    search_text: power infrastructure energy generation data center power
+  gpu-cloud:
+    id: company-role:gpu-cloud
+    label: GPU cloud
+    rank: 4
+    aliases: [neocloud]
+    description: GPU cloud and AI infrastructure operators.
+    search_text: gpu cloud neocloud ai infrastructure operator
+  hyperscaler:
+    id: company-role:hyperscaler
+    label: Hyperscalers
+    rank: 5
+    aliases: [cloud]
+    description: Large cloud and hyperscale AI infrastructure buyers/operators.
+    search_text: hyperscaler cloud big tech ai infrastructure
+  ai-lab:
+    id: company-role:ai-lab
+    label: AI labs
+    rank: 6
+    aliases: [model-lab]
+    description: AI model developers and labs.
+    search_text: ai lab model developer foundation model
+  software-services:
+    id: company-role:software-services
+    label: Software services
+    rank: 6
+    aliases: [it-services]
+    description: Software and IT services companies in source-channel filings.
+    search_text: software services it consulting
+  market-basket:
+    id: company-role:market-basket
+    label: Market basket
+    rank: null
+    aliases: [etf, hedge]
+    description: Market basket or hedge instruments preserved from source filings.
+    search_text: market basket etf hedge macro hedge
+
+companies:
+  ALAB:
+    primary_role_id: company-role:networking
+    secondary_role_ids: [company-role:chip-designer]
+    display_tags: [copper_signal_integrity]
+  AMSC:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: []
+  AMZN:
+    primary_role_id: company-role:hyperscaler
+    secondary_role_ids: []
+    display_tags: []
+  APLD:
+    primary_role_id: company-role:gpu-cloud
+    secondary_role_ids: [company-role:power-infrastructure]
+    display_tags: [neocloud, data_center]
+  ASML:
+    primary_role_id: company-role:equipment
+    secondary_role_ids: []
+    display_tags: [euv]
+  AVGO:
+    primary_role_id: company-role:chip-designer
+    secondary_role_ids: [company-role:networking]
+    display_tags: [custom_asic]
+  BE:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: [fuel_cell]
+  BITF:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: [bitcoin_miner, data_center]
+  BTDR:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: [bitcoin_miner, data_center]
+  BW:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: []
+  CIEN:
+    primary_role_id: company-role:networking
+    secondary_role_ids: [company-role:optics]
+    display_tags: [optical_networking]
+  CIFR:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: [company-role:gpu-cloud]
+    display_tags: [bitcoin_miner, data_center, power_landlord]
+  CLSK:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: [bitcoin_miner, data_center]
+  COHR:
+    primary_role_id: company-role:optics
+    secondary_role_ids: []
+    display_tags: [pluggable_optics, cpo]
+  CORZ:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: [company-role:gpu-cloud]
+    display_tags: [data_center, power_landlord]
+  CRWV:
+    primary_role_id: company-role:gpu-cloud
+    secondary_role_ids: []
+    display_tags: [neocloud]
+  EQT:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: [natural_gas]
+  GLXY:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: [company-role:gpu-cloud]
+    display_tags: [data_center, power_landlord, adjacent]
+  GNRC:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: []
+  GOOGL:
+    primary_role_id: company-role:hyperscaler
+    secondary_role_ids: [company-role:ai-lab]
+    display_tags: []
+  HUT:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: [bitcoin_miner, data_center]
+  INFY:
+    primary_role_id: company-role:software-services
+    secondary_role_ids: []
+    display_tags: []
+  INTC:
+    primary_role_id: company-role:foundry
+    secondary_role_ids: [company-role:chip-designer]
+    display_tags: [foundry_relief]
+  IREN:
+    primary_role_id: company-role:gpu-cloud
+    secondary_role_ids: [company-role:power-infrastructure]
+    display_tags: [neocloud, data_center]
+  KRC:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: [data_center, real_estate]
+  LBRT:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: [energy_services]
+  LITE:
+    primary_role_id: company-role:optics
+    secondary_role_ids: []
+    display_tags: [pluggable_optics, cpo]
+  MSFT:
+    primary_role_id: company-role:hyperscaler
+    secondary_role_ids: [company-role:ai-lab]
+    display_tags: []
+  MU:
+    primary_role_id: company-role:memory
+    secondary_role_ids: []
+    display_tags: [hbm, dram]
+  NBIS:
+    primary_role_id: company-role:gpu-cloud
+    secondary_role_ids: []
+    display_tags: [neocloud]
+  NVDA:
+    primary_role_id: company-role:chip-designer
+    secondary_role_ids: [company-role:networking]
+    display_tags: [gpu, accelerator]
+  PSIX:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: []
+  PSTG:
+    primary_role_id: company-role:server-oem
+    secondary_role_ids: []
+    display_tags: [storage]
+  PUMP:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: [energy_services]
+  QQQ:
+    primary_role_id: company-role:market-basket
+    secondary_role_ids: []
+    display_tags: [macro_hedge, etf]
+  RIOT:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: [bitcoin_miner, data_center]
+  SEI:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: []
+    display_tags: []
+  SMTC:
+    primary_role_id: company-role:networking
+    secondary_role_ids: [company-role:chip-designer]
+    display_tags: [copper_signal_integrity]
+  SNDK:
+    primary_role_id: company-role:memory
+    secondary_role_ids: []
+    display_tags: [nand, storage]
+  TSEM:
+    primary_role_id: company-role:foundry
+    secondary_role_ids: []
+    display_tags: [specialty_foundry]
+  TSM:
+    primary_role_id: company-role:foundry
+    secondary_role_ids: [company-role:packaging]
+    display_tags: [n3_logic, cowos]
+  WULF:
+    primary_role_id: company-role:power-infrastructure
+    secondary_role_ids: [company-role:gpu-cloud]
+    display_tags: [data_center, power_landlord]
+  WYFI:
+    primary_role_id: company-role:optics
+    secondary_role_ids: []
+    display_tags: [fiber]
