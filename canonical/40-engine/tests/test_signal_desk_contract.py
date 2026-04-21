@@ -44,14 +44,14 @@ class SignalDeskContractTest(unittest.TestCase):
 
     def test_position_leg_counts_match_source(self) -> None:
         counts = self.signal_desk["quality"]["position_leg_counts"]
-        self.assertEqual(counts["baker"], {"source": 20, "emitted": 20})
-        self.assertEqual(counts["leopold"], {"source": 25, "emitted": 25})
+        self.assertEqual(counts["baker"], {"source": 18, "emitted": 18})
+        self.assertEqual(counts["leopold"], {"source": 10, "emitted": 10})
         positions = [row for row in self.signal_desk["rows"] if row["row_type"] == "position"]
         by_fund = {}
         for row in positions:
             by_fund[row["fund_id"]] = by_fund.get(row["fund_id"], 0) + 1
-        self.assertEqual(by_fund["baker"], 20)
-        self.assertEqual(by_fund["leopold"], 25)
+        self.assertEqual(by_fund["baker"], 18)
+        self.assertEqual(by_fund["leopold"], 10)
 
     def test_rows_have_source_documents_and_timeline(self) -> None:
         source_doc_ids = {doc["id"] for doc in self.signal_desk["source_documents"]}

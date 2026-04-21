@@ -165,8 +165,7 @@
         "company:COHR",
         "company:LITE",
         "company:CIEN",
-        "company:ALAB",
-        "company:SMTC"
+        "company:ALAB"
       ],
       "cycle_action": "Watch",
       "cycle_phase": "pre_cycle",
@@ -175,7 +174,7 @@
       "cycle_signal": "COHR and LITE now have real orders, partnerships, and demos, but revenue still points to 2027+ rather than a current bottleneck.",
       "id": "thesis-stage:co-packaged-optics-cpo-scale-up",
       "name": "Co-packaged optics / CPO (scale-up)",
-      "notes": "Volume CPO is a Feynman story (2028+), NOT Rubin Ultra. NVL576 is test/low-volume. Inside every rack through NVL1152 remains copper. Early COHR/LITE orders matter because they improve confidence in the roadmap, but they do not yet move this stage from \"next\" to \"active.\" ALAB and SMTC benefit from copper persistence inside racks — retimers and signal integrity ICs needed at 200G/lane. Baker: ALAB $268M, SMTC $51M. CPO winners will be whoever integrates optical engines on-package — COHR and LITE are best positioned but volume revenue is years away.\n",
+      "notes": "Volume CPO is a Feynman story (2028+), NOT Rubin Ultra. NVL576 is test/low-volume. Inside every rack through NVL1152 remains copper. Early COHR/LITE orders matter because they improve confidence in the roadmap, but they do not yet move this stage from \"next\" to \"active.\" ALAB benefits from copper persistence inside racks — retimers and signal integrity needed at 200G/lane. Baker: ALAB $268M. CPO winners will be whoever integrates optical engines on-package — COHR and LITE are best positioned but volume revenue is years away.\n",
       "period": "2028-2030",
       "signals": [
         "Lumentum disclosed an incremental multi-hundred-million-dollar CPO order for 1H 2027 delivery",
@@ -190,8 +189,7 @@
         "COHR",
         "LITE",
         "CIEN",
-        "ALAB",
-        "SMTC"
+        "ALAB"
       ]
     },
     {
@@ -321,12 +319,6 @@
       "next_earnings": "2026-05-07",
       "status": "active"
     },
-    "CORZ": {
-      "bottleneck": "power",
-      "company_id": "company:CORZ",
-      "next_earnings": "2026-05-08",
-      "status": "played_out"
-    },
     "CRWV": {
       "bottleneck": "gpu_cloud",
       "company_id": "company:CRWV",
@@ -370,13 +362,6 @@
       "next_earnings": "2026-05-28",
       "status": "active"
     },
-    "SMTC": {
-      "also": "cpo_next",
-      "bottleneck": "copper_signal_integrity",
-      "company_id": "company:SMTC",
-      "next_earnings": "2026-06-04",
-      "status": "active"
-    },
     "SNDK": {
       "bottleneck": "memory",
       "company_id": "company:SNDK",
@@ -396,5 +381,5 @@
       "status": "active"
     }
   },
-  "updated": "2026-04-08"
+  "updated": "2026-04-21"
 }

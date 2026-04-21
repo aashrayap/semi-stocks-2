@@ -17,6 +17,27 @@ cross_checked:
   - hedgefollow
   - 13f_info
 
+active_roster_prune:
+  market_cap_check_date: "2026-04-21"
+  threshold_usd: 10_000_000_000
+  reason: "Excluded from active generated company roster because current market cap was below $10B."
+  tickers:
+    - { ticker: APLD, first_acquired: "Q1 2025", market_cap_usd_approx: 9_300_000_000 }
+    - { ticker: BITF, first_acquired: "Q4 2025", market_cap_usd_approx: 1_600_000_000 }
+    - { ticker: BTDR, first_acquired: "Q3 2025", market_cap_usd_approx: 3_200_000_000 }
+    - { ticker: BW, first_acquired: "Q4 2025", market_cap_usd_approx: 2_300_000_000 }
+    - { ticker: CIFR, first_acquired: "Q3 2025", market_cap_usd_approx: 7_900_000_000 }
+    - { ticker: CLSK, first_acquired: "Q4 2025", market_cap_usd_approx: 3_100_000_000 }
+    - { ticker: CORZ, first_acquired: "Q1 2025", market_cap_usd_approx: 6_300_000_000 }
+    - { ticker: HUT, first_acquired: "Q3 2025", market_cap_usd_approx: 8_800_000_000 }
+    - { ticker: KRC, first_acquired: "Q4 2025", market_cap_usd_approx: 3_800_000_000 }
+    - { ticker: LBRT, first_acquired: "Q4 2025", market_cap_usd_approx: 4_300_000_000 }
+    - { ticker: PSIX, first_acquired: "Q4 2025", market_cap_usd_approx: 1_800_000_000 }
+    - { ticker: PUMP, first_acquired: "Q4 2025", market_cap_usd_approx: 1_700_000_000 }
+    - { ticker: RIOT, first_acquired: "Q3 2025", market_cap_usd_approx: 6_800_000_000 }
+    - { ticker: SEI, first_acquired: "Q3 2025", market_cap_usd_approx: 4_900_000_000 }
+    - { ticker: WYFI, first_acquired: "Q4 2025", market_cap_usd_approx: 600_000_000 }
+
 positions:
   - ticker: CRWV
     company: CoreWeave
@@ -58,17 +79,6 @@ positions:
     change_vs_prior: "+604%"
     bottleneck: optical
 
-  - ticker: CORZ
-    company: Core Scientific
-    type: common
-    value: 419_000_000
-    shares: 29_000_000
-    pct_portfolio: 0.076
-    first_acquired: "Q1 2025"
-    change_vs_prior: "+42%"
-    bottleneck: power
-    notes: "9.4% activist stake — 13D filed Aug 2025"
-
   - ticker: IREN
     company: IREN
     type: common
@@ -77,16 +87,6 @@ positions:
     pct_portfolio: 0.060
     first_acquired: "Q1 2025"
     change_vs_prior: "+20%"
-    bottleneck: power
-
-  - ticker: APLD
-    company: Applied Digital
-    type: common
-    value: 278_000_000
-    shares: 11_000_000
-    pct_portfolio: 0.050
-    first_acquired: "Q1 2025"
-    change_vs_prior: "+86%"
     bottleneck: power
 
   - ticker: SNDK
@@ -109,16 +109,6 @@ positions:
     change_vs_prior: "+161%"
     bottleneck: power
 
-  - ticker: CIFR
-    company: Cipher Mining
-    type: common
-    value: 155_000_000
-    shares: 11_000_000
-    pct_portfolio: 0.028
-    first_acquired: "Q3 2025"
-    change_vs_prior: "+115%"
-    bottleneck: power
-
   - ticker: COHR
     company: Coherent Corp
     type: common
@@ -128,16 +118,6 @@ positions:
     first_acquired: "Q3 2025"
     change_vs_prior: "+211%"
     bottleneck: optical
-
-  - ticker: SEI
-    company: Solaris Energy Infrastructure
-    type: common
-    value: 86_000_000
-    shares: 1_900_000
-    pct_portfolio: 0.016
-    first_acquired: "Q3 2025"
-    change_vs_prior: "+62%"
-    bottleneck: power
 
   - ticker: TSEM
     company: Tower Semiconductor
@@ -149,97 +129,6 @@ positions:
     change_vs_prior: "+53%"
     bottleneck: foundry
 
-  - ticker: RIOT
-    company: Riot Platforms
-    type: common
-    value: 78_000_000
-    shares: 6_200_000
-    pct_portfolio: 0.014
-    first_acquired: "Q3 2025"
-    change_vs_prior: "+71%"
-    bottleneck: power
-
-  - ticker: KRC
-    company: Kilroy Realty
-    type: common
-    value: 50_000_000
-    shares: 1_300_000
-    pct_portfolio: 0.009
-    first_acquired: "Q4 2025"
-    change_vs_prior: new
-    bottleneck: power
-    notes: "DC real estate play"
-
-  - ticker: HUT
-    company: Hut 8 Corp
-    type: common
-    value: 40_000_000
-    shares: 860_000
-    pct_portfolio: 0.007
-    first_acquired: "Q3 2025"
-    change_vs_prior: "+43%"
-    bottleneck: power
-
-  - ticker: WYFI
-    company: WhiteFiber
-    type: common
-    value: 28_000_000
-    shares: 1_800_000
-    pct_portfolio: 0.005
-    first_acquired: "Q4 2025"
-    change_vs_prior: new
-    bottleneck: optical
-
-  - ticker: PSIX
-    company: Power Solutions Intl
-    type: common
-    value: 25_000_000
-    shares: 432_000
-    pct_portfolio: 0.004
-    first_acquired: "Q4 2025"
-    change_vs_prior: new
-    bottleneck: power
-
-  - ticker: BTDR
-    company: Bitdeer Technologies
-    type: common
-    value: 20_000_000
-    shares: 1_800_000
-    pct_portfolio: 0.004
-    first_acquired: "Q3 2025"
-    change_vs_prior: "+92%"
-    bottleneck: power
-
-  - ticker: CLSK
-    company: CleanSpark
-    type: common
-    value: 17_000_000
-    shares: 1_600_000
-    pct_portfolio: 0.003
-    first_acquired: "Q4 2025"
-    change_vs_prior: new
-    bottleneck: power
-
-  - ticker: BITF
-    company: Bitfarms
-    type: common
-    value: 16_000_000
-    shares: 6_900_000
-    pct_portfolio: 0.003
-    first_acquired: "Q4 2025"
-    change_vs_prior: new
-    bottleneck: power
-
-  - ticker: LBRT
-    company: Liberty Energy
-    type: common
-    value: 11_000_000
-    shares: 567_000
-    pct_portfolio: 0.002
-    first_acquired: "Q4 2025"
-    change_vs_prior: new
-    bottleneck: power
-
   - ticker: INFY
     company: Infosys
     type: put
@@ -250,26 +139,6 @@ positions:
     change_vs_prior: new
     bottleneck: short
     notes: "Only short position"
-
-  - ticker: PUMP
-    company: ProPetro Holdings
-    type: common
-    value: 8_700_000
-    shares: 910_000
-    pct_portfolio: 0.002
-    first_acquired: "Q4 2025"
-    change_vs_prior: new
-    bottleneck: power
-
-  - ticker: BW
-    company: Babcock & Wilcox
-    type: common
-    value: 8_600_000
-    shares: 1_400_000
-    pct_portfolio: 0.002
-    first_acquired: "Q4 2025"
-    change_vs_prior: new
-    bottleneck: power
 
 exits:
   - ticker: NVDA

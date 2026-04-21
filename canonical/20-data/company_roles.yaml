@@ -109,18 +109,10 @@ companies:
     primary_role_id: company-role:networking
     secondary_role_ids: [company-role:chip-designer]
     display_tags: [copper_signal_integrity]
-  AMSC:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: []
   AMZN:
     primary_role_id: company-role:hyperscaler
     secondary_role_ids: []
     display_tags: []
-  APLD:
-    primary_role_id: company-role:gpu-cloud
-    secondary_role_ids: [company-role:power-infrastructure]
-    display_tags: [neocloud, data_center]
   ASML:
     primary_role_id: company-role:equipment
     secondary_role_ids: []
@@ -133,38 +125,14 @@ companies:
     primary_role_id: company-role:power-infrastructure
     secondary_role_ids: []
     display_tags: [fuel_cell]
-  BITF:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: [bitcoin_miner, data_center]
-  BTDR:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: [bitcoin_miner, data_center]
-  BW:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: []
   CIEN:
     primary_role_id: company-role:networking
     secondary_role_ids: [company-role:optics]
     display_tags: [optical_networking]
-  CIFR:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: [company-role:gpu-cloud]
-    display_tags: [bitcoin_miner, data_center, power_landlord]
-  CLSK:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: [bitcoin_miner, data_center]
   COHR:
     primary_role_id: company-role:optics
     secondary_role_ids: []
     display_tags: [pluggable_optics, cpo]
-  CORZ:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: [company-role:gpu-cloud]
-    display_tags: [data_center, power_landlord]
   CRWV:
     primary_role_id: company-role:gpu-cloud
     secondary_role_ids: []
@@ -185,10 +153,6 @@ companies:
     primary_role_id: company-role:hyperscaler
     secondary_role_ids: [company-role:ai-lab]
     display_tags: []
-  HUT:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: [bitcoin_miner, data_center]
   INFY:
     primary_role_id: company-role:software-services
     secondary_role_ids: []
@@ -201,14 +165,6 @@ companies:
     primary_role_id: company-role:gpu-cloud
     secondary_role_ids: [company-role:power-infrastructure]
     display_tags: [neocloud, data_center]
-  KRC:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: [data_center, real_estate]
-  LBRT:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: [energy_services]
   LITE:
     primary_role_id: company-role:optics
     secondary_role_ids: []
@@ -229,34 +185,14 @@ companies:
     primary_role_id: company-role:chip-designer
     secondary_role_ids: [company-role:networking]
     display_tags: [gpu, accelerator]
-  PSIX:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: []
   PSTG:
     primary_role_id: company-role:server-oem
     secondary_role_ids: []
     display_tags: [storage]
-  PUMP:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: [energy_services]
   QQQ:
     primary_role_id: company-role:market-basket
     secondary_role_ids: []
     display_tags: [macro_hedge, etf]
-  RIOT:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: [bitcoin_miner, data_center]
-  SEI:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: []
-    display_tags: []
-  SMTC:
-    primary_role_id: company-role:networking
-    secondary_role_ids: [company-role:chip-designer]
-    display_tags: [copper_signal_integrity]
   SNDK:
     primary_role_id: company-role:memory
     secondary_role_ids: []
@@ -269,11 +205,3 @@ companies:
     primary_role_id: company-role:foundry
     secondary_role_ids: [company-role:packaging]
     display_tags: [n3_logic, cowos]
-  WULF:
-    primary_role_id: company-role:power-infrastructure
-    secondary_role_ids: [company-role:gpu-cloud]
-    display_tags: [data_center, power_landlord]
-  WYFI:
-    primary_role_id: company-role:optics
-    secondary_role_ids: []
-    display_tags: [fiber]

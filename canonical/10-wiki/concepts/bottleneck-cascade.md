@@ -3,7 +3,7 @@ title: Bottleneck Cascade
 tags: [thesis, bottleneck, supply-chain, rotation]
 sources: [../../30-thesis/thesis.yaml, raw/dwarkesh-dylan-ai-infrastructure-bottlenecks.md, raw/jstwng-nvidia-margin-illusion.md]
 created: 2026-04-07
-updated: 2026-04-13
+updated: 2026-04-21
 ---
 
 # Bottleneck Cascade
@@ -19,7 +19,7 @@ The core thesis: AI compute demand is chronically underestimated. Every supplier
 | [[concepts/memory-supercycle]] | 2025-2026 | Active | MU, SNDK |
 | [[concepts/n3-wafer-crunch]] | 2025-2027 | Active | TSM, NVDA, AVGO, INTC |
 | [[concepts/pluggable-optics]] | 2025-2027 | Active | COHR, LITE, CIEN |
-| [[concepts/co-packaged-optics]] | 2028-2030 | Next | COHR, LITE, CIEN, ALAB, SMTC |
+| [[concepts/co-packaged-optics]] | 2028-2030 | Next | COHR, LITE, CIEN, ALAB |
 | [[concepts/euv-tool-bottleneck]] | 2028-2030 | Next | ASML |
 
 The hierarchy is getting clearer: power and data-center buildout remain difficult, but they are substitution-rich. Semiconductor constraints are substitution-poor, which is why the bottleneck keeps rotating upstream from deployment into memory, wafers, fabs, and eventually tools.

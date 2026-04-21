@@ -122,8 +122,7 @@
               "COHR",
               "LITE",
               "CIEN",
-              "ALAB",
-              "SMTC"
+              "ALAB"
             ]
           },
           {
@@ -286,21 +285,6 @@
             "held_by": [
               "leopold"
             ],
-            "leopold_pct": 0.076,
-            "leopold_value": 419000000,
-            "next_earnings": "2026-05-08",
-            "semi_signals": 0,
-            "status": "played_out",
-            "ticker": "CORZ"
-          },
-          {
-            "agreement": "single",
-            "baker_pct": null,
-            "baker_value": null,
-            "bottleneck": "power",
-            "held_by": [
-              "leopold"
-            ],
             "leopold_pct": 0.06,
             "leopold_value": 329000000,
             "next_earnings": "2026-05-15",
@@ -367,21 +351,6 @@
             "semi_signals": 0,
             "status": "active",
             "ticker": "TSEM"
-          },
-          {
-            "agreement": "single",
-            "baker_pct": 0.006,
-            "baker_value": 51000000,
-            "bottleneck": "copper_signal_integrity",
-            "held_by": [
-              "baker"
-            ],
-            "leopold_pct": null,
-            "leopold_value": null,
-            "next_earnings": "2026-06-04",
-            "semi_signals": 0,
-            "status": "active",
-            "ticker": "SMTC"
           },
           {
             "agreement": "single",
