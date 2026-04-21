@@ -130,3 +130,15 @@ Tiered framework: TSM + ASML (Tier 1, highest conviction), MU + AVGO (Tier 2, ti
 ## [2026-04-13] rebuild-index | 22 pages indexed, 136 local links, 0 orphan pages, 0 dead links
 
 ## [2026-04-13] rebuild-index | 23 pages indexed, 148 local links, 0 orphan pages, 0 dead links
+
+## [2026-04-21] cleanup | active company roster pruned below $10B market cap
+
+Removed sub-$10B current market-cap names from the active generated company roster while preserving pruning metadata in the structured 13F source files.
+
+- **Leopold pruned:** APLD, BITF, BTDR, BW, CIFR, CLSK, CORZ, HUT, KRC, LBRT, PSIX, PUMP, RIOT, SEI, WYFI
+- **Baker pruned:** AMSC, SMTC
+- **Role-map-only pruned:** WULF
+- **Thesis map updated:** removed SMTC from CPO/copper signal integrity and CORZ from played-out power
+- **Wiki summaries updated:** Leopold, Baker, bottleneck cascade, and co-packaged optics pages now match the active roster
+
+## [2026-04-21] rebuild-index | 23 pages indexed, 148 local links, 0 orphan pages, 0 dead links

@@ -11,17 +11,7 @@
       "type": "published_in_report"
     },
     {
-      "source": "company:AMSC",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
       "source": "company:AMZN",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:APLD",
       "target": "report:latest",
       "type": "published_in_report"
     },
@@ -56,37 +46,12 @@
       "type": "published_in_report"
     },
     {
-      "source": "company:BITF",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:BTDR",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:BW",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
       "source": "company:CIEN",
       "target": "bottleneck:pluggable-optics",
       "type": "exposes_company_to"
     },
     {
       "source": "company:CIEN",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:CIFR",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:CLSK",
       "target": "report:latest",
       "type": "published_in_report"
     },
@@ -102,16 +67,6 @@
     },
     {
       "source": "company:COHR",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:CORZ",
-      "target": "bottleneck:power",
-      "type": "exposes_company_to"
-    },
-    {
-      "source": "company:CORZ",
       "target": "report:latest",
       "type": "published_in_report"
     },
@@ -151,11 +106,6 @@
       "type": "published_in_report"
     },
     {
-      "source": "company:HUT",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
       "source": "company:INFY",
       "target": "report:latest",
       "type": "published_in_report"
@@ -182,16 +132,6 @@
     },
     {
       "source": "company:IREN",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:KRC",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:LBRT",
       "target": "report:latest",
       "type": "published_in_report"
     },
@@ -246,42 +186,12 @@
       "type": "published_in_report"
     },
     {
-      "source": "company:PSIX",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
       "source": "company:PSTG",
       "target": "report:latest",
       "type": "published_in_report"
     },
     {
-      "source": "company:PUMP",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
       "source": "company:QQQ",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:RIOT",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:SEI",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:SMTC",
-      "target": "bottleneck:copper-signal-integrity",
-      "type": "exposes_company_to"
-    },
-    {
-      "source": "company:SMTC",
       "target": "report:latest",
       "type": "published_in_report"
     },
@@ -317,11 +227,6 @@
     },
     {
       "source": "company:TSM",
-      "target": "report:latest",
-      "type": "published_in_report"
-    },
-    {
-      "source": "company:WYFI",
       "target": "report:latest",
       "type": "published_in_report"
     },
@@ -452,11 +357,6 @@
     },
     {
       "source": "page:baker-q4-2025",
-      "target": "company:SMTC",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:baker-q4-2025",
       "target": "page:bottleneck-cascade",
       "type": "links_to"
     },
@@ -518,11 +418,6 @@
     {
       "source": "page:bottleneck-cascade",
       "target": "company:NVDA",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:bottleneck-cascade",
-      "target": "company:SMTC",
       "type": "mentions_ticker"
     },
     {
@@ -633,11 +528,6 @@
     {
       "source": "page:co-packaged-optics",
       "target": "company:LITE",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:co-packaged-optics",
-      "target": "company:SMTC",
       "type": "mentions_ticker"
     },
     {
@@ -1072,11 +962,6 @@
     },
     {
       "source": "page:leopold-q4-2025",
-      "target": "company:APLD",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
       "target": "company:AVGO",
       "type": "mentions_ticker"
     },
@@ -1087,37 +972,7 @@
     },
     {
       "source": "page:leopold-q4-2025",
-      "target": "company:BITF",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
-      "target": "company:BTDR",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
-      "target": "company:BW",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
-      "target": "company:CIFR",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
-      "target": "company:CLSK",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
       "target": "company:COHR",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
-      "target": "company:CORZ",
       "type": "mentions_ticker"
     },
     {
@@ -1128,11 +983,6 @@
     {
       "source": "page:leopold-q4-2025",
       "target": "company:EQT",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
-      "target": "company:HUT",
       "type": "mentions_ticker"
     },
     {
@@ -1152,16 +1002,6 @@
     },
     {
       "source": "page:leopold-q4-2025",
-      "target": "company:KRC",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
-      "target": "company:LBRT",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
       "target": "company:LITE",
       "type": "mentions_ticker"
     },
@@ -1177,26 +1017,6 @@
     },
     {
       "source": "page:leopold-q4-2025",
-      "target": "company:PSIX",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
-      "target": "company:PUMP",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
-      "target": "company:RIOT",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
-      "target": "company:SEI",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
       "target": "company:SNDK",
       "type": "mentions_ticker"
     },
@@ -1208,11 +1028,6 @@
     {
       "source": "page:leopold-q4-2025",
       "target": "company:TSM",
-      "type": "mentions_ticker"
-    },
-    {
-      "source": "page:leopold-q4-2025",
-      "target": "company:WYFI",
       "type": "mentions_ticker"
     },
     {
@@ -2002,7 +1817,7 @@
       "id": "bottleneck:copper-signal-integrity",
       "label": "Copper Signal Integrity",
       "type": "bottleneck",
-      "val": 3
+      "val": 2
     },
     {
       "id": "bottleneck:cowos-packaging",
@@ -2086,7 +1901,7 @@
       "id": "bottleneck:power",
       "label": "Power",
       "type": "bottleneck",
-      "val": 5
+      "val": 4
     },
     {
       "id": "bottleneck:power-dc-buildout",
@@ -2101,22 +1916,10 @@
       "val": 7
     },
     {
-      "id": "company:AMSC",
-      "label": "American Superconductor",
-      "type": "company",
-      "val": 2
-    },
-    {
       "id": "company:AMZN",
       "label": "Amazon",
       "type": "company",
       "val": 4
-    },
-    {
-      "id": "company:APLD",
-      "label": "Applied Digital",
-      "type": "company",
-      "val": 3
     },
     {
       "id": "company:ASML",
@@ -2137,52 +1940,16 @@
       "val": 4
     },
     {
-      "id": "company:BITF",
-      "label": "Bitfarms",
-      "type": "company",
-      "val": 3
-    },
-    {
-      "id": "company:BTDR",
-      "label": "Bitdeer Technologies",
-      "type": "company",
-      "val": 3
-    },
-    {
-      "id": "company:BW",
-      "label": "Babcock & Wilcox",
-      "type": "company",
-      "val": 3
-    },
-    {
       "id": "company:CIEN",
       "label": "Ciena Corp",
       "type": "company",
       "val": 8
     },
     {
-      "id": "company:CIFR",
-      "label": "Cipher Mining",
-      "type": "company",
-      "val": 3
-    },
-    {
-      "id": "company:CLSK",
-      "label": "CleanSpark",
-      "type": "company",
-      "val": 3
-    },
-    {
       "id": "company:COHR",
       "label": "Coherent Corp.",
       "type": "company",
       "val": 17
-    },
-    {
-      "id": "company:CORZ",
-      "label": "Core Scientific",
-      "type": "company",
-      "val": 4
     },
     {
       "id": "company:CRWV",
@@ -2209,12 +1976,6 @@
       "val": 4
     },
     {
-      "id": "company:HUT",
-      "label": "Hut 8 Corp",
-      "type": "company",
-      "val": 3
-    },
-    {
       "id": "company:INFY",
       "label": "Infosys",
       "type": "company",
@@ -2231,18 +1992,6 @@
       "label": "IREN",
       "type": "company",
       "val": 4
-    },
-    {
-      "id": "company:KRC",
-      "label": "Kilroy Realty",
-      "type": "company",
-      "val": 3
-    },
-    {
-      "id": "company:LBRT",
-      "label": "Liberty Energy",
-      "type": "company",
-      "val": 3
     },
     {
       "id": "company:LITE",
@@ -2269,20 +2018,8 @@
       "val": 22
     },
     {
-      "id": "company:PSIX",
-      "label": "Power Solutions Intl",
-      "type": "company",
-      "val": 3
-    },
-    {
       "id": "company:PSTG",
       "label": "Pure Storage",
-      "type": "company",
-      "val": 3
-    },
-    {
-      "id": "company:PUMP",
-      "label": "ProPetro Holdings",
       "type": "company",
       "val": 3
     },
@@ -2291,24 +2028,6 @@
       "label": "Invesco QQQ Trust",
       "type": "company",
       "val": 5
-    },
-    {
-      "id": "company:RIOT",
-      "label": "Riot Platforms",
-      "type": "company",
-      "val": 3
-    },
-    {
-      "id": "company:SEI",
-      "label": "Solaris Energy Infrastructure",
-      "type": "company",
-      "val": 3
-    },
-    {
-      "id": "company:SMTC",
-      "label": "Semtech",
-      "type": "company",
-      "val": 6
     },
     {
       "id": "company:SNDK",
@@ -2327,12 +2046,6 @@
       "label": "Taiwan Semiconductor Manufacturing Company Limited",
       "type": "company",
       "val": 17
-    },
-    {
-      "id": "company:WYFI",
-      "label": "WhiteFiber",
-      "type": "company",
-      "val": 3
     },
     {
       "id": "concept:bottleneck-cascade",
@@ -2412,21 +2125,21 @@
       "id": "page:baker-q4-2025",
       "label": "Gavin Baker — Q4 2025 13F",
       "type": "page:source",
-      "val": 29
+      "val": 28
     },
     {
       "href": "bottleneck-cascade.html",
       "id": "page:bottleneck-cascade",
       "label": "Bottleneck Cascade",
       "type": "page:concept",
-      "val": 49
+      "val": 48
     },
     {
       "href": "co-packaged-optics.html",
       "id": "page:co-packaged-optics",
       "label": "Co-Packaged Optics (CPO)",
       "type": "page:concept",
-      "val": 15
+      "val": 14
     },
     {
       "href": "cohr-q2-fy2026.html",
@@ -2503,7 +2216,7 @@
       "id": "page:leopold-q4-2025",
       "label": "Leopold Aschenbrenner — Q4 2025 13F",
       "type": "page:source",
-      "val": 43
+      "val": 28
     },
     {
       "href": "lite-q2-fy2026.html",
@@ -2642,7 +2355,7 @@
       "id": "report:latest",
       "label": "semi-stocks latest report",
       "type": "report",
-      "val": 42
+      "val": 25
     },
     {
       "id": "source:atreides-management-lp",

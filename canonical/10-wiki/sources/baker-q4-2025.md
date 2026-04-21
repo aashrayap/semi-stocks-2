@@ -3,7 +3,7 @@ title: "Gavin Baker — Q4 2025 13F"
 tags: [13f, baker, atreides, nvidia, optical, memory]
 sources: [../../20-data/sources/baker/q4_2025.yaml]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-21
 ---
 
 # Gavin Baker — Q4 2025 13F
@@ -30,7 +30,7 @@ Atreides Management LP. $8.2B AUM. 56 positions (more diversified than Leopold).
 - **Optical interconnect:** COHR ($394M), CIEN ($334M), LITE ($141M), ALAB ($268M)
 - **Memory:** MU ($411M)
 - **Storage:** PSTG ($381M)
-- **Copper signal integrity:** ALAB ($268M), SMTC ($51M)
+- **Copper signal integrity:** ALAB ($268M); SMTC was pruned from the active company roster after the sub-$10B market-cap pass
 - **Macro hedge:** QQQ puts ($2.2B notional)
 
 ## Notable Moves
@@ -38,6 +38,10 @@ Atreides Management LP. $8.2B AUM. 56 positions (more diversified than Leopold).
 - **EXITED:** AMD, META entirely — winner-take-most consolidation
 - **NEW:** WIX, MSFT, GNRC
 - NVDA position is opposite of Leopold's exit — directional disagreement
+
+## Active Roster Prune
+
+On 2026-04-21, sub-$10B current market-cap names were removed from the active generated company roster: AMSC and SMTC. The pruning details remain in `canonical/20-data/sources/baker/q4_2025.yaml`.
 
 ## Key Insight
 

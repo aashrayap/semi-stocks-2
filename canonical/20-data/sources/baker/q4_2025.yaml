@@ -20,6 +20,14 @@ cross_checked:
 # Only thesis-relevant positions included (semi supply chain, power, optical, memory, GPU).
 # Full filing has ~30 additional non-thesis positions (DKS, PM, RL, RBLX, W, etc.)
 
+active_roster_prune:
+  market_cap_check_date: "2026-04-21"
+  threshold_usd: 10_000_000_000
+  reason: "Excluded from active generated company roster because current market cap was below $10B."
+  tickers:
+    - { ticker: AMSC, first_acquired: null, market_cap_usd_approx: 2_000_000_000 }
+    - { ticker: SMTC, first_acquired: null, market_cap_usd_approx: 9_900_000_000 }
+
 positions:
   - ticker: QQQ
     company: Invesco QQQ Trust
@@ -163,15 +171,6 @@ positions:
     change_vs_prior: new
     bottleneck: hyperscaler
 
-  - ticker: SMTC
-    company: Semtech
-    type: common
-    value: 51_000_000
-    shares: 691_591
-    pct_portfolio: 0.006
-    change_vs_prior: "+2%"
-    bottleneck: optical
-
   - ticker: CRWV
     company: CoreWeave
     type: common
@@ -181,15 +180,6 @@ positions:
     change_vs_prior: "+864%"
     bottleneck: gpu_cloud
     notes: "Tiny vs Leopold's $1.2B — different conviction level"
-
-  - ticker: AMSC
-    company: American Superconductor
-    type: common
-    value: 30_000_000
-    shares: 1_044_193
-    pct_portfolio: 0.004
-    change_vs_prior: "+35%"
-    bottleneck: power
 
   - ticker: GNRC
     company: Generac Holdings

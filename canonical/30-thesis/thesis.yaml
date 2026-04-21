@@ -1,4 +1,4 @@
-updated: "2026-04-08"
+updated: "2026-04-21"
 
 # Baker cycle framework — applied to each cascade stage
 # cycle_phase: resolved | post_peak | peak_shortage | mid_shortage | early_cycle | pre_cycle
@@ -104,7 +104,7 @@ cascade:
     cycle_phase: pre_cycle
     cycle_signal: "COHR and LITE now have real orders, partnerships, and demos, but revenue still points to 2027+ rather than a current bottleneck."
     period: "2028-2030"
-    tickers: [COHR, LITE, CIEN, ALAB, SMTC]
+    tickers: [COHR, LITE, CIEN, ALAB]
     signals:
       - "Lumentum disclosed an incremental multi-hundred-million-dollar CPO order for 1H 2027 delivery"
       - "Coherent's March 2026 NVIDIA partnership added multibillion-dollar purchase commitments, future capacity rights, and a $2B investment"
@@ -117,8 +117,8 @@ cascade:
       NVL576 is test/low-volume. Inside every rack through NVL1152 remains copper.
       Early COHR/LITE orders matter because they improve confidence in the roadmap, but they do not
       yet move this stage from "next" to "active."
-      ALAB and SMTC benefit from copper persistence inside racks — retimers and signal
-      integrity ICs needed at 200G/lane. Baker: ALAB $268M, SMTC $51M.
+      ALAB benefits from copper persistence inside racks — retimers and signal
+      integrity needed at 200G/lane. Baker: ALAB $268M.
       CPO winners will be whoever integrates optical engines on-package — COHR and LITE
       are best positioned but volume revenue is years away.
 
@@ -145,7 +145,6 @@ ticker_map:
   LITE:  { bottleneck: pluggable_optics, status: active, also: cpo_next, next_earnings: "2026-05-06" }
   CIEN:  { bottleneck: pluggable_optics, status: active, next_earnings: "2026-06-04" }
   ALAB:  { bottleneck: copper_signal_integrity, status: active, also: cpo_next, next_earnings: "2026-05-06" }
-  SMTC:  { bottleneck: copper_signal_integrity, status: active, also: cpo_next, next_earnings: "2026-06-04" }
   MU:    { bottleneck: memory, status: active, next_earnings: "2026-06-25" }
   SNDK:  { bottleneck: memory, status: active, next_earnings: "2026-05-01" }
   TSM:   { bottleneck: n3_logic, status: active, next_earnings: "2026-04-17" }
@@ -155,7 +154,6 @@ ticker_map:
   ASML:  { bottleneck: euv, status: next, next_earnings: "2026-04-16" }
   CRWV:  { bottleneck: gpu_cloud, status: active, next_earnings: "2026-05-12" }
   BE:    { bottleneck: power, status: played_out, next_earnings: "2026-05-08" }
-  CORZ:  { bottleneck: power, status: played_out, next_earnings: "2026-05-08" }
   IREN:  { bottleneck: power, status: played_out, next_earnings: "2026-05-15" }
   EQT:   { bottleneck: power, status: played_out, next_earnings: "2026-04-23" }
   TSEM:  { bottleneck: foundry, status: active, next_earnings: "2026-05-14" }

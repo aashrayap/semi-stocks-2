@@ -101,26 +101,10 @@
   },
   {
     "bottleneck": null,
-    "id": "company:AMSC",
-    "label": "American Superconductor",
-    "status": null,
-    "ticker": "AMSC",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
     "id": "company:AMZN",
     "label": "Amazon",
     "status": null,
     "ticker": "AMZN",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
-    "id": "company:APLD",
-    "label": "Applied Digital",
-    "status": null,
-    "ticker": "APLD",
     "type": "company"
   },
   {
@@ -148,30 +132,6 @@
     "type": "company"
   },
   {
-    "bottleneck": null,
-    "id": "company:BITF",
-    "label": "Bitfarms",
-    "status": null,
-    "ticker": "BITF",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
-    "id": "company:BTDR",
-    "label": "Bitdeer Technologies",
-    "status": null,
-    "ticker": "BTDR",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
-    "id": "company:BW",
-    "label": "Babcock & Wilcox",
-    "status": null,
-    "ticker": "BW",
-    "type": "company"
-  },
-  {
     "bottleneck": "pluggable_optics",
     "id": "company:CIEN",
     "label": "Ciena Corp",
@@ -180,35 +140,11 @@
     "type": "company"
   },
   {
-    "bottleneck": null,
-    "id": "company:CIFR",
-    "label": "Cipher Mining",
-    "status": null,
-    "ticker": "CIFR",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
-    "id": "company:CLSK",
-    "label": "CleanSpark",
-    "status": null,
-    "ticker": "CLSK",
-    "type": "company"
-  },
-  {
     "bottleneck": "pluggable_optics",
     "id": "company:COHR",
     "label": "Coherent Corp.",
     "status": "active",
     "ticker": "COHR",
-    "type": "company"
-  },
-  {
-    "bottleneck": "power",
-    "id": "company:CORZ",
-    "label": "Core Scientific",
-    "status": "played_out",
-    "ticker": "CORZ",
     "type": "company"
   },
   {
@@ -245,14 +181,6 @@
   },
   {
     "bottleneck": null,
-    "id": "company:HUT",
-    "label": "Hut 8 Corp",
-    "status": null,
-    "ticker": "HUT",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
     "id": "company:INFY",
     "label": "Infosys",
     "status": null,
@@ -273,22 +201,6 @@
     "label": "IREN",
     "status": "played_out",
     "ticker": "IREN",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
-    "id": "company:KRC",
-    "label": "Kilroy Realty",
-    "status": null,
-    "ticker": "KRC",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
-    "id": "company:LBRT",
-    "label": "Liberty Energy",
-    "status": null,
-    "ticker": "LBRT",
     "type": "company"
   },
   {
@@ -325,14 +237,6 @@
   },
   {
     "bottleneck": null,
-    "id": "company:PSIX",
-    "label": "Power Solutions Intl",
-    "status": null,
-    "ticker": "PSIX",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
     "id": "company:PSTG",
     "label": "Pure Storage",
     "status": null,
@@ -341,42 +245,10 @@
   },
   {
     "bottleneck": null,
-    "id": "company:PUMP",
-    "label": "ProPetro Holdings",
-    "status": null,
-    "ticker": "PUMP",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
     "id": "company:QQQ",
     "label": "Invesco QQQ Trust",
     "status": null,
     "ticker": "QQQ",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
-    "id": "company:RIOT",
-    "label": "Riot Platforms",
-    "status": null,
-    "ticker": "RIOT",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
-    "id": "company:SEI",
-    "label": "Solaris Energy Infrastructure",
-    "status": null,
-    "ticker": "SEI",
-    "type": "company"
-  },
-  {
-    "bottleneck": "copper_signal_integrity",
-    "id": "company:SMTC",
-    "label": "Semtech",
-    "status": "active",
-    "ticker": "SMTC",
     "type": "company"
   },
   {
@@ -401,14 +273,6 @@
     "label": "Taiwan Semiconductor Manufacturing Company Limited",
     "status": "active",
     "ticker": "TSM",
-    "type": "company"
-  },
-  {
-    "bottleneck": null,
-    "id": "company:WYFI",
-    "label": "WhiteFiber",
-    "status": null,
-    "ticker": "WYFI",
     "type": "company"
   },
   {

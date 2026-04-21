@@ -309,23 +309,9 @@
   },
   {
     "href": null,
-    "id": "company:AMSC",
-    "text": "",
-    "title": "AMSC - American Superconductor",
-    "type": "company"
-  },
-  {
-    "href": null,
     "id": "company:AMZN",
     "text": "",
     "title": "AMZN - Amazon",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:APLD",
-    "text": "",
-    "title": "APLD - Applied Digital",
     "type": "company"
   },
   {
@@ -351,44 +337,9 @@
   },
   {
     "href": null,
-    "id": "company:BITF",
-    "text": "",
-    "title": "BITF - Bitfarms",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:BTDR",
-    "text": "",
-    "title": "BTDR - Bitdeer Technologies",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:BW",
-    "text": "",
-    "title": "BW - Babcock & Wilcox",
-    "type": "company"
-  },
-  {
-    "href": null,
     "id": "company:CIEN",
     "text": "pluggable_optics active",
     "title": "CIEN - Ciena Corp",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:CIFR",
-    "text": "",
-    "title": "CIFR - Cipher Mining",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:CLSK",
-    "text": "",
-    "title": "CLSK - CleanSpark",
     "type": "company"
   },
   {
@@ -396,13 +347,6 @@
     "id": "company:COHR",
     "text": "pluggable_optics active Datacenter and communications was 72% of Q2 revenue, management guided another up-quarter, and March 2026 artifacts show direct NVIDIA capacity commitments plus OFC demos across 6.4T CPO, 400G-per-lane InP modulation, and 1.6T/XPO-related platforms.",
     "title": "COHR - Coherent Corp.",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:CORZ",
-    "text": "power played_out",
-    "title": "CORZ - Core Scientific",
     "type": "company"
   },
   {
@@ -435,13 +379,6 @@
   },
   {
     "href": null,
-    "id": "company:HUT",
-    "text": "",
-    "title": "HUT - Hut 8 Corp",
-    "type": "company"
-  },
-  {
-    "href": null,
     "id": "company:INFY",
     "text": "",
     "title": "INFY - Infosys",
@@ -459,20 +396,6 @@
     "id": "company:IREN",
     "text": "power played_out",
     "title": "IREN - IREN",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:KRC",
-    "text": "",
-    "title": "KRC - Kilroy Realty",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:LBRT",
-    "text": "",
-    "title": "LBRT - Liberty Energy",
     "type": "company"
   },
   {
@@ -505,13 +428,6 @@
   },
   {
     "href": null,
-    "id": "company:PSIX",
-    "text": "",
-    "title": "PSIX - Power Solutions Intl",
-    "type": "company"
-  },
-  {
-    "href": null,
     "id": "company:PSTG",
     "text": "",
     "title": "PSTG - Pure Storage",
@@ -519,37 +435,9 @@
   },
   {
     "href": null,
-    "id": "company:PUMP",
-    "text": "",
-    "title": "PUMP - ProPetro Holdings",
-    "type": "company"
-  },
-  {
-    "href": null,
     "id": "company:QQQ",
     "text": "",
     "title": "QQQ - Invesco QQQ Trust",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:RIOT",
-    "text": "",
-    "title": "RIOT - Riot Platforms",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:SEI",
-    "text": "",
-    "title": "SEI - Solaris Energy Infrastructure",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:SMTC",
-    "text": "copper_signal_integrity active",
-    "title": "SMTC - Semtech",
     "type": "company"
   },
   {
@@ -571,13 +459,6 @@
     "id": "company:TSM",
     "text": "n3_logic active Q4 2025 showed continued strong leading-edge demand, 3nm already at 28% of wafer revenue, advanced nodes at 77%, and another strong guide into Q1 2026 alongside a $52B-$56B capex plan.",
     "title": "TSM - Taiwan Semiconductor Manufacturing Company Limited",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:WYFI",
-    "text": "",
-    "title": "WYFI - WhiteFiber",
     "type": "company"
   },
   {
@@ -639,7 +520,7 @@
   {
     "href": "index.html",
     "id": "page:index",
-    "text": "Wiki Index — semi stocks Master index of all wiki pages. LLM maintained — do not edit manually. Thesis linked: Data sources: Last updated: 2026 04 13 Concepts Page Summary concepts/bottleneck cascade Core thesis — sequential supply chain bottlenecks, rotation trade concepts/euv tool bottleneck Deep upstream ceiling — ASML and supplier chain govern long ru... Master index of all wiki pages. LLM-maintained — do not edit manually. Thesis-linked: `../30-thesis/thesis.yaml` | Data sources: `../20-data/sources/` Last updated: 2026-04-13 ## Concepts | Page | Summary | |------|---------| | [[concepts/bottleneck-cascade]] | Core thesis — sequential supply chain bottlenecks, rotation trade | | [[concepts/euv-tool-bottleneck]] | Deep-upstream ceiling — ASML and supplier chain govern long-run chip output | | [[concepts/memory-supercycle]] | DRAM/HBM crunch — prices +90% QoQ, all vendors sold out...",
+    "text": "Wiki Index — semi stocks Master index of all wiki pages. LLM maintained — do not edit manually. Thesis linked: Data sources: Last updated: 2026 04 21 Concepts Page Summary concepts/bottleneck cascade Core thesis — sequential supply chain bottlenecks, rotation trade concepts/euv tool bottleneck Deep upstream ceiling — ASML and supplier chain govern long ru... Master index of all wiki pages. LLM-maintained — do not edit manually. Thesis-linked: `../30-thesis/thesis.yaml` | Data sources: `../20-data/sources/` Last updated: 2026-04-21 ## Concepts | Page | Summary | |------|---------| | [[concepts/bottleneck-cascade]] | Core thesis — sequential supply chain bottlenecks, rotation trade | | [[concepts/euv-tool-bottleneck]] | Deep-upstream ceiling — ASML and supplier chain govern long-run chip output | | [[concepts/memory-supercycle]] | DRAM/HBM crunch — prices +90% QoQ, all vendors sold out...",
     "title": "Wiki Index — semi-stocks",
     "type": "page:meta"
   },

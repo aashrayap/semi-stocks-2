@@ -3,7 +3,7 @@ title: "Leopold Aschenbrenner — Q4 2025 13F"
 tags: [13f, leopold, situational-awareness, power, optical, miners]
 sources: [../../20-data/sources/leopold/q4_2025.yaml]
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-21
 ---
 
 # Leopold Aschenbrenner — Q4 2025 13F
@@ -24,22 +24,26 @@ Performance: +47% net H1 2025 vs S&P +6%. Q4 2025: -21.3%.
 | BE | Common | $911M | 16.5% | Power | +1970% |
 | INTC | Call | $749M | 13.6% | N3 logic | +10% |
 | LITE | Common | $479M | 8.7% | Optical | +604% |
-| CORZ | Common | $419M | 7.6% | Power | +42% |
+| IREN | Common | $329M | 6.0% | Power / GPU cloud | +20% |
 
 ## Allocation by Bottleneck
 
-- **Power/energy:** ~22% (BE, EQT, SEI, LBRT, PUMP, BW)
-- **Bitcoin miners converting to AI DCs:** ~15% (CORZ, IREN, APLD, CIFR, RIOT, HUT, BTDR, CLSK, BITF)
+- **Power/energy:** core retained names are BE and EQT after the sub-$10B active-roster prune
+- **Bitcoin miners converting to AI DCs:** IREN remains in the active roster; smaller miner/DC conversion names were pruned
 - **GPU cloud:** ~22% (CRWV)
-- **Optical:** ~10% (LITE, COHR, WYFI)
+- **Optical:** LITE and COHR remain active; WYFI was pruned
 - **N3/foundry:** ~15% (INTC, TSEM)
 - **Memory:** ~5% (SNDK +816%)
 
 ## Notable Moves
 
 - **EXITED:** NVDA (puts), AVGO, TSM (puts), VST, GDX, MU (puts), WDC, STX
-- **NEW:** KRC (DC real estate), PSIX, CLSK, BITF, LBRT, BW, WYFI, INFY (only short — puts)
+- **NEW retained in active roster:** INFY (only short — puts)
 - SNDK +816% increase — storage play
+
+## Active Roster Prune
+
+On 2026-04-21, sub-$10B current market-cap names were removed from the active generated company roster: APLD, BITF, BTDR, BW, CIFR, CLSK, CORZ, HUT, KRC, LBRT, PSIX, PUMP, RIOT, SEI, and WYFI. Their first-acquired dates remain in `canonical/20-data/sources/leopold/q4_2025.yaml`.
 
 ## Key Insight
 
