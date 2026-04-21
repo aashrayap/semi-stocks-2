@@ -1,43 +1,5 @@
 source: semianalysis
 entity: "SemiAnalysis (Dylan Patel)"
 updated: "2026-04-21"
-
-signals:
-  - date: "2026-04-02"
-    title: "The Great GPU Shortage — Rental Capacity"
-    bottleneck: n3_logic
-    data_points:
-      - "H100 1yr rental: $1.70/hr (Oct 2025) → $2.35/hr (Mar 2026), +40%"
-      - "AWS p6-b200 spot: $14/hr/GPU"
-      - "Month-on-month rental increases 15-20% (Jan-Mar 2026)"
-      - "All new capacity through Aug-Sep 2026 already booked"
-      - "Blackwell deployment lead times extended to Jun-Jul 2026"
-    tickers: [NVDA, CRWV, TSM]
-
-  - date: "2026-03-15"
-    title: "The Great AI Silicon Shortage"
-    bottleneck: n3_logic
-    data_points:
-      - "AI = 60% of TSMC N3 output (2026), projected 86% by 2027"
-      - "Reallocating 5% smartphone N3 wafers = ~100K Rubin GPUs or ~300K TPU v7s"
-      - "Google 2026 capex roughly doubled vs prior expectations"
-      - "Amazon 2026 AI infrastructure spend remains on a steep expansion path"
-      - "All major AI accelerators moving to N3 simultaneously"
-    tickers: [TSM, NVDA, GOOGL, AMZN]
-
-  - date: "2026-04-01"
-    title: "Hyperscaler CapEx Pull Through"
-    bottleneck: hyperscaler
-    data_points:
-      - "Big tech total 2026 AI spending estimated around $650B, +80% YoY"
-      - "Google and Amazon remain the two largest incremental demand engines for accelerator clusters"
-      - "Cloud procurement cadence supports sustained NVDA and CRWV order visibility"
-    tickers: [GOOGL, AMZN, NVDA, CRWV]
-
-media:
-  - date: "2026-04-01"
-    source: "CNBC (Jim Cramer)"
-    claims:
-      - "Big tech total 2026 AI spending: ~$650B, +80% YoY"
-      - "Google 2026 capex expected to remain at historically elevated levels"
-      - "Amazon AI infrastructure spend expected to remain at historically elevated levels"
+signals: []
+media: []

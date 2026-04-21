@@ -1,43 +1,21 @@
 # Agent fleet configuration
-# Agents read this file for what to track and when to alert.
+# Data reset baseline: no active tracked tickers or snapshots.
 
 updated: "2026-04-21"
 
-# Polling intervals (for scheduled agents)
-# informational only — not consumed by any agent script
 polling:
-  earnings_calendar: "daily"       # Check for upcoming earnings daily
-  thirteenf_monitor: "weekly"      # Check for new 13F filings weekly
-  signal_scanner: "daily"          # Scan for new SemiAnalysis signals daily
+  earnings_calendar: "daily"
+  thirteenf_monitor: "weekly"
+  signal_scanner: "daily"
 
-# Alert thresholds
 alerts:
-  earnings_days_out: 14            # Alert when earnings are within N days
-  earnings_urgent_days: 7          # Mark as urgent within N days
-  forward_claim_lookahead_days: 30 # Flag claims verifiable within N days
+  earnings_days_out: 14
+  earnings_urgent_days: 7
+  forward_claim_lookahead_days: 30
 
-# Tracked tickers — pulled from config.yaml deep_dive + canonical/30-thesis/thesis.yaml ticker_map
-# Deep-dive names get full treatment (forward claims, wiki context, bottleneck analysis)
-deep_dive:
-  - CRWV
-  - NVDA
-  - TSM
-  - ASML
-  - GOOGL
-  - AMZN
+deep_dive: []
+watchlist: []
 
-# Full watchlist from canonical/30-thesis/thesis.yaml ticker_map
-# informational only — not consumed by any agent script
-watchlist:
-  - CRWV
-  - NVDA
-  - TSM
-  - ASML
-  - GOOGL
-  - AMZN
-
-# Source paths (relative to repo root)
-# informational only — not consumed by any agent script
 paths:
   thesis: "canonical/30-thesis/thesis.yaml"
   companies: "canonical/20-data/companies"
@@ -48,8 +26,6 @@ paths:
   baker: "canonical/20-data/sources/baker"
   semianalysis: "canonical/20-data/sources/semianalysis"
 
-# Output paths (relative to repo root, all within agents/)
-# informational only — not consumed by any agent script
 output:
   reports: "agents/reports"
   drafts_13f: "agents/drafts/13f"
@@ -58,84 +34,10 @@ output:
   logs: "agents/logs"
   state: "agents/state"
 
-# Prediction settings
 predictions:
-  auto_generate_days_before: 7   # Generate predictions N days before earnings
+  auto_generate_days_before: 7
   categories: [capacity, pricing, demand, margins, guidance, positioning]
   confidence_levels: [high, medium, low]
 
-# Source monitoring configuration for hourly market intel trigger
-sources:
-  analysts:
-    gavin_baker:
-      type: twitter_search
-      handle: "@GavinSBaker"
-      entity: "Atreides Management LP"
-      cik: "0001777813"
-      keywords: ["semiconductor", "AI", "chip", "cycle", "NVDA", "TSM"]
-    leopold:
-      type: web_search
-      entity: "Situational Awareness LP"
-      cik: "0002045724"
-      keywords: ["semiconductor", "AI", "scaling", "compute"]
-    dylan_patel:
-      type: web_search
-      handle: "Dylan Patel"
-      entity: "SemiAnalysis"
-      keywords: ["fab", "memory", "EUV", "DRAM", "HBM", "semiconductor"]
-  feeds:
-    semianalysis:
-      type: rss
-      url: "https://newsletter.semianalysis.com/feed"
-      keywords: ["semiconductor", "fab", "memory", "AI", "chip"]
-  filings:
-    sec_13f:
-      type: edgar
-      endpoint: "https://efts.sec.gov/LATEST/search-index"
-      tracked_filers:
-        - name: "Situational Awareness LP"
-          cik: "0002045724"
-        - name: "Atreides Management LP"
-          cik: "0001777813"
-      form_types: ["13F-HR", "13F-HR/A"]
-      cadence: weekly  # only check on Mondays
-  news:
-    financial:
-      type: web_search
-      domains: ["seekingalpha.com", "finance.yahoo.com", "wsj.com", "ft.com", "bloomberg.com"]
-    semiconductor:
-      type: web_search
-      domains: ["wccftech.com", "tomshardware.com", "anandtech.com"]
-    industry_data:
-      type: web_search
-      domains: ["trendforce.com", "semiconductors.org"]
-  screening:
-    finviz:
-      type: web_search
-      note: "Search via WebSearch — no direct API access on free tier"
-
-# ---------------------------------------------------------------------------
-# Transcript sources — tiered fetching strategy for earnings call transcripts
-# ---------------------------------------------------------------------------
-transcript_sources:
-  # Tier 1: direct q4cdn PDF (highest fidelity — FactSet/CallStreet corrected)
-  q4cdn:
-    CRWV:
-      cdn_id: "s205.q4cdn.com/133937190"
-      events_page: "https://investors.coreweave.com/news-events/events"
-    NVDA:
-      cdn_id: "s201.q4cdn.com/141608511"
-      events_page: "https://investor.nvidia.com/events-and-presentations"
-
-  # Tier 2: IR page scrape (PDF behind discoverable links)
-  ir_scrape:
-    TSM:
-      transcript_page: "https://investor.tsmc.com/english/quarterly-results"
-
-  # Tier 3: Motley Fool fallback (covers all tickers, lower fidelity)
-  motley_fool:
-    base_url: "https://www.fool.com/earnings/call-transcripts/"
-    slugs:
-      CRWV: "coreweave"
-      NVDA: "nvidia"
-      TSM: "taiwan-semiconductor-manufacturing"
+sources: {}
+transcript_sources: {}
