@@ -1,22 +1,22 @@
 {
   "artifact_counts": {
-    "claims": 43,
-    "companies": 23,
-    "edges": 641,
-    "entities": 76,
-    "pages": 34,
+    "claims": 21,
+    "companies": 6,
+    "edges": 225,
+    "entities": 35,
+    "pages": 23,
     "reports": 1,
-    "signals": 67,
-    "thesis_stages": 7
+    "signals": 19,
+    "thesis_stages": 5
   },
-  "generated_at": "2026-04-21T08:47:04Z",
+  "generated_at": "2026-04-21T10:08:03Z",
   "generator": "site-data-v0.1",
   "id": "build:site-data",
   "source_counts": {
-    "data_yaml": 14,
+    "data_yaml": 7,
     "reports": 2,
-    "wiki_markdown": 36
+    "wiki_markdown": 23
   },
-  "source_hash": "9b275f4a0583be9e991b013b3b6d0063ad61c1e89ea7709cc3480fde54c9810b",
+  "source_hash": "7e7548cfce0cf9acae0a33215b289f298b9ae5c8446eaad23e0a5063b4f0ce5a",
   "warnings": []
 }

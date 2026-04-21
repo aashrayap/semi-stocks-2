@@ -230,21 +230,6 @@ thesis_signals:
     evidence: "Delivered 50K GB200s in Q4 to single customer. Nvidia GPUs 'remain in short supply' per Intrator. Massive capex plan ($30-35B) = enormous chip demand."
     source_ref: earnings_call_transcript
 
-  - bottleneck: memory
-    direction: confirms
-    evidence: "Every GPU CRWV deploys needs HBM. $30-35B capex = substantial HBM demand. Storage ARR >$100M and growing."
-    source_ref: earnings_call_transcript
-
-  - bottleneck: power
-    direction: confirms
-    evidence: "850 MW active, 3.1 GW contracted, targeting 5+ GW by 2030. 43 data centers. 260 MW added in Q4 alone."
-    source_ref: earnings_call_transcript
-
-  - bottleneck: pluggable_optics
-    direction: confirms
-    evidence: "Every NVL72 rack deployed uses pluggable optics for scale-out. 100K+ GPUs deployed in Q4 = significant transceiver demand."
-    source_ref: earnings_call_transcript
-
 positioning:
   leopold:
     ticker: CRWV

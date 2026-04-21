@@ -229,22 +229,6 @@ thesis_signals:
       Six new chips this cycle — all need N3.
     source_ref: earnings_event
 
-  - bottleneck: memory
-    direction: confirms
-    evidence: >
-      $21.4B inventory (significant HBM stockpile).
-      Every GPU shipped needs HBM. NVIDIA GPU volumes are primary demand driver for memory supercycle.
-      CRWV alone ordering $30-35B capex worth of GPUs = massive HBM pull-through.
-    source_ref: earnings_event
-
-  - bottleneck: pluggable_optics
-    direction: confirms
-    evidence: >
-      Networking revenue $11B (+3.5x YoY). Every NVL72 rack uses OSFP pluggable transceivers.
-      Spectrum-X "a home run." "We ship racks of computers" = optics in every unit.
-      Grace Blackwell = ~2/3 of DC revenue — all rack-scale with optics.
-    source_ref: earnings_event
-
   - bottleneck: gpu_cloud
     direction: confirms
     evidence: >

@@ -142,3 +142,17 @@ Removed sub-$10B current market-cap names from the active generated company rost
 - **Wiki summaries updated:** Leopold, Baker, bottleneck cascade, and co-packaged optics pages now match the active roster
 
 ## [2026-04-21] rebuild-index | 23 pages indexed, 148 local links, 0 orphan pages, 0 dead links
+
+## [2026-04-21] cleanup | reduced canonical scope to six-company spine
+
+Pruned canonical wiki/data surface to the active focus set: `NVDA`, `CRWV`, `ASML`, `TSM`, `GOOGL`, `AMZN`.
+
+- Deleted non-core company packets under `canonical/20-data/companies/`
+- Deleted all thesis proposals under `canonical/20-data/thesis-proposals/`
+- Pruned Baker/Leopold/SemiAnalysis structured sources to the reduced ticker set
+- Removed non-core wiki source/concept/output pages and rewrote remaining pages to match the reduced model
+- Updated `config.yaml`, `agents/config.yaml`, and `canonical/30-thesis/thesis.yaml` to the six-company scope
+
+## [2026-04-21] rebuild-index | 10 pages indexed, 33 local links, 0 orphan pages, 0 dead links
+
+## [2026-04-21] rebuild-index | 10 pages indexed, 33 local links, 0 orphan pages, 0 dead links

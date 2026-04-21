@@ -4,7 +4,7 @@ quarter: "Q4 2025"
 period: "2025-12-31"
 filed: "2026-02-11"
 aum: 5_517_000_000
-positions_count: 25
+positions_count: 1
 top5_concentration: 0.68
 performance_q4: -0.2134
 performance_h1_2025: 0.47
@@ -17,27 +17,6 @@ cross_checked:
   - hedgefollow
   - 13f_info
 
-active_roster_prune:
-  market_cap_check_date: "2026-04-21"
-  threshold_usd: 10_000_000_000
-  reason: "Excluded from active generated company roster because current market cap was below $10B."
-  tickers:
-    - { ticker: APLD, first_acquired: "Q1 2025", market_cap_usd_approx: 9_300_000_000 }
-    - { ticker: BITF, first_acquired: "Q4 2025", market_cap_usd_approx: 1_600_000_000 }
-    - { ticker: BTDR, first_acquired: "Q3 2025", market_cap_usd_approx: 3_200_000_000 }
-    - { ticker: BW, first_acquired: "Q4 2025", market_cap_usd_approx: 2_300_000_000 }
-    - { ticker: CIFR, first_acquired: "Q3 2025", market_cap_usd_approx: 7_900_000_000 }
-    - { ticker: CLSK, first_acquired: "Q4 2025", market_cap_usd_approx: 3_100_000_000 }
-    - { ticker: CORZ, first_acquired: "Q1 2025", market_cap_usd_approx: 6_300_000_000 }
-    - { ticker: HUT, first_acquired: "Q3 2025", market_cap_usd_approx: 8_800_000_000 }
-    - { ticker: KRC, first_acquired: "Q4 2025", market_cap_usd_approx: 3_800_000_000 }
-    - { ticker: LBRT, first_acquired: "Q4 2025", market_cap_usd_approx: 4_300_000_000 }
-    - { ticker: PSIX, first_acquired: "Q4 2025", market_cap_usd_approx: 1_800_000_000 }
-    - { ticker: PUMP, first_acquired: "Q4 2025", market_cap_usd_approx: 1_700_000_000 }
-    - { ticker: RIOT, first_acquired: "Q3 2025", market_cap_usd_approx: 6_800_000_000 }
-    - { ticker: SEI, first_acquired: "Q3 2025", market_cap_usd_approx: 4_900_000_000 }
-    - { ticker: WYFI, first_acquired: "Q4 2025", market_cap_usd_approx: 600_000_000 }
-
 positions:
   - ticker: CRWV
     company: CoreWeave
@@ -49,122 +28,10 @@ positions:
     change_vs_prior: "+116%"
     bottleneck: gpu_cloud
 
-  - ticker: BE
-    company: Bloom Energy
-    type: common
-    value: 911_000_000
-    shares: 11_000_000
-    pct_portfolio: 0.165
-    first_acquired: "Q3 2025"
-    change_vs_prior: "+1970%"
-    bottleneck: power
-
-  - ticker: INTC
-    company: Intel
-    type: call
-    value: 749_000_000
-    shares: 20_000_000
-    pct_portfolio: 0.136
-    first_acquired: "Q1 2025"
-    change_vs_prior: "+10%"
-    bottleneck: n3_logic
-
-  - ticker: LITE
-    company: Lumentum Holdings
-    type: common
-    value: 479_000_000
-    shares: 1_300_000
-    pct_portfolio: 0.087
-    first_acquired: "Q3 2025"
-    change_vs_prior: "+604%"
-    bottleneck: optical
-
-  - ticker: IREN
-    company: IREN
-    type: common
-    value: 329_000_000
-    shares: 8_700_000
-    pct_portfolio: 0.060
-    first_acquired: "Q1 2025"
-    change_vs_prior: "+20%"
-    bottleneck: power
-
-  - ticker: SNDK
-    company: SanDisk
-    type: common
-    value: 250_000_000
-    shares: 1_100_000
-    pct_portfolio: 0.045
-    first_acquired: "Q3 2025"
-    change_vs_prior: "+816%"
-    bottleneck: memory
-
-  - ticker: EQT
-    company: EQT Corp
-    type: common
-    value: 171_000_000
-    shares: 3_200_000
-    pct_portfolio: 0.031
-    first_acquired: "Q1 2025"
-    change_vs_prior: "+161%"
-    bottleneck: power
-
-  - ticker: COHR
-    company: Coherent Corp
-    type: common
-    value: 89_000_000
-    shares: 480_000
-    pct_portfolio: 0.016
-    first_acquired: "Q3 2025"
-    change_vs_prior: "+211%"
-    bottleneck: optical
-
-  - ticker: TSEM
-    company: Tower Semiconductor
-    type: common
-    value: 85_000_000
-    shares: 723_000
-    pct_portfolio: 0.015
-    first_acquired: "Q3 2025"
-    change_vs_prior: "+53%"
-    bottleneck: foundry
-
-  - ticker: INFY
-    company: Infosys
-    type: put
-    value: 8_900_000
-    shares: 500_000
-    pct_portfolio: 0.002
-    first_acquired: "Q4 2025"
-    change_vs_prior: new
-    bottleneck: short
-    notes: "Only short position"
-
 exits:
   - ticker: NVDA
     type: put
     prior_value: 299_000_000
-  - ticker: VST
-    type: common
-    prior_value: 252_000_000
-  - ticker: GDX
-    type: common
-    prior_value: 196_000_000
-  - ticker: GLXY
-    type: common
-    prior_value: 93_000_000
-  - ticker: AVGO
-    type: common
-    prior_value: 76_000_000
   - ticker: TSM
     type: put
     prior_value: 75_000_000
-  - ticker: MU
-    type: put
-    prior_value: 50_000_000
-  - ticker: WDC
-    type: common
-    prior_value: 18_000_000
-  - ticker: STX
-    type: common
-    prior_value: 12_000_000

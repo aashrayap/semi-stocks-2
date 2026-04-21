@@ -35,22 +35,19 @@ companies:
   deep_dive:
     - ticker: CRWV
       bottleneck: gpu_cloud
-      reason: "Leopold #1 ($1.2B calls) vs Baker tiny ($43M). GPU cloud demand validator."
+      reason: "GPU cloud demand validator and highest-conviction overlap lens."
     - ticker: NVDA
       bottleneck: n3_logic
-      reason: "Leopold exited vs Baker $1B+. The core disagreement."
-    - ticker: MU
-      bottleneck: memory
-      reason: "Memory supercycle. Baker long + hedged, Leopold exited puts."
-    - ticker: COHR
-      bottleneck: pluggable_optics
-      reason: "Only full agreement zone. Both long, both adding."
-    - ticker: INTC
-      bottleneck: n3_logic
-      reason: "Leopold $749M calls vs Baker dumping (-81%). Opposite directions."
+      reason: "Core semiconductor demand expression and primary disagreement lens."
     - ticker: TSM
       bottleneck: n3_logic
-      reason: "Foundry bottleneck source. Neither holds but both depend on it."
-    - ticker: LITE
-      bottleneck: pluggable_optics
-      reason: "Leopold adding aggressively, Baker trimming."
+      reason: "Foundry constraint base-layer for AI accelerator supply."
+    - ticker: ASML
+      bottleneck: euv
+      reason: "Deep-upstream tool throughput ceiling in the thesis control plane."
+    - ticker: GOOGL
+      bottleneck: hyperscaler
+      reason: "Demand-side hyperscaler spend and custom AI infrastructure pull."
+    - ticker: AMZN
+      bottleneck: hyperscaler
+      reason: "Demand-side hyperscaler spend and AWS AI infrastructure pull."

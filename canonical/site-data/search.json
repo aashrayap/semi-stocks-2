@@ -1,40 +1,5 @@
 [
   {
-    "href": "cohr-q2-fy2026",
-    "id": "claim:COHR:q2-fy2026:01",
-    "text": "Q3 FY2026 revenue of $1.70B-$1.84B",
-    "title": "COHR claim",
-    "type": "claim"
-  },
-  {
-    "href": "cohr-q2-fy2026",
-    "id": "claim:COHR:q2-fy2026:02",
-    "text": "Q3 FY2026 non-GAAP gross margin of 38.5%-40.5%",
-    "title": "COHR claim",
-    "type": "claim"
-  },
-  {
-    "href": "cohr-q2-fy2026",
-    "id": "claim:COHR:q2-fy2026:03",
-    "text": "Q3 FY2026 non-GAAP EPS of $1.28-$1.48",
-    "title": "COHR claim",
-    "type": "claim"
-  },
-  {
-    "href": "cohr-q2-fy2026",
-    "id": "claim:COHR:q2-fy2026:04",
-    "text": "Continued strong growth in H2 FY2026 and throughout FY2027 driven by datacenter and communications demand and capacity expansion",
-    "title": "COHR claim",
-    "type": "claim"
-  },
-  {
-    "href": "cohr-q2-fy2026",
-    "id": "claim:COHR:q2-fy2026:05",
-    "text": "NVIDIA multiyear demand and capacity commitments deepen Coherent's role in next-generation AI optics",
-    "title": "COHR claim",
-    "type": "claim"
-  },
-  {
     "href": "crwv-q4-2025",
     "id": "claim:CRWV:q4-2025:01",
     "text": "Q1 represents the trough in annual margin trajectory — margins ramp from low single digits in Q1, expanding each quarter, to low double-digits by Q4 2026",
@@ -95,125 +60,6 @@
     "id": "claim:CRWV:q4-2025:09",
     "text": "FY 2026 capex $30B-$35B Spending $2.60 for every $1 of revenue. Market flagged this as unsustainable — key risk.",
     "title": "CRWV claim",
-    "type": "claim"
-  },
-  {
-    "href": "intc-q4-2025",
-    "id": "claim:INTC:q4-2025:01",
-    "text": "Q1 2026 revenue of $11.7B-$12.7B",
-    "title": "INTC claim",
-    "type": "claim"
-  },
-  {
-    "href": "intc-q4-2025",
-    "id": "claim:INTC:q4-2025:02",
-    "text": "Intel Foundry revenue up double digits QoQ in Q1 2026",
-    "title": "INTC claim",
-    "type": "claim"
-  },
-  {
-    "href": "intc-q4-2025",
-    "id": "claim:INTC:q4-2025:03",
-    "text": "Available supply improves beginning in Q2 2026 and through the rest of 2026",
-    "title": "INTC claim",
-    "type": "claim"
-  },
-  {
-    "href": "intc-q4-2025",
-    "id": "claim:INTC:q4-2025:04",
-    "text": "2026 operating expenses of $16B",
-    "title": "INTC claim",
-    "type": "claim"
-  },
-  {
-    "href": "intc-q4-2025",
-    "id": "claim:INTC:q4-2025:05",
-    "text": "2026 capex flat to down slightly versus 2025",
-    "title": "INTC claim",
-    "type": "claim"
-  },
-  {
-    "href": "intc-q4-2025",
-    "id": "claim:INTC:q4-2025:06",
-    "text": "14A customer supplier decisions begin in H2 2026 and extend into H1 2027",
-    "title": "INTC claim",
-    "type": "claim"
-  },
-  {
-    "href": "lite-q2-fy2026",
-    "id": "claim:LITE:q2-fy2026:01",
-    "text": "Q3 FY2026 revenue of $780M-$830M",
-    "title": "LITE claim",
-    "type": "claim"
-  },
-  {
-    "href": "lite-q2-fy2026",
-    "id": "claim:LITE:q2-fy2026:02",
-    "text": "Q3 FY2026 non-GAAP operating margin of 30%-31%",
-    "title": "LITE claim",
-    "type": "claim"
-  },
-  {
-    "href": "lite-q2-fy2026",
-    "id": "claim:LITE:q2-fy2026:03",
-    "text": "OCS backlog well beyond $400M converts into revenue as demand scales",
-    "title": "LITE claim",
-    "type": "claim"
-  },
-  {
-    "href": "lite-q2-fy2026",
-    "id": "claim:LITE:q2-fy2026:04",
-    "text": "Incremental multi-hundred-million-dollar CPO order delivers in 1H calendar 2027",
-    "title": "LITE claim",
-    "type": "claim"
-  },
-  {
-    "href": "lite-q2-fy2026",
-    "id": "claim:LITE:q2-fy2026:05",
-    "text": "R64 OCS reaches general availability in 2H 2026",
-    "title": "LITE claim",
-    "type": "claim"
-  },
-  {
-    "href": "mu-q2-fy2026",
-    "id": "claim:MU:q2-fy2026:01",
-    "text": "Q3 FY2026 revenue of $33.5B +/- $750M",
-    "title": "MU claim",
-    "type": "claim"
-  },
-  {
-    "href": "mu-q2-fy2026",
-    "id": "claim:MU:q2-fy2026:02",
-    "text": "Q3 FY2026 gross margin of approximately 81%",
-    "title": "MU claim",
-    "type": "claim"
-  },
-  {
-    "href": "mu-q2-fy2026",
-    "id": "claim:MU:q2-fy2026:03",
-    "text": "DRAM and NAND supply-demand conditions remain tight beyond calendar 2026",
-    "title": "MU claim",
-    "type": "claim"
-  },
-  {
-    "href": "mu-q2-fy2026",
-    "id": "claim:MU:q2-fy2026:04",
-    "text": "1-gamma DRAM becomes a majority of Micron's DRAM bit mix by mid-calendar 2026",
-    "title": "MU claim",
-    "type": "claim"
-  },
-  {
-    "href": "mu-q2-fy2026",
-    "id": "claim:MU:q2-fy2026:05",
-    "text": "HBM4E ramps volume in calendar 2027",
-    "title": "MU claim",
-    "type": "claim"
-  },
-  {
-    "href": "mu-q2-fy2026",
-    "id": "claim:MU:q2-fy2026:06",
-    "text": "Fiscal 2026 capex will be above $25B",
-    "title": "MU claim",
     "type": "claim"
   },
   {
@@ -302,15 +148,8 @@
   },
   {
     "href": null,
-    "id": "company:ALAB",
-    "text": "copper_signal_integrity active",
-    "title": "ALAB - Astera Labs",
-    "type": "company"
-  },
-  {
-    "href": null,
     "id": "company:AMZN",
-    "text": "",
+    "text": "hyperscaler active",
     "title": "AMZN - Amazon",
     "type": "company"
   },
@@ -322,34 +161,6 @@
     "type": "company"
   },
   {
-    "href": null,
-    "id": "company:AVGO",
-    "text": "n3_logic active",
-    "title": "AVGO - AVGO",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:BE",
-    "text": "power played_out",
-    "title": "BE - Bloom Energy",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:CIEN",
-    "text": "pluggable_optics active",
-    "title": "CIEN - Ciena Corp",
-    "type": "company"
-  },
-  {
-    "href": "cohr-q2-fy2026",
-    "id": "company:COHR",
-    "text": "pluggable_optics active Datacenter and communications was 72% of Q2 revenue, management guided another up-quarter, and March 2026 artifacts show direct NVIDIA capacity commitments plus OFC demos across 6.4T CPO, 400G-per-lane InP modulation, and 1.6T/XPO-related platforms.",
-    "title": "COHR - Coherent Corp.",
-    "type": "company"
-  },
-  {
     "href": "crwv-q4-2025",
     "id": "company:CRWV",
     "text": "gpu_cloud active Q4 2025 revenue reached $1.57B, backlog expanded to $66.8B, management said it still could not catch up with demand, and virtually all 2026 capacity was already allocated. That makes CoreWeave the strongest current demand validator in the repo.",
@@ -358,65 +169,9 @@
   },
   {
     "href": null,
-    "id": "company:EQT",
-    "text": "power played_out",
-    "title": "EQT - EQT Corp",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:GNRC",
-    "text": "",
-    "title": "GNRC - Generac Holdings",
-    "type": "company"
-  },
-  {
-    "href": null,
     "id": "company:GOOGL",
-    "text": "",
+    "text": "hyperscaler active",
     "title": "GOOGL - Alphabet",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:INFY",
-    "text": "",
-    "title": "INFY - Infosys",
-    "type": "company"
-  },
-  {
-    "href": "intc-q4-2025",
-    "id": "company:INTC",
-    "text": "n3_logic active Intel said AI-driven demand materially outstripped available supply, DCAI had its fastest sequential growth of the decade, and Foundry revenue rose on EUV mix. At the same time, 18A and 14A milestones mean the company is trying to become a real future supply response.",
-    "title": "INTC - Intel Corporation",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:IREN",
-    "text": "power played_out",
-    "title": "IREN - IREN",
-    "type": "company"
-  },
-  {
-    "href": "lite-q2-fy2026",
-    "id": "company:LITE",
-    "text": "pluggable_optics active Q2 FY2026 revenue grew 65.5% YoY, Q3 guide implies another major step up, OCS backlog is above $400M, CPO already has a multi-hundred-million-dollar order for 1H 2027 delivery, and NVIDIA committed both capital and future purchase rights in March 2026.",
-    "title": "LITE - Lumentum Holdings Inc.",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:MSFT",
-    "text": "",
-    "title": "MSFT - Microsoft",
-    "type": "company"
-  },
-  {
-    "href": "mu-q2-fy2026",
-    "id": "company:MU",
-    "text": "memory active The quarter set records across revenue, gross margin, EPS, and free cash flow, while management explicitly said DRAM and NAND should remain supply constrained beyond calendar 2026. HBM4 volume shipments for NVIDIA Vera Rubin connect the memory thesis directly to the 2026 GPU ramp.",
-    "title": "MU - Micron Technology, Inc.",
     "type": "company"
   },
   {
@@ -424,34 +179,6 @@
     "id": "company:NVDA",
     "text": "n3_logic active Q4 FY2026 printed $68.1B revenue, $11B of networking revenue, and $95.2B of supply commitments, while management guided another step up to $78B in Q1 and pushed Rubin production into H2 2026. That combination keeps NVIDIA at the center of the current cascade.",
     "title": "NVDA - NVIDIA Corporation",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:PSTG",
-    "text": "",
-    "title": "PSTG - Pure Storage",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:QQQ",
-    "text": "",
-    "title": "QQQ - Invesco QQQ Trust",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:SNDK",
-    "text": "memory active",
-    "title": "SNDK - SanDisk",
-    "type": "company"
-  },
-  {
-    "href": null,
-    "id": "company:TSEM",
-    "text": "foundry active",
-    "title": "TSEM - Tower Semiconductor",
     "type": "company"
   },
   {
@@ -464,50 +191,22 @@
   {
     "href": "bottleneck-cascade.html",
     "id": "page:bottleneck-cascade",
-    "text": "Bottleneck Cascade The core thesis: AI compute demand is chronically underestimated. Every supplier builds \"X minus 1\" of what's needed. Bottlenecks shift in sequence — the trade is identifying the next binding constraint before consensus. Confirmed Sequence Stage Period Status Key Tickers CoWoS packaging 2023 Played out ASX, AMAT Power / DC buildout 2024... # Bottleneck Cascade The core thesis: AI compute demand is chronically underestimated. Every supplier builds \"X minus 1\" of what's needed. Bottlenecks shift in sequence — the trade is identifying the next binding constraint before consensus. ## Confirmed Sequence | Stage | Period | Status | Key Tickers | |-------|--------|--------|-------------| | CoWoS packaging | 2023 | Played out | ASX, AMAT | | Power / DC buildout | 2024 | Played out | VST, CEG, TLN, VRT | | [[concepts/memory-supercycle]] | 2025-2026 | Active | MU, SNDK | | [[...",
+    "text": "Bottleneck Cascade Current thesis scope is intentionally reduced to a single six company path: , , , , , . Active Sequence Stage Status Core Tickers GPU cloud demand Active CRWV, NVDA, GOOGL, AMZN N3 logic wafers Active TSM, NVDA, GOOGL, AMZN Hyperscaler capex pull Active GOOGL, AMZN, NVDA, CRWV, TSM EUV tools Next ASML, TSM, NVDA Investor Alignment Baker... # Bottleneck Cascade Current thesis scope is intentionally reduced to a single six-company path: `NVDA`, `CRWV`, `TSM`, `ASML`, `GOOGL`, `AMZN`. ## Active Sequence | Stage | Status | Core Tickers | |-------|--------|--------------| | GPU cloud demand | Active | CRWV, NVDA, GOOGL, AMZN | | N3 logic wafers | Active | TSM, NVDA, GOOGL, AMZN | | Hyperscaler capex pull | Active | GOOGL, AMZN, NVDA, CRWV, TSM | | EUV tools | Next | ASML, TSM, NVDA | ## Investor Alignment - Baker: strongest direct exposure to `NVDA`, plus `GOOGL` and `AM...",
     "title": "Bottleneck Cascade",
-    "type": "page:concept"
-  },
-  {
-    "href": "co-packaged-optics.html",
-    "id": "page:co-packaged-optics",
-    "text": "Co Packaged Optics (CPO) As AI clusters scale to tens of thousands of GPUs, copper cables between racks can't keep up — too slow, too much heat. CPO replaces copper with laser light by integrating optical engines directly onto the chip package. Why It's Next (Not Now) CPO market projected at $20B by 2036, 37% CAGR Lumentum disclosed an incremental multi h... # Co-Packaged Optics (CPO) As AI clusters scale to tens of thousands of GPUs, copper cables between racks can't keep up — too slow, too much heat. CPO replaces copper with laser light by integrating optical engines directly onto the chip package. ## Why It's Next (Not Now) - CPO market projected at $20B by 2036, 37% CAGR - Lumentum disclosed an incremental multi-hundred-million-dollar CPO order for 1H 2027 delivery - Coherent's March 2026 NVIDIA partnership added multibillion-dollar purchase commitments, future capacity rights, an...",
-    "title": "Co-Packaged Optics (CPO)",
     "type": "page:concept"
   },
   {
     "href": "euv-tool-bottleneck.html",
     "id": "page:euv-tool-bottleneck",
-    "text": "EUV Tool Bottleneck EUV lithography is the deepest upstream choke point in AI semiconductors. Once power, land, and near term cleanroom constraints are partially worked around, the limiting factor becomes how many advanced wafers the industry can expose through ASML tools and the tiny supplier chain behind them. Why It Matters ASML remains the only EUV su... # EUV Tool Bottleneck EUV lithography is the deepest upstream choke point in AI semiconductors. Once power, land, and near-term cleanroom constraints are partially worked around, the limiting factor becomes how many advanced wafers the industry can expose through ASML tools and the tiny supplier chain behind them. ## Why It Matters - ASML remains the only EUV supplier. - One gigawatt of Rubin-class capacity was framed as requiring about `2 million` EUV passes and roughly `3.5` EUV tools. - ASML output was framed as roughly `70` to...",
+    "text": "EUV Tool Bottleneck is retained as the long run upstream ceiling in the reduced model. Why It Matters Tool throughput sets the upper bound on leading edge wafer output. can only expand advanced node output as tooling and supplier cadence allows. demand intensity pulls this upstream constraint forward over time. Reduced Scope Read Through The near term wat... # EUV Tool Bottleneck `ASML` is retained as the long-run upstream ceiling in the reduced model. ## Why It Matters - Tool throughput sets the upper bound on leading-edge wafer output. - `TSM` can only expand advanced-node output as tooling and supplier cadence allows. - `NVDA` demand intensity pulls this upstream constraint forward over time. ## Reduced-Scope Read-Through The near-term watchpoint is N3 utilization (`TSM`/`NVDA`), while EUV remains the next-stage gate (`ASML`) when broader foundry expansion saturates. See also: [[co...",
     "title": "EUV Tool Bottleneck",
-    "type": "page:concept"
-  },
-  {
-    "href": "memory-supercycle.html",
-    "id": "page:memory-supercycle",
-    "text": "Memory Supercycle Every AI chip needs memory (DRAM/HBM) to hold the data it's processing. HBM (High Bandwidth Memory) is special memory stacked in layers and bonded directly to the GPU — it's 85% less dense than regular DRAM and much harder to make. Why It's a Bottleneck AI is consuming so much memory that there isn't enough left for phones, PCs, and othe... # Memory Supercycle Every AI chip needs memory (DRAM/HBM) to hold the data it's processing. HBM (High Bandwidth Memory) is special memory stacked in layers and bonded directly to the GPU — it's 85% less dense than regular DRAM and much harder to make. ## Why It's a Bottleneck AI is consuming so much memory that there isn't enough left for phones, PCs, and other devices. The result: - DRAM contract prices surged +90-95% in a single quarter (Q1 2026, TrendForce) - DDR4 spot price ($2.10/Gbit) now exceeds HBM3e ($1.70/Gbit) — unprece...",
-    "title": "Memory Supercycle",
     "type": "page:concept"
   },
   {
     "href": "n3-wafer-crunch.html",
     "id": "page:n3-wafer-crunch",
-    "text": "N3 Wafer Crunch N3 refers to TSMC's 3 nanometer manufacturing process — the most advanced way to make chips. Every major AI accelerator is moving to N3 simultaneously in 2026, creating a capacity crunch. Why It's a Bottleneck AI already consumes 60% of TSMC N3 output (2026), projected 86% by 2027 N3 utilization at 100%+ in H2 2026 TSMC Q4 2025 printed $33... # N3 Wafer Crunch N3 refers to TSMC's 3-nanometer manufacturing process — the most advanced way to make chips. Every major AI accelerator is moving to N3 simultaneously in 2026, creating a capacity crunch. ## Why It's a Bottleneck - AI already consumes 60% of TSMC N3 output (2026), projected 86% by 2027 - N3 utilization at 100%+ in H2 2026 - TSMC Q4 2025 printed $33.73B revenue and 62.3% gross margin, then guided Q1 to $34.6B-$35.8B on strong leading-edge demand - TSMC 3nm already accounted for 28% of wafer revenue, while advanced...",
+    "text": "N3 Wafer Crunch N3 is the near term supply gate in the reduced six company model. Core Signals TSMC reported strong leading edge demand and elevated advanced node mix. NVDA roadmap demand remains concentrated on leading edge wafers. GOOGL and AMZN capex plans keep pressure on accelerator procurement. SemiAnalysis signals continue to describe tight near te... # N3 Wafer Crunch N3 is the near-term supply gate in the reduced six-company model. ## Core Signals - TSMC reported strong leading-edge demand and elevated advanced-node mix. - NVDA roadmap demand remains concentrated on leading-edge wafers. - GOOGL and AMZN capex plans keep pressure on accelerator procurement. - SemiAnalysis signals continue to describe tight near-term GPU and N3 conditions. ## Portfolio Read-Through - Baker is directly long the NVDA side of this constraint. - Leopold's active exit history in NVDA/TSM contrasts w...",
     "title": "N3 Wafer Crunch",
-    "type": "page:concept"
-  },
-  {
-    "href": "nvda-margin-residual.html",
-    "id": "page:nvda-margin-residual",
-    "text": "NVDA Margin as Residual NVIDIA's gross margin is not a moat — it is a residual. The surplus left over after paying two supply constrained monopolists (TSMC for fabrication + packaging, the HBM oligopoly for memory) and before selling to four hyperscalers who are building their own alternatives. The margin compresses from both directions simultaneously. Th... # NVDA Margin as Residual NVIDIA's gross margin is not a moat — it is a residual. The surplus left over after paying two supply-constrained monopolists (TSMC for fabrication + packaging, the HBM oligopoly for memory) and before selling to four hyperscalers who are building their own alternatives. The margin compresses from both directions simultaneously. ## The Framework NVIDIA captures ~75% of the GPU selling price while contributing ~14% of the physical BoM. The gap is its vulnerability: ``` GPU selling price ($30-40K) minus TSM...",
-    "title": "NVDA Margin as Residual",
-    "type": "page:concept"
-  },
-  {
-    "href": "pluggable-optics.html",
-    "id": "page:pluggable-optics",
-    "text": "Pluggable Optics (Scale Out) Pluggable optical transceivers connect GPU racks to each other over fiber. Every NVL72/NVL144/NVL288 rack Nvidia ships uses pluggable optics for scale out networking. Revenue is flowing NOW. Why It's a Bottleneck Every rack has OSFP cages for inter rack connectivity Coherent Q2 FY2026: datacenter and communications was 72% of... # Pluggable Optics (Scale-Out) Pluggable optical transceivers connect GPU racks to each other over fiber. Every NVL72/NVL144/NVL288 rack Nvidia ships uses pluggable optics for scale-out networking. Revenue is flowing NOW. ## Why It's a Bottleneck - Every rack has OSFP cages for inter-rack connectivity - Coherent Q2 FY2026: datacenter and communications was 72% of revenue ($1.208B), and Q3 guide is $1.70B-$1.84B - Lumentum Q2 FY2026: revenue grew 65.5% YoY, Q3 guide is $780M-$830M, and OCS backlog is already above $400M - 800G/1.6T...",
-    "title": "Pluggable Optics (Scale-Out)",
     "type": "page:concept"
   },
   {
@@ -520,7 +219,7 @@
   {
     "href": "index.html",
     "id": "page:index",
-    "text": "Wiki Index — semi stocks Master index of all wiki pages. LLM maintained — do not edit manually. Thesis linked: Data sources: Last updated: 2026 04 21 Concepts Page Summary concepts/bottleneck cascade Core thesis — sequential supply chain bottlenecks, rotation trade concepts/euv tool bottleneck Deep upstream ceiling — ASML and supplier chain govern long ru... Master index of all wiki pages. LLM-maintained — do not edit manually. Thesis-linked: `../30-thesis/thesis.yaml` | Data sources: `../20-data/sources/` Last updated: 2026-04-21 ## Concepts | Page | Summary | |------|---------| | [[concepts/bottleneck-cascade]] | Core thesis — sequential supply chain bottlenecks, rotation trade | | [[concepts/euv-tool-bottleneck]] | Deep-upstream ceiling — ASML and supplier chain govern long-run chip output | | [[concepts/memory-supercycle]] | DRAM/HBM crunch — prices +90% QoQ, all vendors sold out...",
+    "text": "Wiki Index — semi stocks Master index of all wiki pages. LLM maintained — do not edit manually. Thesis linked: Data sources: Last updated: 2026 04 21 Concepts Page Summary concepts/bottleneck cascade Six company control plane view of current bottleneck sequence concepts/n3 wafer crunch Near term N3 throughput pressure across NVDA, TSM, and hyperscaler dem... Master index of all wiki pages. LLM-maintained — do not edit manually. Thesis-linked: `../30-thesis/thesis.yaml` | Data sources: `../20-data/sources/` Last updated: 2026-04-21 ## Concepts | Page | Summary | |------|---------| | [[concepts/bottleneck-cascade]] | Six-company control-plane view of current bottleneck sequence | | [[concepts/n3-wafer-crunch]] | Near-term N3 throughput pressure across NVDA, TSM, and hyperscaler demand | | [[concepts/euv-tool-bottleneck]] | ASML-led long-run tool throughput ceiling | | [[concepts/token-e...",
     "title": "Wiki Index — semi-stocks",
     "type": "page:meta"
   },
@@ -539,27 +238,6 @@
     "type": "page:meta"
   },
   {
-    "href": "baker-cyclicality-thesis.html",
-    "id": "page:baker-cyclicality-thesis",
-    "text": "Baker's Cyclicality Thesis — Every Shortage Is Followed by a Glut Gavin Baker (@GavinSBaker, Atreides Management) articulated a framework for semiconductor investing in a November 24, 2023 tweet thread and expanded on it in his December 2025 \"Invest Like the Best\" podcast (EP.451). The core claims: 1. Semiconductor companies trade like the cyclicals they... # Baker's Cyclicality Thesis — Every Shortage Is Followed by a Glut Gavin Baker (@GavinSBaker, Atreides Management) articulated a framework for semiconductor investing in a November 24, 2023 tweet thread and expanded on it in his December 2025 \"Invest Like the Best\" podcast (EP.451). The core claims: 1. Semiconductor companies **trade like the cyclicals they have always been** — even the most secular, highest-growth names experience massive inventory corrections every 2-3 years. 2. **Any semiconductor company whose products are in...",
-    "title": "Baker's Cyclicality Thesis — Every Shortage Is Followed by a Glut",
-    "type": "page:output"
-  },
-  {
-    "href": "long-term-value-chain-thesis.html",
-    "id": "page:long-term-value-chain-thesis",
-    "text": "Long Term AI Hardware Value Chain Thesis Two independent analytical frameworks — Wang's structural margin compression and Baker's cyclicality — converge on the same directional conclusion for NVIDIA but diverge on the physical infrastructure layers. This output synthesizes both into a longer term positioning framework. The Two Frameworks Framework 1: Marg... # Long-Term AI Hardware Value Chain Thesis Two independent analytical frameworks — Wang's structural margin compression and Baker's cyclicality — converge on the same directional conclusion for NVIDIA but diverge on the physical infrastructure layers. This output synthesizes both into a longer-term positioning framework. --- ## The Two Frameworks ### Framework 1: Margin as Residual (Wang) NVIDIA's gross margin is the surplus left after paying supply-constrained monopolists and before selling to an oligopsony building alternatives....",
-    "title": "Long-Term AI Hardware Value Chain Thesis",
-    "type": "page:output"
-  },
-  {
-    "href": "nvda-swing-trade-thesis.html",
-    "id": "page:nvda-swing-trade-thesis",
-    "text": "NVDA Pre Earnings Swing Trade & Iron Condor Thesis Query: Can we exploit the $170 $190 range in NVDA before earnings, via a swing trade and/or an iron condor? Verdict: Yes — the range is technically confirmed and fundamentally supported, but the window closes at earnings (~May 28). Thesis Summary NVDA is trading at ~$177.64, pinned between incredible fund... # NVDA Pre-Earnings Swing Trade & Iron Condor Thesis Query: Can we exploit the $170-$190 range in NVDA before earnings, via a swing trade and/or an iron condor? **Verdict: Yes — the range is technically confirmed and fundamentally supported, but the window closes at earnings (~May 28).** ## Thesis Summary NVDA is trading at ~$177.64, pinned between incredible fundamentals (21x forward P/E, 73% YoY revenue growth, $97B FCF) and macro headwinds (25% semiconductor tariffs, FTC antitrust probe, China competition). This tug-of-war crea...",
-    "title": "NVDA Pre-Earnings Swing Trade & Iron Condor Thesis",
-    "type": "page:output"
-  },
-  {
     "href": "cohr-q2-fy2026-primary-sources.html",
     "id": "page:cohr-q2-fy2026-primary-sources",
     "text": "Coherent Corp. Q2 FY2026 Primary Sources Date captured: 2026 04 08 Quarter covered: Q2 FY2026 (ended 2025 12 31) Artifact Register URL: https://www.coherent.com/content/dam/coherent/site/en/documents/investors/financial releases/2026/february 4/earnings release fy26 q2.pdf URL: https://www.coherent.com/content/dam/coherent/site/en/documents/investors/inve... Date captured: 2026-04-08 Quarter covered: Q2 FY2026 (ended 2025-12-31) ## Artifact Register - `earnings_release` URL: https://www.coherent.com/content/dam/coherent/site/en/documents/investors/financial-releases/2026/february-4/earnings-release-fy26-q2.pdf - `investor_presentation` URL: https://www.coherent.com/content/dam/coherent/site/en/documents/investors/investor-presentations/2026/february-4/investor-presentation-20260204.pdf - `nvidia_partnership` URL: https://www.coherent.com/news/press-releases/nvidia-and-coherent-announc...",
@@ -571,6 +249,13 @@
     "id": "page:crwv-q4-2025-transcript",
     "text": "CoreWeave, Inc. (CRWV) Q4 2025 Earnings Call Transcript Date: 26 Feb 2026, 5:00 PM ET Source: Corrected Transcript, FactSet CallStreet, LLC URL: https://s205.q4cdn.com/133937190/files/doc financials/2025/q4/CORRECTED TRANSCRIPT CoreWeave Inc CRWV US Q4 2025 Earnings Call 26 February 2026 5 00 PM ET.pdf CORPORATE PARTICIPANTS Michael Intrator Co Founder, C... **Date:** 26-Feb-2026, 5:00 PM ET **Source:** Corrected Transcript, FactSet CallStreet, LLC **URL:** https://s205.q4cdn.com/133937190/files/doc_financials/2025/q4/CORRECTED-TRANSCRIPT-CoreWeave-Inc-CRWV-US-Q4-2025-Earnings-Call-26-February-2026-5-00-PM-ET.pdf --- ## CORPORATE PARTICIPANTS **Michael Intrator** Co-Founder, Chairman, President & Chief Executive Officer, CoreWeave, Inc. **Nitin Agrawal** Chief Financial Officer, CoreWeave, Inc. --- ## OTHER PARTICIPANTS **Josh Baer** — Analyst, Morgan Stanley & Co. LLC **Gabriela Borg...",
     "title": "CoreWeave, Inc. (CRWV) Q4 2025 Earnings Call Transcript",
+    "type": "page:raw"
+  },
+  {
+    "href": "dwarkesh-dylan-ai-infrastructure-bottlenecks.html",
+    "id": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
+    "text": "Dwarkesh x Dylan Patel — AI Infrastructure Bottlenecks Date captured: 2026 04 08 Source type: User provided podcast transcript Speakers: Dwarkesh Patel, Dylan Patel Context Long form discussion on hyperscaler CapEx, AI lab compute procurement, memory and N3 shortages, ASML/EUV ceilings, power buildout, China catch up, and space data centers. Captured Clai... Date captured: 2026-04-08 Source type: User-provided podcast transcript Speakers: Dwarkesh Patel, Dylan Patel ## Context Long-form discussion on hyperscaler CapEx, AI-lab compute procurement, memory and N3 shortages, ASML/EUV ceilings, power buildout, China catch-up, and space data centers. ## Captured Claims - Big Tech hyperscaler CapEx is running at roughly `$600B` in 2026, with broader supply-chain spend near `$1T`. - The US is adding roughly `20 GW` of critical IT capacity in 2026, but a meaningful share of 2026 CapEx prepays...",
+    "title": "Dwarkesh x Dylan Patel — AI Infrastructure Bottlenecks",
     "type": "page:raw"
   },
   {
@@ -609,6 +294,13 @@
     "type": "page:raw"
   },
   {
+    "href": "jstwng-nvidia-margin-illusion.html",
+    "id": "page:jstwng-nvidia-margin-illusion",
+    "text": "NVIDIA's Margin Illusion Author: Justin Wang (@jstwng) Platform: X (Article) Date: 2026 04 12 URL: https://x.com/jstwng (article post) An NVIDIA H100 GPU costs approximately $6,400 to produce and sells for $30,000–$40,000, resulting in a staggering implied chip level gross margin of roughly 82% [1]. The market has interpreted this as confirmation of the c... **Author:** Justin Wang (@jstwng) **Platform:** X (Article) **Date:** 2026-04-12 **URL:** https://x.com/jstwng (article post) --- An NVIDIA H100 GPU costs approximately $6,400 to produce and sells for $30,000–$40,000, resulting in a staggering implied chip-level gross margin of roughly 82% [1]. The market has interpreted this as confirmation of the chip designer's durable pricing power, but the truth is that NVIDIA's margin structure is the most exposed in the AI hardware stack and can be better understood as a residual — the surp...",
+    "title": "NVIDIA's Margin Illusion",
+    "type": "page:raw"
+  },
+  {
     "href": "tsm-q4-2025-primary-sources.html",
     "id": "page:tsm-q4-2025-primary-sources",
     "text": "TSMC Q4 2025 Primary Sources Date captured: 2026 04 08 Quarter covered: Q4 2025 (ended 2025 12 31) Artifact Register URL: https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/tsm 20260115x6k.htm URL: https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e withguidancexfinal.htm URL: https://www.sec.gov/Archives/edgar/data/1... Date captured: 2026-04-08 Quarter covered: Q4 2025 (ended 2025-12-31) ## Artifact Register - `form_6k` URL: https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/tsm-20260115x6k.htm - `press_release_ex_99_1` URL: https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm - `presentation_ex_99_2` URL: https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25presentatione.htm ## Captured Metrics - Q4 2025 revenue: `NT$1,046.09B` / `US$33.73B` - Q4 2025 net income: `NT...",
@@ -616,86 +308,44 @@
     "type": "page:raw"
   },
   {
-    "href": "cohr-q2-fy2026.html",
-    "id": "page:cohr-q2-fy2026",
-    "text": "Coherent Q2 FY2026 Earnings Coherent printed another strong AI optics quarter on February 4, 2026. Datacenter and communications remained the growth engine, now 72% of revenue, while management guided to continued strength in the second half of FY2026 and FY2027 as production capacity expands. Key Metrics Metric Q2 FY2026 Notes Revenue $1.69B +17% YoY rep... # Coherent Q2 FY2026 Earnings Coherent printed another strong AI-optics quarter on February 4, 2026. Datacenter and communications remained the growth engine, now 72% of revenue, while management guided to continued strength in the second half of FY2026 and FY2027 as production capacity expands. ## Key Metrics | Metric | Q2 FY2026 | Notes | |---|---|---| | Revenue | $1.69B | +17% YoY reported, +22% pro forma | | GAAP gross margin | 36.9% | +145bps YoY | | Non-GAAP gross margin | 39.0% | +77bps YoY | | GAAP EPS | $0.76 | +71% YoY |...",
-    "title": "Coherent Q2 FY2026 Earnings",
-    "type": "page:source"
-  },
-  {
     "href": "crwv-q4-2025.html",
     "id": "page:crwv-q4-2025",
-    "text": "CoreWeave Q4 2025 Earnings Earnings call: February 26, 2026. Stock dropped ~18 20% next day despite revenue beat — Q1 guidance miss and massive capex plan spooked the market. Key Metrics Metric Q4 2025 FY 2025 2026 Guide Revenue $1.57B (+110% YoY) $5.13B (+168%) $12 13B (~140%) Adj. EBITDA $898M (57% margin) $3.1B (60%) — Adj. Operating Income $88M (6%) —... # CoreWeave Q4 2025 Earnings Earnings call: February 26, 2026. Stock dropped ~18-20% next day despite revenue beat — Q1 guidance miss and massive capex plan spooked the market. ## Key Metrics | Metric | Q4 2025 | FY 2025 | 2026 Guide | |---|---|---|---| | Revenue | $1.57B (+110% YoY) | $5.13B (+168%) | $12-13B (~140%) | | Adj. EBITDA | $898M (57% margin) | $3.1B (60%) | — | | Adj. Operating Income | $88M (6%) | — | $900M-$1.1B | | Net Loss (GAAP) | -$452M | -$1.17B | — | | CapEx | $8.2B | $14.9B | $30-35B | | Backlog | $66.8B | 4x...",
+    "text": "CoreWeave Q4 2025 Earnings CRWV is retained as the GPU cloud demand validator in the six company spine. Key Metrics Metric Q4 2025 FY 2025 2026 Guide Revenue $1.57B (+110% YoY) $5.13B (+168%) $12 13B Adj. EBITDA $898M (57% margin) $3.1B (60%) — CapEx $8.2B $14.9B $30 35B Backlog $66.8B 4x'd YTD — Thesis Read Through Demand layer: CRWV backlog and deployme... # CoreWeave Q4 2025 Earnings CRWV is retained as the GPU-cloud demand validator in the six-company spine. ## Key Metrics | Metric | Q4 2025 | FY 2025 | 2026 Guide | |---|---|---|---| | Revenue | $1.57B (+110% YoY) | $5.13B (+168%) | $12-13B | | Adj. EBITDA | $898M (57% margin) | $3.1B (60%) | — | | CapEx | $8.2B | $14.9B | $30-35B | | Backlog | $66.8B | 4x'd YTD | — | ## Thesis Read-Through - Demand layer: CRWV backlog and deployment pace confirm high GPU appetite. - Supply layer impact: CRWV demand pulls directly on NVDA and TSM...",
     "title": "CoreWeave Q4 2025 Earnings",
-    "type": "page:source"
-  },
-  {
-    "href": "dwarkesh-dylan-ai-infrastructure-bottlenecks.html",
-    "id": "page:dwarkesh-dylan-ai-infrastructure-bottlenecks",
-    "text": "Dwarkesh x Dylan Patel — AI Infrastructure Bottlenecks This transcript is the cleanest single source articulation of SemiAnalysis's current hierarchy of constraints: power and data centers are real problems, but semiconductors remain the harder ceiling. Near term the bottleneck is memory plus leading edge wafer and fab space; further out it rotates into t... # Dwarkesh x Dylan Patel — AI Infrastructure Bottlenecks This transcript is the cleanest single-source articulation of SemiAnalysis's current hierarchy of constraints: power and data centers are real problems, but semiconductors remain the harder ceiling. Near term the bottleneck is memory plus leading-edge wafer and fab space; further out it rotates into the EUV tool chain. ## Key Takeaways - Hyperscaler CapEx is time-shifted. A 2026 dollar does not map one-for-one to 2026 compute because a large share prepays later turbines, lan...",
-    "title": "Dwarkesh x Dylan Patel — AI Infrastructure Bottlenecks",
     "type": "page:source"
   },
   {
     "href": "baker-q4-2025.html",
     "id": "page:baker-q4-2025",
-    "text": "Gavin Baker — Q4 2025 13F Atreides Management LP. $8.2B AUM. 56 positions (more diversified than Leopold). NVIDIA's first major institutional investor 20+ years ago. Thesis Signal Semiconductor supply chain is the bottleneck, not power. Massive NVDA long. Winner take most in GPUs. Exited AMD and META entirely. Top Positions Ticker Type Value % Port Bottle... # Gavin Baker — Q4 2025 13F Atreides Management LP. $8.2B AUM. 56 positions (more diversified than Leopold). NVIDIA's first major institutional investor 20+ years ago. ## Thesis Signal **Semiconductor supply chain is the bottleneck, not power.** Massive NVDA long. Winner-take-most in GPUs. Exited AMD and META entirely. ## Top Positions | Ticker | Type | Value | % Port | Bottleneck | Notes | |--------|------|-------|--------|------------|-------| | NVDA | Common + Calls | $1B+ | — | N3 logic | $902M in NEW call options | | MU | Com...",
+    "text": "Gavin Baker — Q4 2025 13F Atreides Management LP. This page is intentionally pruned to the active six company spine. Active Position Set Ticker Type Value Bottleneck NVDA Common + Calls $1.01B N3 logic GOOGL Common $161M Hyperscaler AMZN Common $159M Hyperscaler CRWV Common $43M GPU cloud Read Through Baker's largest semiconductor expression remains NVDA.... # Gavin Baker — Q4 2025 13F Atreides Management LP. This page is intentionally pruned to the active six-company spine. ## Active Position Set | Ticker | Type | Value | Bottleneck | |--------|------|-------|------------| | NVDA | Common + Calls | $1.01B | N3 logic | | GOOGL | Common | $161M | Hyperscaler | | AMZN | Common | $159M | Hyperscaler | | CRWV | Common | $43M | GPU cloud | ## Read-Through - Baker's largest semiconductor expression remains NVDA. - GOOGL and AMZN anchor the demand side of the stack. - CRWV is retained as a s...",
     "title": "Gavin Baker — Q4 2025 13F",
-    "type": "page:source"
-  },
-  {
-    "href": "intc-q4-2025.html",
-    "id": "page:intc-q4-2025",
-    "text": "Intel Q4 2025 Earnings Intel's January 22, 2026 quarter is not a clean bull case, but it is an important bottleneck datapoint. The numbers show AI related server demand is strong enough that Intel still cannot fully meet it, while 18A and foundry ramp represent one of the only plausible future supply responses to the current leading edge crunch. Key Metri... # Intel Q4 2025 Earnings Intel's January 22, 2026 quarter is not a clean bull case, but it is an important bottleneck datapoint. The numbers show AI-related server demand is strong enough that Intel still cannot fully meet it, while 18A and foundry ramp represent one of the only plausible future supply responses to the current leading-edge crunch. ## Key Metrics | Metric | Q4 2025 | Notes | |---|---|---| | Revenue | $13.7B | -4% YoY | | Non-GAAP gross margin | 37.9% | ahead of guide | | Non-GAAP EPS | $0.15 | ahead of guide | | Ca...",
-    "title": "Intel Q4 2025 Earnings",
-    "type": "page:source"
-  },
-  {
-    "href": "jstwng-nvidia-margin-illusion.html",
-    "id": "page:jstwng-nvidia-margin-illusion",
-    "text": "Justin Wang — NVIDIA's Margin Illusion X article (2026 04 12, 17K+ views) arguing NVIDIA's gross margin is a structural residual — the surplus left after paying supply constrained monopolists (TSMC, HBM oligopoly) and before selling to an oligopsony of hyperscalers that are building in house alternatives. The margin is compressing from both directions and... # Justin Wang — NVIDIA's Margin Illusion X article (2026-04-12, 17K+ views) arguing NVIDIA's gross margin is a structural residual — the surplus left after paying supply-constrained monopolists (TSMC, HBM oligopoly) and before selling to an oligopsony of hyperscalers that are building in-house alternatives. The margin is compressing from both directions and the market has not priced it. ## Core Argument NVIDIA captures 75%+ of the GPU selling price while contributing only ~14% of the BoM. The other 86% flows to suppliers with inde...",
-    "title": "Justin Wang — NVIDIA's Margin Illusion",
     "type": "page:source"
   },
   {
     "href": "leopold-q4-2025.html",
     "id": "page:leopold-q4-2025",
-    "text": "Leopold Aschenbrenner — Q4 2025 13F Situational Awareness LP. $5.5B AUM. 25 positions. Filed 2026 02 11. Top 5 concentration: 68%. Performance: +47% net H1 2025 vs S&P +6%. Q4 2025: 21.3%. Thesis Signal Power is THE bottleneck, not chips. Exited NVDA and AVGO entirely. Moved down stack from chips to power infrastructure and GPU cloud operators. Top Positi... # Leopold Aschenbrenner — Q4 2025 13F Situational Awareness LP. $5.5B AUM. 25 positions. Filed 2026-02-11. Top 5 concentration: 68%. Performance: +47% net H1 2025 vs S&P +6%. Q4 2025: -21.3%. ## Thesis Signal **Power is THE bottleneck, not chips.** Exited NVDA and AVGO entirely. Moved down-stack from chips to power infrastructure and GPU cloud operators. ## Top Positions | Ticker | Type | Value | % Port | Bottleneck | QoQ Change | |--------|------|-------|--------|------------|------------| | CRWV | Call | $1.2B | 21.9% | GPU clou...",
+    "text": "Leopold Aschenbrenner — Q4 2025 13F Situational Awareness LP. This page is intentionally pruned to the active six company spine. Active Position Set Ticker Type Value % Port Bottleneck CRWV Call $1.2B 21.9% GPU cloud Active Name Exits NVDA puts exited TSM puts exited Read Through Leopold remains concentrated in downstream GPU cloud exposure through CRWV.... # Leopold Aschenbrenner — Q4 2025 13F Situational Awareness LP. This page is intentionally pruned to the active six-company spine. ## Active Position Set | Ticker | Type | Value | % Port | Bottleneck | |--------|------|-------|--------|------------| | CRWV | Call | $1.2B | 21.9% | GPU cloud | ## Active-Name Exits - NVDA puts exited - TSM puts exited ## Read-Through - Leopold remains concentrated in downstream GPU-cloud exposure through CRWV. - Relative to Baker, this creates a clean compare: Baker's core is NVDA plus hyperscalers,...",
     "title": "Leopold Aschenbrenner — Q4 2025 13F",
-    "type": "page:source"
-  },
-  {
-    "href": "lite-q2-fy2026.html",
-    "id": "page:lite-q2-fy2026",
-    "text": "Lumentum Q2 FY2026 Earnings Lumentum's February 3, 2026 quarter is one of the strongest current proofs that AI optics revenue is real, not just an architecture story. Revenue grew 65.5% YoY, management guided to another step up in Q3, and the company explicitly said OCS backlog is already above $400M while CPO orders are now multi hundred million dollar s... # Lumentum Q2 FY2026 Earnings Lumentum's February 3, 2026 quarter is one of the strongest current proofs that AI optics revenue is real, not just an architecture story. Revenue grew 65.5% YoY, management guided to another step up in Q3, and the company explicitly said OCS backlog is already above $400M while CPO orders are now multi-hundred-million-dollar sized. ## Key Metrics | Metric | Q2 FY2026 | Notes | |---|---|---| | Revenue | $665.5M | +24.7% QoQ, +65.5% YoY | | GAAP gross margin | 36.1% | | | Non-GAAP gross margin | 42.5%...",
-    "title": "Lumentum Q2 FY2026 Earnings",
-    "type": "page:source"
-  },
-  {
-    "href": "mu-q2-fy2026.html",
-    "id": "page:mu-q2-fy2026",
-    "text": "Micron Q2 FY2026 Earnings Micron's March 18, 2026 quarter is the clearest financial proof that concepts/memory supercycle is not theoretical anymore. Revenue, margins, EPS, and free cash flow all set records, while management explicitly said DRAM and NAND demand remain constrained by supply and should stay tight beyond 2026. Key Metrics Metric Q2 FY2026 N... # Micron Q2 FY2026 Earnings Micron's March 18, 2026 quarter is the clearest financial proof that [[concepts/memory-supercycle]] is not theoretical anymore. Revenue, margins, EPS, and free cash flow all set records, while management explicitly said DRAM and NAND demand remain constrained by supply and should stay tight beyond 2026. ## Key Metrics | Metric | Q2 FY2026 | Notes | |---|---|---| | Revenue | $23.86B | vs $13.64B in Q1 | | GAAP gross margin | 74.4% | vs 56.0% in Q1 | | Non-GAAP gross margin | 74.9% | vs 56.8% in Q1 | | GA...",
-    "title": "Micron Q2 FY2026 Earnings",
     "type": "page:source"
   },
   {
     "href": "nvda-q4-fy2026.html",
     "id": "page:nvda-q4-fy2026",
-    "text": "NVIDIA — Q4 FY2026 Earnings Record quarter: $68.1B revenue (+73% YoY), beat guidance by ~$3B. Guided Q1 to $78B vs Street's $72.6B. Stock rose on the beat. Data Center = 91% of revenue. Key Metrics Metric Q4 FY2026 FY2026 QoQ YoY Revenue $68.1B $215.9B +20% +73% Data Center $62.3B $193.7B +22% +75% Networking $11B $31B — +3.5x Gaming $3.7B $16.0B 13% +47%... # NVIDIA — Q4 FY2026 Earnings Record quarter: $68.1B revenue (+73% YoY), beat guidance by ~$3B. Guided Q1 to $78B vs Street's $72.6B. Stock rose on the beat. Data Center = 91% of revenue. ## Key Metrics | Metric | Q4 FY2026 | FY2026 | QoQ | YoY | |---|---|---|---|---| | Revenue | $68.1B | $215.9B | +20% | +73% | | Data Center | $62.3B | $193.7B | +22% | +75% | | Networking | $11B | $31B | — | +3.5x | | Gaming | $3.7B | $16.0B | -13% | +47% | | Gross Margin (non-GAAP) | 75.2% | 71.3% | +180bps | — | | Net Income | $43.0B | $120.1B...",
+    "text": "NVIDIA — Q4 FY2026 Earnings NVDA is the primary semiconductor expression in the reduced universe. Key Metrics Metric Q4 FY2026 FY2026 Revenue $68.1B (+73% YoY) $215.9B Data Center $62.3B (+75% YoY) $193.7B Networking $11B (+3.5x YoY) $31B Gross Margin (non GAAP) 75.2% 71.3% Guidance Snapshot Q1 FY2027 revenue: $78B +/ 2% Q1 non GAAP gross margin: 75% +/ 5... # NVIDIA — Q4 FY2026 Earnings NVDA is the primary semiconductor expression in the reduced universe. ## Key Metrics | Metric | Q4 FY2026 | FY2026 | |---|---|---| | Revenue | $68.1B (+73% YoY) | $215.9B | | Data Center | $62.3B (+75% YoY) | $193.7B | | Networking | $11B (+3.5x YoY) | $31B | | Gross Margin (non-GAAP) | 75.2% | 71.3% | ## Guidance Snapshot - Q1 FY2027 revenue: $78B +/-2% - Q1 non-GAAP gross margin: 75% +/-50bps - Rubin production target: H2 2026 ## Thesis Read-Through - Baker's largest conviction sits in NVDA. - N3 de...",
     "title": "NVIDIA — Q4 FY2026 Earnings",
     "type": "page:source"
   },
   {
     "href": "semianalysis-signals.html",
     "id": "page:semianalysis-signals",
-    "text": "SemiAnalysis Signals Dylan Patel's SemiAnalysis. Proprietary supply chain data — tracks every data center, fab, tool order, wafer allocation globally. The only source with bottom up models for TSMC wafer allocation, ASML tool shipments, HBM capacity by vendor, and hyperscaler CapEx breakdown. Track Record Memory crunch call: Sep 2024, 12 months early CoWo... # SemiAnalysis Signals Dylan Patel's SemiAnalysis. Proprietary supply chain data — tracks every data center, fab, tool order, wafer allocation globally. The only source with bottom-up models for TSMC wafer allocation, ASML tool shipments, HBM capacity by vendor, and hyperscaler CapEx breakdown. ## Track Record - Memory crunch call: Sep 2024, 12 months early - CoWoS bottleneck: 2023 (correct) - Power crisis: 2024 (correct) ## Current Key Signals ### Memory - 30% of Big Tech's $600B+ CapEx goes to memory - Smartphone volumes droppin...",
+    "text": "SemiAnalysis Signals SemiAnalysis is the external supply chain signal layer in this reduced pipeline. Active Signal Scope , , : near term GPU and N3 tightness. , : hyperscaler capex pull through into accelerator demand. Why It Stays It provides directional operating context for Leopold and Baker positions. It connects demand (GOOGL/AMZN/CRWV) to supply co... # SemiAnalysis Signals SemiAnalysis is the external supply-chain signal layer in this reduced pipeline. ## Active Signal Scope - `NVDA`, `CRWV`, `TSM`: near-term GPU and N3 tightness. - `GOOGL`, `AMZN`: hyperscaler capex pull-through into accelerator demand. ## Why It Stays - It provides directional operating context for Leopold and Baker positions. - It connects demand (GOOGL/AMZN/CRWV) to supply constraint nodes (NVDA/TSM). ## Semi-stocks Data - Structured signal set: `canonical/20-data/sources/semianalysis/signals.yaml` - Thesi...",
     "title": "SemiAnalysis Signals",
     "type": "page:source"
   },
   {
     "href": "tsm-q4-2025.html",
     "id": "page:tsm-q4-2025",
-    "text": "TSMC Q4 2025 Earnings TSMC's January 15, 2026 quarter is the base layer proof for concepts/n3 wafer crunch. Leading edge demand remained strong, 3nm already accounted for 28% of wafer revenue, advanced nodes were 77% of wafer revenue, and management guided both another strong Q1 and a $52B $56B 2026 capex budget. Key Metrics Metric Q4 2025 Notes Revenue $... # TSMC Q4 2025 Earnings TSMC's January 15, 2026 quarter is the base-layer proof for [[concepts/n3-wafer-crunch]]. Leading-edge demand remained strong, 3nm already accounted for 28% of wafer revenue, advanced nodes were 77% of wafer revenue, and management guided both another strong Q1 and a $52B-$56B 2026 capex budget. ## Key Metrics | Metric | Q4 2025 | Notes | |---|---|---| | Revenue | $33.73B | +25.5% YoY in USD | | Net income | NT$505.74B | +35.0% YoY | | Diluted EPS | NT$19.50 | $3.14 per ADR | | Gross margin | 62.3% | beat p...",
+    "text": "TSMC Q4 2025 Earnings TSM is the foundry anchor in the six company spine. Key Metrics Metric Q4 2025 Notes Revenue $33.73B +25.5% YoY in USD Gross margin 62.3% beat prior guide 3nm mix 28% of wafer revenue Advanced nodes 77% of wafer revenue 7nm and below Q1 2026 guide $34.6B $35.8B 2026 capex $52B $56B Thesis Read Through TSM is the physical throughput g... # TSMC Q4 2025 Earnings TSM is the foundry anchor in the six-company spine. ## Key Metrics | Metric | Q4 2025 | Notes | |---|---|---| | Revenue | $33.73B | +25.5% YoY in USD | | Gross margin | 62.3% | beat prior guide | | 3nm mix | 28% of wafer revenue | | | Advanced nodes | 77% of wafer revenue | 7nm and below | | Q1 2026 guide | $34.6B-$35.8B | | | 2026 capex | $52B-$56B | | ## Thesis Read-Through - TSM is the physical throughput gate for the NVDA-led demand cycle. - GOOGL and AMZN demand pull reinforces leading-edge utilization...",
     "title": "TSMC Q4 2025 Earnings",
     "type": "page:source"
   },
@@ -705,41 +355,6 @@
     "text": "Summary Cascade + Cycle Risk Positions + Signals Earnings + Proof Gates Drift Warnings",
     "title": "semi-stocks latest report",
     "type": "report"
-  },
-  {
-    "href": "cohr-q2-fy2026",
-    "id": "signal:company:COHR:q2-fy2026:01",
-    "text": "Datacenter and communications was 72% of Q2 revenue ($1.208B) and management tied H2 FY2026 and FY2027 growth to continued datacenter demand plus production capacity expansion.",
-    "title": "COHR",
-    "type": "signal"
-  },
-  {
-    "href": "cohr-q2-fy2026",
-    "id": "signal:company:COHR:q2-fy2026:02",
-    "text": "Q3 guide calls for $1.70B-$1.84B revenue and 38.5%-40.5% non-GAAP gross margin, implying AI-optics demand is supporting both growth and pricing/mix.",
-    "title": "COHR",
-    "type": "signal"
-  },
-  {
-    "href": "cohr-q2-fy2026",
-    "id": "signal:company:COHR:q2-fy2026:03",
-    "text": "March 2026 NVIDIA partnership added a multibillion-dollar purchase commitment, future capacity rights for advanced laser and optical networking products, and a $2B NVIDIA investment to expand Coherent's U.S. manufacturing and R&D base.",
-    "title": "COHR",
-    "type": "signal"
-  },
-  {
-    "href": "cohr-q2-fy2026",
-    "id": "signal:company:COHR:q2-fy2026:04",
-    "text": "OFC 2026 demos included 6.4T socketed silicon-photonics CPO, VCSEL-based socketed CPO, and a 400G-per-lane InP-on-silicon modulator path, showing Coherent has multiple technical routes into future package-level optics.",
-    "title": "COHR",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:semianalysis:2026-02-09:04",
-    "text": "AMD Venice: up to 256 cores, 1.7x perf/watt vs Turin; Intel Diamond Rapids: up to 256 cores, ~40% faster than Granite Rapids; Nvidia Vera: 2x performance over Grace, 6 dies; SoftBank acquired Ampere Computing for $6.5B; ARM datacenter royalty revenue more than doubled YoY, >1B Neoverse cores deployed",
-    "title": "CPUs are Back: The Datacenter CPU Landscape in 2026",
-    "type": "signal"
   },
   {
     "href": "crwv-q4-2025",
@@ -756,94 +371,10 @@
     "type": "signal"
   },
   {
-    "href": "crwv-q4-2025",
-    "id": "signal:company:CRWV:q4-2025:03",
-    "text": "Every GPU CRWV deploys needs HBM. $30-35B capex = substantial HBM demand. Storage ARR >$100M and growing.",
-    "title": "CRWV",
-    "type": "signal"
-  },
-  {
-    "href": "crwv-q4-2025",
-    "id": "signal:company:CRWV:q4-2025:04",
-    "text": "850 MW active, 3.1 GW contracted, targeting 5+ GW by 2030. 43 data centers. 260 MW added in Q4 alone.",
-    "title": "CRWV",
-    "type": "signal"
-  },
-  {
-    "href": "crwv-q4-2025",
-    "id": "signal:company:CRWV:q4-2025:05",
-    "text": "Every NVL72 rack deployed uses pluggable optics for scale-out. 100K+ GPUs deployed in Q4 = significant transceiver demand.",
-    "title": "CRWV",
-    "type": "signal"
-  },
-  {
     "href": null,
-    "id": "signal:semianalysis:2026-03-27:06",
-    "text": "CPO = $20B market by 2036, 37% CAGR; 2026 is inflection year: prototypes → volume deployment; Required for Nvidia NVL576+ inter-rack connectivity; OFC panel: Nvidia, Broadcom, Marvell, AMD, Google, Meta, Oracle all present; TSMC SoIC 3D integration for CPO platforms",
-    "title": "Co-Packaged Optics (CPO)",
-    "type": "signal"
-  },
-  {
-    "href": "intc-q4-2025",
-    "id": "signal:company:INTC:q4-2025:01",
-    "text": "Intel said AI-driven demand created meaningful supply constraints, DCAI revenue rose 15% sequentially, and revenue would have been materially higher with more supply.",
-    "title": "INTC",
-    "type": "signal"
-  },
-  {
-    "href": "intc-q4-2025",
-    "id": "signal:company:INTC:q4-2025:02",
-    "text": "Intel Foundry is ramping 18A, raising EUV wafer mix, and engaging external customers on 14A, which is precisely the kind of alternative leading-edge supply response that could ease the crunch later.",
-    "title": "INTC",
-    "type": "signal"
-  },
-  {
-    "href": "intc-q4-2025",
-    "id": "signal:company:INTC:q4-2025:03",
-    "text": "Intel flagged rising DRAM, NAND, and substrate pricing due to intense AI infrastructure demand, showing upstream component constraints are now feeding through into Intel's model.",
-    "title": "INTC",
-    "type": "signal"
-  },
-  {
-    "href": "lite-q2-fy2026",
-    "id": "signal:company:LITE:q2-fy2026:01",
-    "text": "Revenue rose 65.5% YoY, components were 66.7% of total revenue, and Q3 guide points to another major step up, showing AI optical demand is already moving the reported P&L.",
-    "title": "LITE",
-    "type": "signal"
-  },
-  {
-    "href": "lite-q2-fy2026",
-    "id": "signal:company:LITE:q2-fy2026:02",
-    "text": "OCS backlog is already above $400M, and the R64 OCS extends Lumentum's optical-circuit-switch lineup into lower-port-count AI deployments with 72x72 scaling and major power savings.",
-    "title": "LITE",
-    "type": "signal"
-  },
-  {
-    "href": "lite-q2-fy2026",
-    "id": "signal:company:LITE:q2-fy2026:03",
-    "text": "Management disclosed an incremental multi-hundred-million-dollar CPO order for 1H 2027 delivery, while NVIDIA added a $2B investment, a multibillion purchase commitment, and future capacity rights for advanced laser components.",
-    "title": "LITE",
-    "type": "signal"
-  },
-  {
-    "href": "mu-q2-fy2026",
-    "id": "signal:company:MU:q2-fy2026:01",
-    "text": "Management said DRAM and NAND data-center bit TAM should exceed 50% of industry TAM in 2026 and that both AI and traditional server demand are constrained by inadequate supply.",
-    "title": "MU",
-    "type": "signal"
-  },
-  {
-    "href": "mu-q2-fy2026",
-    "id": "signal:company:MU:q2-fy2026:02",
-    "text": "Record Q2 results with 74.9% non-GAAP gross margin and a Q3 guide of $33.5B revenue / ~81% gross margin show the shortage is converting directly into pricing and earnings power.",
-    "title": "MU",
-    "type": "signal"
-  },
-  {
-    "href": "mu-q2-fy2026",
-    "id": "signal:company:MU:q2-fy2026:03",
-    "text": "Micron has begun HBM4 volume shipments for NVIDIA Vera Rubin and is investing above $25B in FY2026 capex, reinforcing that memory capacity is being pulled hard by the 2026 accelerator ramp.",
-    "title": "MU",
+    "id": "signal:semianalysis:2026-04-01:03",
+    "text": "Big tech total 2026 AI spending estimated around $650B, +80% YoY; Google and Amazon remain the two largest incremental demand engines for accelerator clusters; Cloud procurement cadence supports sustained NVDA and CRWV order visibility",
+    "title": "Hyperscaler CapEx Pull Through",
     "type": "signal"
   },
   {
@@ -856,36 +387,8 @@
   {
     "href": "nvda-q4-fy2026",
     "id": "signal:company:NVDA:q4-fy2026:02",
-    "text": "$21.4B inventory (significant HBM stockpile). Every GPU shipped needs HBM. NVIDIA GPU volumes are primary demand driver for memory supercycle. CRWV alone ordering $30-35B capex worth of GPUs = massive HBM pull-through.",
-    "title": "NVDA",
-    "type": "signal"
-  },
-  {
-    "href": "nvda-q4-fy2026",
-    "id": "signal:company:NVDA:q4-fy2026:03",
-    "text": "Networking revenue $11B (+3.5x YoY). Every NVL72 rack uses OSFP pluggable transceivers. Spectrum-X \"a home run.\" \"We ship racks of computers\" = optics in every unit. Grace Blackwell = ~2/3 of DC revenue — all rack-scale with optics.",
-    "title": "NVDA",
-    "type": "signal"
-  },
-  {
-    "href": "nvda-q4-fy2026",
-    "id": "signal:company:NVDA:q4-fy2026:04",
     "text": "Supply commitments doubled ($50.3B → $95.2B). $500B revenue visibility. Demand \"growing exponentially.\" Validates CRWV thesis — NVIDIA can't build fast enough.",
     "title": "NVDA",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:semianalysis:2026-03-15:03",
-    "text": "Nvidia acquired Groq for ~$20B; Rubin Ultra NVL144: 144 GPUs/rack, 72 NVLink 7 switches, 28.8Tbit/s per switch; NVL576 (Rubin Ultra): CPO optics required between racks; CPO market projected $20B by 2036, 37% CAGR; Vera CPU: 88 cores, 1.5TB LPDDR5X, 1.8TB/s NVLink-C2C (2x Grace)",
-    "title": "Nvidia — The Inference Kingdom Expands (GTC 2026)",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:semianalysis:2025-12-15:05",
-    "text": "HBM 85% less dense than DDR equivalent (0.16 vs 0.296 Gb/mm2); 12-layer HBM stack yield ~87% (at 99% per-layer); HBM market: $35B (2025) → $54.6B (2026); HBM bit share of DRAM: 19% (2025) → 23% (2026); China CXMT matching Micron TSV capacity by end 2025, ~2M stacks (enough for ~250K Ascend 910Cs); Rubin Ultra projected 1,024GB HBM4E per GPU",
-    "title": "Scaling the Memory Wall: The Rise and Roadmap of HBM",
     "type": "signal"
   },
   {
@@ -912,315 +415,112 @@
   {
     "href": null,
     "id": "signal:semianalysis:2026-03-15:02",
-    "text": "AI = 60% of TSMC N3 output (2026), projected 86% by 2027; Reallocating 5% smartphone N3 wafers = ~100K Rubin GPUs or ~300K TPU v7s; Reallocating 25% = ~700K Rubin GPUs or ~1.5M TPU v7s; Google 2026 capex roughly doubled vs prior expectations; Anthropic added $6B ARR in Feb 2026 alone (Claude Code driven); HBM consumes ~3x more wafer capacity than commodity DRAM, widening to ~4x with HBM4; All major AI accelerators moving to N3 simultaneously: Rubin, TPU v7/v8, Trainium3, MI350X",
+    "text": "AI = 60% of TSMC N3 output (2026), projected 86% by 2027; Reallocating 5% smartphone N3 wafers = ~100K Rubin GPUs or ~300K TPU v7s; Google 2026 capex roughly doubled vs prior expectations; Amazon 2026 AI infrastructure spend remains on a steep expansion path; All major AI accelerators moving to N3 simultaneously",
     "title": "The Great AI Silicon Shortage",
     "type": "signal"
   },
   {
     "href": null,
     "id": "signal:semianalysis:2026-04-02:01",
-    "text": "H100 1yr rental: $1.70/hr (Oct 2025) → $2.35/hr (Mar 2026), +40%; AWS p6-b200 spot: $14/hr/GPU; Month-on-month rental increases 15-20% (Jan-Mar 2026); All new capacity through Aug-Sep 2026 already booked; Blackwell deployment lead times extended to Jun-Jul 2026; Anthropic ARR: $9B (end 2025) → $25B (early 2026)",
+    "text": "H100 1yr rental: $1.70/hr (Oct 2025) → $2.35/hr (Mar 2026), +40%; AWS p6-b200 spot: $14/hr/GPU; Month-on-month rental increases 15-20% (Jan-Mar 2026); All new capacity through Aug-Sep 2026 already booked; Blackwell deployment lead times extended to Jun-Jul 2026",
     "title": "The Great GPU Shortage — Rental Capacity",
     "type": "signal"
   },
   {
     "href": null,
-    "id": "signal:proposal:hbm-contracting-structure-shift:01",
-    "text": "Wang draws LNG market parallel: when buyers shifted from spot to 15-20yr take-or-pay contracts, price volatility compressed and suppliers re-rated from cyclical to quasi-utility (Cheniere, Shell, TotalEnergies). HBM contracting trending same direction. If analogy holds, 5-8x fwd P/E on memory embeds unwarranted cyclical discount. SK Hynix 68.8% GM, Micron 74.9% GM — approaching/exceeding TSMC for first time in history.",
-    "title": "thesis_proposal_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:proposal:nvda-margin-compression:01",
-    "text": "Wang's margin-as-residual framework. NVIDIA captures 75%+ of GPU ASP while contributing ~14% of BoM. Margin absorbs pressure from TSMC (5-10% annual hikes), HBM oligopoly (20%+ price increases), and hyperscaler custom silicon (TPU v7, Trainium2/3, Maia 200 as credible BATNA). GAAP GM already 75.0% → 71.1%. Street models 74% → 71% over 5yr, likely understating bilateral pressure magnitude.",
-    "title": "thesis_proposal_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:proposal:tsm-pricing-power-reclassification:01",
-    "text": "Wang ranks CoWoS as #1 in substitutability ranking (most constrained, least substitutable). CoWoS capacity ~75K wafers/month early 2026, targeting 130K by late 2026, but demand at 113% CAGR keeps it fully booked. TSMC at ~25x fwd P/E is a discount to S&P 500 IT (~32x) despite 92% sub-5nm share and packaging monopoly.",
-    "title": "thesis_proposal_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:co-packaged-optics-cpo-scale-up:01",
-    "text": "Lumentum disclosed an incremental multi-hundred-million-dollar CPO order for 1H 2027 delivery",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:co-packaged-optics-cpo-scale-up:02",
-    "text": "Coherent's March 2026 NVIDIA partnership added multibillion-dollar purchase commitments, future capacity rights, and a $2B investment",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:co-packaged-optics-cpo-scale-up:03",
-    "text": "Coherent OFC 2026 demos included 6.4T silicon-photonics CPO, VCSEL socketed CPO, and a 400G-per-lane InP-on-silicon path",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:co-packaged-optics-cpo-scale-up:04",
-    "text": "Rubin Ultra NVL576: CPO between racks — explicitly low volume / test only",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:co-packaged-optics-cpo-scale-up:05",
-    "text": "Feynman NVL1152: CPO between racks, copper within rack (base case)",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:co-packaged-optics-cpo-scale-up:06",
-    "text": "448G SerDes challenges (shoreline, reach, power) favor CPO over copper at next speed step",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
     "id": "signal:thesis:euv-tools:01",
-    "text": "ASML can produce ~100 EUV tools/yr by 2030 (Zeiss optics is the constraint)",
+    "text": "ASML tooling cadence remains the long-run upper bound for advanced wafer output.",
     "title": "thesis_stage_signal",
     "type": "signal"
   },
   {
     "href": null,
-    "id": "signal:thesis:euv-tools:02",
-    "text": "One gigawatt of Rubin-class capacity needs ~3.5 EUV tools and ~2M EUV wafer passes",
+    "id": "signal:thesis:gpu-cloud-demand:01",
+    "text": "CoreWeave backlog and ramp cadence keep near-term GPU demand tight.",
     "title": "thesis_stage_signal",
     "type": "signal"
   },
   {
     "href": null,
-    "id": "signal:thesis:euv-tools:03",
-    "text": "Installed EUV base could approach ~700 tools by 2030, implying ~200 GW of annual AI-chip output if fully AI-allocated",
+    "id": "signal:thesis:gpu-cloud-demand:02",
+    "text": "Hyperscaler spend growth continues to pull forward accelerator demand.",
     "title": "thesis_stage_signal",
     "type": "signal"
   },
   {
     "href": null,
-    "id": "signal:thesis:euv-tools:04",
-    "text": "Near-term bottleneck is fab / cleanroom space; later bottleneck rotates to EUV tool throughput",
+    "id": "signal:thesis:hyperscaler-capex-pull:01",
+    "text": "Large cloud buyers continue to expand AI infrastructure budgets.",
     "title": "thesis_stage_signal",
     "type": "signal"
   },
   {
     "href": null,
-    "id": "signal:thesis:memory-supercycle:01",
-    "text": "Micron Q2 FY2026: $23.86B revenue, 74.9% non-GAAP gross margin, and Q3 guide of ~$33.5B revenue / ~81% gross margin",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:memory-supercycle:02",
-    "text": "Micron says DRAM and NAND remain supply constrained beyond calendar 2026",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:memory-supercycle:03",
-    "text": "Micron began HBM4 volume shipments for NVIDIA Vera Rubin",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:memory-supercycle:04",
-    "text": "DRAM contract prices +90-95% QoQ (Q1 2026, TrendForce)",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:memory-supercycle:05",
-    "text": "DDR4 spot $2.10/Gbit — now exceeds HBM3e at $1.70/Gbit (unprecedented)",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:memory-supercycle:06",
-    "text": "30% of Big Tech $650B CapEx goes to memory",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:memory-supercycle:07",
-    "text": "NVIDIA $21.4B inventory includes significant HBM stockpile (Q4 FY2026)",
+    "id": "signal:thesis:hyperscaler-capex-pull:02",
+    "text": "Cloud demand visibility supports sustained ordering through the stack.",
     "title": "thesis_stage_signal",
     "type": "signal"
   },
   {
     "href": null,
     "id": "signal:thesis:n3-logic-wafers:01",
-    "text": "TSMC Q4 2025: $33.73B revenue, 62.3% gross margin, and Q1 guide of $34.6B-$35.8B on strong leading-edge demand",
+    "text": "TSMC leading-edge utilization remains elevated while AI share rises.",
     "title": "thesis_stage_signal",
     "type": "signal"
   },
   {
     "href": null,
     "id": "signal:thesis:n3-logic-wafers:02",
-    "text": "TSMC 3nm already accounts for 28% of wafer revenue, and advanced nodes are 77% of wafer revenue",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:n3-logic-wafers:03",
-    "text": "Intel said revenue would have been materially higher with more supply; DCAI revenue rose 15% sequentially",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:n3-logic-wafers:04",
-    "text": "AI = 60% of TSMC N3 output (2026), projected 86% by 2027",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:n3-logic-wafers:05",
-    "text": "N3 utilization 100%+ in H2 2026",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:n3-logic-wafers:06",
-    "text": "All major AI accelerators moving to N3 simultaneously: Rubin, TPU v7/v8, Trainium3, MI350X",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:n3-logic-wafers:07",
-    "text": "NVIDIA supply commitments doubled $50.3B → $95.2B QoQ, capacity secured through CY2027 (Q4 FY2026)",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:n3-logic-wafers:08",
-    "text": "Vera Rubin samples shipped, production H2 2026 — six new chips this cycle all on N3",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:pluggable-optics-scale-out:01",
-    "text": "Coherent Q2 FY2026: datacenter and communications was 72% of revenue ($1.208B) and Q3 guide is $1.70B-$1.84B",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:pluggable-optics-scale-out:02",
-    "text": "Lumentum Q2 FY2026: revenue grew 65.5% YoY and Q3 guide is $780M-$830M",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:pluggable-optics-scale-out:03",
-    "text": "Lumentum optical-circuit-switch backlog is already above $400M",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:pluggable-optics-scale-out:04",
-    "text": "Every NVL72/NVL144/NVL288 rack uses pluggable optics for scale-out networking",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:pluggable-optics-scale-out:05",
-    "text": "NVIDIA networking revenue $11B quarterly (+3.5x YoY), Spectrum-X 'a home run' (Q4 FY2026)",
+    "text": "NVIDIA and hyperscaler accelerator roadmaps overlap on leading-edge capacity.",
     "title": "thesis_stage_signal",
     "type": "signal"
   },
   {
     "href": null,
     "id": "signal:thesis:power-dc-buildout:01",
-    "text": "56 GW of power announced; PJM backlog still 286 GW",
+    "text": "Large AI clusters still require rapid data-center and power deployment.",
     "title": "thesis_stage_signal",
     "type": "signal"
   },
   {
     "href": null,
     "id": "signal:thesis:power-dc-buildout:02",
-    "text": "Power can route around bottlenecks through multiple lanes: combined-cycle turbines, aeroderivatives, reciprocating engines, ship engines, fuel cells, batteries, and grid peak-shaving",
+    "text": "GPU cloud and hyperscaler build plans remain constrained by infrastructure pace.",
     "title": "thesis_stage_signal",
     "type": "signal"
-  },
-  {
-    "href": null,
-    "id": "signal:thesis:power-dc-buildout:03",
-    "text": "Updated hierarchy: power remains hard, but the more durable choke points now look upstream in memory, wafers, fabs, and EUV tooling",
-    "title": "thesis_stage_signal",
-    "type": "signal"
-  },
-  {
-    "href": "",
-    "id": "thesis-stage:co-packaged-optics-cpo-scale-up",
-    "text": "Lumentum disclosed an incremental multi-hundred-million-dollar CPO order for 1H 2027 delivery Coherent's March 2026 NVIDIA partnership added multibillion-dollar purchase commitments, future capacity rights, and a $2B investment Coherent OFC 2026 demos included 6.4T silicon-photonics CPO, VCSEL socketed CPO, and a 400G-per-lane InP-on-silicon path Rubin Ultra NVL576: CPO between racks — explicitly low volume / test only Feynman NVL1152: CPO between racks, copper within rack (base case) 448G SerDes challenges (shoreline, reach, power) favor CPO over copper at next speed step COHR and LITE now have real orders, partnerships, and demos, but revenue still points to 2027+ rather than a current bottleneck.",
-    "title": "Co-packaged optics / CPO (scale-up)",
-    "type": "thesis_stage"
-  },
-  {
-    "href": "",
-    "id": "thesis-stage:cowos-packaging",
-    "text": "",
-    "title": "CoWoS packaging",
-    "type": "thesis_stage"
   },
   {
     "href": "",
     "id": "thesis-stage:euv-tools",
-    "text": "ASML can produce ~100 EUV tools/yr by 2030 (Zeiss optics is the constraint) One gigawatt of Rubin-class capacity needs ~3.5 EUV tools and ~2M EUV wafer passes Installed EUV base could approach ~700 tools by 2030, implying ~200 GW of annual AI-chip output if fully AI-allocated Near-term bottleneck is fab / cleanroom space; later bottleneck rotates to EUV tool throughput ASML bookings hit record EUR 13.2B (Q4 2025), but the deeper issue is physical throughput: EUV and its supplier chain cap long-run AI-chip output.",
+    "text": "ASML tooling cadence remains the long-run upper bound for advanced wafer output.",
     "title": "EUV tools",
     "type": "thesis_stage"
   },
   {
     "href": "",
-    "id": "thesis-stage:memory-supercycle",
-    "text": "Micron Q2 FY2026: $23.86B revenue, 74.9% non-GAAP gross margin, and Q3 guide of ~$33.5B revenue / ~81% gross margin Micron says DRAM and NAND remain supply constrained beyond calendar 2026 Micron began HBM4 volume shipments for NVIDIA Vera Rubin DRAM contract prices +90-95% QoQ (Q1 2026, TrendForce) DDR4 spot $2.10/Gbit — now exceeds HBM3e at $1.70/Gbit (unprecedented) 30% of Big Tech $650B CapEx goes to memory NVIDIA $21.4B inventory includes significant HBM stockpile (Q4 FY2026) Micron just printed a record quarter and guided ~81% gross margin, but Baker already hedged MU. Strong proof, late-cycle risk rising.",
-    "title": "Memory supercycle",
+    "id": "thesis-stage:gpu-cloud-demand",
+    "text": "CoreWeave backlog and ramp cadence keep near-term GPU demand tight. Hyperscaler spend growth continues to pull forward accelerator demand.",
+    "title": "GPU cloud demand",
+    "type": "thesis_stage"
+  },
+  {
+    "href": "",
+    "id": "thesis-stage:hyperscaler-capex-pull",
+    "text": "Large cloud buyers continue to expand AI infrastructure budgets. Cloud demand visibility supports sustained ordering through the stack.",
+    "title": "Hyperscaler capex pull",
     "type": "thesis_stage"
   },
   {
     "href": "",
     "id": "thesis-stage:n3-logic-wafers",
-    "text": "TSMC Q4 2025: $33.73B revenue, 62.3% gross margin, and Q1 guide of $34.6B-$35.8B on strong leading-edge demand TSMC 3nm already accounts for 28% of wafer revenue, and advanced nodes are 77% of wafer revenue Intel said revenue would have been materially higher with more supply; DCAI revenue rose 15% sequentially AI = 60% of TSMC N3 output (2026), projected 86% by 2027 N3 utilization 100%+ in H2 2026 All major AI accelerators moving to N3 simultaneously: Rubin, TPU v7/v8, Trainium3, MI350X NVIDIA supply commitments doubled $50.3B → $95.2B QoQ, capacity secured through CY2027 (Q4 FY2026) Vera Rubin samples shipped, production H2 2026 — six new chips this cycle all on N3 TSMC and Intel both confirmed AI-driven tightness, but TSMC's $52B-$56B capex and Intel's 18A/14A ramp are visible future relief valves.",
+    "text": "TSMC leading-edge utilization remains elevated while AI share rises. NVIDIA and hyperscaler accelerator roadmaps overlap on leading-edge capacity.",
     "title": "N3 logic wafers",
     "type": "thesis_stage"
   },
   {
     "href": "",
-    "id": "thesis-stage:pluggable-optics-scale-out",
-    "text": "Coherent Q2 FY2026: datacenter and communications was 72% of revenue ($1.208B) and Q3 guide is $1.70B-$1.84B Lumentum Q2 FY2026: revenue grew 65.5% YoY and Q3 guide is $780M-$830M Lumentum optical-circuit-switch backlog is already above $400M Every NVL72/NVL144/NVL288 rack uses pluggable optics for scale-out networking NVIDIA networking revenue $11B quarterly (+3.5x YoY), Spectrum-X 'a home run' (Q4 FY2026) COHR and LITE are now printing direct AI-optics revenue, backlog, and guide data. Still early cycle, but consensus crowding is rising.",
-    "title": "Pluggable optics (scale-out)",
-    "type": "thesis_stage"
-  },
-  {
-    "href": "",
     "id": "thesis-stage:power-dc-buildout",
-    "text": "56 GW of power announced; PJM backlog still 286 GW Power can route around bottlenecks through multiple lanes: combined-cycle turbines, aeroderivatives, reciprocating engines, ship engines, fuel cells, batteries, and grid peak-shaving Updated hierarchy: power remains hard, but the more durable choke points now look upstream in memory, wafers, fabs, and EUV tooling Still monetizable, but increasingly substitution-rich: behind-the-meter engines, fuel cells, batteries, and grid workarounds make power less likely than semiconductors to be the terminal bottleneck.",
+    "text": "Large AI clusters still require rapid data-center and power deployment. GPU cloud and hyperscaler build plans remain constrained by infrastructure pace.",
     "title": "Power / DC buildout",
     "type": "thesis_stage"
   }

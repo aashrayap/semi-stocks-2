@@ -1,7 +1,7 @@
 # Agent fleet configuration
 # Agents read this file for what to track and when to alert.
 
-updated: "2026-04-13"
+updated: "2026-04-21"
 
 # Polling intervals (for scheduled agents)
 # informational only — not consumed by any agent script
@@ -21,33 +21,20 @@ alerts:
 deep_dive:
   - CRWV
   - NVDA
-  - MU
-  - COHR
-  - INTC
   - TSM
-  - LITE
+  - ASML
+  - GOOGL
+  - AMZN
 
 # Full watchlist from canonical/30-thesis/thesis.yaml ticker_map
 # informational only — not consumed by any agent script
 watchlist:
-  - COHR
-  - LITE
-  - CIEN
-  - ALAB
-  - SMTC
-  - MU
-  - SNDK
-  - TSM
-  - NVDA
-  - AVGO
-  - INTC
-  - ASML
   - CRWV
-  - BE
-  - CORZ
-  - IREN
-  - EQT
-  - TSEM
+  - NVDA
+  - TSM
+  - ASML
+  - GOOGL
+  - AMZN
 
 # Source paths (relative to repo root)
 # informational only — not consumed by any agent script
@@ -144,10 +131,6 @@ transcript_sources:
   ir_scrape:
     TSM:
       transcript_page: "https://investor.tsmc.com/english/quarterly-results"
-    MU:
-      events_page: "https://investors.micron.com/events-and-presentations"
-    INTC:
-      events_page: "https://intc.com/news-events/events-and-presentations"
 
   # Tier 3: Motley Fool fallback (covers all tickers, lower fidelity)
   motley_fool:
@@ -155,8 +138,4 @@ transcript_sources:
     slugs:
       CRWV: "coreweave"
       NVDA: "nvidia"
-      MU: "micron-technology"
-      COHR: "coherent"
-      INTC: "intel"
       TSM: "taiwan-semiconductor-manufacturing"
-      LITE: "lumentum-holdings"
