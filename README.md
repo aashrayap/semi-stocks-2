@@ -2,9 +2,11 @@
 
 Second-iteration semi-stocks workspace organized as a canonical propagation system.
 
-## Current State
+## Signal Desk Diagrams
 
-![Current app state](docs/diagrams/signal-desk-current-state.png)
+### Canonical Data Flow
+
+![Signal Desk canonical data flow](docs/diagrams/signal-desk-canonical-data-flow-v2.png)
 
 The active app path is repo-owned and data-contract first:
 
@@ -14,9 +16,31 @@ canonical truth -> canonical/40-engine -> canonical/site-data -> canonical/site-
 
 `canonical/site-data/` is generated. `canonical/site-reader/` is a web-only reader that consumes generated data and must not become a source of truth.
 
-## Signal Desk Surface
+### Contract Boundary
 
-![Signal Desk visual surface how-to](docs/diagrams/signal-desk-surface-how-to.png)
+![Signal Desk contract boundary](docs/diagrams/signal-desk-contract-boundary-v2.png)
+
+`canonical/40-engine` compiles accepted canonical state into a rebuildable
+`canonical/site-data/signal_desk.json` contract. The reader consumes that
+generated contract only; it must not read or write canonical YAML directly.
+
+### Researcher + Human Loop
+
+![Signal Desk researcher and human loop](docs/diagrams/signal-desk-human-research-loop-v2.png)
+
+Human loop:
+
+```text
+raw source -> wiki ingest/query -> thesis proposal -> human gate -> admitted universe -> signal_desk.json -> web reader -> next research question
+```
+
+Human approval is the admission gate. Signal Desk supports decisions; it does
+not make them, and it should only show companies and evidence after accepted
+proposal ancestry admits them.
+
+### Reader Surface
+
+![Signal Desk reader surface](docs/diagrams/signal-desk-reader-surface-v2.png)
 
 Use the surface in this order:
 
@@ -26,28 +50,11 @@ Use the surface in this order:
 4. **Open profile** — profile explains why a company or edge appears.
 5. **Decide next work** — act, update thesis/data, or create the next ingest/query task.
 
-## Control Guide
-
-![Signal Desk control guide](docs/diagrams/signal-desk-control-guide.png)
-
 - `Search` — use when you know a ticker, phrase, claim, source, or theme.
 - `Source Channel` — provenance lens for admitted evidence: Baker, Leopold, SemiAnalysis, company earnings, and thesis stage.
 - `Company Role` — economic layer: optics, memory, power, GPU cloud, foundry, chip designer, etc.
 - `Filters` — thesis theme, timeline, and include-undated controls.
 - `Graph controls` — reduce clutter with support-family toggles, min weight, and top-edge limits.
-
-## Human Loop
-
-![Signal Desk human workflow](docs/diagrams/signal-desk-human-in-loop-workflows.png)
-
-Human loop:
-
-```text
-raw source -> wiki ingest/query -> thesis proposal -> human gate -> admitted universe -> signal_desk.json -> web reader -> next research question
-```
-
-Signal Desk supports decisions. It does not make them, and it should only show
-companies and evidence after accepted proposal ancestry admits them.
 
 ## Run
 
