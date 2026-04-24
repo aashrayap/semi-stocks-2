@@ -46,6 +46,8 @@ EDGE_TYPES = {
     "updates_thesis_stage",
     "published_in_report",
 }
+PROPOSAL_STATUSES = {"proposed", "accepted", "rejected"}
+GENERATED_COMPANY_DOSSIER_DIR = DATA_DIR / "companies" / "_generated"
 
 
 def build_site_data(validate: bool = False) -> dict[str, int]:
@@ -135,15 +137,8 @@ def validate_site_data(artifacts: dict[str, Any]) -> None:
 
     required_nonempty = (
         ("pages", artifacts["pages"]),
-        ("companies", artifacts["companies"]),
-        ("signals", artifacts["signals"]),
-        ("entities", artifacts["entities"]),
-        ("edges", artifacts["edges"]),
-        ("claims", artifacts["claims"]),
         ("reports", artifacts["reports"]),
         ("search", artifacts["search"]),
-        ("graph.nodes", artifacts["graph"].get("nodes", [])),
-        ("graph.links", artifacts["graph"].get("links", [])),
     )
     empty = [name for name, value in required_nonempty if not value]
     if empty:
@@ -167,6 +162,7 @@ def validate_site_data(artifacts: dict[str, Any]) -> None:
             raise ValueError(f"Graph link endpoint missing from graph nodes: {link}")
 
     validate_signal_desk(artifacts["signal_desk"])
+    validate_reader_site_data_gate(artifacts)
 
 
 def _collect_artifacts() -> dict[str, Any]:
@@ -175,13 +171,17 @@ def _collect_artifacts() -> dict[str, Any]:
     company_packets = _load_company_packets()
     thesis_proposals = _load_thesis_proposals()
 
-    companies = _build_companies(thesis, company_packets)
-    claims = _build_claims(company_packets)
-    signals = _build_signals(thesis, company_packets, thesis_proposals)
+    companies = _merge_proposal_companies(_build_companies(thesis, company_packets), thesis_proposals)
+    admitted_universe = _build_admitted_universe(thesis_proposals, companies)
+    _sync_generated_company_dossiers(companies, thesis_proposals)
+    companies = _filter_companies_for_admitted_universe(companies, admitted_universe)
+    claims = _filter_claims_for_site_data_gate(_build_claims(company_packets), admitted_universe)
+    signals = _filter_signals_for_site_data_gate(_build_signals(thesis, company_packets, thesis_proposals), admitted_universe)
     reports = _build_reports()
-    entities = _build_entities(page_index["pages"], companies, reports, thesis, signals)
-    edges = _build_edges(page_index, companies, signals, claims, reports, thesis, entities)
-    thesis_payload = _build_thesis(thesis, thesis_proposals)
+    thesis_payload = _build_thesis(thesis, admitted_universe)
+    reports = _filter_reports_for_site_data_gate(reports, admitted_universe)
+    entities = _build_entities(page_index["pages"], companies, reports, thesis_payload, signals)
+    edges = _build_edges(page_index, companies, signals, claims, reports, thesis_payload, entities)
     signal_desk = _build_signal_desk(
         page_index=page_index,
         thesis=thesis,
@@ -256,6 +256,10 @@ def validate_signal_desk(signal_desk: dict[str, Any]) -> None:
     source_channel_ids = {item["id"] for item in facets.get("source_channels", [])}
     thesis_theme_ids = {item["id"] for item in facets.get("thesis_themes", [])}
     support_families = set(facets.get("graph_support_families", []))
+    if "source-channel:pending-proposals" in source_channel_ids:
+        raise ValueError("Main Signal Desk feed must not expose pending proposal source channel")
+    if "proposal" in set(facets.get("row_types", [])):
+        raise ValueError("Main Signal Desk feed must not expose proposal row type")
     if support_families != {"co_position", "shared_signal"}:
         raise ValueError(f"Signal Desk MVP graph support families must be co_position/shared_signal: {support_families}")
 
@@ -271,8 +275,15 @@ def validate_signal_desk(signal_desk: dict[str, Any]) -> None:
     source_document_ids = {item["id"] for item in source_documents}
     company_ids = {item["id"] for item in companies}
     row_ids = {item["id"] for item in rows}
+    admitted_universe = signal_desk.get("quality", {}).get("admitted_universe", {})
+    admitted_company_ids = set(admitted_universe.get("company_ids", []))
+    evidence_source_document_ids = set(admitted_universe.get("evidence_source_document_ids", []))
 
     for source_document in source_documents:
+        if source_document.get("document_kind") == "thesis_proposal":
+            raise ValueError(f"Main Signal Desk feed must not expose proposal source document: {source_document.get('id')}")
+        if source_document.get("id") not in evidence_source_document_ids:
+            raise ValueError(f"Source document outside accepted evidence refs: {source_document.get('id')}")
         if source_document.get("source_channel_id") not in source_channel_ids:
             raise ValueError(f"Unknown source channel in source document {source_document.get('id')}")
         _require_period(source_document.get("period"), source_document.get("id"))
@@ -282,6 +293,8 @@ def validate_signal_desk(signal_desk: dict[str, Any]) -> None:
                 raise ValueError(f"Unknown company {company_id} in source document {source_document['id']}")
 
     for company in companies:
+        if company["id"] not in admitted_company_ids:
+            raise ValueError(f"Company outside admitted universe: {company['id']}")
         role_id = company.get("primary_role_id")
         if role_id not in role_ids:
             raise ValueError(f"Unknown primary role {role_id!r} in {company.get('id')}")
@@ -297,6 +310,10 @@ def validate_signal_desk(signal_desk: dict[str, Any]) -> None:
 
     for row in rows:
         row_id = row.get("id")
+        if row.get("row_type") == "proposal":
+            raise ValueError(f"Main Signal Desk feed must not expose proposal row: {row_id}")
+        if not set(row.get("source_document_ids", [])) <= evidence_source_document_ids:
+            raise ValueError(f"Row outside accepted evidence refs: {row_id}")
         if row.get("source_channel_id") not in source_channel_ids:
             raise ValueError(f"Unknown source channel in row {row_id}")
         if not row.get("company_ids"):
@@ -320,7 +337,7 @@ def validate_signal_desk(signal_desk: dict[str, Any]) -> None:
         _require_period(row.get("period"), row_id)
         _require_timeline(row.get("timeline"), row_id)
         graph_eligibility = row.get("graph_eligibility", {})
-        if row.get("row_type") in {"claim", "proposal"} and graph_eligibility.get("eligible"):
+        if row.get("row_type") == "claim" and graph_eligibility.get("eligible"):
             raise ValueError(f"{row.get('row_type')} rows cannot be graph eligible in MVP: {row_id}")
         family = graph_eligibility.get("family")
         if graph_eligibility.get("eligible") and family not in support_families:
@@ -354,8 +371,84 @@ def validate_signal_desk(signal_desk: dict[str, Any]) -> None:
     position_counts = signal_desk.get("quality", {}).get("position_leg_counts", {})
     for source_name in ("baker", "leopold"):
         counts = position_counts.get(source_name, {})
-        if counts.get("source") != counts.get("emitted"):
-            raise ValueError(f"{source_name} source/emitted position counts differ: {counts}")
+        if counts.get("emitted", 0) > counts.get("source", 0):
+            raise ValueError(f"{source_name} emitted position count exceeds source count: {counts}")
+    tables = signal_desk.get("tables", {})
+    if "proposals" in set(tables.get("view_order", [])) or "proposals" in (tables.get("views") or {}):
+        raise ValueError("Main Signal Desk feed must not expose proposal table view")
+
+
+def validate_reader_site_data_gate(artifacts: dict[str, Any]) -> None:
+    """Validate non-Signal Desk site-data against the same admission gate."""
+    admitted_universe = artifacts["signal_desk"].get("quality", {}).get("admitted_universe", {})
+    admitted_company_ids = set(admitted_universe.get("company_ids", []))
+    evidence_source_document_ids = set(admitted_universe.get("evidence_source_document_ids", []))
+    admitted_tickers = {
+        company_id.split(":", 1)[1].upper()
+        for company_id in admitted_company_ids
+        if company_id.startswith("company:")
+    }
+    admitted_signal_ids = {signal["id"] for signal in artifacts["signals"]}
+    admitted_claim_ids = {claim["id"] for claim in artifacts["claims"]}
+
+    for company in artifacts["companies"]:
+        if company["id"] not in admitted_company_ids:
+            raise ValueError(f"Top-level company outside admitted universe: {company['id']}")
+
+    for signal in artifacts["signals"]:
+        source_document_id = _signal_source_document_id(signal)
+        if source_document_id not in evidence_source_document_ids:
+            raise ValueError(f"Top-level signal outside accepted evidence refs: {signal['id']}")
+        ticker = signal.get("ticker")
+        if ticker and _company_id(str(ticker).upper()) not in admitted_company_ids:
+            raise ValueError(f"Top-level signal outside admitted companies: {signal['id']}")
+        for ticker in signal.get("tickers", []) or []:
+            if _company_id(str(ticker).upper()) not in admitted_company_ids:
+                raise ValueError(f"Top-level signal leaks non-admitted ticker: {signal['id']} {ticker}")
+
+    for claim in artifacts["claims"]:
+        if claim.get("company_id") not in admitted_company_ids:
+            raise ValueError(f"Top-level claim outside admitted companies: {claim['id']}")
+        if _company_source_doc_id(claim.get("ticker"), claim.get("quarter", "unknown")) not in evidence_source_document_ids:
+            raise ValueError(f"Top-level claim outside accepted evidence refs: {claim['id']}")
+
+    for entity in artifacts["entities"]:
+        if entity.get("type") == "company" and entity["id"] not in admitted_company_ids:
+            raise ValueError(f"Top-level entity outside admitted universe: {entity['id']}")
+
+    for row in artifacts["search"]:
+        if row["type"].startswith("page:"):
+            raise ValueError(f"Search page outside admitted reader surface: {row['id']}")
+        if row["type"] == "company" and row["id"] not in admitted_company_ids:
+            raise ValueError(f"Search company outside admitted universe: {row['id']}")
+        if row["type"] == "signal" and row["id"] not in admitted_signal_ids:
+            raise ValueError(f"Search signal outside accepted evidence refs: {row['id']}")
+        if row["type"] == "claim" and row["id"] not in admitted_claim_ids:
+            raise ValueError(f"Search claim outside accepted evidence refs: {row['id']}")
+
+    for node in artifacts["graph"].get("nodes", []):
+        if node.get("type") == "company" and node["id"] not in admitted_company_ids:
+            raise ValueError(f"Graph company node outside admitted universe: {node['id']}")
+
+    for report in artifacts["reports"]:
+        for section in report.get("sections", []):
+            if section.get("body_html"):
+                raise ValueError(f"Report section body not gate-filtered: {section.get('id')}")
+            for row in section.get("rows", []) or []:
+                ticker = row.get("ticker")
+                if ticker and str(ticker).upper() not in admitted_tickers:
+                    raise ValueError(f"Report row ticker outside admitted universe: {ticker}")
+                for ticker in row.get("tickers", []) or []:
+                    if str(ticker).upper() not in admitted_tickers:
+                        raise ValueError(f"Report row ticker list outside admitted universe: {ticker}")
+
+    ticker_map = artifacts["thesis"].get("ticker_map", {}) or {}
+    for ticker, meta in ticker_map.items():
+        company_id = meta.get("company_id") or _company_id(str(ticker).upper())
+        if company_id not in admitted_company_ids:
+            raise ValueError(f"Thesis ticker_map outside admitted universe: {ticker}")
+    if "proposals" in artifacts["thesis"]:
+        raise ValueError("Reader site-data thesis payload must not expose proposal records")
 
 
 def _build_signal_desk(
@@ -370,13 +463,12 @@ def _build_signal_desk(
 ) -> dict[str, Any]:
     role_config = _load_company_role_config()
     pages_by_slug = {page["slug"]: page for page in page_index["pages"]}
+    admitted_universe = _build_admitted_universe(thesis_proposals, companies)
+    admitted_company_ids = set(admitted_universe["company_ids"])
+    companies = [company for company in companies if company["id"] in admitted_company_ids]
     companies_by_id = {company["id"]: company for company in companies}
     companies_by_ticker = {company["ticker"]: company for company in companies}
     thesis_theme_ids_by_company = _thesis_theme_ids_by_company(thesis_payload)
-    thesis_theme_ids_by_name = {
-        stage["name"]: _thesis_theme_id_from_stage_id(stage["id"])
-        for stage in thesis_payload.get("cascade", [])
-    }
     thesis_theme_ids_by_bottleneck = _thesis_theme_ids_by_bottleneck(thesis_payload)
 
     source_channels = _source_channel_facets()
@@ -386,22 +478,19 @@ def _build_signal_desk(
         thesis_payload=thesis_payload,
         companies_by_id=companies_by_id,
         company_packets=company_packets,
-        thesis_proposals=thesis_proposals,
         thesis_theme_ids_by_company=thesis_theme_ids_by_company,
-        thesis_theme_ids_by_name=thesis_theme_ids_by_name,
     )
+    source_documents = _filter_source_documents_for_evidence_refs(source_documents, admitted_universe)
     source_documents_by_id = {doc["id"]: doc for doc in source_documents}
 
     rows = _build_signal_desk_rows(
         signals=signals,
         claims=claims,
-        thesis_proposals=thesis_proposals,
         companies_by_id=companies_by_id,
         companies_by_ticker=companies_by_ticker,
         source_documents_by_id=source_documents_by_id,
         thesis_theme_ids_by_company=thesis_theme_ids_by_company,
         thesis_theme_ids_by_bottleneck=thesis_theme_ids_by_bottleneck,
-        thesis_theme_ids_by_name=thesis_theme_ids_by_name,
     )
     companies_payload = _build_signal_desk_companies(
         companies=companies,
@@ -412,7 +501,11 @@ def _build_signal_desk(
     )
     company_ids = {company["id"] for company in companies_payload}
     source_documents = _filter_source_documents_for_companies(source_documents, company_ids)
-    rows = [row for row in rows if set(row.get("company_ids", [])) <= company_ids]
+    rows = _filter_rows_for_emitted_closure(
+        rows=rows,
+        company_ids=company_ids,
+        source_document_ids={doc["id"] for doc in source_documents},
+    )
 
     source_channels = _with_source_channel_counts(source_channels, rows, source_documents, companies_payload)
     company_roles = _company_role_facets(role_config, companies_payload, rows)
@@ -420,12 +513,12 @@ def _build_signal_desk(
     indexes = _build_signal_desk_indexes(rows, companies_payload, source_documents)
     tables = _build_signal_desk_tables(rows, source_documents)
     graph = _build_signal_desk_graph(companies_payload, rows)
-    quality = _build_signal_desk_quality(rows, graph)
+    quality = _build_signal_desk_quality(rows, graph, admitted_universe)
     facets = {
         "source_channels": source_channels,
         "company_roles": company_roles,
         "thesis_themes": thesis_themes,
-        "row_types": ["position", "signal", "claim", "proposal"],
+        "row_types": ["position", "signal", "claim"],
         "graph_support_families": ["co_position", "shared_signal"],
     }
     build_payload = {
@@ -477,7 +570,6 @@ def _source_channel_facets() -> list[dict[str, Any]]:
         ("source-channel:semianalysis", "SemiAnalysis", "supply_chain_research", ["sem", "semi-analysis", "sa", "dylan-patel"], "SemiAnalysis supply-chain research evidence."),
         ("source-channel:company-earnings", "Company earnings", "company_reported", [], "Company-reported earnings packets, signals, and proof gates."),
         ("source-channel:thesis-stage", "Thesis stage", "thesis_control", [], "Current thesis cascade control-plane signals."),
-        ("source-channel:pending-proposals", "Pending proposals", "thesis_proposal", [], "Pending or recently applied thesis proposal rows."),
     ]
     return [
         {
@@ -611,9 +703,7 @@ def _build_signal_desk_source_documents(
     thesis_payload: dict[str, Any],
     companies_by_id: dict[str, dict[str, Any]],
     company_packets: list[dict[str, Any]],
-    thesis_proposals: list[dict[str, Any]],
     thesis_theme_ids_by_company: dict[str, list[str]],
-    thesis_theme_ids_by_name: dict[str, str],
 ) -> list[dict[str, Any]]:
     docs: list[dict[str, Any]] = []
     for fund_name in ("baker", "leopold"):
@@ -716,45 +806,22 @@ def _build_signal_desk_source_documents(
         "search_text": _search_text("thesis", "current thesis", THESIS_PATH),
     })
 
-    for proposal in thesis_proposals:
-        slug = proposal["_slug"]
-        company_ids = _proposal_company_ids(proposal, thesis_payload, companies_by_id)
-        theme_ids = _proposal_theme_ids(proposal, thesis_theme_ids_by_name)
-        docs.append({
-            "id": _proposal_source_doc_id(slug),
-            "source_channel_id": "source-channel:pending-proposals",
-            "document_kind": "thesis_proposal",
-            "title": _clip(proposal.get("proposal", slug), 120),
-            "canonical_path": proposal["_file"],
-            "related_paths": [],
-            "wiki_page_slug": None,
-            "external_url": None,
-            "company_ids": company_ids,
-            "thesis_theme_ids": theme_ids,
-            "period": _period_from_label("proposal"),
-            "timeline": _timeline(_string_or_none(proposal.get("updated") or proposal.get("created")), f"Updated {proposal.get('updated') or proposal.get('created')}", "proposal_updated"),
-            "search_text": _search_text(slug, proposal.get("proposal"), proposal.get("status"), proposal.get("target_sections", [])),
-        })
-
     return sorted(docs, key=lambda item: item["id"])
 
 
 def _build_signal_desk_rows(
     signals: list[dict[str, Any]],
     claims: list[dict[str, Any]],
-    thesis_proposals: list[dict[str, Any]],
     companies_by_id: dict[str, dict[str, Any]],
     companies_by_ticker: dict[str, dict[str, Any]],
     source_documents_by_id: dict[str, dict[str, Any]],
     thesis_theme_ids_by_company: dict[str, list[str]],
     thesis_theme_ids_by_bottleneck: dict[str, list[str]],
-    thesis_theme_ids_by_name: dict[str, str],
 ) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     rows.extend(_build_position_rows(companies_by_id, source_documents_by_id, thesis_theme_ids_by_company))
     rows.extend(_build_signal_rows(signals, companies_by_id, companies_by_ticker, source_documents_by_id, thesis_theme_ids_by_company, thesis_theme_ids_by_bottleneck))
     rows.extend(_build_claim_rows(claims, companies_by_id, source_documents_by_id, thesis_theme_ids_by_company))
-    rows.extend(_build_proposal_rows(thesis_proposals, companies_by_id, source_documents_by_id, thesis_theme_ids_by_name))
     return sorted(rows, key=lambda item: item["id"])
 
 
@@ -971,55 +1038,6 @@ def _build_claim_rows(
     return rows
 
 
-def _build_proposal_rows(
-    thesis_proposals: list[dict[str, Any]],
-    companies_by_id: dict[str, dict[str, Any]],
-    source_documents_by_id: dict[str, dict[str, Any]],
-    thesis_theme_ids_by_name: dict[str, str],
-) -> list[dict[str, Any]]:
-    rows: list[dict[str, Any]] = []
-    for proposal in thesis_proposals:
-        slug = proposal["_slug"]
-        source_document_id = _proposal_source_doc_id(slug)
-        if source_document_id not in source_documents_by_id:
-            continue
-        company_ids = _proposal_company_ids(proposal, {"cascade": []}, companies_by_id)
-        theme_ids = _proposal_theme_ids(proposal, thesis_theme_ids_by_name)
-        # If proposal company scope cannot be inferred from direct tickers, use
-        # the companies carried by its source document.
-        if not company_ids:
-            company_ids = source_documents_by_id[source_document_id].get("company_ids", [])
-        if not company_ids:
-            continue
-        row_id = f"row:proposal:{slug}"
-        title = _clip(proposal.get("proposal", slug), 120)
-        updated = _string_or_none(proposal.get("updated") or proposal.get("created"))
-        rows.append({
-            **_base_row(
-                row_id=row_id,
-                row_type="proposal",
-                title=title,
-                summary=_clip(proposal.get("proposal", ""), 260),
-                company_ids=company_ids,
-                primary_company_id=company_ids[0] if len(company_ids) == 1 else None,
-                source_channel_id="source-channel:pending-proposals",
-                source_document_ids=[source_document_id],
-                source_paths=[source_documents_by_id[source_document_id]["canonical_path"]],
-                thesis_theme_ids=theme_ids,
-                period=_period_from_label("proposal"),
-                timeline=_timeline(updated, f"Updated {_display_date(updated)}" if updated else "Proposal update", "proposal_updated"),
-                graph_eligibility={"eligible": False, "family": None, "reason": "proposals do not create graph edges in MVP"},
-                lifecycle_state=str(proposal.get("status") or "pending"),
-                ui_badges=["Proposal", _titleize(proposal.get("status", "pending"))],
-                search_parts=[slug, proposal.get("proposal"), proposal.get("status"), proposal.get("target_sections", []), proposal.get("evidence", [])],
-            ),
-            "proposal_type": "thesis_patch",
-            "affected_company_ids": company_ids,
-            "affected_thesis_theme_ids": theme_ids,
-        })
-    return rows
-
-
 def _build_signal_desk_companies(
     companies: list[dict[str, Any]],
     rows: list[dict[str, Any]],
@@ -1041,11 +1059,9 @@ def _build_signal_desk_companies(
     payload: list[dict[str, Any]] = []
     for company in companies:
         ticker = company["ticker"]
-        mapping = role_map.get(ticker)
-        if not mapping:
-            raise ValueError(f"Missing company role mapping for {ticker}")
-        primary_role_id = mapping.get("primary_role_id")
-        secondary_role_ids = mapping.get("secondary_role_ids", []) or []
+        mapping = role_map.get(ticker, {}) or {}
+        primary_role_id = mapping.get("primary_role_id") or company.get("primary_role_id") or "company-role:unknown"
+        secondary_role_ids = mapping.get("secondary_role_ids", company.get("secondary_role_ids", [])) or []
         if primary_role_id not in role_ids:
             raise ValueError(f"Unknown primary role {primary_role_id} for {ticker}")
         unknown_secondary = [role_id for role_id in secondary_role_ids if role_id not in role_ids]
@@ -1061,7 +1077,6 @@ def _build_signal_desk_companies(
             "positions": sum(1 for row in company_rows if row["row_type"] == "position"),
             "signals": sum(1 for row in company_rows if row["row_type"] == "signal"),
             "claims": sum(1 for row in company_rows if row["row_type"] == "claim"),
-            "proposals": sum(1 for row in company_rows if row["row_type"] == "proposal"),
             "source_documents": len({doc["id"] for doc in company_docs}),
         }
         theme_ids = _unique_sorted(
@@ -1082,7 +1097,7 @@ def _build_signal_desk_companies(
             "name": company["name"],
             "primary_role_id": primary_role_id,
             "secondary_role_ids": secondary_role_ids,
-            "display_tags": mapping.get("display_tags", []) or [],
+            "display_tags": mapping.get("display_tags", company.get("display_tags", [])) or [],
             "thesis_theme_ids": theme_ids,
             "source_channel_ids": source_channel_ids,
             "source_document_ids": source_document_ids,
@@ -1100,7 +1115,45 @@ def _filter_source_documents_for_companies(
     for doc in source_documents:
         item = {**doc}
         item["company_ids"] = [company_id for company_id in doc.get("company_ids", []) if company_id in company_ids]
-        filtered.append(item)
+        if item["company_ids"]:
+            filtered.append(item)
+    return sorted(filtered, key=lambda item: item["id"])
+
+
+def _filter_source_documents_for_evidence_refs(
+    source_documents: list[dict[str, Any]],
+    admitted_universe: dict[str, Any],
+) -> list[dict[str, Any]]:
+    evidence_source_document_ids = set(admitted_universe.get("evidence_source_document_ids", []))
+    accepted_proposal_ids = set(admitted_universe.get("accepted_proposal_ids", []))
+    if accepted_proposal_ids and not evidence_source_document_ids:
+        raise ValueError("Accepted proposal ancestry must include evidence source document refs")
+    if not evidence_source_document_ids:
+        return []
+    docs_by_id = {doc["id"]: doc for doc in source_documents}
+    missing = evidence_source_document_ids - set(docs_by_id)
+    if missing:
+        raise ValueError(f"Accepted proposal evidence refs unknown source documents: {sorted(missing)}")
+    return [docs_by_id[doc_id] for doc_id in sorted(evidence_source_document_ids)]
+
+
+def _filter_rows_for_emitted_closure(
+    *,
+    rows: list[dict[str, Any]],
+    company_ids: set[str],
+    source_document_ids: set[str],
+) -> list[dict[str, Any]]:
+    filtered = []
+    for row in rows:
+        row_company_ids = set(row.get("company_ids", []))
+        row_source_document_ids = set(row.get("source_document_ids", []))
+        if not row_company_ids or not row_source_document_ids:
+            continue
+        if not row_company_ids <= company_ids:
+            continue
+        if not row_source_document_ids <= source_document_ids:
+            continue
+        filtered.append(row)
     return sorted(filtered, key=lambda item: item["id"])
 
 
@@ -1170,13 +1223,6 @@ def _build_signal_desk_tables(rows: list[dict[str, Any]], source_documents: list
             ("pct_portfolio", "% Portfolio"),
             ("change_vs_prior", "Change"),
         ]),
-        "proposals": _row_table_view("proposals", "Proposals", "proposal", row_ids_by_type.get("proposal", []), [
-            ("timeline", "Updated"),
-            ("title", "Proposal"),
-            ("affected_company_ids", "Companies"),
-            ("affected_thesis_theme_ids", "Thesis Themes"),
-            ("lifecycle_state", "Lifecycle State"),
-        ]),
         "sources": {
             "id": "sources",
             "label": "Sources",
@@ -1196,7 +1242,7 @@ def _build_signal_desk_tables(rows: list[dict[str, Any]], source_documents: list
     }
     return {
         "default_view_id": "signals",
-        "view_order": ["signals", "claims", "positions", "proposals", "sources"],
+        "view_order": ["signals", "claims", "positions", "sources"],
         "views": views,
     }
 
@@ -1282,7 +1328,11 @@ def _build_signal_desk_graph(
     }
 
 
-def _build_signal_desk_quality(rows: list[dict[str, Any]], graph: dict[str, Any]) -> dict[str, Any]:
+def _build_signal_desk_quality(
+    rows: list[dict[str, Any]],
+    graph: dict[str, Any],
+    admitted_universe: dict[str, Any],
+) -> dict[str, Any]:
     baker_source = len((_read_yaml(_latest_source_file("baker")).get("positions", []) or []))
     leopold_source = len((_read_yaml(_latest_source_file("leopold")).get("positions", []) or []))
     baker_emitted = sum(1 for row in rows if row.get("row_type") == "position" and row.get("fund_id") == "baker")
@@ -1298,6 +1348,7 @@ def _build_signal_desk_quality(rows: list[dict[str, Any]], graph: dict[str, Any]
             "baker": {"source": baker_source, "emitted": baker_emitted},
             "leopold": {"source": leopold_source, "emitted": leopold_emitted},
         },
+        "admitted_universe": admitted_universe,
         "trace_blockers": [
             "no relationship_edges dataset",
             "no typed directional value-chain edges",
@@ -1452,6 +1503,251 @@ def _build_companies(thesis: dict[str, Any], company_packets: list[dict[str, Any
     return companies
 
 
+def _merge_proposal_companies(
+    companies: list[dict[str, Any]],
+    thesis_proposals: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    by_id = {company["id"]: {**company} for company in companies}
+    for proposal in thesis_proposals:
+        if proposal.get("status") != "accepted":
+            continue
+        for entry in _proposal_company_entries(proposal):
+            company_id = _company_id_from_proposal_entry(entry)
+            ticker = _ticker_from_proposal_entry(entry, company_id)
+            if not company_id or not ticker:
+                continue
+            existing = by_id.get(company_id, {})
+            by_id[company_id] = {
+                "id": company_id,
+                "ticker": ticker,
+                "name": entry.get("name") or existing.get("name") or ticker,
+                "bottleneck": existing.get("bottleneck"),
+                "status": existing.get("status"),
+                "also": existing.get("also"),
+                "next_earnings": existing.get("next_earnings"),
+                "source_page": existing.get("source_page"),
+                "latest_packet": existing.get("latest_packet"),
+                "quarters": existing.get("quarters", []),
+                "positions": existing.get("positions", []),
+                "signal_counts": existing.get("signal_counts", {}),
+                "claim_counts": existing.get("claim_counts", {}),
+                "metrics": existing.get("metrics", {}),
+                "thesis": existing.get("thesis", {}),
+                "primary_role_id": entry.get("role_id") or entry.get("primary_role_id") or existing.get("primary_role_id"),
+                "secondary_role_ids": entry.get("secondary_role_ids") or existing.get("secondary_role_ids", []),
+                "admission_proposal_id": proposal.get("id"),
+            }
+    return sorted(by_id.values(), key=lambda item: item["id"])
+
+
+def _sync_generated_company_dossiers(
+    companies: list[dict[str, Any]],
+    thesis_proposals: list[dict[str, Any]],
+) -> None:
+    GENERATED_COMPANY_DOSSIER_DIR.mkdir(parents=True, exist_ok=True)
+    expected_paths: set[Path] = set()
+    for dossier in _build_generated_company_dossiers(companies, thesis_proposals):
+        ticker = dossier.get("ticker") or dossier["id"].split(":", 1)[-1]
+        path = GENERATED_COMPANY_DOSSIER_DIR / f"{_slugify(ticker)}.yaml"
+        expected_paths.add(path)
+        _write_yaml(path, dossier)
+    for path in sorted(GENERATED_COMPANY_DOSSIER_DIR.glob("*.yaml")):
+        if path not in expected_paths:
+            path.unlink()
+
+
+def _build_generated_company_dossiers(
+    companies: list[dict[str, Any]],
+    thesis_proposals: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    companies_by_id = {company["id"]: company for company in companies}
+    accepted_by_company: dict[str, list[tuple[dict[str, Any], dict[str, Any]]]] = {}
+    for proposal in thesis_proposals:
+        if proposal.get("status") != "accepted":
+            continue
+        for entry in _proposal_company_entries(proposal):
+            company_id = _company_id_from_proposal_entry(entry)
+            if company_id in companies_by_id:
+                accepted_by_company.setdefault(company_id, []).append((proposal, entry))
+
+    dossiers: list[dict[str, Any]] = []
+    for company_id, refs in sorted(accepted_by_company.items()):
+        company = companies_by_id[company_id]
+        proposal, entry = refs[0]
+        proposal_ids = sorted({str(item[0].get("id")) for item in refs if item[0].get("id")})
+        theme_ids = _unique_sorted(
+            *[item[1].get("thesis_theme_ids", []) for item in refs],
+            *[item[0].get("thesis_theme_ids", []) for item in refs],
+        )
+        evidence_refs = []
+        for source_proposal, _ in refs:
+            for evidence in source_proposal.get("evidence_refs", []) or []:
+                if not isinstance(evidence, dict):
+                    continue
+                evidence_refs.append({
+                    key: value
+                    for key, value in evidence.items()
+                    if key in {"candidate_record_id", "source_document_id", "supports_company_ids", "summary"}
+                })
+        dossiers.append({
+            "kind": "approved_company",
+            "schema_version": 1,
+            "id": company_id,
+            "ticker": company.get("ticker") or _ticker_from_proposal_entry(entry, company_id),
+            "name": company.get("name") or entry.get("name") or company_id,
+            "primary_role_id": company.get("primary_role_id") or entry.get("role_id") or "company-role:unknown",
+            "secondary_role_ids": company.get("secondary_role_ids", []) or [],
+            "display_tags": company.get("display_tags", []) or [],
+            "thesis_theme_ids": theme_ids,
+            "admission": {
+                "primary_proposal_id": proposal.get("id"),
+                "proposal_ids": proposal_ids,
+                "inclusion_summary": entry.get("inclusion_reason") or proposal.get("decision_question") or proposal.get("title", ""),
+            },
+            "evidence_refs": evidence_refs,
+            "generated": {
+                "by": SIGNAL_DESK_GENERATOR_VERSION,
+                "from": "canonical/20-data/thesis-proposals",
+            },
+        })
+    return dossiers
+
+
+def _filter_companies_for_admitted_universe(
+    companies: list[dict[str, Any]],
+    admitted_universe: dict[str, Any],
+) -> list[dict[str, Any]]:
+    admitted_company_ids = set(admitted_universe.get("company_ids", []))
+    return [company for company in companies if company["id"] in admitted_company_ids]
+
+
+def _filter_claims_for_site_data_gate(
+    claims: list[dict[str, Any]],
+    admitted_universe: dict[str, Any],
+) -> list[dict[str, Any]]:
+    admitted_company_ids = set(admitted_universe.get("company_ids", []))
+    evidence_source_document_ids = set(admitted_universe.get("evidence_source_document_ids", []))
+    return [
+        claim
+        for claim in claims
+        if claim.get("company_id") in admitted_company_ids
+        and _company_source_doc_id(claim.get("ticker"), claim.get("quarter", "unknown")) in evidence_source_document_ids
+    ]
+
+
+def _filter_signals_for_site_data_gate(
+    signals: list[dict[str, Any]],
+    admitted_universe: dict[str, Any],
+) -> list[dict[str, Any]]:
+    admitted_company_ids = set(admitted_universe.get("company_ids", []))
+    admitted_tickers = {company_id.split(":", 1)[1].upper() for company_id in admitted_company_ids if company_id.startswith("company:")}
+    evidence_source_document_ids = set(admitted_universe.get("evidence_source_document_ids", []))
+    filtered: list[dict[str, Any]] = []
+    for signal in signals:
+        source_document_id = _signal_source_document_id(signal)
+        if source_document_id not in evidence_source_document_ids:
+            continue
+        item = {**signal}
+        if item.get("kind") == "semianalysis_signal":
+            item["tickers"] = [ticker for ticker in item.get("tickers", []) if str(ticker).upper() in admitted_tickers]
+            if not item["tickers"]:
+                continue
+        elif item.get("ticker") and _company_id(str(item.get("ticker")).upper()) not in admitted_company_ids:
+            continue
+        filtered.append(item)
+    return sorted(filtered, key=lambda item: item["id"])
+
+
+def _filter_reports_for_site_data_gate(
+    reports: list[dict[str, Any]],
+    admitted_universe: dict[str, Any],
+) -> list[dict[str, Any]]:
+    admitted_tickers = {
+        company_id.split(":", 1)[1].upper()
+        for company_id in admitted_universe.get("company_ids", [])
+        if company_id.startswith("company:")
+    }
+    filtered_reports = []
+    for report in reports:
+        report_item = {**report}
+        sections = []
+        for section in report.get("sections", []):
+            section_item = {**section}
+            if "body_html" in section_item:
+                section_item["body_html"] = ""
+            if isinstance(section_item.get("rows"), list):
+                rows = []
+                for row in section_item["rows"]:
+                    row_ticker = row.get("ticker")
+                    if row_ticker and str(row_ticker).upper() not in admitted_tickers:
+                        continue
+                    row_item = {**row}
+                    if isinstance(row_item.get("tickers"), list):
+                        row_item["tickers"] = [
+                            ticker for ticker in row_item["tickers"]
+                            if str(ticker).upper() in admitted_tickers
+                        ]
+                    rows.append(row_item)
+                section_item["rows"] = rows
+            sections.append(section_item)
+        report_item["sections"] = sections
+        filtered_reports.append(report_item)
+    return filtered_reports
+
+
+def _signal_source_document_id(signal: dict[str, Any]) -> str:
+    kind = signal.get("kind")
+    if kind == "company_thesis_signal":
+        return _company_source_doc_id(signal.get("ticker"), signal.get("quarter", "unknown"))
+    if kind == "semianalysis_signal":
+        return "source-doc:semianalysis:signals"
+    if kind == "thesis_stage_signal":
+        return "source-doc:thesis:current"
+    return ""
+
+
+def _build_admitted_universe(
+    thesis_proposals: list[dict[str, Any]],
+    companies: list[dict[str, Any]],
+) -> dict[str, Any]:
+    companies_by_id = {company["id"]: company for company in companies}
+    accepted_proposal_ids: list[str] = []
+    company_ids: set[str] = set()
+    company_ids_by_proposal: dict[str, list[str]] = {}
+    evidence_source_document_ids: set[str] = set()
+    evidence_candidate_record_ids: set[str] = set()
+
+    for proposal in thesis_proposals:
+        if proposal.get("status") != "accepted":
+            continue
+        proposal_id = str(proposal.get("id") or f"proposal:{proposal['_slug']}")
+        accepted_proposal_ids.append(proposal_id)
+        proposal_company_ids = _proposal_admitted_company_ids(proposal, companies_by_id)
+        if not proposal_company_ids:
+            raise ValueError(f"Accepted proposal {proposal_id} has no resolvable company refs")
+        company_ids.update(proposal_company_ids)
+        company_ids_by_proposal[proposal_id] = proposal_company_ids
+        for evidence in proposal.get("evidence_refs", []) or []:
+            source_document_id = _string_or_none(evidence.get("source_document_id"))
+            candidate_record_id = _string_or_none(evidence.get("candidate_record_id"))
+            if source_document_id:
+                evidence_source_document_ids.add(source_document_id)
+            if candidate_record_id:
+                evidence_candidate_record_ids.add(candidate_record_id)
+
+    return {
+        "admission_authority": "accepted_thesis_proposal",
+        "accepted_proposal_ids": sorted(accepted_proposal_ids),
+        "company_ids": sorted(company_ids),
+        "company_ids_by_proposal": {
+            proposal_id: sorted(ids)
+            for proposal_id, ids in sorted(company_ids_by_proposal.items())
+        },
+        "evidence_source_document_ids": sorted(evidence_source_document_ids),
+        "evidence_candidate_record_ids": sorted(evidence_candidate_record_ids),
+    }
+
+
 def _build_claims(company_packets: list[dict[str, Any]]) -> list[dict[str, Any]]:
     claims: list[dict[str, Any]] = []
     for packet in sorted(company_packets, key=lambda p: str(p.get("_file", ""))):
@@ -1560,12 +1856,19 @@ def _build_signals(
     return sorted(signals, key=lambda item: item["id"])
 
 
-def _build_thesis(thesis: dict[str, Any], thesis_proposals: list[dict[str, Any]]) -> dict[str, Any]:
+def _build_thesis(thesis: dict[str, Any], admitted_universe: dict[str, Any]) -> dict[str, Any]:
     cycle_by_name = {row["name"]: row for row in cycle_assessment()}
+    admitted_company_ids = set(admitted_universe.get("company_ids", []))
+    admitted_tickers = {
+        company_id.split(":", 1)[1].upper()
+        for company_id in admitted_company_ids
+        if company_id.startswith("company:")
+    }
     cascade = []
     for stage in thesis.get("cascade", []) or []:
         name = stage.get("name", "")
         cycle = cycle_by_name.get(name, {})
+        tickers = [str(t).upper() for t in stage.get("tickers", []) if str(t).upper() in admitted_tickers]
         cascade.append({
             "id": _thesis_stage_id(name),
             "name": name,
@@ -1576,8 +1879,8 @@ def _build_thesis(thesis: dict[str, Any], thesis_proposals: list[dict[str, Any]]
             "cycle_risk": cycle.get("cycle_risk"),
             "cycle_signal": stage.get("cycle_signal", ""),
             "cycle_risk_flags": stage.get("cycle_risk_flags", []),
-            "tickers": [str(t).upper() for t in stage.get("tickers", []) or []],
-            "company_ids": [_company_id(str(t).upper()) for t in stage.get("tickers", []) or []],
+            "tickers": tickers,
+            "company_ids": [_company_id(ticker) for ticker in tickers],
             "signals": stage.get("signals", []),
             "notes": stage.get("notes", ""),
         })
@@ -1594,19 +1897,8 @@ def _build_thesis(thesis: dict[str, Any], thesis_proposals: list[dict[str, Any]]
                 "company_id": _company_id(ticker),
             }
             for ticker, meta in sorted((thesis.get("ticker_map", {}) or {}).items())
+            if str(ticker).upper() in admitted_tickers
         },
-        "proposals": [
-            {
-                "id": f"proposal:{proposal['_slug']}",
-                "status": proposal.get("status"),
-                "created": _string_or_none(proposal.get("created")),
-                "updated": _string_or_none(proposal.get("updated")),
-                "proposal": _clean(proposal.get("proposal", "")),
-                "target_sections": proposal.get("target_sections", []),
-                "path": proposal["_file"],
-            }
-            for proposal in thesis_proposals
-        ],
     }
 
 
@@ -1884,14 +2176,6 @@ def _build_search(
     thesis: dict[str, Any],
 ) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
-    for page in pages:
-        rows.append({
-            "id": page["id"],
-            "type": f"page:{page['type']}",
-            "title": page["title"],
-            "text": _clip(f"{page['summary']} {page.get('body_markdown', '')}", 900),
-            "href": page["href"],
-        })
     for company in companies:
         rows.append({
             "id": company["id"],
@@ -2070,6 +2354,8 @@ def _load_company_packets() -> list[dict[str, Any]]:
         return packets
     for path in sorted(companies_dir.glob("*/*.yaml")):
         data = _read_yaml(path)
+        if data.get("kind") == "approved_company":
+            continue
         if data:
             data["_file"] = _rel(path)
             packets.append(data)
@@ -2085,8 +2371,75 @@ def _load_thesis_proposals() -> list[dict[str, Any]]:
         data = _read_yaml(path)
         data["_file"] = _rel(path)
         data["_slug"] = _slugify(path.stem)
+        _validate_thesis_proposal(data, path)
         proposals.append(data)
     return proposals
+
+
+def _validate_thesis_proposal(proposal: dict[str, Any], path: Path) -> None:
+    path_label = _rel(path)
+    if proposal.get("kind") != "thesis_proposal":
+        raise ValueError(f"{path_label} must set kind: thesis_proposal")
+    if proposal.get("schema_version") != 1:
+        raise ValueError(f"{path_label} must set schema_version: 1")
+    proposal_id = proposal.get("id")
+    if not isinstance(proposal_id, str) or not proposal_id.startswith("proposal:"):
+        raise ValueError(f"{path_label} must set a stable proposal:* id")
+    status = proposal.get("status")
+    if status not in PROPOSAL_STATUSES:
+        raise ValueError(f"{path_label} status must be one of {sorted(PROPOSAL_STATUSES)}")
+    if "reader_eligible" in proposal:
+        raise ValueError(f"{path_label} must not author reader_eligible; derive eligibility from status")
+    if "applied" in proposal:
+        raise ValueError(f"{path_label} must not author applied state in this phase")
+    if status != "accepted":
+        return
+    if not _proposal_company_entries(proposal):
+        raise ValueError(f"{path_label} accepted proposal must include at least one company ref")
+    evidence_refs = proposal.get("evidence_refs", []) or []
+    if not evidence_refs:
+        raise ValueError(f"{path_label} accepted proposal must include evidence_refs")
+    if not any(isinstance(ref, dict) and ref.get("source_document_id") for ref in evidence_refs):
+        raise ValueError(f"{path_label} accepted proposal must include evidence_refs[].source_document_id")
+    decision = proposal.get("decision") or {}
+    if not decision.get("decided_by") or not decision.get("decided_at"):
+        raise ValueError(f"{path_label} accepted proposal must include decision.decided_by and decision.decided_at")
+
+
+def _proposal_company_entries(proposal: dict[str, Any]) -> list[dict[str, Any]]:
+    companies = proposal.get("companies", []) or []
+    if isinstance(companies, dict):
+        companies = [companies]
+    return [entry for entry in companies if isinstance(entry, dict)]
+
+
+def _company_id_from_proposal_entry(entry: dict[str, Any]) -> str:
+    company_id = _string_or_none(entry.get("company_id"))
+    if company_id:
+        return company_id
+    ticker = _string_or_none(entry.get("ticker"))
+    return _company_id(ticker.upper()) if ticker else ""
+
+
+def _ticker_from_proposal_entry(entry: dict[str, Any], company_id: str) -> str:
+    ticker = _string_or_none(entry.get("ticker"))
+    if ticker:
+        return ticker.upper()
+    if company_id.startswith("company:"):
+        return company_id.split(":", 1)[1].upper()
+    return ""
+
+
+def _proposal_admitted_company_ids(
+    proposal: dict[str, Any],
+    companies_by_id: dict[str, dict[str, Any]],
+) -> list[str]:
+    company_ids = []
+    for entry in _proposal_company_entries(proposal):
+        company_id = _company_id_from_proposal_entry(entry)
+        if company_id and company_id in companies_by_id:
+            company_ids.append(company_id)
+    return sorted(set(company_ids))
 
 
 def _read_yaml(path: Path) -> dict[str, Any]:
@@ -2099,6 +2452,13 @@ def _read_yaml(path: Path) -> dict[str, Any]:
 def _write_json(path: Path, value: Any) -> None:
     path.write_text(
         json.dumps(_jsonable(value), ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+
+def _write_yaml(path: Path, value: Any) -> None:
+    path.write_text(
+        yaml.safe_dump(_jsonable(value), sort_keys=False, allow_unicode=False),
         encoding="utf-8",
     )
 
@@ -2380,10 +2740,6 @@ def _company_source_doc_id(ticker: Any, quarter: Any) -> str:
     return _source_doc_id("company", str(ticker).upper(), _slugify(quarter))
 
 
-def _proposal_source_doc_id(slug: str) -> str:
-    return _source_doc_id("proposal", slug)
-
-
 def _wiki_source_for_slug(pages_by_slug: dict[str, dict[str, Any]], slug: str | None) -> tuple[str | None, str | None]:
     if not slug:
         return None, None
@@ -2529,39 +2885,6 @@ def _theme_status(value: Any) -> str:
     if text in {"next", "watch"}:
         return "watch"
     return "inactive"
-
-
-def _proposal_theme_ids(proposal: dict[str, Any], thesis_theme_ids_by_name: dict[str, str]) -> list[str]:
-    text = _search_text(proposal.get("target_sections", []), proposal.get("proposal", ""))
-    result: set[str] = set()
-    for name, theme_id in thesis_theme_ids_by_name.items():
-        if _slugify(name).replace("-", " ") in text or name.lower() in text:
-            result.add(theme_id)
-    return sorted(result)
-
-
-def _proposal_company_ids(
-    proposal: dict[str, Any],
-    thesis_payload: dict[str, Any],
-    companies_by_id: dict[str, dict[str, Any]],
-) -> list[str]:
-    text = _search_text(proposal)
-    result: set[str] = set()
-    ticker_to_company = {
-        company.get("ticker"): company_id
-        for company_id, company in companies_by_id.items()
-        if company.get("ticker")
-    }
-    for ticker in TICKER_RE.findall(text.upper()):
-        company_id = ticker_to_company.get(ticker)
-        if company_id:
-            result.add(company_id)
-    for stage in thesis_payload.get("cascade", []):
-        if stage.get("name", "").lower() in text or _slugify(stage.get("name", "")).replace("-", " ") in text:
-            for company_id in stage.get("company_ids", []):
-                if company_id in companies_by_id:
-                    result.add(company_id)
-    return sorted(result)
 
 
 def _base_row(

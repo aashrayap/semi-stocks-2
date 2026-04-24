@@ -33,12 +33,12 @@
 
 Canonical flow:
 
-`canonical/10-wiki/raw -> canonical/10-wiki/sources|concepts|outputs -> canonical/20-data/sources|companies -> canonical/30-thesis/thesis.yaml -> canonical/40-engine -> canonical/50-reports`
+`canonical/10-wiki/raw -> canonical/10-wiki/sources|concepts|outputs -> canonical/20-data/sources|thesis-proposals|companies -> canonical/30-thesis/thesis.yaml -> canonical/40-engine -> canonical/50-reports`
 
 Write ownership:
 
 - `canonical/10-wiki/` owns authored wiki knowledge and generated wiki metadata.
-- `canonical/20-data/` owns structured evidence only.
+- `canonical/20-data/` owns structured evidence, authored thesis proposals, and generated post-gate company dossiers.
 - `canonical/30-thesis/thesis.yaml` owns the narrow thesis control plane.
 - `canonical/40-engine/` owns synthesis and render code.
 - `canonical/50-reports/` owns canonical published reports.
@@ -75,3 +75,7 @@ Write ownership:
 - Repo-wide process docs live under `docs/process/`.
 - Subsystem-local docs stay near their owner.
 - Historical migration docs remain under `docs/artifacts/`; do not use them as current runtime authority unless current root docs point there.
+
+## Progressive Disclosure
+
+- Shared language: read `docs/UBIQUITOUS_LANGUAGE.md` when planning, implementing, or reviewing domain terminology.

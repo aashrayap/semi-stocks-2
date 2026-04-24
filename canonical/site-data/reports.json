@@ -5,7 +5,7 @@
     "path": "canonical/50-reports/latest.html",
     "sections": [
       {
-        "body_html": "<strong>Where we are:</strong> The semiconductor supply chain has a sequence of physical constraints that limit how fast AI can scale. Each one gets solved eventually, but the next one becomes the new ceiling. Right now, <strong></strong> are the active constraints — they're happening simultaneously, not sequentially as originally expected.<br><br><strong>What the money says:</strong> Leopold Aschenbrenner's fund ($5.5B) and Gavin Baker's fund ($8.2B) are both betting heavily on AI infrastructure but disagree on <em>where</em> the constraint is tightest. Leopold has exited chip companies entirely and loaded up on power infrastructure and GPU cloud operators. Baker has done the opposite — $1B+ in Nvidia alone — betting that chips themselves remain scarce. The cleanest three-source overlap is <strong>optical interconnect ()</strong>, which makes it the highest-conviction, lowest-divergence-risk zone in the entire thesis.",
+        "body_html": "",
         "id": "report-section:latest:summary",
         "kind": "summary",
         "title": "Summary"

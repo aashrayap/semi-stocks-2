@@ -31,7 +31,7 @@ Use the surface in this order:
 ![Signal Desk control guide](docs/diagrams/signal-desk-control-guide.png)
 
 - `Search` — use when you know a ticker, phrase, claim, source, or theme.
-- `Source Channel` — provenance lens: Baker, Leopold, SemiAnalysis, company earnings, thesis stage, pending proposals.
+- `Source Channel` — provenance lens for admitted evidence: Baker, Leopold, SemiAnalysis, company earnings, and thesis stage.
 - `Company Role` — economic layer: optics, memory, power, GPU cloud, foundry, chip designer, etc.
 - `Filters` — thesis theme, timeline, and include-undated controls.
 - `Graph controls` — reduce clutter with support-family toggles, min weight, and top-edge limits.
@@ -43,10 +43,11 @@ Use the surface in this order:
 Human loop:
 
 ```text
-raw source -> wiki ingest/query -> human approval -> canonical data/thesis -> signal_desk.json -> web reader -> next research question
+raw source -> wiki ingest/query -> thesis proposal -> human gate -> admitted universe -> signal_desk.json -> web reader -> next research question
 ```
 
-Signal Desk supports decisions. It does not make them.
+Signal Desk supports decisions. It does not make them, and it should only show
+companies and evidence after accepted proposal ancestry admits them.
 
 ## Run
 
@@ -104,7 +105,7 @@ Start here:
 ## Canonical Stages
 
 - `canonical/10-wiki/` — canonical knowledge workspace and ingest landing zone
-- `canonical/20-data/` — structured evidence only (`sources/`, `companies/`)
+- `canonical/20-data/` — structured evidence, proposal decisions, and generated post-gate company dossiers (`sources/`, `thesis-proposals/`, `companies/`)
 - `canonical/30-thesis/thesis.yaml` — narrow control plane
 - `canonical/40-engine/` — engine stage wrapper and package-safe Python module root
 - `canonical/50-reports/` — canonical published artifacts

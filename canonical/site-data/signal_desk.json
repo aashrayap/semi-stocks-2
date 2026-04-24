@@ -2,14 +2,14 @@
   "build": {
     "collection_hashes": {
       "companies": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "facets": "3b1a29080bd12573dba7e4b74eaf454a8bf8ba6453badb1210bcb16628e71c09",
+      "facets": "691da9803051fe9fe4ea38a49e2883a309fb1bf75af7d9d21f26e293431d8bbe",
       "graph": "28a50d3bc239da2c0efcb1d76c6a3886bc0c020619263c0347af03d15a214b4c",
-      "indexes": "627ceeef99cb17dfc9e4b71b27eb49ba7d0994a4dcc7a05a0c0969b3db866d61",
+      "indexes": "22c6de361abdca9ddc7b0dd369cea4ab251351a36787c8f5b9bc978acf2df7e6",
       "rows": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "source_documents": "52fc15a6aa8dcccd63d44bf1ae52390d76468aee12130617efeb85822ecee141",
-      "tables": "1a53a3a4dc090ef0dc17fef036ca33b45c21cef05c5b99b16d16d7a817f9e0ef"
+      "source_documents": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "tables": "0a7932ee29be492443fc6f55961627bdb27f79184a49e9934e16694375390fb2"
     },
-    "generated_at": "2026-04-21T10:17:36Z",
+    "generated_at": "2026-04-24T10:42:59Z",
     "generator": "site-data-v0.2",
     "source_hash": "ab14604623a5efe32983e47515c4c1caa3874e9b3fc3530be7f218ea5b564768"
   },
@@ -49,8 +49,7 @@
     "row_types": [
       "position",
       "signal",
-      "claim",
-      "proposal"
+      "claim"
     ],
     "source_channels": [
       {
@@ -62,7 +61,7 @@
         "counts": {
           "companies": 0,
           "rows": 0,
-          "source_documents": 1
+          "source_documents": 0
         },
         "description": "Baker / Atreides fund-positioning evidence.",
         "id": "source-channel:baker",
@@ -91,25 +90,12 @@
         "counts": {
           "companies": 0,
           "rows": 0,
-          "source_documents": 1
+          "source_documents": 0
         },
         "description": "Leopold / Situational Awareness fund-positioning evidence.",
         "id": "source-channel:leopold",
         "label": "Leopold",
         "search_text": "source-channel:leopold leopold fund_positioning situational-awareness situational awareness / fund-positioning evidence."
-      },
-      {
-        "aliases": [],
-        "channel_kind": "thesis_proposal",
-        "counts": {
-          "companies": 0,
-          "rows": 0,
-          "source_documents": 0
-        },
-        "description": "Pending or recently applied thesis proposal rows.",
-        "id": "source-channel:pending-proposals",
-        "label": "Pending proposals",
-        "search_text": "source-channel:pending-proposals pending proposals thesis_proposal or recently applied thesis proposal rows."
       },
       {
         "aliases": [
@@ -122,7 +108,7 @@
         "counts": {
           "companies": 0,
           "rows": 0,
-          "source_documents": 1
+          "source_documents": 0
         },
         "description": "SemiAnalysis supply-chain research evidence.",
         "id": "source-channel:semianalysis",
@@ -135,7 +121,7 @@
         "counts": {
           "companies": 0,
           "rows": 0,
-          "source_documents": 1
+          "source_documents": 0
         },
         "description": "Current thesis cascade control-plane signals.",
         "id": "source-channel:thesis-stage",
@@ -170,22 +156,17 @@
     "row_ids_by_source_channel": {},
     "row_ids_by_thesis_theme": {},
     "row_ids_by_type": {},
-    "source_document_ids_by_source_channel": {
-      "source-channel:baker": [
-        "source-doc:baker:q4-1900"
-      ],
-      "source-channel:leopold": [
-        "source-doc:leopold:q4-1900"
-      ],
-      "source-channel:semianalysis": [
-        "source-doc:semianalysis:signals"
-      ],
-      "source-channel:thesis-stage": [
-        "source-doc:thesis:current"
-      ]
-    }
+    "source_document_ids_by_source_channel": {}
   },
   "quality": {
+    "admitted_universe": {
+      "accepted_proposal_ids": [],
+      "admission_authority": "accepted_thesis_proposal",
+      "company_ids": [],
+      "company_ids_by_proposal": {},
+      "evidence_candidate_record_ids": [],
+      "evidence_source_document_ids": []
+    },
     "graph_edges_contextual_only": true,
     "position_leg_counts": {
       "baker": {
@@ -209,139 +190,13 @@
     "ui_ready": true
   },
   "rows": [],
-  "source_documents": [
-    {
-      "canonical_path": "canonical/20-data/sources/baker/q4_0000.yaml",
-      "company_ids": [],
-      "document_kind": "13f_filing",
-      "external_url": null,
-      "id": "source-doc:baker:q4-1900",
-      "period": {
-        "end_date": "1900-12-31",
-        "fiscal_quarter": null,
-        "fiscal_year": null,
-        "label": "Q4 1900",
-        "quarter": 4,
-        "start_date": null,
-        "system": "calendar_quarter",
-        "year": 1900
-      },
-      "related_paths": [],
-      "search_text": "baker atreides management lp q4 1900 13f",
-      "source_channel_id": "source-channel:baker",
-      "thesis_theme_ids": [],
-      "timeline": {
-        "end_date": null,
-        "include_in_range": true,
-        "kind": "filed_date",
-        "label": "Filed Jan 1 1901",
-        "precision": "day",
-        "sort_date": "1901-01-01"
-      },
-      "title": "Atreides Management LP Q4 1900 13F",
-      "wiki_page_slug": null
-    },
-    {
-      "canonical_path": "canonical/20-data/sources/leopold/q4_0000.yaml",
-      "company_ids": [],
-      "document_kind": "13f_filing",
-      "external_url": null,
-      "id": "source-doc:leopold:q4-1900",
-      "period": {
-        "end_date": "1900-12-31",
-        "fiscal_quarter": null,
-        "fiscal_year": null,
-        "label": "Q4 1900",
-        "quarter": 4,
-        "start_date": null,
-        "system": "calendar_quarter",
-        "year": 1900
-      },
-      "related_paths": [],
-      "search_text": "leopold situational awareness lp q4 1900 13f",
-      "source_channel_id": "source-channel:leopold",
-      "thesis_theme_ids": [],
-      "timeline": {
-        "end_date": null,
-        "include_in_range": true,
-        "kind": "filed_date",
-        "label": "Filed Jan 1 1901",
-        "precision": "day",
-        "sort_date": "1901-01-01"
-      },
-      "title": "Situational Awareness LP Q4 1900 13F",
-      "wiki_page_slug": null
-    },
-    {
-      "canonical_path": "canonical/20-data/sources/semianalysis/signals.yaml",
-      "company_ids": [],
-      "document_kind": "supply_chain_research",
-      "external_url": null,
-      "id": "source-doc:semianalysis:signals",
-      "period": {
-        "end_date": null,
-        "fiscal_quarter": null,
-        "fiscal_year": null,
-        "label": "ongoing",
-        "quarter": null,
-        "start_date": null,
-        "system": "label",
-        "year": null
-      },
-      "related_paths": [],
-      "search_text": "semianalysis (dylan patel) supply chain research",
-      "source_channel_id": "source-channel:semianalysis",
-      "thesis_theme_ids": [],
-      "timeline": {
-        "end_date": null,
-        "include_in_range": true,
-        "kind": "published_date",
-        "label": "Updated Apr 21 2026",
-        "precision": "day",
-        "sort_date": "2026-04-21"
-      },
-      "title": "SemiAnalysis (Dylan Patel)",
-      "wiki_page_slug": null
-    },
-    {
-      "canonical_path": "canonical/30-thesis/thesis.yaml",
-      "company_ids": [],
-      "document_kind": "thesis_control",
-      "external_url": null,
-      "id": "source-doc:thesis:current",
-      "period": {
-        "end_date": null,
-        "fiscal_quarter": null,
-        "fiscal_year": null,
-        "label": "current",
-        "quarter": null,
-        "start_date": null,
-        "system": "label",
-        "year": null
-      },
-      "related_paths": [],
-      "search_text": "thesis current /users/ash/documents/2026/semi-stocks-2/canonical/30-thesis/thesis.yaml",
-      "source_channel_id": "source-channel:thesis-stage",
-      "thesis_theme_ids": [],
-      "timeline": {
-        "end_date": null,
-        "include_in_range": true,
-        "kind": "thesis_updated",
-        "label": "Updated 2026-04-21",
-        "precision": "day",
-        "sort_date": "2026-04-21"
-      },
-      "title": "Current thesis control plane",
-      "wiki_page_slug": null
-    }
-  ],
+  "source_documents": [],
   "tables": {
     "default_view_id": "signals",
     "view_order": [
       "signals",
       "claims",
       "positions",
-      "proposals",
       "sources"
     ],
     "views": {
@@ -447,51 +302,6 @@
         "row_type": "position",
         "source_document_ids": []
       },
-      "proposals": {
-        "columns": [
-          {
-            "key": "timeline",
-            "label": "Updated",
-            "sortable": true,
-            "visible_by_default": true
-          },
-          {
-            "key": "title",
-            "label": "Proposal",
-            "sortable": true,
-            "visible_by_default": true
-          },
-          {
-            "key": "affected_company_ids",
-            "label": "Companies",
-            "sortable": true,
-            "visible_by_default": true
-          },
-          {
-            "key": "affected_thesis_theme_ids",
-            "label": "Thesis Themes",
-            "sortable": true,
-            "visible_by_default": true
-          },
-          {
-            "key": "lifecycle_state",
-            "label": "Lifecycle State",
-            "sortable": true,
-            "visible_by_default": true
-          }
-        ],
-        "default_sort": {
-          "direction": "desc",
-          "key": "timeline.sort_date",
-          "nulls": "last"
-        },
-        "entity_type": "row",
-        "id": "proposals",
-        "label": "Proposals",
-        "row_ids": [],
-        "row_type": "proposal",
-        "source_document_ids": []
-      },
       "signals": {
         "columns": [
           {
@@ -586,12 +396,7 @@
         "label": "Sources",
         "row_ids": [],
         "row_type": null,
-        "source_document_ids": [
-          "source-doc:baker:q4-1900",
-          "source-doc:leopold:q4-1900",
-          "source-doc:semianalysis:signals",
-          "source-doc:thesis:current"
-        ]
+        "source_document_ids": []
       }
     }
   },
