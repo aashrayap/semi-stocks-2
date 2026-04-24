@@ -1,0 +1,5 @@
+[2026-04-24T14:06:40] earnings_calendar
+  lookahead_tickers: none
+  report: none (dry-run)
+  error: canonical thesis not found or empty
+
