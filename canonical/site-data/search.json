@@ -1,26 +1,5 @@
 [
   {
-    "href": "index.html",
-    "id": "page:index",
-    "text": "Wiki Index — semi stocks Master index of wiki pages. Thesis linked: Data sources: Last updated: 2026 04 21 Concepts No concept pages yet. Sources No source pages yet. Outputs No output pages yet. Master index of wiki pages. Thesis-linked: `../30-thesis/thesis.yaml` | Data sources: `../20-data/sources/` Last updated: 2026-04-21 ## Concepts No concept pages yet. ## Sources No source pages yet. ## Outputs No output pages yet.",
-    "title": "Wiki Index — semi-stocks",
-    "type": "page:meta"
-  },
-  {
-    "href": "log.html",
-    "id": "page:log",
-    "text": "Wiki Log — semi stocks Append only record of wiki activity. [2026 04 21] reset canonical data baseline cleared Cleared canonical wiki/data content to start from zero while keeping architecture intact. [2026 04 21] rebuild index 0 pages indexed, 0 local links, 0 orphan pages, 0 dead links [2026 04 21] rebuild index 0 pages indexed, 0 local links, 0 orphan... Append-only record of wiki activity. --- ## [2026-04-21] reset | canonical data baseline cleared Cleared canonical wiki/data content to start from zero while keeping architecture intact. ## [2026-04-21] rebuild-index | 0 pages indexed, 0 local links, 0 orphan pages, 0 dead links ## [2026-04-21] rebuild-index | 0 pages indexed, 0 local links, 0 orphan pages, 0 dead links",
-    "title": "Wiki Log — semi-stocks",
-    "type": "page:meta"
-  },
-  {
-    "href": "schema.html",
-    "id": "page:schema",
-    "text": "Wiki Schema — semi stocks Rules and conventions for the semi stocks investment research wiki. Co evolved by Ash and Claude. Directory structure Three layers 1. Raw sources ( ) — immutable. LLM reads but never modifies. 2. The wiki ( , , ) — LLM owned. LLM creates, updates, cross references. Human reads but rarely edits. 3. The schema (this file) — co evol... Rules and conventions for the semi-stocks investment research wiki. Co-evolved by Ash and Claude. ## Directory structure ``` semi-stocks-2/canonical/10-wiki/ ├── index.md ← master catalog of all pages (LLM-maintained) ├── _index.json ← generated page graph for query/lint ├── _backlinks.json ← generated reverse link map ├── _lint.json ← generated orphan/dead-link state ├── log.md ← append-only activity log ├── schema.md ← this file — conventions and workflows ├── raw/ ← immutable source documents (transcripts, articles, 13F snapsho...",
-    "title": "Wiki Schema — semi-stocks",
-    "type": "page:meta"
-  },
-  {
     "href": "canonical/50-reports/latest.html",
     "id": "report:latest",
     "text": "Summary Cascade + Cycle Risk Positions + Signals Earnings + Proof Gates Drift Warnings",

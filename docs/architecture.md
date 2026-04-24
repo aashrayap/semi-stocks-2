@@ -4,7 +4,7 @@
 
 `semi-stocks-2` should make the propagation system explicit:
 
-`canonical/10-wiki/raw -> canonical/10-wiki/sources|concepts -> canonical/20-data/sources|companies -> canonical/30-thesis/thesis.yaml -> canonical/40-engine -> canonical/50-reports`
+`canonical/10-wiki/raw -> canonical/10-wiki/sources|concepts -> canonical/20-data/sources|thesis-proposals|companies -> canonical/30-thesis/thesis.yaml -> canonical/40-engine -> canonical/50-reports`
 
 `agents/` reads canonical state in parallel but writes sidecar state only under `agents/`.
 
@@ -52,9 +52,9 @@ Knowledge lane and ingest landing zone.
 
 Structured evidence lane.
 
-- `sources/` — structured source snapshots and position data
-- `companies/` — structured company-level models and claim-tracking state
-- `thesis-proposals/` — structured evidence staging for pending thesis patches before promotion to `30-thesis/thesis.yaml`. One YAML file per proposed change. Evidence from multiple sources accretes into each proposal. Status: `pending` → `applied` | `rejected`.
+- `sources/` — candidate structured evidence. Source presence does not imply reader admission.
+- `thesis-proposals/` — authored proposal decision records. One YAML file per proposed change. Status: `proposed` | `accepted` | `rejected`; `accepted` is the only reader admission gate in the current phase.
+- `companies/` — post-gate company data. In v1, generated approved-company dossiers persist under `_generated/` and derive from accepted proposal ancestry. This lane must not independently admit reader-visible companies.
 
 `canonical/20-data/` does not own thesis or cross-lane process docs.
 
@@ -73,6 +73,10 @@ Canonical published artifacts rendered from `canonical/40-engine/`. These are do
 ### `canonical/site-data/`
 
 Generated JSON data contracts derived from canonical wiki, data, thesis, and report state. This is the preferred repo-owned app boundary for new web reader surfaces such as Signal Desk. It may be deleted and rebuilt from `canonical/40-engine/`.
+
+Signal Desk must build an `admitted universe` first: every emitted company, row,
+source document, source-channel count, search facet, graph node, and graph edge
+must be reachable from accepted proposal ancestry.
 
 ### `canonical/site-reader/`
 

@@ -24,6 +24,7 @@ Repo-local skill for `semi-stocks-2` wiki work. Do not fall back to any other wi
 - Schema: `/Users/ash/Documents/2026/semi-stocks-2/canonical/10-wiki/schema.md`
 - Raw sources: `/Users/ash/Documents/2026/semi-stocks-2/canonical/10-wiki/raw`
 - Thesis: `/Users/ash/Documents/2026/semi-stocks-2/canonical/30-thesis/thesis.yaml`
+- Thesis proposals: `/Users/ash/Documents/2026/semi-stocks-2/canonical/20-data/thesis-proposals`
 - Rebuild: `uv run python ~/.dot-agent/skills/wiki/scripts/rebuild_index.py /Users/ash/Documents/2026/semi-stocks-2/canonical/10-wiki`
 
 ## Required Flow
@@ -41,7 +42,9 @@ Repo-local skill for `semi-stocks-2` wiki work. Do not fall back to any other wi
 
 - Start at `canonical/10-wiki/index.md`.
 - Follow wikilinks through `concepts/`, `sources/`, and `outputs/`.
-- Use `canonical/20-data/` only when structured evidence is needed.
+- Use `canonical/20-data/` only when structured evidence or admission state is needed.
+- For reader/admission questions, check `canonical/20-data/thesis-proposals/`
+  for accepted proposal ancestry before treating company data as admitted.
 - Use `canonical/30-thesis/thesis.yaml` only for control-plane conclusions.
 
 ## Lint Mode
