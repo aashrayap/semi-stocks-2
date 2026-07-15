@@ -1,0 +1,4 @@
+[2026-07-15 15:06:18] INFO hourly-market-intel run
+[2026-07-15 15:06:18] INFO Earnings pipeline: ran
+[2026-07-15 15:06:18] INFO Signals found: 62 new across 18 tickers
+[2026-07-15 15:06:18] INFO Sources checked: per-ticker search (18), SemiAnalysis RSS (blocked-403), Gavin Baker, Dylan Patel, Leopold (no recent), financial news deep-dive (7 tickers)
