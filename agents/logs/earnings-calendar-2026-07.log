@@ -3,3 +3,8 @@
   report: none (dry-run)
   error: canonical thesis not found or empty
 
+[2026-07-23T21:07:04] earnings_calendar
+  lookahead_tickers: none
+  report: none (dry-run)
+  error: canonical thesis not found or empty
+

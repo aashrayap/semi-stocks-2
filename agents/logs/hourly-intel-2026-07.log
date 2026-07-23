@@ -2,3 +2,7 @@
 [2026-07-15 15:06:18] INFO Earnings pipeline: ran
 [2026-07-15 15:06:18] INFO Signals found: 62 new across 18 tickers
 [2026-07-15 15:06:18] INFO Sources checked: per-ticker search (18), SemiAnalysis RSS (blocked-403), Gavin Baker, Dylan Patel, Leopold (no recent), financial news deep-dive (7 tickers)
+[2026-07-23 21:06:00] INFO hourly-market-intel run
+[2026-07-23 21:06:00] INFO Earnings pipeline: ran (partial - calendar empty, predictor no upcoming, transcript_fetcher cryptography error, report.py success)
+[2026-07-23 21:06:00] INFO Signals found: 72 new across 17 tickers
+[2026-07-23 21:06:00] INFO Sources checked: per-ticker search (18 tickers), SemiAnalysis RSS (403 paywall, web fallback), Gavin Baker, Leopold Aschenbrenner, Dylan Patel, financial news (7 deep-dive: CRWV NVDA MU COHR INTC TSM LITE), SEC EDGAR skipped (Thursday)
