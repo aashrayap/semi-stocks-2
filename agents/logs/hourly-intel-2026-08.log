@@ -1,0 +1,4 @@
+[2026-08-03 20:10:00] INFO hourly-market-intel run
+[2026-08-03 20:10:00] INFO Earnings pipeline: ran (partial failures: empty ticker_map, pdfminer crash)
+[2026-08-03 20:10:00] INFO Signals found: 35 new across 18 tickers (+ MULTI analyst/filing signals)
+[2026-08-03 20:10:00] INFO Sources checked: per-ticker-search(18), SemiAnalysis-RSS(403-blocked), Gavin-Baker, Leopold-Aschenbrenner, Dylan-Patel, financial-news(7-deep-dive), SEC-EDGAR-13F(Monday-checked)
