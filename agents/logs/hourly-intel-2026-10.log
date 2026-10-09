@@ -2,3 +2,7 @@
 [2026-10-06 13:02:08] INFO Earnings pipeline: failed (empty ticker_map in thesis.yaml)
 [2026-10-06 13:02:08] INFO Signals found: 22 new across 18 tickers
 [2026-10-06 13:02:08] INFO Sources checked: per-ticker search (18), SemiAnalysis RSS (blocked by proxy), Gavin Baker, Leopold Aschenbrenner, Dylan Patel, financial news (7 deep-dive tickers), SEC EDGAR 13F (skipped - Tuesday)
+[2026-10-09 21:05:00] INFO hourly-market-intel run
+[2026-10-09 21:05:00] INFO Earnings pipeline: ran (scripts executed, ticker_map empty so limited output)
+[2026-10-09 21:05:00] INFO Signals found: 23 new across 17 tickers
+[2026-10-09 21:05:00] INFO Sources checked: per-ticker search (18), SemiAnalysis RSS (failed DNS), Gavin Baker, Leopold Aschenbrenner, Dylan Patel, financial news (7 deep-dive tickers), SEC EDGAR (skipped, not Monday)

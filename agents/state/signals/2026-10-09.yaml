@@ -1,0 +1,338 @@
+date: "2026-10-09"
+generated_at: "2026-10-09T21:05:00"
+signals:
+
+# --- COHR (pluggable_optics) ---
+
+- id: "sig-20261009-2101-COHR-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: COHR
+  bottleneck: pluggable_optics
+  source: "tipranks.com"
+  source_url: "https://www.tipranks.com/stocks/COHR/earnings"
+  headline: "Coherent FQ4 2026 revenue $2.05B beats by $61M, guides FQ1 2027 to $2.2-2.4B"
+  summary: "Coherent reported FQ4 revenue of $2.05B (+34% YoY), beating consensus by ~$61M. Guided next quarter revenue to $2.2-2.4B with EPS $1.85-$2.05, raising prior guidance. Expects first $3B+ revenue quarter by end of FY27."
+  relevance: confirms
+  thesis_ref: "pluggable_optics demand driven by AI datacenter buildout"
+  confidence: high
+  category: guidance
+
+- id: "sig-20261009-2101-COHR-002"
+  found_at: "2026-10-09T21:01:00"
+  ticker: COHR
+  bottleneck: pluggable_optics
+  source: "itiger.com"
+  source_url: "https://www.itiger.com/hans/news/2643292619"
+  headline: "Coherent showed 1.6T/3.2T/12.8T architectures at OFC 2026, NVIDIA strategic investment"
+  summary: "At OFC 2026 in June, Coherent demonstrated next-gen datacenter connectivity architectures spanning 1.6T to 12.8T. Strategic investment from NVIDIA with billions in purchase commitments. Expanding 6-inch InP wafer capacity."
+  relevance: confirms
+  thesis_ref: "pluggable optics capacity expansion tied to NVIDIA ecosystem"
+  confidence: medium
+  category: capacity
+
+# --- LITE (pluggable_optics) ---
+
+- id: "sig-20261009-2101-LITE-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: LITE
+  bottleneck: pluggable_optics
+  source: "seekingalpha.com"
+  source_url: "https://seekingalpha.com/pr/20615640"
+  headline: "Lumentum FQ4 revenue $1.01B (+109% YoY), guides $1.225-1.275B next quarter"
+  summary: "Lumentum reported FQ4 revenue of $1.01B, more than doubling YoY. Q1 FY27 guidance of $1.225-1.275B represents continued acceleration. Revenue forecast raised from prior $960M-$1.01B range."
+  relevance: confirms
+  thesis_ref: "pluggable optics demand acceleration from AI/datacenter"
+  confidence: high
+  category: guidance
+
+- id: "sig-20261009-2101-LITE-002"
+  found_at: "2026-10-09T21:01:00"
+  ticker: LITE
+  bottleneck: pluggable_optics
+  source: "tikr.com"
+  source_url: "https://www.tikr.com/it/blog/lumentum-ceo-just-revealed-a-new-opportunity-that-could-be-bigger-than-co-packaged-optics-heres-what-it-means-for-lite-stock"
+  headline: "Lumentum CEO says near-packaged optics could be bigger than co-packaged optics"
+  summary: "At Mizuho conference June 2026, CEO Michael Hurlston described near-packaged optics (NPO) as potentially a bigger opportunity than co-packaged optics, signaling a new product category."
+  relevance: novel
+  thesis_ref: "near-packaged optics as emerging pluggable architecture"
+  confidence: medium
+  category: positioning
+
+# --- CIEN (pluggable_optics) ---
+
+- id: "sig-20261009-2101-CIEN-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: CIEN
+  bottleneck: pluggable_optics
+  source: "247wallst.com"
+  source_url: "https://247wallst.com/investing/2026/09/15/ciena-rises-4-as-optics-selloff-unwinds-coherent-edges-higher-corning-holds-steady/"
+  headline: "Ciena FQ3 revenue $1.67B (+37% YoY), raises FY26 guide to $6.42B, targets 30%+ FY27 growth"
+  summary: "Ciena posted FQ3 revenue of $1.67B (+37% YoY) and raised its FY26 revenue guidance to $6.42B. Set preliminary FY27 target of at least 30% revenue growth. Stock rose 4% as optics selloff reversed."
+  relevance: confirms
+  thesis_ref: "optical networking demand from AI buildout"
+  confidence: high
+  category: guidance
+
+# --- ALAB (copper_signal_integrity) ---
+
+- id: "sig-20261009-2101-ALAB-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: ALAB
+  bottleneck: copper_signal_integrity
+  source: "sdxcentral.com"
+  source_url: "https://quantisnow.com/company/ALAB"
+  headline: "Astera Labs unveils next-gen CXL controllers for agentic AI workloads"
+  summary: "On Sep 15, Astera Labs unveiled next-gen CXL memory controllers including high-end X-Series targeting agentic AI workloads. Scorpio fabric switch expected to become largest product family a quarter ahead of schedule."
+  relevance: novel
+  thesis_ref: "CXL memory and fabric switching for AI scale-up"
+  confidence: medium
+  category: positioning
+
+# --- SMTC (copper_signal_integrity) ---
+
+- id: "sig-20261009-2101-SMTC-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: SMTC
+  bottleneck: copper_signal_integrity
+  source: "businesswire.com"
+  source_url: "https://www.businesswire.com/news/home/20260316127252/en/"
+  headline: "Semtech FY2026 'landmark year', launches 224Gbps TIA/MZM drivers for 800G-3.2T"
+  summary: "Semtech reported FQ4/FY2026 results with CEO calling it a landmark year. Launched 224Gbps-per-lane TIA and MZM drivers for optical interconnects, CEI-224G-Linear and LPO-MSA compliant, targeting 800G/1.6T/3.2T era."
+  relevance: confirms
+  thesis_ref: "copper signal integrity scaling for next-gen datacenter speeds"
+  confidence: high
+  category: positioning
+
+# --- MU (memory) ---
+
+- id: "sig-20261009-2101-MU-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: MU
+  bottleneck: memory
+  source: "seekingalpha.com"
+  source_url: "https://seekingalpha.com/article/4951192"
+  headline: "Micron FQ4 revenue ~$54.2B, guides FQ1 FY27 to ~$61.5B with ~86% gross margin"
+  summary: "Micron posted FQ4 revenue of approximately $54.2B with adj EPS ~$33.42. Guided FQ1 FY27 to ~$61.5B revenue. Memory shortage expected to persist beyond 2026."
+  relevance: confirms
+  thesis_ref: "memory demand outstripping supply, pricing power"
+  confidence: medium
+  category: guidance
+
+- id: "sig-20261009-2101-MU-002"
+  found_at: "2026-10-09T21:01:00"
+  ticker: MU
+  bottleneck: memory
+  source: "trendforce.com"
+  source_url: "https://www.trendforce.com/news/2026/05/27/news-inside-microns-1-trillion-market-cap-leap-a-global-fab-expansion-overview-across-the-u-s-and-asia/"
+  headline: "Micron tops $1T market cap, begins 1-alpha DRAM at Manassas, acquires Taiwan P5 fab for $1.8B"
+  summary: "Micron briefly exceeded $1T valuation. Began 1-alpha DRAM production at Manassas fab (May 2026), quadrupling DDR4 wafer output. Signed LOI to acquire Powerchip P5 fab in Taiwan for $1.8B. Major capacity expansion with most new capacity coming online from 2027."
+  relevance: confirms
+  thesis_ref: "memory capacity expansion still constrained relative to demand"
+  confidence: high
+  category: capacity
+
+# --- TSM (n3_logic) ---
+
+- id: "sig-20261009-2101-TSM-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: TSM
+  bottleneck: n3_logic
+  source: "vaneck.com"
+  source_url: "https://www.vaneck.com/offshore/en/news-and-insights/blogs/thematic-investing/tsmc-q2-earnings-call-what-it-means-for-smh/"
+  headline: "TSMC Q2 revenue $40.2B (+36% YoY), raises FY26 growth to 40%+, capex to $60-64B"
+  summary: "TSMC Q2 2026 revenue hit $40.2B with record net income. Gross margin 67.7% above guidance. Advanced tech at 77% of wafer revenue. Raised full-year growth guidance to 40%+ and capex to $60-64B from $52-56B. Q3 guided $44.6-45.8B, ~$2B above consensus."
+  relevance: confirms
+  thesis_ref: "N3/advanced logic capacity constrained, TSMC pricing power"
+  confidence: high
+  category: guidance
+
+# --- NVDA (n3_logic) ---
+
+- id: "sig-20261009-2101-NVDA-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: NVDA
+  bottleneck: n3_logic
+  source: "finance.yahoo.com"
+  source_url: "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-posts-blowout-q1-174603465.html"
+  headline: "NVIDIA FQ1 FY27 revenue $81.6B (+85% YoY), Data Center $75.2B, guides Q2 to $91B"
+  summary: "NVIDIA posted FQ1 FY27 revenue of $81.6B (+85% YoY, +20% QoQ). Data Center revenue was $75.2B (+92% YoY). Guided Q2 to $91B +/-2%. Not assuming China data center compute revenue. Announced $80B additional buyback."
+  relevance: confirms
+  thesis_ref: "GPU demand continues to exceed supply, driving N3 logic demand"
+  confidence: high
+  category: guidance
+
+# --- AVGO (n3_logic) ---
+
+- id: "sig-20261009-2101-AVGO-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: AVGO
+  bottleneck: n3_logic
+  source: "tipranks.com"
+  source_url: "https://www.tipranks.com/news/broadcom-announces-important-upgrade-to-ai-chips-fending-off-industry-rivals"
+  headline: "Broadcom extends Google TPU design deal through 2031, partners with Anthropic for 2027 compute"
+  summary: "Broadcom will continue designing Google TPUs and networking components through 2031. Expanded collaboration with Anthropic for compute beginning 2027. Also has $10B custom AI chip deal with OpenAI delivering from 2026."
+  relevance: confirms
+  thesis_ref: "custom AI silicon demand broadening beyond NVIDIA GPUs"
+  confidence: medium
+  category: demand
+
+# --- INTC (n3_logic) ---
+
+- id: "sig-20261009-2101-INTC-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: INTC
+  bottleneck: n3_logic
+  source: "intc.com"
+  source_url: "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results"
+  headline: "Intel Q2 revenue $16.1B (+25% YoY) beats guidance, still posting GAAP losses"
+  summary: "Intel Q2 2026 revenue was $16.1B (+25% YoY), above $13.8-14.8B guidance. Non-GAAP EPS $0.42 but GAAP EPS -$2.16. Q3 guided $15.8-16.8B. Completed sale of $5B in Intel stock to NVIDIA. Q1 had $3.7B net loss from restructuring."
+  relevance: neutral
+  thesis_ref: "Intel foundry recovery trajectory, NVIDIA partnership"
+  confidence: high
+  category: guidance
+
+# --- ASML (euv) ---
+
+- id: "sig-20261009-2101-ASML-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: ASML
+  bottleneck: euv
+  source: "datacenterdynamics.com"
+  source_url: "https://www.datacenterdynamics.com/en/news/asml-to-deliver-lithography-machine-featuring-1000w-light-source-by-2030-improving-chip-yield-by-50/"
+  headline: "ASML plans 1000W EUV source by end of decade, Rapidus installs NXE:3800E in Hokkaido"
+  summary: "ASML targeting 1000W EUV light source by ~2030, enabling 330 wafers/hr (up from 220 at 600W). Rapidus installed NXE:3800E at IIM-1 foundry in Chitose. US startup xLight received $150M government investment for competing lithography."
+  relevance: neutral
+  thesis_ref: "EUV capacity and competition dynamics"
+  confidence: medium
+  category: capacity
+
+# --- CRWV (gpu_cloud) ---
+
+- id: "sig-20261009-2101-CRWV-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: CRWV
+  bottleneck: gpu_cloud
+  source: "seekingalpha.com"
+  source_url: "https://seekingalpha.com/news/4589882-coreweave-reaffirms-12b-13b-2026-revenue-outlook-while-lifting-2026-exit-run-rate-floor-to"
+  headline: "CoreWeave reaffirms $12-13B FY26 revenue, raises exit run-rate floor to $18B, $99.4B backlog"
+  summary: "CoreWeave Q1 revenue $2.08B (+111.7% YoY). Reaffirmed $12-13B FY2026 revenue guidance, raised exit run-rate floor to $18B. Contracted backlog grew to ~$99.4B. Later raised guidance to $12.4-13.2B in August. Capex $31-35B."
+  relevance: confirms
+  thesis_ref: "GPU cloud demand vastly exceeds current capacity"
+  confidence: high
+  category: guidance
+
+# --- BE (power) ---
+
+- id: "sig-20261009-2101-BE-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: BE
+  bottleneck: power
+  source: "fool.com"
+  source_url: "https://www.fool.com/investing/2026/07/31/bloom-energy-vs-the-grid-why-data-centers-are-choo/"
+  headline: "Bloom Energy secures $2.65B AEP deal for 1GW, Oracle/Brookfield megadeals worth billions"
+  summary: "Bloom Energy signed $2.65B deal with AEP for up to 1GW of fuel cells (Jan 2026). Secured megadeals with Oracle, Brookfield, and AEP. 30-50% of planned 2026 datacenter capacity faces major delays, driving demand for on-site power."
+  relevance: confirms
+  thesis_ref: "power bottleneck driving alternative generation for datacenters"
+  confidence: high
+  category: demand
+
+# --- CORZ (power) ---
+
+- id: "sig-20261009-2101-CORZ-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: CORZ
+  bottleneck: power
+  source: "sec.gov"
+  source_url: "https://www.sec.gov/Archives/edgar/data/0001839341/000183934126000014/core-20260630.htm"
+  headline: "Core Scientific controls 2.1 GW across 11 data centers, issued $3.3B notes, pipeline at 4.5 GW"
+  summary: "As of Q2 2026, Core Scientific controlled ~2.1 GW gross utility power across 11 data centers in 7 states. Raised $3.3B via senior secured notes. Gross power pipeline reached 4.5 GW. Expanding Pecos to 1.5 GW and acquired Polaris DS adding 440 MW at Muskogee."
+  relevance: confirms
+  thesis_ref: "power infrastructure buildout for AI/HPC colocation"
+  confidence: high
+  category: capacity
+
+# --- IREN (power) ---
+
+- id: "sig-20261009-2101-IREN-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: IREN
+  bottleneck: power
+  source: "datacenterdynamics.com"
+  source_url: "https://www.datacenterdynamics.com/en/news/ai-cloud-iren-purchases-50000-nvidia-b300-gpus/"
+  headline: "IREN orders 50K NVIDIA B300 GPUs for 150K total fleet, targets $3.7B ARR, $9.7B MSFT contract"
+  summary: "IREN agreed to buy 50K+ NVIDIA B300 GPUs, expanding fleet to ~150K. Targets $3.7B annualized revenue by year-end. Has $9.7B Microsoft cloud contract. 810MW operating, 2.1GW under construction, 1GW in development. Q2 revenue dropped to $184.7M from $240.3M."
+  relevance: confirms
+  thesis_ref: "GPU cloud buildout constrained by power availability"
+  confidence: medium
+  category: capacity
+
+# --- EQT (power) ---
+
+- id: "sig-20261009-2101-EQT-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: EQT
+  bottleneck: power
+  source: "regardsofwallstreet.com"
+  source_url: "https://www.regardsofwallstreet.com/news/eqt-earnings-preview-q2-2026-data-center-gas"
+  headline: "EQT Q2 production above guidance at 634 Bcfe, signs new 2 GW WV gas supply deal"
+  summary: "EQT Q2 2026 production of 634 Bcfe beat high end of guidance. Announced new long-term gas supply deal for a 2 GW West Virginia power plant. Already exclusive supplier for 4.4 GW Homer City data center campus. Projects 10 Bcf/d of data center gas demand by 2030."
+  relevance: confirms
+  thesis_ref: "natural gas as critical datacenter power input"
+  confidence: high
+  category: demand
+
+# --- TSEM (foundry) ---
+
+- id: "sig-20261009-2101-TSEM-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: TSEM
+  bottleneck: foundry
+  source: "itiger.com"
+  source_url: "https://itiger.com/news/2483027838"
+  headline: "Tower Semi signs $1.3B in AI chip deals, $4B Japan expansion with $1B gov grant"
+  summary: "Tower Semiconductor signed $1.3B in AI chip deals (May 2026). Announced $4B investment over 3 years in Japan facilities with $1B Japanese government grant. Silicon photonics demand remains strong. Next earnings expected ~Nov 11."
+  relevance: confirms
+  thesis_ref: "specialty foundry demand from AI and photonics"
+  confidence: medium
+  category: demand
+
+# --- Analyst signals ---
+
+- id: "sig-20261009-2101-BAKER-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: NVDA
+  bottleneck: n3_logic
+  source: "hedgefundalpha.com"
+  source_url: "https://hedgefundalpha.com/conferences/inside-mind-a-tech-sohn-2026/"
+  headline: "Gavin Baker: Trainium is most underrated NVIDIA competitor, AI constrained by 'watts and wafers'"
+  summary: "At Sohn 2026 conference, Atreides CIO Gavin Baker named Amazon Trainium as the most underrated NVIDIA competitor due to switched scaleup networks. Credits TSMC's ~5%/quarter capacity expansion with preventing a bubble. Argues AI buildout constrained by 'watts and wafers'."
+  relevance: novel
+  thesis_ref: "supply constraints in logic and power as structural bottleneck"
+  confidence: medium
+  category: positioning
+
+- id: "sig-20261009-2101-LEOPOLD-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: MU
+  bottleneck: memory
+  source: "economistwritingeveryday.com"
+  source_url: "https://economistwritingeveryday.com/tag/citadel/"
+  headline: "Aschenbrenner's Situational Awareness fund reportedly blew up on July 2026 chip selloff"
+  summary: "Leopold Aschenbrenner's Situational Awareness LP, investing in AI infrastructure bottlenecks (semis, power, storage), reportedly grew to ~$45B before a July 2026 chip/software selloff forced liquidation to Citadel. Unverified from secondary sources."
+  relevance: novel
+  thesis_ref: "concentration risk in semiconductor infrastructure trades"
+  confidence: low
+  category: macro
+
+- id: "sig-20261009-2101-PATEL-001"
+  found_at: "2026-10-09T21:01:00"
+  ticker: MU
+  bottleneck: memory
+  source: "ceointerviews.ai"
+  source_url: "https://ceointerviews.ai/interview/1073173/"
+  headline: "Dylan Patel: memory prices to keep climbing, less elastic buyers priced out"
+  summary: "SemiAnalysis CEO Dylan Patel predicts continued memory price increases as AI demand outstrips supply, with smartphone/laptop prices rising by hundreds of dollars. SemiAnalysis projects $100M+ revenue in 2026 and raised $500M for early-stage AI fund."
+  relevance: confirms
+  thesis_ref: "memory pricing power from structural undersupply"
+  confidence: medium
+  category: pricing
