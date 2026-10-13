@@ -1,0 +1,5 @@
+[2026-10-13 21:03:00] INFO daily earnings pipeline executed
+[2026-10-13 21:03:00] INFO earnings_calendar: completed (empty ticker_map)
+[2026-10-13 21:03:00] INFO pre_earnings_predictor: no tickers with earnings in next 7 days
+[2026-10-13 21:03:00] INFO transcript_fetcher: no due transcripts
+[2026-10-13 21:03:00] INFO report: generated agents/reports/latest.html
