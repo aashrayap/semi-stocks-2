@@ -1,125 +1,123 @@
 # semi-stocks-2
 
-Second-iteration semi-stocks workspace organized as a canonical propagation system.
+A small research pipeline that turns notes and public filings about
+semiconductor and AI-infrastructure companies into one checked data file, plus
+a browser app (Signal Desk) for reading it.
 
-## Signal Desk Diagrams
+It exists to keep research evidence traceable: a company only shows up in the
+reader after a person approves it, and every row links back to its source.
 
-### Canonical Data Flow
-
-![Signal Desk canonical data flow](docs/diagrams/signal-desk-canonical-data-flow-v2.png)
-
-The active app path is repo-owned and data-contract first:
-
-```text
-canonical truth -> canonical/40-engine -> canonical/site-data -> canonical/site-reader
+```mermaid
+flowchart LR
+  A[Notes and public filings] --> B[Structured evidence files]
+  B --> C{Person approves a proposal}
+  C --> D[Build step checks everything]
+  D --> E[One JSON data file]
+  E --> F[Web reader]
 ```
 
-`canonical/site-data/` is generated. `canonical/site-reader/` is a web-only reader that consumes generated data and must not become a source of truth.
+> Not investment advice. This is a personal research and engineering project.
 
-### Contract Boundary
+## What it does
 
-![Signal Desk contract boundary](docs/diagrams/signal-desk-contract-boundary-v2.png)
+1. **Collect.** Source material (earnings-call transcripts, quarterly 13F
+   holdings filings from public funds, industry research notes) lands as
+   Markdown in `canonical/10-wiki/`.
+2. **Structure.** Facts worth tracking become YAML in `canonical/20-data/`.
+3. **Approve.** A change to the tracked set of companies is written as a
+   proposal file with status `proposed`, `accepted` or `rejected`. Only
+   `accepted` proposals let a company and its evidence through.
+4. **Build.** A Python step (`canonical/40-engine/`) drops anything without
+   an approved path to it, validates the rest and writes
+   `canonical/site-data/signal_desk.json`.
+5. **Read.** A React app (`canonical/site-reader/`) loads only that JSON and
+   offers search, filters (source, company role, theme, date), an evidence
+   table, company profiles and a graph of companies that share evidence.
 
-`canonical/40-engine` compiles accepted canonical state into a rebuildable
-`canonical/site-data/signal_desk.json` contract. The reader consumes that
-generated contract only; it must not read or write canonical YAML directly.
+Separately, `agents/` holds scheduled helper scripts: an earnings calendar,
+a transcript fetcher, template-based pre-earnings predictions, a scorer that
+grades them after results arrive, and an HTML report. They read the main data
+but write only inside `agents/`, as drafts for a person to review.
 
-### Researcher + Human Loop
+**Current state:** the repo ships with an empty baseline. No proposals are
+accepted, so the build succeeds with zero companies and the reader shows its
+empty state. `agents/state/signals/` has sample dated signal files.
 
-![Signal Desk researcher and human loop](docs/diagrams/signal-desk-human-research-loop-v2.png)
+## Run it
 
-Human loop:
-
-```text
-raw source -> wiki ingest/query -> thesis proposal -> human gate -> admitted universe -> signal_desk.json -> web reader -> next research question
-```
-
-Human approval is the admission gate. Signal Desk supports decisions; it does
-not make them, and it should only show companies and evidence after accepted
-proposal ancestry admits them.
-
-### Reader Surface
-
-![Signal Desk reader surface](docs/diagrams/signal-desk-reader-surface-v2.png)
-
-Use the surface in this order:
-
-1. **Search or filter** — narrow by ticker, phrase, source channel, company role, thesis theme, or date.
-2. **Read graph shape carefully** — edges mean shared evidence only.
-3. **Read table rows** — rows are the actual evidence.
-4. **Open profile** — profile explains why a company or edge appears.
-5. **Decide next work** — act, update thesis/data, or create the next ingest/query task.
-
-- `Search` — use when you know a ticker, phrase, claim, source, or theme.
-- `Source Channel` — provenance lens for admitted evidence: Baker, Leopold, SemiAnalysis, company earnings, and thesis stage.
-- `Company Role` — economic layer: optics, memory, power, GPU cloud, foundry, chip designer, etc.
-- `Filters` — thesis theme, timeline, and include-undated controls.
-- `Graph controls` — reduce clutter with support-family toggles, min weight, and top-edge limits.
-
-## Run
-
-Generate and validate data:
+Needs Python 3.10 with [uv](https://docs.astral.sh/uv/), and Node.js 18+.
 
 ```bash
+# Build and validate the data file, then run the Python contract tests
 uv run python canonical/40-engine/site_data.py --validate
-```
-
-Run web reader:
-
-```bash
-cd canonical/site-reader
-npm install
-npm run dev -- --port 5173
-```
-
-Open:
-
-```text
-http://127.0.0.1:5173/
-```
-
-Test:
-
-```bash
 uv run python canonical/40-engine/tests/test_signal_desk_contract.py
+
+# Web reader at http://127.0.0.1:5173/
 cd canonical/site-reader
+npm ci
+npm run dev -- --port 5173
+
+# Reader tests: unit, then browser (first run: npx playwright install chromium)
 npm test
-npm run build
 npm run test:e2e
 ```
 
-## Parked
+## What is tested
 
-- Trace is parked until a typed `relationship_edges` dataset exists.
-- Graph edges are contextual evidence only.
-- No supplier/customer, money-flow, chip-flow, ownership, causality, or Trace path should be inferred from graph lines.
+- **Data contract (12 Python tests).** The reader's company list equals the
+  approved set; every row, source document, graph node and edge belongs to an
+  approved company; every row cites a source document and has a date field;
+  unapproved proposals never reach the feed; emitted fund positions never
+  exceed what the source filing holds; claims never create graph edges.
+- **Filter logic (3 Vitest tests).** OR within a filter and AND across
+  filters; undated rows follow the "include undated" switch; search combines
+  with source filters.
+- **Browser (3 Playwright tests).** The page renders its counts, edge
+  selection explains itself, and an over-filtered graph explains its empty
+  state. The edge test needs at least one graph edge, so it cannot pass on
+  the empty baseline described above.
 
-Start here:
-- Read [docs/architecture.md](docs/architecture.md) for lane ownership and propagation order.
-- Read [docs/doc-contract.md](docs/doc-contract.md) for root-doc and subsystem-doc boundaries.
-- Read [docs/ash.md](docs/ash.md) for a visual explainer of the repository.
-- Use [AGENTS.md](AGENTS.md) or [CLAUDE.md](CLAUDE.md) for agent routing.
+## Design choices worth noticing
 
-## Top-Level Map
+- **A human gate, enforced in code.** Approval is not a convention: the build
+  computes the set of approved companies and source documents first, and
+  every output is filtered against it, and the tests check each output.
+- **One-way data flow.** Data moves from notes to evidence to build output to
+  reader, never back. `canonical/site-data/` can be deleted and rebuilt at
+  any time; the reader never reads the source YAML.
+- **Repeatable builds.** Each build records a SHA-256 hash of every input
+  file and of each output collection. Rebuilding from the same inputs changes
+  only the timestamp, so a diff shows real data changes.
+- **The build fails loudly.** Without a schema library, validation rejects
+  unknown edge types, links to missing records, duplicate IDs and companies
+  without a ticker or name.
+- **An honest graph.** A line between two companies means only "these share
+  evidence" (both held by the same fund, or named in the same signal). It
+  never claims supplier, customer or money flow. A path-tracing feature is
+  deliberately switched off until typed relationship data exists, and a test
+  keeps it off.
+- **Code fetches, people judge.** Agent scripts gather and template data
+  without a language model; each prediction names the earnings report that
+  will grade it.
 
-- `canonical/` — source-of-truth propagation lanes
-- `agents/` — sidecar automation, drafts, logs, and scheduler state
-- `docs/` — durable repo docs and process docs
-- `tmp/` — scratch space
-- `config.yaml` — shared runtime config kept at root during migration
-- `pyproject.toml` / `uv.lock` — Python runtime managed with `uv`
+## Layout
 
-## Canonical Stages
+| Path | Holds |
+|---|---|
+| `canonical/10-wiki/` | Source notes; `raw/` is never edited |
+| `canonical/20-data/` | Structured evidence and approval proposals |
+| `canonical/30-thesis/thesis.yaml` | The short list of current conclusions |
+| `canonical/40-engine/` | Python build, validation and tests |
+| `canonical/50-reports/` | HTML report (`uv run python canonical/40-engine/report.py`) |
+| `canonical/site-data/` | Generated JSON (rebuildable) |
+| `canonical/site-reader/` | React + Vite reader and its tests |
+| `agents/` | Scheduled helper scripts and their drafts |
+| `docs/` | Architecture notes, process docs, diagrams |
 
-- `canonical/10-wiki/` — canonical knowledge workspace and ingest landing zone
-- `canonical/20-data/` — structured evidence, proposal decisions, and generated post-gate company dossiers (`sources/`, `thesis-proposals/`, `companies/`)
-- `canonical/30-thesis/thesis.yaml` — narrow control plane
-- `canonical/40-engine/` — engine stage wrapper and package-safe Python module root
-- `canonical/50-reports/` — canonical published artifacts
+Numbered folders follow the order data moves. Write rules:
+[docs/architecture.md](docs/architecture.md).
 
-## Generated App Surfaces
+## License
 
-- `canonical/site-data/` — generated JSON contract for repo-owned web readers and review surfaces; not a canonical stage
-- `canonical/site-reader/` — repo-owned web reader source that consumes `canonical/site-data/`; not a canonical stage
-
-Use `uv run ...` for Python commands. Wiki ingest, query, and lint work should route through the repo-local `ingest-semi` skill rather than generic wiki discovery.
+No license file is included, so default copyright applies. Reader third-party
+notices: [THIRD_PARTY_NOTICES.md](canonical/site-reader/THIRD_PARTY_NOTICES.md).
