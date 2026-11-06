@@ -22,8 +22,10 @@ flowchart LR
 
 1. **Collect.** Source material (earnings-call transcripts, quarterly 13F
    holdings filings from public funds, industry research notes) lands as
-   Markdown in `canonical/10-wiki/`.
-2. **Structure.** Facts worth tracking become YAML in `canonical/20-data/`.
+   Markdown in `canonical/10-wiki/raw/`. A language model (Claude) then writes
+   the summary and concept pages beside it.
+2. **Structure.** Facts worth tracking become YAML in `canonical/20-data/`,
+   often drafted by the language model as proposed changes.
 3. **Approve.** A change to the tracked set of companies is written as a
    proposal file with status `proposed`, `accepted` or `rejected`. Only
    `accepted` proposals let a company and its evidence through.
@@ -36,12 +38,16 @@ flowchart LR
 
 Separately, `agents/` holds scheduled helper scripts: an earnings calendar,
 a transcript fetcher, template-based pre-earnings predictions, a scorer that
-grades them after results arrive, and an HTML report. They read the main data
-but write only inside `agents/`, as drafts for a person to review.
+grades them after results arrive, and an HTML report. An hourly Claude Code
+Remote Trigger (`agents/trigger-prompt.md`) runs these during market hours,
+searches the web for news on tracked companies, and commits dated signal
+files. They read the main data but write data only inside `agents/`, as
+drafts for a person to review.
 
 **Current state:** the repo ships with an empty baseline. No proposals are
 accepted, so the build succeeds with zero companies and the reader shows its
-empty state. `agents/state/signals/` has sample dated signal files.
+empty state. `agents/state/signals/` holds a few dated signal files written
+by real runs of the hourly trigger.
 
 ## Run it
 
@@ -59,7 +65,7 @@ npm run dev -- --port 5173
 
 # Reader tests: unit, then browser (first run: npx playwright install chromium)
 npm test
-npm run test:e2e
+npm run test:e2e   # one of three fails on the empty baseline; see below
 ```
 
 ## What is tested
@@ -83,10 +89,12 @@ npm run test:e2e
   computes the set of approved companies and source documents first, and
   every output is filtered against it, and the tests check each output.
 - **One-way data flow.** Data moves from notes to evidence to build output to
-  reader, never back. `canonical/site-data/` can be deleted and rebuilt at
-  any time; the reader never reads the source YAML.
-- **Repeatable builds.** Each build records a SHA-256 hash of every input
-  file and of each output collection. Rebuilding from the same inputs changes
+  reader. The only thing the build writes back is a generated mirror of
+  company files in `canonical/20-data/companies/_generated/`.
+  `canonical/site-data/` can be deleted and rebuilt at any time; the reader
+  never reads the source YAML.
+- **Repeatable builds.** Each build records one SHA-256 hash over all input
+  files and one per output collection. Rebuilding from the same inputs changes
   only the timestamp, so a diff shows real data changes.
 - **The build fails loudly.** Without a schema library, validation rejects
   unknown edge types, links to missing records, duplicate IDs and companies
@@ -96,8 +104,10 @@ npm run test:e2e
   never claims supplier, customer or money flow. A path-tracing feature is
   deliberately switched off until typed relationship data exists, and a test
   keeps it off.
-- **Code fetches, people judge.** Agent scripts gather and template data
-  without a language model; each prediction names the earnings report that
+- **The model drafts, a person decides.** A language model writes the wiki
+  pages, signal files and proposed changes; the Python scripts themselves use
+  no model. A person marks a proposal `accepted`, and only accepted proposals
+  reach the reader. Each prediction names the earnings report that
   will grade it.
 
 ## Layout
