@@ -14,14 +14,12 @@ Automated agents are sidecar workers for `semi-stocks-2`.
 - `config.yaml` for tracked tickers and sources.
 - `canonical/10-wiki/schema.md` before wiki-aware analysis.
 - `docs/process/agent-scheduler.md` for unattended runtime.
-- `docs/process/trigger-setup.md` for Claude Code Remote Trigger setup.
 
 ## Runtime
 
 - Use `uv run python agents/src/<script>.py ...`.
 - Daily sidecar flow: `uv run python agents/src/daily_runner.py`.
 - Local scheduler install: `uv run python agents/src/install_launchd.py --hour 6 --minute 5 --load`.
-- Remote trigger prompt: `agents/trigger-prompt.md`.
 
 ## Outputs
 
