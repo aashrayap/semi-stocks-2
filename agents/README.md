@@ -39,14 +39,8 @@ agents/
 - Agent writes remain under `agents/`.
 - Runtime conditions for unattended runs are documented in `docs/process/agent-scheduler.md`.
 
-## Remote Trigger (Primary)
+## Retired: hourly remote trigger
 
-The `hourly-market-intel` Claude Code Remote Trigger runs on Anthropic cloud during market hours.
-It executes the earnings pipeline (once/day) and source monitoring (hourly), then commits signals
-and opens a daily PR.
-
-- Trigger prompt: `agents/trigger-prompt.md`
-- Signal output: `agents/state/signals/YYYY-MM-DD.yaml`
-- Signal schema: `agents/state/signals/schema.md`
-- Setup instructions: `docs/process/trigger-setup.md`
-- Trigger log: `agents/logs/hourly-intel-YYYY-MM.log`
+An hourly Claude Code Remote Trigger once wrote `agents/state/signals/` and
+`agents/logs/hourly-intel-*.log`. It is retired and its prompt is removed; those
+files stay as history.

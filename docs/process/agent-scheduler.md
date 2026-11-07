@@ -2,21 +2,10 @@
 
 Date: 2026-04-10
 
-## Primary: Claude Code Remote Trigger
+## Retired: Claude Code Remote Trigger
 
-The primary execution path is the `hourly-market-intel` Claude Code Remote Trigger running on Anthropic's cloud infrastructure.
-
-- **Schedule:** Hourly during US market hours — `0 13-21 * * 1-5` UTC (8 AM - 4 PM ET, weekdays)
-- **Execution:** ~9 runs per trading day, fresh repo clone each run
-- **What it does each run:**
-  1. Earnings pipeline (first run of day only): calendar, predictions, transcripts, report
-  2. Source monitoring (every run): per-ticker web search, SemiAnalysis RSS, analyst searches, SEC EDGAR 13F (weekly), financial news
-  3. Signal output: writes to `agents/state/signals/YYYY-MM-DD.yaml`
-  4. Commits to `claude/daily-signals` branch, creates/updates daily PR
-
-- **No Mac dependency** — runs on Anthropic cloud regardless of laptop state
-- **Setup:** See `docs/process/trigger-setup.md` for configuration instructions
-- **Trigger prompt:** See `agents/trigger-prompt.md`
+An hourly remote trigger used to run the pipeline and commit signals. It is
+retired and its prompt is removed.
 
 ## Local Backup: launchd
 
